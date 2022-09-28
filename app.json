@@ -1,0 +1,8 @@
+{
+    "name": "Tau Epsilon Kappa",
+    "description": "Tau Epsilon Kappa's Website",
+    "repository": "https://github.com/dexterkennedy/nicole-kennedy",
+    "logo": "https://nicole-kennedy.herokuapp.com/logo",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+}
