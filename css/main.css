@@ -117,6 +117,10 @@ footer {
     align-items: center;
 }
 
+footer p {
+    font-size: 12px;
+}
+
 footer div {
     display: flex;
 }
@@ -126,7 +130,7 @@ footer li {
 }  
 
 .icon {
-    width: 50px;
+    width: 100px;
 }
 
 /*------------------------------------------------------
@@ -292,7 +296,8 @@ MEMBER PAGE
     width: 85%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     transition: all 0.4s;
@@ -301,7 +306,7 @@ MEMBER PAGE
 
 .member {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -331,7 +336,7 @@ MEMBER PAGE
     z-index: 0;
     position: absolute;
     top: 60px;
-    left: 80px;
+    left: 90px;
 }
 
 .member img:hover {
@@ -566,6 +571,15 @@ MEDIA QUERIES PAGE
         margin-bottom: 0px;
     }
 
+    /*FOOTER*/
+    footer p {
+        font-size: 17px;
+    } 
+    
+    .icon {
+        width: 50px;
+    }
+
     /*INDEX PAGE BACKGROUND SECTION*/
     #home {
         grid-template-columns: 45% 55%;
@@ -678,26 +692,6 @@ MEDIA QUERIES PAGE
         width: 90%;
     }
 
-    /*MEMBERS*/
-    .members {
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    
-    .member {
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .names {
-        margin-bottom: 0px;
-    }
-
-    .member img:nth-child(2) {
-        left: 90px;
-    }
-
     /*RUSH TIMELINE & BOXES*/
     .rush-container {
         display: grid;
@@ -794,11 +788,6 @@ MEDIA QUERIES PAGE
     }
     .pics img:nth-child(18) {
         grid-area: 6 / 5 / span 1 / span 1;
-    }
-
-    /*MEMBERS*/
-    #actives .names p {
-        display: none;
     }
 
     /*TIMELINE & APPLICATION CONTAINER*/
