@@ -112,7 +112,7 @@ footer {
     display: flex;
     flex-direction: row;
     box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
-    padding: 0 30px 0 30px;
+    padding: 25px;
     justify-content: space-between;
     align-items: center;
 }
