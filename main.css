@@ -429,7 +429,15 @@ APPLICATION BOXES
     grid-area: 2 / 3 / span 2 / span 1;
 }
 
-
+#founders {
+    grid-area: 4 / 2 / span 1 / span 2;
+}
+#messageN {
+    grid-area: 5 / 2 / span 2 / span 1;
+}
+#messageT {
+    grid-area: 5 / 3 / span 2 / span 1;
+}
 #application h1 {
     padding-bottom: 10px;
 }
