@@ -951,3 +951,38 @@ Alumnibody {
       margin-bottom: 20px;
     }
   }
+
+/* Founders' Quotes */
+
+.quotes-row {
+    display: flex;
+    align-items: center; /* This centers the children vertically */
+  }
+  
+  .quote-container {
+    flex-grow: 1; /* This ensures that the quote containers take up the remaining space */
+    width: 48%;
+    padding: 20px;
+    margin: 0 1%;
+  }
+  
+  .divider {
+    width: 3px;
+    background-color: #293786;
+    align-self: stretch; /* This makes the divider stretch to match the height of the tallest sibling */
+    margin: 0 10px; /* optional, adds some space between the divider and the quotes */
+    margin-bottom: 25px;
+  }
+  
+  .quote-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .quote-author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
