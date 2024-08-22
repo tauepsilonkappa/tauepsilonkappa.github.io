@@ -66,21 +66,53 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
+    /* box-shadow: 0px 0px 30px rgb(127 137 161 / 30%); */
     padding-right: 50px;
     position: sticky;
     top: 0px;
 }
 
-header img {
-    width: 150px;
-    margin: 10px;
+header img[alt="tek logo"] {
+    width: 150px; 
+    height: auto;
+    margin: 15px;
+}
+
+header.index-transparent {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-right: 50px;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+header.index-transparent.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
+}
+
+header.index-transparent .nav-links a {
+    color: white;
+}
+
+header.index-transparent.scrolled .nav-links a {
+    color: #293786;
 }
 
 .nav-links {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 a {
@@ -181,13 +213,14 @@ BACKGROUND INFO
 ------------------------------------------------------*/
 #background {
     width: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 #home {
-    display: grid;
+    display: block;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    text-align: center;
     justify-items: center;
     align-items: center;
 }
@@ -200,18 +233,35 @@ BACKGROUND INFO
 
 #home div {
     grid-row: 2 / span 1;
-    margin: 0 50px 0;
+    margin-bottom: 50px;
+}
+
+#home h2 {
+    color: #293786;
+}
+
+#home p {
+    padding: 30px 350px 0;
 }
 
 /*------------------------------------------------------
 HOMEPAGE VALUES
 ------------------------------------------------------*/
+.value-area {
+    background-color: #2937861a;
+    padding: 10px 50px 60px 50px;
+}
+
+.value-area h1 {
+    padding-top: 40px;
+    color: black;
+}
+
 .values {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
-    margin: 0 30px 0 30px;
 }
 
 .value {
@@ -226,6 +276,7 @@ HOMEPAGE VALUES
     grid-template-rows: 1fr 1fr 3fr;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .values .icon {
@@ -236,6 +287,7 @@ HOMEPAGE VALUES
 .value-header {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    color: #293786;
 }
 
 .value-content {
@@ -380,14 +432,44 @@ RUSH PAGE
 ------------------------------------------------------*/
 
 .rush {
-    margin: 40px 100px 40px;
-}
+    display: flex;
+    align-items: center;
+    padding: 80px 80px 80px 80px;
+    background-color: white;
+    flex-wrap: wrap;
+  }
+  
+  .rush-text-box {
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    margin-left: 120px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .rush-text-box h1 {
+    font-size: 36px;
+    width: 500px;
+  }
+  
+  .rush-text-box p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .rush img {
+    width: 65%;
+    height: auto;
+    margin-left: -250px;
+    display: block;
+    object-fit: cover;
+  }
 
 /*------------------------------------------------------
 APPLICATION BOXES
 ------------------------------------------------------*/
 #application {
-    background-color: #eaf9ff;
     justify-content: center;
 }
 
@@ -444,18 +526,18 @@ TIMELINE
 }
 
 .timeline h2 {
-    font-weight: bold;
     text-align: left;
+    font-size: 22px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: -70px;
     width: 4px;
-    height: 100%;
-    background: #87CEEB;
+    height: 116.5%;
+    background: #293786;
 }
 
 .timeline-container {
@@ -470,9 +552,8 @@ TIMELINE
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    text-align: center;
-    font-size: 2px;
-    background: #87CEEB;
+    background: #293786;
+    top: 10%;
 }
 .timeline i {
     position: absolute;
@@ -482,7 +563,7 @@ TIMELINE
 }
 
 .timeline-body {
-    padding: 5px 20px 5px;
+    padding: 5px 10px 20px;
     width:100%;
 }
 
@@ -499,9 +580,31 @@ TIMELINE
 }
 
 .rush-container {
-    background-color: #eaf9ff;
+    background-color: #2937861a;
     justify-content: center;
     align-items: center;
+    padding: 70px 0px 70px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .rush {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 40px 20px;
+    }
+
+    .rush-text-box {
+        margin-left: 0; /* Remove left margin */
+        width: 90%; /* Set width to 90% on smaller screens */
+    }
+
+    .rush img {
+        width: 90%; /* Set image width to 90% */
+        margin: 20px auto; /* Center the image */
+    }
+
+    .rush-text-box h1, .rush-text-box p {
+        text-align: center; /* Center-align text on smaller screens */
+    }
 }
 
 /*------------------------------------------------------
@@ -797,7 +900,7 @@ MEDIA QUERIES PAGE
     }
     
     .rush-container {
-        background-color: #eaf9ff;
+        background-color: #2937861a;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: center;
