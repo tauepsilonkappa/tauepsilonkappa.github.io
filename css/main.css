@@ -588,22 +588,22 @@ TIMELINE
 
 @media screen and (max-width: 768px) {
     .rush {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
         padding: 40px 20px;
     }
 
     .rush-text-box {
-        margin-left: 0; /* Remove left margin */
-        width: 90%; /* Set width to 90% on smaller screens */
+        margin-left: 0;
+        width: 90%;
     }
 
     .rush img {
-        width: 90%; /* Set image width to 90% */
-        margin: 20px auto; /* Center the image */
+        width: 90%;
+        margin: 20px auto;
     }
 
     .rush-text-box h1, .rush-text-box p {
-        text-align: center; /* Center-align text on smaller screens */
+        text-align: center;
     }
 }
 
