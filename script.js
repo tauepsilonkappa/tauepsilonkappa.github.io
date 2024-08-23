@@ -25,3 +25,19 @@ function changeSlide(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+document.querySelectorAll('.counter').forEach(counter => {
+  counter.innerText = '0';
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+    const increment = target / 200;
+
+    if (current < target) {
+      counter.innerText = `${Math.ceil(current + increment)}`;
+      setTimeout(updateCounter, 10);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCounter();
+});
