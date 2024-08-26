@@ -514,6 +514,7 @@ RUSH PAGE
 }
 
 .rush {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   padding: 80px 80px 80px 80px;
