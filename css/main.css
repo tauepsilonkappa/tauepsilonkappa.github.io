@@ -748,11 +748,20 @@ MEDIA QUERIES PAGE
   }
 
   #rush-firstarea {
-    width: 98.5vh;
-    background-color: #000000;
-    transform: translate(-30%, 44%) rotate(90deg);
-    margin-bottom: 500px;
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d6cec0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #rush-firstPic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150vh;
+    transform: translate(-50%, -50%) rotate(90deg) scale(2);
+    object-fit: cover;
   }
 
   .rush {
@@ -761,7 +770,7 @@ MEDIA QUERIES PAGE
   }
 
   .rush-text-box {
-    margin-top: -100px;
+    margin-top: 0px;
     margin-left: 0;
     width: 90%;
     display: flex;
@@ -780,14 +789,14 @@ MEDIA QUERIES PAGE
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .rush-text-box p {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .timeline::before {
