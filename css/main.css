@@ -668,9 +668,9 @@ TIMELINE
 @media screen and (max-width: 768px) {
   #rush-firstarea {
     height: auto;
-    width: 100vh;
+    width: 120vh;
     background-color: #000000;
-    transform: translate(-30%, 43%) rotate(90deg);
+    transform: translate(-30%, 35%) rotate(90deg);
     margin-bottom: 500px;
   }
 
