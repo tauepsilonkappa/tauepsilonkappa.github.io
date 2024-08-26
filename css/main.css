@@ -679,7 +679,7 @@ TIMELINE
 @media screen and (max-width: 1370px) {
   #rush-firstarea {
     width: 98.5vw;
-    height: 100vh;
+    height: 95vh;
     background-color: #d6cec0;
     position: relative;
     overflow: hidden;
