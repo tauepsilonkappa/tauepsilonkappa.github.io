@@ -59,6 +59,47 @@ SKIP TO MAIN
   top: 90px;
 }
 
+.explore-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 60px;
+  border: 3px solid white;
+  border-radius: 70px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.explore-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  background-color: transparent;
+}
+
+.explore-icon i {
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.explore-button:hover {
+  background-color: white;
+  color: #333;
+  border-color: white;
+}
+
+.explore-button:hover .explore-icon i {
+  color: #333;
+}
+
 /*------------------------------------------------------
 NAV BAR
 ------------------------------------------------------*/
