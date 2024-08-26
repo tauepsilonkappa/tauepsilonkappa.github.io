@@ -257,6 +257,7 @@ MEDIA QUERIES PAGE
     width: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    right: 5px;
   }
 
   .dropdown-content a {
@@ -268,6 +269,29 @@ MEDIA QUERIES PAGE
 
   .show {
     display: block;
+  }
+
+  header {
+    padding-right: 10px;
+  }
+
+  header img[alt="tek logo"] {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+
+  header.index-transparent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header.index-transparent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer-icon {
