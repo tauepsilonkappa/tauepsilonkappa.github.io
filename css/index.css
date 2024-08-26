@@ -1,0 +1,273 @@
+/*------------------------------------------------------
+HOMEPAGE PIC + TITLE
+------------------------------------------------------*/
+#firstarea {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  background-color: #000000;
+}
+
+#firstPic {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#firstarea h1 {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#firstarea h2 {
+  grid-row: 3 / span 1;
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+  grid-column: 1 / span 1;
+}
+
+.explore-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 60px;
+  border: 3px solid white;
+  border-radius: 70px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.explore-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  background-color: transparent;
+}
+
+.explore-icon i {
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.explore-button:hover {
+  background-color: white;
+  color: #333;
+  border-color: white;
+}
+
+.explore-button:hover .explore-icon i {
+  color: #333;
+}
+
+/*------------------------------------------------------
+BACKGROUND INFO
+------------------------------------------------------*/
+#background {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+#home {
+  display: block;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#home img {
+  width: 250px;
+  grid-row: 1 / span 1;
+  text-align: center;
+}
+
+#home div {
+  grid-row: 2 / span 1;
+  margin-bottom: 50px;
+}
+
+#home h2 {
+  color: #293786;
+}
+
+#home p {
+  padding: 30px 350px 0;
+}
+
+/*------------------------------------------------------
+HOMEPAGE VALUES
+------------------------------------------------------*/
+.value-area {
+  background-color: #2937861a;
+  padding: 10px 50px 60px 50px;
+}
+
+.value-area h1 {
+  padding-top: 40px;
+  color: black;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.value {
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgb(127 137 161 / 30%);
+  background-color: #ffffff;
+  margin: 20px;
+  transition: all 0.4s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.values .icon {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.value-header {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  color: #293786;
+}
+
+.value-content {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.value:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+#pillar1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+#pillar2 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+#pillar3 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+/*------------------------------------------------------
+********************************************************
+MEDIA QUERIES PAGE
+********************************************************
+------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #home p {
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  #home h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .value {
+    width: 90%;
+    padding: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*INDEX PAGE BACKGROUND SECTION*/
+  #home {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr;
+  }
+
+  #home img {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+
+  #home div {
+    grid-area: 1 / 2 / span 1 / span 1;
+  }
+
+  /*SIDE-BY-SIDE VALUE CARDS*/
+  .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+
+  #firstarea h1 {
+    font-size: 70px;
+  }
+  #firstarea h2 {
+    font-size: 40px;
+  }
+
+  #pillar1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #pillar2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #pillar3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .value {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*INDEX PAGE BACKGROUND SECTION*/
+  #home {
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+  }
+}
