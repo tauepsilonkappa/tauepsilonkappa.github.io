@@ -204,15 +204,6 @@ HOMEPAGE PIC + TITLE
   background-color: #000000;
 }
 
-#rush-firstarea {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 5fr;
-  background-color: #000000;
-}
-
 #firstPic {
   grid-column: 1 / span 1;
   grid-row: 1 / span 4;
@@ -505,6 +496,22 @@ MEMBER PAGE
 RUSH PAGE
 ********************************************************
 ------------------------------------------------------*/
+#rush-firstarea {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  background-color: #d6cec0;
+}
+
+#firstPic {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .rush {
   display: flex;
@@ -523,6 +530,10 @@ RUSH PAGE
   width: 40%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .rush-text-box h1 {
@@ -663,6 +674,26 @@ TIMELINE
   justify-content: center;
   align-items: center;
   padding: 70px 0px 70px 0px;
+}
+@media screen and (max-width: 1370px) {
+  #rush-firstarea {
+    width: 98.5vw;
+    height: 100vh;
+    background-color: #d6cec0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #rush-firstPic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.12);
+    object-fit: cover;
+  }
+  .timeline::before {
+    height: 111.5%;
+  }
 }
 
 /*------------------------------------------------------
