@@ -665,48 +665,6 @@ TIMELINE
   padding: 70px 0px 70px 0px;
 }
 
-@media screen and (max-width: 768px) {
-  #rush-firstarea {
-    height: auto;
-    width: 120vh;
-    background-color: #000000;
-    transform: translate(-30%, 35%) rotate(90deg);
-    margin-bottom: 500px;
-  }
-
-  .rush {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .rush-text-box {
-    margin-left: 0;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .rush img {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  .rush-text-box h1,
-  .rush-text-box p {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .timeline::before {
-    height: 110%;
-    z-index: -1;
-  }
-}
-
 /*------------------------------------------------------
 ********************************************************
 MEDIA QUERIES PAGE
@@ -779,16 +737,62 @@ MEDIA QUERIES PAGE
     grid-template-rows: auto;
   }
 
-  @media screen and (max-width: 768px) {
-    .alumnilist,
-    .alumnilist li {
-      text-align: center;
-      margin: 0 auto;
-    }
+  .alumnilist,
+  .alumnilist li {
+    text-align: center;
+    margin: 0 auto;
   }
 
   .footer-icon {
     width: 100px;
+  }
+
+  #rush-firstarea {
+    width: 98.5vh;
+    background-color: #000000;
+    transform: translate(-30%, 44%) rotate(90deg);
+    margin-bottom: 500px;
+    display: flex;
+  }
+
+  .rush {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .rush-text-box {
+    margin-top: -100px;
+    margin-left: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rush img {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .rush-text-box h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .rush-text-box p {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .timeline::before {
+    height: 110%;
+    z-index: -1;
   }
 }
 
