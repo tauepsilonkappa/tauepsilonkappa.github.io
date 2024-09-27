@@ -62,11 +62,11 @@ SKIP TO MAIN
 .explore-button {
   display: inline-flex;
   align-items: center;
-  padding: 8px 60px;
+  padding: 7px 50px;
   border: 3px solid white;
   border-radius: 70px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   background-color: transparent;
@@ -199,27 +199,56 @@ FOOTER
 ------------------------------------------------------*/
 footer {
   display: flex;
-  flex-direction: row;
   box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
-  padding: 25px;
-  justify-content: space-between;
+  padding: 20px;
   align-items: center;
+  background-color: #2b3c67;
 }
 
-footer p {
-  font-size: 12px;
+footer .footer-center p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
 
-footer div {
+.footer-center {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
 }
 
-footer li {
-  padding: 0 15px 0 15px;
+footer nav ul {
+  display: flex;
+  gap: 20px;
 }
 
-.icon {
-  width: 100px;
+footer a {
+  color: #ffffff;
+}
+
+footer img[alt="tek logo"] {
+  width: 120px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.footer-icon svg {
+  fill: white;
+  transition: fill;
+  width: 24px;
+}
+
+.footer-icon:hover svg {
+  fill: #fbf7de;
+}
+
+.footer-icon.mail-icon svg {
+  padding-top: 4px;
 }
 
 /*------------------------------------------------------
@@ -294,8 +323,27 @@ MEDIA QUERIES PAGE
     justify-content: center;
   }
 
-  .footer-icon {
-    width: 100px;
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .footer-center {
+    position: static;
+    transform: none;
+  }
+
+  footer .footer-center p {
+    font-size: 10px;
+    margin-top: -10px;
+  }
+
+  footer img[alt="tek logo"] {
+    margin: 0 auto;
+  }
+
+  footer nav ul {
+    justify-content: center;
   }
 }
 
@@ -317,16 +365,12 @@ MEDIA QUERIES PAGE
   }
 
   /*FOOTER*/
-  footer p {
-    font-size: 17px;
+  footer .footer-center p {
+    font-size: 10px;
   }
 
   .icon {
     width: 50px;
-  }
-
-  .footer-icon {
-    width: 40px;
   }
 }
 
@@ -334,5 +378,10 @@ MEDIA QUERIES PAGE
   /*NAV BAR*/
   header {
     flex-direction: row;
+  }
+
+  /*FOOTER*/
+  footer .footer-center p {
+    font-size: 14px;
   }
 }
