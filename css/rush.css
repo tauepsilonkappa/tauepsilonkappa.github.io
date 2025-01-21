@@ -4,288 +4,299 @@ RUSH PAGE
 ********************************************************
 ------------------------------------------------------*/
 #rush-firstarea {
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 5fr;
-    background-color: #2e4d41; /* Forest green background */
-  }
-  
-  #firstPic {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .rush {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    padding: 80px 80px 80px 80px;
-    background-color: #2e4d41; /* Forest green */
-    flex-wrap: wrap;
-    color: #ffffff; /* White text */
-  }
-  
-  .rush-text-box {
-    background-color: #011f4b; /* Navy blue */
-    padding: 30px 30px 30px 30px;
-    margin-left: 120px;
-    width: 40%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff; /* White text */
-  }
-  
-  .rush-text-box h1 {
-    font-size: 36px;
-    width: 500px;
-    color: #ffffff; /* White text */
-    text-shadow: 2px 2px #2e4d41; /* Forest green shadow */
-  }
-  
-  .rush-text-box p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #d1d1d1; /* Light gray text */
-  }
-  
-  .rush img {
-    width: 65%;
-    height: auto;
-    margin-left: -250px;
-    display: block;
-    object-fit: cover;
-    border: 2px solid #011f4b; /* Navy blue border */
-  }
-  
-  /*------------------------------------------------------
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  background-color: #455d45;
+}
+
+#firstPic {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rush {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 80px 80px 80px 80px;
+  background-color: #455d45;
+  flex-wrap: wrap;
+  color: #ffffff; /* White text */
+}
+
+.rush-text-box {
+  background-color: #8f9788;
+  padding: 30px 30px 30px 30px;
+  margin-left: 120px;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* White text */
+}
+
+.rush-text-box h1 {
+  font-size: 36px;
+  width: 500px;
+  color: #ffffff; /* White text */
+  text-shadow: 2px 2px #455d45;
+}
+
+.rush-text-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #d1d1d1; /* Light gray text */
+}
+
+.rush img {
+  width: 65%;
+  height: auto;
+  margin-left: -250px;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #8f9788;
+}
+
+/*------------------------------------------------------
     APPLICATION BOXES
     ------------------------------------------------------*/
-  #application {
-    justify-content: center;
-  }
-  
-  .application {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-rows: auto auto auto;
-    grid-gap: 5px;
-    padding-bottom: 30px;
-  }
-  
-  .application div {
-    box-shadow: 0px 0px 15px rgb(127 137 161 / 30%);
-    padding: 30px;
-    background-color: #011f4b; /* Navy blue */
-    color: #ffffff; /* White text */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .application a {
-    color: #ffffff; /* White links */
-  }
-  
-  #faqs {
-    grid-area: 1 / 2 / span 2 / span 1;
-  }
-  
-  #app-link {
-    grid-area: 1 / 3 / span 1 / span 1;
-  }
-  
-  #interest-link {
-    grid-area: 3 / 2 / span 1 / span 1;
-  }
-  
-  #questions {
-    grid-area: 2 / 3 / span 2 / span 1;
-  }
-  
-  #application h1 {
-    padding-bottom: 10px;
-    color: #ffffff; /* White text */
-  }
-  
-  /*------------------------------------------------------
+#application {
+  justify-content: center;
+}
+
+.application {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px;
+  padding-bottom: 30px;
+}
+
+.application div {
+  box-shadow: 0px 0px 15px rgb(127 137 161 / 30%);
+  padding: 30px;
+  background-color: #8f9788;
+  color: #ffffff; /* White text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.application a {
+  color: #ffffff; /* White links */
+}
+
+#faqs {
+  grid-area: 1 / 2 / span 2 / span 1;
+}
+
+#app-link {
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+
+#interest-link {
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#questions {
+  grid-area: 2 / 3 / span 2 / span 1;
+}
+
+#application h1 {
+  padding-bottom: 10px;
+  color: #ffffff; /* White text */
+}
+
+/*------------------------------------------------------
     TIMELINE
     ------------------------------------------------------*/
-  .timeline {
-    position: relative;
-    padding-left: 30px;
-    margin-left: 150px;
-  }
-  
-  .timeline h2 {
-    text-align: left;
-    font-size: 22px;
-    color: #ffffff; /* White text */
-  }
-  
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -70px;
-    width: 4px;
-    height: 116.5%;
-    background: #011f4b; /* Navy blue */
-  }
-  
-  .timeline-container {
-    position: relative;
-    width: 95%;
-  }
-  
-  .timeline-icon {
-    position: absolute;
-    left: -38px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #011f4b; /* Navy blue */
-  }
-  
-  .timeline i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .timeline-body {
-    padding: 5px 10px 20px;
-    width: 100%;
-    color: #ffffff; /* White text */
-  }
-  
-  .timeline-body::before {
-    content: "";
-    background: inherit;
-    width: 20px;
-    height: 20px;
-    display: block;
-    position: absolute;
-    left: -10px;
-    transform: rotate(45deg);
-    border-radius: 0 0 0 2px;
-  }
-  
-  .rush-container {
-    background-color: #2e4d41; /* Forest green */
-    justify-content: center;
-    align-items: center;
-    padding: 70px 0px 70px 0px;
-  }
-  
-  /* Founders' Quotes */
-  
-  .quotes-row {
-    display: flex;
-    align-items: center; /* This centers the children vertically */
-  }
-  
-  .quote-container {
-    flex-grow: 1; /* This ensures that the quote containers take up the remaining space */
-    width: 48%;
-    padding: 20px;
-    margin: 0 1%;
-    background-color: #011f4b; /* Navy blue */
-    color: #ffffff; /* White text */
-  }
-  
-  .divider {
-    width: 3px;
-    background-color: #ffffff; /* White divider */
-    align-self: stretch; /* This makes the divider stretch to match the height of the tallest sibling */
-    margin: 0 10px; /* Adds space between the divider and the quotes */
-  }
-  
-  .quote-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
-  .quote-author {
-    font-size: 18px;
-    font-weight: bold;
-    color: #d1d1d1; /* Light gray text */
-  }
-  
-  /*------------------------------------------------------
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 150px;
+}
+
+.timeline h2 {
+  text-align: left;
+  font-size: 22px;
+  color: #ffffff; /* White text */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -70px;
+  width: 4px;
+  height: 116.5%;
+  background: #8f9788;
+}
+
+.timeline-container {
+  position: relative;
+  width: 95%;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -38px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8f9788;
+}
+
+.timeline i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-body {
+  padding: 5px 10px 20px;
+  width: 100%;
+  color: #ffffff; /* White text */
+}
+
+.timeline-body::before {
+  content: "";
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.rush-container {
+  background-color: #455d45;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px 70px 0px;
+}
+
+/* Founders' Quotes */
+h1 {
+  font-family: quasimoda-2, sans-serif;
+  color: #455d45;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.quotes-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quote-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #8f9788;
+  color: #ffffff;
+  height: auto;
+}
+
+.quote-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+/*------------------------------------------------------
   ********************************************************
   MEDIA QUERIES PAGE
   ********************************************************
   ------------------------------------------------------*/
-  @media screen and (max-width: 767px) {
-    .rush {
-      flex-direction: column;
-      padding: 40px 20px;
-    }
-  
-    .rush-text-box {
-      margin-top: 0px;
-      margin-left: 0;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .rush img {
-      width: 90%;
-      margin: 20px auto;
-    }
-  
-    .rush-text-box h1 {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      font-size: 28px;
-    }
-  
-    .rush-text-box p {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .timeline::before {
-      height: 110%;
-      z-index: -1;
-    }
+@media screen and (max-width: 767px) {
+  .rush {
+    flex-direction: column;
+    padding: 40px 20px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .rush-container {
-      display: grid;
-      grid-template-columns: 45% 55%;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin: auto;
-    }
-  
-    .application {
-      justify-content: center;
-    }
-  
-    .timeline {
-      margin-left: 80px;
-      margin-right: 40px;
-    }
+
+  .rush-text-box {
+    margin-top: 0px;
+    margin-left: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+
+  .rush img {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .rush-text-box h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .rush-text-box p {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .timeline::before {
+    height: 110%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rush-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  .application {
+    justify-content: center;
+  }
+
+  .timeline {
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+}
