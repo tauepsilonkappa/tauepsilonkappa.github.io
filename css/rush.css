@@ -235,6 +235,14 @@ h1 {
   text-align: left;
 }
 
+.rush-footer {
+  display: flex;
+  box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
+  padding: 20px;
+  align-items: center;
+  background-color: #455d45;
+}
+
 /*------------------------------------------------------
   ********************************************************
   MEDIA QUERIES PAGE

@@ -2,19 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="images/tekPics/Icon.png" />
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/alumni.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
-
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/images/tekPics/Icon.png"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/activities.css" />
     <script src="main.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tau Epsilon Kappa</title>
   </head>
 
@@ -23,18 +27,16 @@
 
     <!-- Navigation Bar-->
     <header>
-      <a href="index.html">
-        <img src="./images/tekPics/tekNavy-3.png" alt="tek logo" tabindex="0" />
+      <a href="/">
+        <img src="/images/tekPics/tekNavy-3.png" alt="tek logo" tabindex="0" />
       </a>
       <nav class="full" aria-label="large navigation">
         <ul class="nav-links">
-          <li class="nav-item"><a href="index.html">HOME</a></li>
-          <li class="nav-item"><a href="members.html">MEMBERS</a></li>
-          <li class="nav-item">
-            <a href="alumni.html" class="active">ALUMNI</a>
-          </li>
-          <li class="nav-item"><a href="activities.html">ACTIVITIES</a></li>
-          <li class="nav-item"><a href="rush.html">RUSH</a></li>
+          <li class="nav-item"><a href="/">HOME</a></li>
+          <li class="nav-item"><a href="/members">MEMBERS</a></li>
+          <li class="nav-item"><a href="/alumni">ALUMNI</a></li>
+          <li class="nav-item"><a href="/activities">ACTIVITIES</a></li>
+          <li class="nav-item"><a href="/rush" class="active">RUSH</a></li>
         </ul>
       </nav>
       <nav class="mobile" aria-label="small navigation">
@@ -44,202 +46,132 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="index.html">HOME</a>
-            <a href="members.html">MEMBERS</a>
-            <a href="alumni.html" class="active">ALUMNI</a>
-            <a href="activities.html">ACTIVITIES</a>
-            <a href="rush.html">RUSH</a>
+            <a href="/">HOME</a>
+            <a href="/members">MEMBERS</a>
+            <a href="/alumni">ALUMNI</a>
+            <a href="/activities">ACTIVITIES</a>
+            <a href="/rush" class="active">RUSH</a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Alumni Content-->
     <main id="main">
-      <section>
-        <!-- <div class="counter-container">
-          <div class="counter" data-target="25">0</div>
-          <h1>AlUMNI</h1>
-        </div> -->
-        <h1>AlUMNI</h1>
-        <p class="alumniparagraph">
-          Alumni of our fraternity are esteemed within our organization and were
-          an integral part of many members' college journeys. They serve as
-          career advocates, advice-givers, and, above all, are our close
-          friends.
-        </p>
-      </section>
-
-      <section class="mainalumni">
-        <div class="slideshow-container">
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img src="/images/people/TrishaKant.jpeg" alt="Trisha Kant" />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founder</li>
-                <li>B.S Cognitive Science '24</li>
-                <li>Technology Consultant @ Impact Advisors</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/trisha-kant/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/images/icons/linkedInIcon.png"
-                alt="LinkedIn Profile of Trisha Kant"
-              />
-            </a>
+      <h1>What We Do</h1>
+      <div class="values">
+        <div id="pillar1" class="value">
+          <div>
+            <img
+              src="/images/icons/job.png"
+              class="icon"
+              alt="job"
+              tabindex="0"
+            />
           </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img src="/images/people/NoahIvers.jpeg" alt="Noah Ivers" />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founder</li>
-                <li>B.S Computer Science '24</li>
-                <li>Software Engineer @ Ford</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/noah-ivers/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/images/icons/linkedInIcon.png"
-                alt="LinkedIn Profile of Noah Ivers"
-              />
-            </a>
-          </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img src="/images/people/NolanSchmitt.jpeg" alt="Nolan Schmitt" />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founding Class</li>
-                <li>B.S Computer Science '24</li>
-                <li>Software Engineer @ ServiceNow</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/nolan-schmitt-873bb722a/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/images/icons/linkedInIcon.png"
-                alt="LinkedIn Profile of Nolan Schmitt"
-              />
-            </a>
-          </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img
-                src="/images/people/AnushaTekmulla.jpeg"
-                alt="Anusha Tekmulla"
-              />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founding Class</li>
-                <li>B.S Computer Science & Cognitive Science '24</li>
-                <li>Software Engineer @ Meta</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/atekumulla/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/images/icons/linkedInIcon.png"
-                alt="LinkedIn Profile of Anusha Tekmulla"
-              />
-            </a>
-          </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img src="/images/people/RavPatel.jpeg" alt="Rav Patel" />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Alpha Class</li>
-                <li>BBA '24</li>
-                <li>Real Estate Private Equity Analyst @ Ares Management</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/n01patel/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/images/icons/linkedInIcon.png"
-                alt="LinkedIn Profile of Rav Patel"
-              />
-            </a>
-          </div>
-          <!-- Add more slides as needed -->
-          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          <h2 class="value-header">Professional Development</h2>
+          <p class="value-content">
+            Tau Epsilon Kappa offers events including resume workshops, mock
+            behavorial and technical interviews, headshots, and company
+            informational sessions to its members. Our Professional Development
+            committee strives to prepare our members to thrive in their careers
+            and contribute to the future of technology.
+          </p>
         </div>
 
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Founders</h>
-            <li>Seb Roclore</li>
-            <li>Noah Ivers</li>
-            <li>Trisha Kant</li>
-            <li>Paul Smith</li>
-            <li>Esha Kaul</li>
-          </ul>
+        <div id="pillar2" class="value">
+          <div>
+            <img
+              src="/images/icons/friendsIcon.png"
+              class="icon"
+              alt="friends"
+              tabindex="0"
+            />
+          </div>
+          <h2 class="value-header">Social Development</h2>
+          <p class="value-content">
+            Our brothers are a close-knit group of students that will become
+            some of your closest friends throughout your time at the University
+            of Michigan. We hold a variety of different socials throughout the
+            semesters, such as dinners, game nights, and holiday parties.
+          </p>
         </div>
 
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Founding Class</h>
-            <li>Isha Shinde</li>
-            <li>Daphne Tsai</li>
-            <li>Ethan Sterling</li>
-            <li>Trisha Chatterjee</li>
-            <li>Velyn Kwok</li>
-            <li>Shreya Vuriti</li>
-            <li>Collin McManus</li>
-            <li>Charlie Khayat</li>
-            <li>Andy Zhang</li>
-            <li>Hannah Kovinsky</li>
-            <li>Nolan Schmitt</li>
-            <li>Anusha Tekumulla</li>
-          </ul>
+        <div id="pillar3" class="value">
+          <div>
+            <img
+              src="/images/icons/academicIcon.png"
+              class="icon"
+              alt="school"
+              tabindex="0"
+            />
+          </div>
+          <h2 class="value-header">Academic Developement</h2>
+          <p class="value-content">
+            At Tau Epsilon Kappa we strive for excellence when it comes to
+            academics. Our network of brothers are always there for one another,
+            whether it be to help with coursework or offer motivation before a
+            big exam.
+          </p>
         </div>
+      </div>
 
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Alpha Class</h>
-            <li>Alex Souza</li>
-            <li>Ally Vern</li>
-            <li>Shaurya Gunderia</li>
-            <li>Tavanya Seth</li>
-            <li>Nirav Patel</li>
-            <li>Kiran Krishnan</li>
-            <li>Nicholas Ziebert</li>
-            <li>Rohan Ghantasala</li>
-            <li>James Chu</li>
-          </ul>
+      <div class="pic-container">
+        <h1>Come meet your fellow tech enthusiasts!</h1>
+        <div class="pics">
+          <img
+            src="/images/tekPics/trivia.jpg"
+            alt="trivia night"
+            tabindex="0"
+          />
+          <img
+            src="/images/tekPics/alphaClass.jpg"
+            alt="founding class"
+            tabindex="0"
+          />
+          <img src="/images/tekPics/skeeps2.JPEG" alt="friends" tabindex="0" />
+          <img src="/images/tekPics/tek7.jpg" alt="bid night" tabindex="0" />
+          <img src="/images/tekPics/tek8.jpg" alt="friends" tabindex="0" />
+          <img src="/images/tekPics/boys.jpg" alt="the boys" tabindex="0" />
+          <img src="/images/tekPics/meeting.JPEG" alt="meeting" tabindex="0" />
+          <img
+            src="/images/tekPics/bidNight2.jpg"
+            alt="bid night"
+            tabindex="0"
+          />
+          <img
+            src="/images/tekPics/foundingClass.jpg"
+            alt="founding class"
+            tabindex="0"
+          />
+          <img src="/images/tekPics/tek2.jpg" alt="tek2" tabindex="0" />
+          <img src="/images/tekPics/tek6.jpg" alt="tek6" tabindex="0" />
+          <img
+            src="/images/tekPics/bidNight3.jpg"
+            alt="bid night"
+            tabindex="0"
+          />
+          <img src="/images/tekPics/groupPic.jpg" alt="bbq" tabindex="0" />
+          <img src="/images/tekPics/boys3.JPEG" alt="the boys" tabindex="0" />
+          <img src="/images/tekPics/tek5.jpg" alt="tek5" tabindex="0" />
+          <img
+            src="/images/tekPics/tailgate.JPEG"
+            alt="TEK tailgate"
+            tabindex="0"
+          />
+          <img src="/images/tekPics/tek4.jpg" alt="tek4" tabindex="0" />
+          <img
+            src="/images/tekPics/mirrorPic.JPEG"
+            alt="girl's mirror selfie"
+            tabindex="0"
+          />
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-      <a href="index.html">
-        <img src="./images/tekPics/tekNavy.png" alt="tek logo" tabindex="0" />
+      <a href="/">
+        <img src="/images/tekPics/tekNavy.png" alt="tek logo" tabindex="0" />
       </a>
 
       <div class="footer-center">
@@ -327,7 +259,6 @@
         </nav>
       </div>
     </footer>
-
-    <script src="slideShow.js"></script>
+    <script src="/scroll.js"></script>
   </body>
 </html>
