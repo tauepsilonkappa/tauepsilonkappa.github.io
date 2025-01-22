@@ -253,6 +253,38 @@ footer img[alt="tek logo"] {
 
 /*------------------------------------------------------
 ********************************************************
+LAZY LOAD
+********************************************************
+------------------------------------------------------*/
+
+.lazy-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f8f8f8 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Shimmer effect for the loading placeholder */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/*------------------------------------------------------
+********************************************************
 MEDIA QUERIES PAGE
 ********************************************************
 ------------------------------------------------------*/
