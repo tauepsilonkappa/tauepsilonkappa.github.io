@@ -10,10 +10,11 @@
     />
     <link rel="stylesheet" type="text/css" href="/static/css/html5reset.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/alumni.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/alumni-new.css" />
     <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
 
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/navigation.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -62,188 +63,404 @@
 
     <!-- Alumni Content-->
     <main id="main">
-      <section>
-        <!-- <div class="counter-container">
-          <div class="counter" data-target="25">0</div>
-          <h1>AlUMNI</h1>
-        </div> -->
-        <h1>AlUMNI</h1>
-        <p class="alumniparagraph">
-          Alumni of our fraternity are esteemed within our organization and were
-          an integral part of many members' college journeys. They serve as
-          career advocates, advice-givers, and, above all, are our close
-          friends.
-        </p>
+      <section class="hero-section">
+        <div class="hero-logos-container">
+          <!-- Left side scattered logos -->
+          <div class="hero-logo-item scattered" style="top: 8%; left: 3%;" data-delay="0">
+            <img src="/static/media/companies/meta-3.svg" alt="Meta" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 22%; left: 8%;" data-delay="300">
+            <img src="/static/media/companies/amazon-web-services-2.svg" alt="Amazon Web Services" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 15%; left: 15%;" data-delay="600">
+            <img src="/static/media/companies/jpmorgan-chase.svg" alt="JPMorgan Chase" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 35%; left: 5%;" data-delay="900">
+            <img src="/static/media/companies/siemens.svg" alt="Siemens" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 48%; left: 12%;" data-delay="1200">
+            <img src="/static/media/companies/fanuc-1.svg" alt="Fanuc" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 28%; left: 2%;" data-delay="1500">
+            <img src="/static/media/companies/ford-8.svg" alt="Ford" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 62%; left: 7%;" data-delay="1800">
+            <img src="/static/media/companies/netflix-3.svg" alt="Netflix" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 42%; left: 17%;" data-delay="2100">
+            <img src="/static/media/companies/at-t-4.svg" alt="AT&T" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 75%; left: 4%;" data-delay="2400">
+            <img src="/static/media/companies/datadog-1.svg" alt="Datadog" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 55%; left: 15%;" data-delay="2700">
+            <img src="/static/media/companies/brandbird-Google-logomark.svg" alt="Google" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 82%; left: 11%;" data-delay="3000">
+            <img src="/static/media/companies/dte-energy.svg" alt="DTE Energy" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 68%; left: 18%;" data-delay="3300">
+            <img src="/static/media/companies/brandbird-IBM-logomark.svg" alt="IBM" />
+          </div>
+          
+          <!-- Right side scattered logos -->
+          <div class="hero-logo-item scattered" style="top: 12%; right: 6%;" data-delay="200">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 25%; right: 14%;" data-delay="500">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 18%; right: 3%;" data-delay="800">
+            <img src="/static/media/companies/detroit-tigers-5.svg" alt="Detroit Tigers" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 38%; right: 9%;" data-delay="1100">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 51%; right: 16%;" data-delay="1400">
+            <img src="/static/media/companies/brandbird-Paypal-logomark.svg" alt="PayPal" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 32%; right: 2%;" data-delay="1700">
+            <img src="/static/media/companies/brandbird-Walmart-logomark.svg" alt="Walmart" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 45%; right: 5%;" data-delay="2000">
+            <img src="/static/media/companies/chase.svg" alt="Chase" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 64%; right: 12%;" data-delay="2300">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 58%; right: 3%;" data-delay="2600">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 77%; right: 8%;" data-delay="2900">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 71%; right: 15%;" data-delay="3200">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 85%; right: 5%;" data-delay="3500">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- Additional edge spots -->
+          <div class="hero-logo-item scattered" style="top: 5%; left: 10%;" data-delay="400">
+            <img src="/static/media/companies/p-g-2.svg" alt="Procter & Gamble" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 90%; left: 8%;" data-delay="700">
+            <img src="/static/media/companies/palantir-technologies-logo.svg" alt="Palantir" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 6%; right: 11%;" data-delay="1000">
+            <img src="/static/media/companies/pnc.svg" alt="PNC Bank" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 88%; right: 10%;" data-delay="1300">
+            <img src="/static/media/companies/spacex.svg" alt="SpaceX" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 3%; left: 6%;" data-delay="1600">
+            <img src="/static/media/companies/the-home-depot-2.svg" alt="Home Depot" />
+          </div>
+          <div class="hero-logo-item scattered" style="top: 93%; left: 14%;" data-delay="1900">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 4%; right: 17%;" data-delay="2200">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 91%; right: 13%;" data-delay="2500">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- More scattered spots for increased density -->
+          <div class="hero-logo-item scattered" style="top: 19%; left: 21%;" data-delay="100">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 33%; left: 22%;" data-delay="450">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 61%; left: 20%;" data-delay="750">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 79%; left: 18%;" data-delay="1050">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 11%; left: 19%;" data-delay="1350">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 46%; left: 23%;" data-delay="1650">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 29%; left: 20%;" data-delay="1950">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 73%; left: 21%;" data-delay="2250">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 87%; left: 19%;" data-delay="2550">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 50%; left: 5%;" data-delay="2850">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 39%; left: 24%;" data-delay="3150">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 66%; left: 22%;" data-delay="3450">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- Right side additional spots -->
+          <div class="hero-logo-item scattered" style="top: 16%; right: 20%;" data-delay="350">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 29%; right: 22%;" data-delay="650">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 43%; right: 18%;" data-delay="950">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 67%; right: 21%;" data-delay="1250">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 81%; right: 19%;" data-delay="1550">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 9%; right: 23%;" data-delay="1850">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 54%; right: 24%;" data-delay="2150">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 74%; right: 22%;" data-delay="2450">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 36%; right: 20%;" data-delay="2750">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 84%; right: 23%;" data-delay="3050">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 22%; right: 19%;" data-delay="3350">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 60%; right: 25%;" data-delay="3650">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- Corner and edge variations -->
+          <div class="hero-logo-item scattered" style="top: 8%; left: 6%;" data-delay="150">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 8%; right: 6%;" data-delay="250">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 88%; left: 6%;" data-delay="550">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 96%; right: 2%;" data-delay="850">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 50%; left: 0.5%;" data-delay="1150">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 50%; right: 0.5%;" data-delay="1450">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 14%; left: 0.8%;" data-delay="1750">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 86%; right: 0.8%;" data-delay="2050">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- Mid-range scattered positions -->
+          <div class="hero-logo-item scattered" style="top: 24%; left: 13%;" data-delay="275">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 57%; left: 9%;" data-delay="575">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 71%; left: 16%;" data-delay="875">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 37%; left: 14%;" data-delay="1175">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 83%; left: 7%;" data-delay="1475">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 13%; left: 11%;" data-delay="1775">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 49%; left: 6%;" data-delay="2075">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 76%; left: 13%;" data-delay="2375">
+            <!-- Empty slot for future logo -->
+          </div>
+          
+          <!-- Right mid-range spots -->
+          <div class="hero-logo-item scattered" style="top: 27%; right: 7%;" data-delay="325">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 41%; right: 13%;" data-delay="625">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 63%; right: 8%;" data-delay="925">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 79%; right: 14%;" data-delay="1225">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 21%; right: 10%;" data-delay="1525">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 47%; right: 15%;" data-delay="1825">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 72%; right: 6%;" data-delay="2125">
+            <!-- Empty slot for future logo -->
+          </div>
+          <div class="hero-logo-item scattered" style="top: 87%; right: 11%;" data-delay="2425">
+            <!-- Empty slot for future logo -->
+          </div>
+        </div>
+        
+        <div class="hero-content">
+          <h1>ALUMNI</h1>
+          <p class="alumni-description">
+            Alumni of our fraternity are esteemed within our organization and were
+            an integral part of many members' college journeys. They serve as
+            career advocates, advice-givers, and, above all, are our close
+            friends.
+          </p>
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Alumni</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Graduating Classes</div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="mainalumni">
-        <div class="slideshow-container">
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img
-                src="/static/media/people/TrishaKant.jpeg"
-                alt="Trisha Kant"
-              />
+      <section class="featured-alumni">
+        <h2>Featured Alumni</h2>
+        <div class="featured-grid">
+          <div class="alumni-card featured">
+            <div class="card-image">
+              <img src="/static/media/people/TrishaKant.jpeg" alt="Trisha Kant" />
+              <div class="company-logo">
+                <span>Impact Advisors</span>
+              </div>
             </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founder</li>
-                <li>B.S Cognitive Science '24</li>
-                <li>Technology Consultant @ Impact Advisors</li>
-              </ul>
+            <div class="card-content">
+              <h3>Trisha Kant</h3>
+              <p class="role">Technology Consultant</p>
+              <p class="class">Founder • B.S Cognitive Science '24</p>
+              <div class="card-actions">
+                <a href="https://www.linkedin.com/in/trisha-kant/" class="linkedin-btn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  Connect
+                </a>
+              </div>
             </div>
-            <a
-              href="https://www.linkedin.com/in/trisha-kant/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="LinkedIn Profile of Trisha Kant"
-              />
-            </a>
           </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
+
+          <div class="alumni-card featured">
+            <div class="card-image">
               <img src="/static/media/people/NoahIvers.jpeg" alt="Noah Ivers" />
+              <div class="company-logo">
+                <span>Ford</span>
+              </div>
             </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founder</li>
-                <li>B.S Computer Science '24</li>
-                <li>Software Engineer @ Ford</li>
-              </ul>
+            <div class="card-content">
+              <h3>Noah Ivers</h3>
+              <p class="role">Software Engineer</p>
+              <p class="class">Founder • B.S Computer Science '24</p>
+              <div class="card-actions">
+                <a href="https://www.linkedin.com/in/noah-ivers/" class="linkedin-btn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  Connect
+                </a>
+              </div>
             </div>
-            <a
-              href="https://www.linkedin.com/in/noah-ivers/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="LinkedIn Profile of Noah Ivers"
-              />
-            </a>
           </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img
-                src="/static/media/people/NolanSchmitt.jpeg"
-                alt="Nolan Schmitt"
-              />
+
+          <div class="alumni-card featured">
+            <div class="card-image">
+              <img src="/static/media/people/AnushaTekmulla.WebP" alt="Anusha Tekmulla" />
+              <div class="company-logo">
+                <span>Meta</span>
+              </div>
             </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founding Class</li>
-                <li>B.S Computer Science '24</li>
-                <li>Software Engineer @ ServiceNow</li>
-              </ul>
+            <div class="card-content">
+              <h3>Anusha Tekmulla</h3>
+              <p class="role">Software Engineer</p>
+              <p class="class">Founding Class • B.S Computer Science & Cognitive Science '24</p>
+              <div class="card-actions">
+                <a href="https://www.linkedin.com/in/atekumulla/" class="linkedin-btn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  Connect
+                </a>
+              </div>
             </div>
-            <a
-              href="https://www.linkedin.com/in/nolan-schmitt-873bb722a/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="LinkedIn Profile of Nolan Schmitt"
-              />
-            </a>
           </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img
-                src="/static/media/people/AnushaTekmulla.WebP"
-                alt="Anusha Tekmulla"
-              />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Founding Class</li>
-                <li>B.S Computer Science & Cognitive Science '24</li>
-                <li>Software Engineer @ Meta</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/atekumulla/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="LinkedIn Profile of Anusha Tekmulla"
-              />
-            </a>
-          </div>
-          <div class="slideshow-slide">
-            <div class="image-container">
-              <img src="/static/media/people/RavPatel.jpeg" alt="Rav Patel" />
-            </div>
-            <div class="text-container">
-              <ul class="alumnilist">
-                <li>Alpha Class</li>
-                <li>BBA '24</li>
-                <li>Real Estate Private Equity Analyst @ Ares Management</li>
-              </ul>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/n01patel/"
-              class="linkedin-logo"
-              target="_blank"
-            >
-              <img
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="LinkedIn Profile of Rav Patel"
-              />
-            </a>
-          </div>
-          <!-- Add more slides as needed -->
-          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </section>
+
+      <section class="all-alumni">
+        <h2>All Alumni</h2>
+        <div class="class-tabs">
+          <button class="tab-btn active" data-class="all">All</button>
+          <button class="tab-btn" data-class="founders">Founders</button>
+          <button class="tab-btn" data-class="founding">Founding Class</button>
+          <button class="tab-btn" data-class="alpha">Alpha Class</button>
         </div>
 
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Founders</h>
-            <li>Seb Roclore</li>
-            <li>Noah Ivers</li>
-            <li>Trisha Kant</li>
-            <li>Paul Smith</li>
-            <li>Esha Kaul</li>
-          </ul>
+        <div class="alumni-grid" id="alumni-grid">
+          <!-- Alumni cards will be populated by JavaScript -->
         </div>
+      </section>
 
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Founding Class</h>
-            <li>Isha Shinde</li>
-            <li>Daphne Tsai</li>
-            <li>Ethan Sterling</li>
-            <li>Trisha Chatterjee</li>
-            <li>Velyn Kwok</li>
-            <li>Shreya Vuriti</li>
-            <li>Collin McManus</li>
-            <li>Charlie Khayat</li>
-            <li>Andy Zhang</li>
-            <li>Hannah Kovinsky</li>
-            <li>Nolan Schmitt</li>
-            <li>Anusha Tekumulla</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="alumnilist">
-            <h class="alumniinfo">Alpha Class</h>
-            <li>Alex Souza</li>
-            <li>Ally Vern</li>
-            <li>Shaurya Gunderia</li>
-            <li>Tavanya Seth</li>
-            <li>Nirav Patel</li>
-            <li>Kiran Krishnan</li>
-            <li>Nicholas Ziebert</li>
-            <li>Rohan Ghantasala</li>
-            <li>James Chu</li>
-          </ul>
+      <section class="companies-section">
+        <h2>Where Our Alumni Work</h2>
+        <div class="companies-showcase">
+          <div class="companies-collage">
+            <div class="logo-item fade-left" data-delay="0">
+              <img src="/static/media/companies/meta-3.svg" alt="Meta" />
+            </div>
+            <div class="logo-item fade-right" data-delay="200">
+              <img src="/static/media/companies/ford-8.svg" alt="Ford" />
+            </div>
+            <div class="logo-item fade-left" data-delay="400">
+              <img src="/static/media/companies/amazon-web-services-2.svg" alt="Amazon Web Services" />
+            </div>
+            <div class="logo-item fade-right" data-delay="600">
+              <img src="/static/media/companies/netflix-3.svg" alt="Netflix" />
+            </div>
+            <div class="logo-item fade-left" data-delay="800">
+              <img src="/static/media/companies/jpmorgan-chase.svg" alt="JPMorgan Chase" />
+            </div>
+            <div class="logo-item fade-right" data-delay="1000">
+              <img src="/static/media/companies/datadog-1.svg" alt="Datadog" />
+            </div>
+            <div class="logo-item fade-left" data-delay="1200">
+              <img src="/static/media/companies/siemens.svg" alt="Siemens" />
+            </div>
+            <div class="logo-item fade-right" data-delay="1400">
+              <img src="/static/media/companies/dte-energy.svg" alt="DTE Energy" />
+            </div>
+            <div class="logo-item fade-left" data-delay="1600">
+              <img src="/static/media/companies/fanuc-1.svg" alt="Fanuc" />
+            </div>
+            <div class="logo-item fade-right" data-delay="1800">
+              <img src="/static/media/companies/detroit-tigers-5.svg" alt="Detroit Tigers" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -344,6 +561,6 @@
       </div>
     </footer>
 
-    <script src="/static/js/slideShow.js"></script>
+    <script src="/static/js/alumni.js"></script>
   </body>
 </html>

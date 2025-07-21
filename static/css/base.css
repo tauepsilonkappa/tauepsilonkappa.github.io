@@ -417,3 +417,146 @@ MEDIA QUERIES PAGE
     font-size: 14px;
   }
 }
+
+/*------------------------------------------------------
+ENHANCED NAVIGATION
+------------------------------------------------------*/
+
+/* Glass morphism effect for navigation */
+header {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Enhanced navigation links */
+.nav-links a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background: #293786;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Mobile navigation improvements */
+.dropdown-content {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  padding: 15px 20px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background: rgba(41, 55, 134, 0.1);
+}
+
+/*------------------------------------------------------
+MODERN BUTTON STYLES
+------------------------------------------------------*/
+
+.modern-btn {
+  background: linear-gradient(135deg, #293786 0%, #1e2a5e 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.modern-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(41, 55, 134, 0.3);
+}
+
+.modern-btn-outline {
+  background: transparent;
+  color: #293786;
+  border: 2px solid #293786;
+}
+
+.modern-btn-outline:hover {
+  background: #293786;
+  color: white;
+}
+
+/*------------------------------------------------------
+ENHANCED FOOTER
+------------------------------------------------------*/
+
+footer {
+  background: linear-gradient(135deg, #1e2a5e 0%, #293786 100%);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+}
+
+.footer-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: translateY(-3px);
+}
+
+/*------------------------------------------------------
+UTILITY CLASSES
+------------------------------------------------------*/
+
+.text-gradient {
+  background: linear-gradient(135deg, #293786 0%, #1e2a5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.shadow-strong {
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}

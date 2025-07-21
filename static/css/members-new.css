@@ -1,0 +1,483 @@
+/*------------------------------------------------------
+MEMBERS PAGE STYLES
+------------------------------------------------------*/
+
+.hero-section {
+  background: linear-gradient(135deg, #293786 0%, #1e2a5e 100%);
+  color: white;
+  padding: 100px 50px 80px;
+  text-align: center;
+}
+
+.members-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/*------------------------------------------------------
+EXECUTIVE BOARD
+------------------------------------------------------*/
+
+.eboard-section {
+  padding: 80px 50px;
+  background: #f8f9fa;
+}
+
+.eboard-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: #293786;
+}
+
+.eboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------
+MEMBER CARDS
+------------------------------------------------------*/
+
+.member-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.member-card.eboard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #293786;
+}
+
+.member-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.member-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 55, 134, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.member-card:hover .member-overlay {
+  opacity: 1;
+}
+
+.member-overlay i {
+  color: white;
+  font-size: 48px;
+}
+
+.member-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.member-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #293786;
+}
+
+.member-title {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.member-details {
+  margin-top: 15px;
+}
+
+.member-major, .member-year {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+/*------------------------------------------------------
+MEMBERS SECTION
+------------------------------------------------------*/
+
+.members-section {
+  padding: 80px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.class-filter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #293786;
+  color: #293786;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #293786;
+  color: white;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  align-items: start;
+}
+
+.member-card.compact {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card.compact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.member-card.compact .member-image {
+  height: 220px;
+  width: 100%;
+}
+
+.member-card.compact .member-info {
+  padding: 20px 15px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-card.compact h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #293786;
+  text-align: center;
+}
+
+.member-card.compact .member-title {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #666;
+  font-weight: 600;
+}
+
+.member-card.compact .member-details {
+  margin-top: 10px;
+}
+
+.member-card.compact .member-major, 
+.member-card.compact .member-year {
+  font-size: 13px;
+  color: #888;
+  margin: 3px 0;
+  text-align: center;
+}
+
+/*------------------------------------------------------
+MODAL STYLES
+------------------------------------------------------*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: hidden;
+  animation: modalFadeIn 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.close:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.modal-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.modal-info h3 {
+  font-size: 36px;
+  color: #293786;
+  margin: 0 0 15px 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+.modal-title {
+  font-size: 22px;
+  color: #666;
+  margin: 0 0 35px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.modal-details {
+  margin-bottom: 30px;
+}
+
+.detail-item {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.detail-item strong {
+  color: #293786;
+  display: inline-block;
+  width: 90px;
+  font-weight: 700;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0077b5;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-btn:hover {
+  background: #005885;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+}
+
+/*------------------------------------------------------
+RESPONSIVE DESIGN
+------------------------------------------------------*/
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1024px) {
+  .eboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+/* Medium tablets */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 80px 30px 60px;
+  }
+  
+  .eboard-section,
+  .members-section {
+    padding: 60px 30px;
+  }
+  
+  .eboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .class-filter {
+    gap: 15px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .members-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+  
+  .modal-body {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .modal-image {
+    height: 300px;
+  }
+  
+  .modal-info {
+    padding: 30px;
+  }
+  
+  .modal-info h3 {
+    font-size: 24px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .eboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-info {
+    padding: 20px;
+  }
+  
+  .detail-item strong {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .hero-section h1 {
+    font-size: 32px;
+  }
+  
+  .eboard-section h2 {
+    font-size: 28px;
+  }
+}
