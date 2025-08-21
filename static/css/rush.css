@@ -11,6 +11,85 @@ RUSH PAGE
   grid-template-rows: 1fr 1fr 1fr 5fr;
   /* background-color: #455d45; */
   background-color: #1e2a5e;
+  position: relative;
+}
+
+/* Stars Animation */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 10s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Shooting stars */
+.stars::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+  animation: shooting-star 8s infinite linear;
+}
+
+.stars::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+  animation: shooting-star 12s infinite linear;
+  animation-delay: 4s;
+}
+
+@keyframes shooting-star {
+  0% {
+    opacity: 0;
+    left: -10%;
+    top: 10%;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 110%;
+    top: 60%;
+  }
 }
 
 /* #firstPic {
@@ -88,6 +167,7 @@ background-color: #152137;
   background-color: #1e2a5e;
   flex-wrap: wrap;
   color: #ffffff; /* White text */
+  position: relative;
 }
 
 .explore-button{
@@ -96,14 +176,111 @@ background-color: #152137;
   bottom: 22%;
 }
 
+/*------------------------------------------------------
+RUSH ACTION BUTTONS
+------------------------------------------------------*/
+
+.rush-action-buttons {
+  position: absolute;
+  left: 31%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  z-index: 10;
+}
+
+.rush-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 30px;
+  border-radius: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid transparent;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.btn-icon i {
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+/* Interest Form Button */
+.interest-btn {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border-color: #28a745;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.interest-btn:hover {
+  background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+/* Application Button (Disabled) */
+.application-btn {
+  background-color: #6c757d;
+  color: #adb5bd;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.application-btn:hover {
+  background-color: #6c757d;
+  color: #adb5bd;
+  transform: none;
+}
+
+/* Mobile responsiveness for buttons */
+@media screen and (max-width: 768px) {
+  .rush-action-buttons {
+    flex-direction: column;
+    gap: 15px;
+    bottom: 5%;
+  }
+  
+  .rush-btn {
+    min-width: 160px;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
+  .btn-icon {
+    margin-right: 8px;
+  }
+  
+  .btn-icon i {
+    font-size: 1em;
+  }
+}
+
 .rush-text-box {
   /* background-color: #8f9788; */
   background-color: #8a91a5;
   padding: 30px 30px 30px 30px;
-  margin-left: 120px;
-  width: 40%;
+  margin-right: 60px;
+  width: 35%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,13 +302,73 @@ background-color: #152137;
   color: #d1d1d1; /* Light gray text */
 }
 
-.rush img {
-  width: 65%;
-  height: auto;
-  margin-left: -250px;
-  display: block;
-  object-fit: cover;
+.rush-photo-collage {
+  position: relative;
+  width: 60%;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.rush-photo {
+  position: absolute;
   border: 2px solid #8a91a5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.rush-photo:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  z-index: 10;
+}
+
+.photo-1 {
+  width: 350px;
+  height: 260px;
+  object-fit: cover;
+  top: 30px;
+  left: 40px;
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.photo-2 {
+  width: 330px;
+  height: 240px;
+  object-fit: cover;
+  top: 60px;
+  right: 50px;
+  transform: rotate(8deg);
+  z-index: 4;
+}
+
+.photo-3 {
+  width: 310px;
+  height: 220px;
+  object-fit: cover;
+  top: 220px;
+  left: 120px;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
+.photo-4 {
+  width: 290px;
+  height: 200px;
+  object-fit: cover;
+  top: 350px;
+  right: 120px;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+
+.photo-5 {
+  width: 270px;
+  height: 180px;
+  object-fit: cover;
+  top: 440px;
+  left: 60px;
+  transform: rotate(-8deg);
+  z-index: 1;
 }
 
 /*------------------------------------------------------
@@ -327,18 +564,55 @@ h1 {
 
   .rush-text-box {
     margin-top: 0px;
-    margin-left: 0;
+    margin-right: 0;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
   }
 
-  .rush img {
+  .rush-photo-collage {
     width: 90%;
+    height: 450px;
     margin: 20px auto;
+  }
+
+  .photo-1 {
+    width: 240px;
+    height: 175px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .photo-2 {
+    width: 220px;
+    height: 160px;
+    top: 40px;
+    right: 25px;
+  }
+
+  .photo-3 {
+    width: 200px;
+    height: 145px;
+    top: 160px;
+    left: 60px;
+  }
+
+  .photo-4 {
+    width: 180px;
+    height: 130px;
+    top: 260px;
+    right: 70px;
+  }
+
+  .photo-5 {
+    width: 160px;
+    height: 115px;
+    top: 340px;
+    left: 30px;
   }
 
   .rush-text-box h1 {

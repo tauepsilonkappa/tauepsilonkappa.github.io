@@ -133,11 +133,13 @@ header.index-transparent {
   z-index: 1000;
   padding-right: 50px;
   box-shadow: none;
-  transition: background-color 0.3s ease;
+  backdrop-filter: blur(0px);
+  transition: all 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 header.index-transparent.scrolled {
   background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
 }
 
@@ -558,13 +560,20 @@ ENHANCED NAVIGATION
 
 /* Glass morphism effect for navigation */
 header {
-  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
-header.scrolled {
+/* Only apply scrolled styles to non-transparent headers */
+header.scrolled:not(.index-transparent) {
   background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Ensure regular headers also have backdrop-filter transition */
+header:not(.index-transparent) {
+  backdrop-filter: blur(0px);
+  transition: all 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 /* Enhanced navigation links */

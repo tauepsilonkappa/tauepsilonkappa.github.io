@@ -54,14 +54,18 @@ BACKGROUND INFO
 ------------------------------------------------------*/
 #background {
   width: 100%;
-  padding: 60px 0;
+  padding: 20px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#background h1 {
+  margin: 10px 0;
 }
 
 #home {
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 10px 50px 40px 50px; /* Reduced top padding, kept bottom padding */
 }
 
 .about-content {
