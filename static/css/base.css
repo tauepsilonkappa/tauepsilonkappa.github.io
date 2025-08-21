@@ -10,7 +10,7 @@ body {
   font-weight: 500;
   color: #333333;
   background-color: #ffffff;
-  font-size: 40px;
+  font-size: 16px;
 }
 
 h1 {
@@ -40,7 +40,8 @@ h3 {
 p {
   font-size: 17px;
   padding: 10px;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /*------------------------------------------------------
@@ -285,11 +286,138 @@ LAZY LOAD
 
 /*------------------------------------------------------
 ********************************************************
+HOMEPAGE LAYOUT - SIMPLE & CLEAN
+********************************************************
+------------------------------------------------------*/
+
+/* Main content wrapper */
+#home {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Vertical layout: text on top, images below */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+/* Text content styling */
+.about-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  color: #293786;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Horizontal scrolling image gallery */
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+}
+
+.image-gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(248,249,250,0.8) 0%, transparent 10%, transparent 90%, rgba(248,249,250,0.8) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gallery-scroll-container {
+  display: flex;
+  gap: 20px;
+  animation: infiniteScroll 30s linear infinite;
+  width: calc(300px * 8 + 20px * 7); /* Adjust based on number of images */
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 4 - 20px * 4)); /* Half the container width */
+  }
+}
+
+/* Webkit scrollbar styling */
+.image-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background: #293786;
+  border-radius: 10px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb:hover {
+  background: #1e2a5e;
+}
+
+.gallery-image {
+  flex: 0 0 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/*------------------------------------------------------
+********************************************************
 MEDIA QUERIES PAGE
 ********************************************************
 ------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+  /* Mobile: Smaller images in horizontal scroll */
+  .gallery-image {
+    flex: 0 0 250px;
+    height: 180px;
+  }
+  
+  .image-gallery {
+    gap: 15px;
+    padding: 15px 0;
+  }
+
   /*MOBILE DROPDOWN*/
   .full {
     display: none;
@@ -380,6 +508,12 @@ MEDIA QUERIES PAGE
 }
 
 @media screen and (min-width: 768px) {
+  /* Tablet: Medium sized images */
+  .gallery-image {
+    flex: 0 0 280px;
+    height: 190px;
+  }
+
   /*CHANGES TO FULL HEADER*/
   .mobile {
     display: none;

@@ -65,10 +65,7 @@ BACKGROUND INFO
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  align-items: start;
+  /* Remove conflicting grid layout - let base.css handle the layout */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -442,21 +439,6 @@ MEDIA QUERIES PAGE
 }
 
 @media screen and (min-width: 768px) {
-  /*INDEX PAGE BACKGROUND SECTION*/
-  #home {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: 1fr;
-  }
-
-  #home img {
-    grid-area: 1 / 1 / span 1 / span 1;
-  }
-
-  #home .about-content {
-    grid-area: 1 / 2 / span 1 / span 1;
-  }
-
   /*SIDE-BY-SIDE VALUE CARDS*/
   .values {
     display: grid;
@@ -491,12 +473,7 @@ MEDIA QUERIES PAGE
 }
 
 @media screen and (min-width: 1024px) {
-  /*INDEX PAGE BACKGROUND SECTION*/
-  #home {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr;
-  }
+  /* Remove conflicting home layout */
 }
 
 /*------------------------------------------------------
