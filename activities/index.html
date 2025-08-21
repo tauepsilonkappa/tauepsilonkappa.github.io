@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/activities.css" />
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/rushPopup.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
     <link
@@ -45,19 +46,20 @@
           <li class="nav-item"><a href="/rush">RUSH</a></li>
         </ul>
       </nav>
-      <nav class="mobile" aria-label="small navigation">
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">
-            MENU
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
+      <nav class="mobile" aria-label="mobile navigation">
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+          <nav class="mobile-menu-nav">
             <a href="/">HOME</a>
             <a href="/members">MEMBERS</a>
             <a href="/alumni">ALUMNI</a>
             <a href="/activities" class="active">ACTIVITIES</a>
             <a href="/rush">RUSH</a>
-          </div>
+          </nav>
         </div>
       </nav>
     </header>

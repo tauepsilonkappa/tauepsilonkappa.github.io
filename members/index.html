@@ -5,8 +5,10 @@
     <link rel="shortcut icon" type="image/png" href="/static/media/tekPics/Icon.png" />
     <link rel="stylesheet" type="text/css" href="/static/css/html5reset.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/members.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/members-new.css" />
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/navigation.js"></script>
+    <script src="/static/js/rushPopup.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
     <link
@@ -35,142 +37,298 @@
           <li class="nav-item"><a href="/rush" >RUSH</a></li>
         </ul>
       </nav>
-      <nav class="mobile" aria-label="small navigation">
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">
-            MENU
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
+      <nav class="mobile" aria-label="mobile navigation">
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+          <nav class="mobile-menu-nav">
             <a href="/">HOME</a>
             <a href="/members" class="active">MEMBERS</a>
             <a href="/alumni">ALUMNI</a>
             <a href="/activities">ACTIVITIES</a>
-            <a href="/rush" class="active">RUSH</a>
-          </div>
+            <a href="/rush">RUSH</a>
+          </nav>
         </div>
       </nav>
     </header>
     <main id="main">
-      <!-- E board -->
-      <div class="container content" id="eboard">
-        <h1>Executive Board</h1>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h2>OUR MEMBERS</h2>
+        <p class="members-description">
+          Meet the brilliant minds that make up Tau Epsilon Kappa. Our diverse community of 
+          technology enthusiasts, innovators, and future leaders are united by our shared 
+          values of excellence, integrity, and professional development.
+        </p>
+      </section>
 
-        <div class="members">
-          <a
-            href="https://www.linkedin.com/in/andrew-kasper-95b68423b/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/AndrewKasper.WebP"
-                alt="andrew"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Andrew Kasper</h2>
-                <p>President</p>
+      <!-- Executive Board -->
+      <section class="eboard-section">
+        <h2>Executive Board</h2>
+        <div class="eboard-grid">
+          <div class="member-card eboard" data-member="margaret-periard">
+            <div class="member-image">
+              <img src="/static/media/people/MargaretPeriard.WebP" alt="Margaret Periard" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
               </div>
             </div>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/maggie-holman-3421b226a/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/MaggieHolman.WebP"
-                alt="maggie"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Maggie Holman</h2>
-                <p>Senior Vice President</p>
+            <div class="member-info">
+              <h3>Margaret Periard</h3>
+              <p class="member-title">President</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Junior</p>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/molly-rich-8ab403294/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/mollyrich.WebP"
-                alt="molly"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Molly Rich</h2>
-                <p>VP Internal</p>
+          <div class="member-card eboard" data-member="andrew-kasper">
+            <div class="member-image">
+              <img src="/static/media/people/AndrewKasper.WebP" alt="Andrew Kasper" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
               </div>
             </div>
-          </a>
-
-          
-          <a
-            href="https://www.linkedin.com/in/jessicaazucenaumich/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/JessicaAzucena.WebP"
-                alt="jessica"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Jessica Azucena</h2>
-                <p>VP Technical Development</p>
+            <div class="member-info">
+              <h3>Andrew Kasper</h3>
+              <p class="member-title">Vice President</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Senior</p>
               </div>
             </div>
-          </a>
-          
+          </div>
 
-          <a href="https://www.linkedin.com/in/pkodakara/" target="_blank">
-            <div class="member">
-              <img
-                src="/static/media/people/PranavKodakara.WebP"
-                alt="pranav"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Pranav Kodakara</h2>
-                <p>VP Professional Development</p>
+          <div class="member-card eboard" data-member="izzy-dubov">
+            <div class="member-image">
+              <img src="/static/media/people/IzzyDubov.WebP" alt="Isabel Dubov" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
               </div>
             </div>
-          </a>
+            <div class="member-info">
+              <h3>Isabel Dubov</h3>
+              <p class="member-title">VP Finance</p>
+              <div class="member-details">
+                <p class="member-major">Data Science</p>
+                <p class="member-year">Junior</p>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/emma-johnson-47822a285/"
-            target="_blank"
-          >
-            <div class="member">
+          <div class="member-card eboard" data-member="sahithi-nalamothu">
+            <div class="member-image">
+              <img src="/static/media/people/SahithiNalamothu.WebP" alt="Sahithi Nalamothu" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Sahithi Nalamothu</h3>
+              <p class="member-title">VP Operations</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Junior</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="alexandra-doytcheva">
+            <div class="member-image">
+              <img src="/static/media/people/AlexDoytcheva.WebP" alt="Alexandra Doytcheva" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Alexandra Doytcheva</h3>
+              <p class="member-title">VP Internal</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Sophomore</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="pranav-goyal">
+            <div class="member-image">
+              <img src="/static/media/people/placeholder.WebP" alt="Pranav Goyal" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Pranav Goyal</h3>
+              <p class="member-title">VP Pro Dev</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Junior</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="insu-jung">
+            <div class="member-image">
+              <img src="/static/media/people/insujung.WebP" alt="Insu Jung" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Insu Jung</h3>
+              <p class="member-title">VP Tech Dev</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Junior</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="andrew-deng">
+            <div class="member-image">
+              <img src="/static/media/people/AndrewDeng.WebP" alt="Andrew Deng" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Andrew Deng</h3>
+              <p class="member-title">VP Chopped asf</p>
+              <div class="member-details">
+                <p class="member-major">Washed</p>
+                <p class="member-year"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="justin-hirsch">
+            <div class="member-image">
+              <img src="/static/media/people/JustinHirsch.WebP" alt="Justin Hirsch" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Justin Hirsch</h3>
+              <p class="member-title">VP Membership</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Sophomore</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="bowie-cooper">
+            <div class="member-image">
+              <img src="/static/media/people/bowiecooper.WebP" alt="Bowie Cooper" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Bowie Cooper</h3>
+              <p class="member-title">VP Recruitment</p>
+              <div class="member-details">
+                <p class="member-major">Data Science</p>
+                <p class="member-year">Senior</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="sam-koda">
+            <div class="member-image">
+              <img src="/static/media/people/SamKoda.WebP" alt="Sam Koda" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Sam Koda</h3>
+              <p class="member-title">VP Recruitment</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Sophomore</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member-card eboard" data-member="nandini-desaraju">
+            <div class="member-image">
+              <img src="/static/media/people/NandiniS.WebP" alt="Nandini Desaraju" />
+              <div class="member-overlay">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3>Nandini Desaraju</h3>
+              <p class="member-title">VP Marketing</p>
+              <div class="member-details">
+                <p class="member-major">Computer Science</p>
+                <p class="member-year">Sophomore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Member Classes -->
+      <section class="members-section">
+        <div class="class-filter">
+          <button class="filter-btn active" data-class="all">All Members</button>
+          <button class="filter-btn" data-class="founding">Founding Class</button>
+          <button class="filter-btn" data-class="alpha">Alpha Class</button>
+          <button class="filter-btn" data-class="beta">Beta Class</button>
+          <button class="filter-btn" data-class="gamma">Gamma Class</button>
+          <button class="filter-btn" data-class="delta">Delta Class</button>
+          <button class="filter-btn" data-class="epsilon">Epsilon Class</button>
+          <button class="filter-btn" data-class="zeta">Zeta Class</button>
+        </div>
+
+        <div class="members-grid" id="members-grid">
+          <!-- Members will be populated by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Member Detail Modal -->
+      <div id="member-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-body">
+            <div class="modal-image">
+              <img id="modal-img" src="" alt="" />
+            </div>
+            <div class="modal-info">
+              <h3 id="modal-name"></h3>
+              <p id="modal-title" class="modal-title"></p>
+              <div class="modal-details">
+                <div class="detail-item">
+                  <strong>Major:</strong>
+                  <span id="modal-major"></span>
+                </div>
+                <div class="detail-item">
+                  <strong>Year:</strong>
+                  <span id="modal-year"></span>
+                </div>
+              </div>
+              <div class="modal-actions">
+                <a id="modal-linkedin" href="" target="_blank" class="linkedin-btn">
+                  <i class="fab fa-linkedin"></i>
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  
+    
+         <!--   <div class="member">
               <img
                 src="/static/media/people/emmajohnson.WebP"
                 alt="emma"
@@ -677,27 +835,7 @@
 
           
 
-          <!--<a
-            href="https://www.linkedin.com/in/darius-zucker-aa6642187/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/DariusZucker.jpg"
-                alt="darius"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Darius Zucker</h2>
-                <p>Beta Class</p>
-              </div>
-            </div>
-          </a>-->
+     
 
           <a href="https://www.linkedin.com/in/davis-rule/" target="_blank">
             <div class="member">
@@ -784,28 +922,6 @@
         </a>
 
           
-
-          <!-- <a
-            href="https://www.linkedin.com/in/hannah-soderstrom-220149a6/"
-            target="_blank"
-          >
-            <div class="member">
-              <img
-                src="/static/media/people/HannahSoderstrom.jpeg"
-                alt="hannah"
-                tabindex="0"
-              />
-              <img
-                class="linkedin-hover"
-                src="/static/media/icons/linkedInWhiteIcon.png"
-                alt="linkedin logo"
-              />
-              <div class="names">
-                <h2>Hannah Soderstrom</h2>
-                <p>Founding Class</p>
-              </div>
-            </div>
-          </a> -->
 
 
           <a
@@ -1004,7 +1120,7 @@
 
           
           <a
-          <a
+          
             href="https://www.linkedin.com/in/kateri-darr-6597b3224/"
             target="_blank"
           >
@@ -1386,7 +1502,7 @@
             </div>
           </a>
       
-        <!-- <a
+     <a
             href="https://www.linkedin.com/in/nikitha-subramaniam/"
             target="_blank"
           >
@@ -1421,7 +1537,7 @@
                 <p>Founding Team</p>
               </div>
             </div>
-          </a> -->
+          </a>
            <a href="https://www.linkedin.com/in/preston-woodworth-7371162b3/" target="_blank">
             <div class="member">
               <img src="/static/media/people/PrestonWoodworth.WebP" alt="nick" tabindex="0" />
@@ -1437,7 +1553,7 @@
             </div>
           </a> 
           
-          <!-- <a
+        <a
             href="https://www.linkedin.com/in/raghav-ramesh-379863206/"
             target="_blank"
           >
@@ -1477,7 +1593,7 @@
                 <p>Alpha Class</p>
               </div>
             </div>
-          </a> -->
+          </a>
           <a href="https://www.linkedin.com/in/sahithi-nalamothu-45568922b/" target="_blank">
             <div class="member">
               <img
@@ -1828,6 +1944,7 @@
       </div>
 
     </main>
+  -->
 
     <!-- Footer -->
     <footer>
@@ -1920,5 +2037,7 @@
         </nav>
       </div>
     </footer>
+    
+    <script src="/static/js/members.js"></script>
   </body>
 </html>

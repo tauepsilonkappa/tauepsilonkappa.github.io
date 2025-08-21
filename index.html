@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/navigation.js"></script>
+    <script src="/static/js/rushPopup.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
     <link
@@ -28,6 +30,38 @@
 
   <body id="homepage">
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+    <!-- Rush Announcement Popup -->
+    <div id="rushPopup" class="popup-overlay">
+      <div class="popup-content">
+        <button class="popup-close" id="closePopup">&times;</button>
+        <div class="popup-header">
+          <h2>🎉 Fall 2025 Rush is Here!</h2>
+        </div>
+        <div class="popup-body">
+          <p>Ready to join the most innovative tech fraternity at the University of Michigan?</p>
+          <p><strong>Fall 2025 Rush</strong> is now open and we're looking for ambitious students passionate about technology, leadership, and brotherhood. All majors welcome!</p>
+          <div class="popup-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Events starting August 27th</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <span>Meet our amazing brothers</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-rocket"></i>
+              <span>Launch your tech career with Tau Epsilon Kappa!</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-actions">
+          <a href="/rush" class="popup-btn primary">Learn More About Rush</a>
+          <button class="popup-btn secondary" id="dismissPopup">Not Now</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Navigation Bar-->
     <header class="index-transparent">
@@ -47,19 +81,20 @@
           <li class="nav-item"><a href="/rush">RUSH</a></li>
         </ul>
       </nav>
-      <nav class="mobile" aria-label="small navigation">
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">
-            MENU
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
+      <nav class="mobile" aria-label="mobile navigation">
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+          <nav class="mobile-menu-nav">
             <a href="/" class="active">HOME</a>
             <a href="/members">MEMBERS</a>
             <a href="/alumni">ALUMNI</a>
             <a href="/activities">ACTIVITIES</a>
             <a href="/rush">RUSH</a>
-          </div>
+          </nav>
         </div>
       </nav>
     </header>
@@ -87,27 +122,41 @@
       <div id="background">
         <h1>WELCOME TO TAU EPSILON KAPPA</h1>
         <div id="home">
-          <img
-            src="/static/media/mapPic.jpeg"
-            alt="map of ann arbor"
-            tabindex="0"
-          />
-          <div>
-            <h2>Founded at the University of Michigan - Ann Arbor</h2>
-            <p>
-              Tau Epsilon Kappa is a co-ed professional technical fraternity
-              committed to professional technical development as well as the
-              advancement of social and academic excellence among the fraternity
-              brothers. Our founders created Tau Epsilon Kappa to be a community
-              of like-minded, hard-working students, all looking to better
-              themselves professionally and academically and to form
-              long-lasting friendships. We strive to provide opportunities for
-              our members to explore their technical interests and further their
-              relationships in both a social and professional environment. Tau
-              Epsilon Kappa fosters members who are passionate to cultivate
-              their skills to help better the community, as well as encourage a
-              diverse, inclusive, and equal community.
-            </p>
+          <div class="about-section">
+            <div class="about-text">
+              <h2>Founded at the University of Michigan - Ann Arbor</h2>
+              <p>
+                Tau Epsilon Kappa is a co-ed professional technical fraternity
+                committed to professional technical development as well as the
+                advancement of social and academic excellence among the fraternity
+                brothers. Our founders created Tau Epsilon Kappa to be a community
+                of like-minded, hard-working students, all looking to better
+                themselves professionally and academically and to form
+                long-lasting friendships.
+              </p>
+              <p>
+                We strive to provide opportunities for our members to explore their technical interests and further their
+                relationships in both a social and professional environment. Tau
+                Epsilon Kappa fosters members who are passionate to cultivate
+                their skills to help better the community, as well as encourage a
+                diverse, inclusive, and equal community.
+              </p>
+            </div>
+            <div class="image-gallery">
+              <div class="gallery-scroll-container">
+                <img src="/static/media/tekPics/alphaClass.jpg" alt="TEK Group Photo" class="gallery-image featured" />
+                <img src="/static/media/rock24.jpeg" alt="Ann Arbor Campus" class="gallery-image" />
+                <img src="static/media/20250406_132103_C2E682.JPEG" alt="TEK Event" class="gallery-image" />
+                <img src="/static/media/rushFA24-2.jpeg" alt="Rush Activities" class="gallery-image" />
+                <!-- Duplicate images for seamless loop -->
+                <img src="static/media/20250222_170521_CE8E8B.JPEG" alt="TEK Group Photo" class="gallery-image featured" />
+                <img src="static/media/20250323_173052_CED5A0.JPEG" alt="Ann Arbor Campus" class="gallery-image" />
+                <img src="static/media/20250326_172825_C79144.JPEG" alt="TEK Event" class="gallery-image" />
+                <img src="static/media/tekrock.jpeg" alt="Rush Activities" class="gallery-image" />
+                 <img src="static/media/20250406_185019_CE482F.JPEG" alt="Rush Activities" class="gallery-image" />
+                  <img src="static/media/20250413_124028_C65074.JPEG" alt="Rush Activities" class="gallery-image" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -188,7 +237,7 @@
       </a>
 
       <div class="footer-center">
-        <p>© 2024 Tau Epsilon Kappa Alpha Chapter. All Rights Reserved.</p>
+        <p>© 2025 Tau Epsilon Kappa Alpha Chapter of The University Of Michigan. All Rights Reserved.</p>
 
         <!-- Hide urls on screen size less than small -->
         <!-- Email -->
@@ -274,5 +323,7 @@
     </footer>
     <script src="/static/js/scroll.js"></script>
     <script src="/static/js/indexButton.js"></script>
+    <script src="/static/js/enhanced-home.js"></script>
+    <script src="/static/js/dynamicCollage.js"></script>
   </body>
 </html>
