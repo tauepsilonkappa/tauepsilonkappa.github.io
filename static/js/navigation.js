@@ -72,24 +72,14 @@ function setupMobileMenu() {
   
   if (!dropdownBtn || !dropdown) return;
   
+  // Don't interfere with existing onclick handler - just add minimal enhancements
+  
   // Close menu when clicking on a link
   const dropdownLinks = dropdown.querySelectorAll('a');
   dropdownLinks.forEach(link => {
     link.addEventListener('click', () => {
       dropdown.classList.remove('show');
     });
-  });
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', (event) => {
-    if (!event.target.closest('.dropdown')) {
-      dropdown.classList.remove('show');
-    }
-  });
-  
-  // Prevent menu from closing when clicking inside
-  dropdown.addEventListener('click', (event) => {
-    event.stopPropagation();
   });
 }
 
