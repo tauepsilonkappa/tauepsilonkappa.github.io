@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
     <script src="/static/js/main.js"></script>
     <script src="/static/js/navigation.js"></script>
+    <script src="/static/js/rushPopup.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css" />
     <link
@@ -29,6 +30,38 @@
 
   <body id="homepage">
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+    <!-- Rush Announcement Popup -->
+    <div id="rushPopup" class="popup-overlay">
+      <div class="popup-content">
+        <button class="popup-close" id="closePopup">&times;</button>
+        <div class="popup-header">
+          <h2>🎉 Fall 2025 Rush is Here!</h2>
+        </div>
+        <div class="popup-body">
+          <p>Ready to join the most innovative tech fraternity at the University of Michigan?</p>
+          <p><strong>Fall 2025 Rush</strong> is now open and we're looking for ambitious students passionate about technology, leadership, and brotherhood. All majors welcome!</p>
+          <div class="popup-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Events starting August 27th</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <span>Meet our amazing brothers</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-rocket"></i>
+              <span>Launch your tech career with Tau Epsilon Kappa!</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-actions">
+          <a href="/rush" class="popup-btn primary">Learn More About Rush</a>
+          <button class="popup-btn secondary" id="dismissPopup">Not Now</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Navigation Bar-->
     <header class="index-transparent">
@@ -112,13 +145,15 @@
               <div class="gallery-scroll-container">
                 <img src="/static/media/tekPics/alphaClass.jpg" alt="TEK Group Photo" class="gallery-image featured" />
                 <img src="/static/media/rock24.jpeg" alt="Ann Arbor Campus" class="gallery-image" />
-                <img src="/static/media/tekRock.jpeg" alt="TEK Event" class="gallery-image" />
+                <img src="static/media/20250406_132103_C2E682.JPEG" alt="TEK Event" class="gallery-image" />
                 <img src="/static/media/rushFA24-2.jpeg" alt="Rush Activities" class="gallery-image" />
                 <!-- Duplicate images for seamless loop -->
-                <img src="/static/media/tekPics/alphaClass.jpg" alt="TEK Group Photo" class="gallery-image featured" />
-                <img src="/static/media/rock24.jpeg" alt="Ann Arbor Campus" class="gallery-image" />
-                <img src="/static/media/tekRock.jpeg" alt="TEK Event" class="gallery-image" />
-                <img src="/static/media/rushFA24-2.jpeg" alt="Rush Activities" class="gallery-image" />
+                <img src="static/media/20250222_170521_CE8E8B.JPEG" alt="TEK Group Photo" class="gallery-image featured" />
+                <img src="static/media/20250323_173052_CED5A0.JPEG" alt="Ann Arbor Campus" class="gallery-image" />
+                <img src="static/media/20250326_172825_C79144.JPEG" alt="TEK Event" class="gallery-image" />
+                <img src="static/media/tekrock.jpeg" alt="Rush Activities" class="gallery-image" />
+                 <img src="static/media/20250406_185019_CE482F.JPEG" alt="Rush Activities" class="gallery-image" />
+                  <img src="static/media/20250413_124028_C65074.JPEG" alt="Rush Activities" class="gallery-image" />
               </div>
             </div>
           </div>

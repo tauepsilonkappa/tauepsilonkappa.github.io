@@ -2,14 +2,24 @@
 const alumniData = [
   // Founders
   {
+    name: "Pranav Kodakara",
+    role: "Software Engineer ",
+    company: "Synchrony",
+    class: "Alpha",
+    degree: "Computer Science BSE '25",
+    linkedin: "https://www.linkedin.com/in/trisha-kant/",
+    image: "static/media/people/PranavKodakara.WebP",
+    category: "founders"
+  },
+  {
     name: "Trisha Kant",
     role: "Technology Consultant",
     company: "Impact Advisors",
-    class: "Founder",
+    class: "Alpha",
     degree: "B.S Cognitive Science '24",
-    linkedin: "https://www.linkedin.com/in/trisha-kant/",
-    image: "/static/media/people/TrishaKant.jpeg",
-    category: "founders"
+    linkedin: "https://www.linkedin.com/in/pkodakara/",
+    image: "static/media/people/TrishaKant.jpeg",
+    category: "alpha"
   },
   {
     name: "Noah Ivers",
@@ -23,32 +33,32 @@ const alumniData = [
   },
   {
     name: "Seb Roclore",
-    role: "Software Engineer",
-    company: "TechCorp",
+    role: "Data Engineer",
+    company: "AT&T",
     class: "Founder",
     degree: "B.S Computer Science '24",
     linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
+    image: "static/media/people/SebRoclore.WebP",
     category: "founders"
   },
   {
     name: "Paul Smith",
-    role: "Product Manager",
-    company: "StartupXYZ",
+    role: "Software Engineer",
+    company: "Enova",
     class: "Founder",
-    degree: "B.S Engineering '24",
+    degree: "B.S Computer Science '24",
     linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
+    image: "static/media/people/PaulSmith.jpeg",
     category: "founders"
   },
   {
     name: "Esha Kaul",
-    role: "Data Scientist",
-    company: "Analytics Inc",
+    role: "Product Manager",
+    company: "Capital One",
     class: "Founder",
     degree: "B.S Data Science '24",
     linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
+    image: "static/media/people/EshaKaul.WebP",
     category: "founders"
   },
   
@@ -75,12 +85,12 @@ const alumniData = [
   },
   {
     name: "Isha Shinde",
-    role: "Software Developer",
-    company: "Microsoft",
+    role: "Product Consultant",
+    company: "Capgemini",
     class: "Founding Class",
     degree: "B.S Computer Science '24",
     linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
+    image: "/static/media/people/IshaShinde.WebP",
     category: "founding"
   },
   {
@@ -95,18 +105,18 @@ const alumniData = [
   },
   {
     name: "Ethan Sterling",
-    role: "Product Manager",
-    company: "Apple",
+    role: "Software Engineer",
+    company: "JP Morgan Chase",
     class: "Founding Class",
-    degree: "B.S Engineering '24",
+    degree: "B.S Computer Science '24",
     linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
+    image: "static/media/people/EthanSterling.WebP",
     category: "founding"
   },
   {
     name: "Andy Zhang",
     role: "Software Engineer",
-    company: "Amazon",
+    company: "BNY",
     class: "Founding Class",
     degree: "B.S Computer Science '24",
     linkedin: "#",
@@ -127,34 +137,25 @@ const alumniData = [
   },
   {
     name: "Alex Souza",
-    role: "Software Engineer",
-    company: "Netflix",
+    role: "Business Intelligence Specialist",
+    company: "AlixPartners",
     class: "Alpha Class",
-    degree: "B.S Computer Science '24",
+    degree: "B.S Data Science '24",
     linkedin: "#",
     image: "/static/media/people/AlexSouza.WebP",
     category: "alpha"
   },
   {
     name: "Ally Vern",
-    role: "Data Analyst",
-    company: "Tesla",
+    role: "UX Designer",
+    company: "Freelance",
     class: "Alpha Class",
-    degree: "B.S Data Science '24",
+    degree: "B.S UX Design  '25",
     linkedin: "#",
     image: "/static/media/people/AllyVern.WebP",
     category: "alpha"
   },
-  {
-    name: "Shaurya Gunderia",
-    role: "Product Manager",
-    company: "Uber",
-    class: "Alpha Class",
-    degree: "B.S Engineering '24",
-    linkedin: "#",
-    image: "/static/media/people/groupPic2.WebP",
-    category: "alpha"
-  }
+ 
 ];
 
 // Function to create alumni card HTML

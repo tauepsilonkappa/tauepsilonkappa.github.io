@@ -51,6 +51,11 @@ ALUMNI PAGE STYLES
   max-width: 800px;
   margin: 0 auto;
   padding: 0 50px;
+  color: white;
+}
+
+.hero-content h1 {
+  color: white;
 }
 
 .hero-logo-item.scattered {
@@ -133,6 +138,104 @@ ALUMNI PAGE STYLES
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/*------------------------------------------------------
+SENIORS CONGRATULATIONS SECTION
+------------------------------------------------------*/
+
+.seniors-congratulations {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 80px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.seniors-congratulations::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #293786 0%, #1e2a5e 50%, #293786 100%);
+}
+
+.seniors-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seniors-congratulations h2 {
+  font-size: 42px;
+  color: #293786;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+}
+
+.seniors-congratulations h2::after {
+  content: '🎓';
+  margin-left: 15px;
+  font-size: 0.8em;
+}
+
+.seniors-message {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 50px;
+  font-weight: 500;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.seniors-photo {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seniors-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.seniors-photo img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.seniors-photo:hover img {
+  transform: scale(1.02);
+}
+
+.seniors-photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(41, 55, 134, 0.1) 0%, rgba(30, 42, 94, 0.1) 100%);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.seniors-photo:hover::before {
+  opacity: 1;
 }
 
 /*------------------------------------------------------
@@ -475,6 +578,25 @@ RESPONSIVE DESIGN
     gap: 40px;
   }
   
+  .seniors-congratulations {
+    padding: 60px 30px;
+  }
+  
+  .seniors-congratulations h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  
+  .seniors-message {
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .seniors-photo img {
+    max-width: 100%;
+  }
+  
   .featured-alumni,
   .all-alumni,
   .companies-section {
@@ -540,6 +662,21 @@ RESPONSIVE DESIGN
   
   .hero-section h1 {
     font-size: 32px;
+  }
+  
+  .seniors-congratulations {
+    padding: 40px 20px;
+  }
+  
+  .seniors-congratulations h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .seniors-message {
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 0 5px;
   }
   
   .featured-alumni h2,
