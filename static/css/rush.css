@@ -14,6 +14,7 @@ RUSH PAGE
   position: relative;
 }
 
+
 /* Stars Animation */
 .stars {
   position: absolute;
@@ -109,6 +110,7 @@ RUSH PAGE
 
 .rush-top-container{
 background-color: #152137;
+height: 100vh;
 
 }
 .rush-top-container .image-l{ 
@@ -151,15 +153,62 @@ background-color: #152137;
   height: 100vh;
 } */
 
-.rush-top-container img {
+/* .rush-top-container div {
+  background-image: url('/static/media/fall25Graphics/Rush-Background.png');
   max-width: 1324px;
+  max-width: 90%;
   width: 100%;
   height: 100vh;
-  /* min-height: 600px; */
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+} */
+
+.rush-top-container div {
+  position:absolute;
+  width: 100%;
+  aspect-ratio: 1324 / 768;
+  height: 100vh;
+  background: center / 100% 100% no-repeat url('/static/media/fall25Graphics/Rush-Background.png');
 }
 
+@media screen and (max-width: 1024px) {
+  /* .rush-top-container div {
+    background-image: url('/static/media/fall25Graphics/Rush-Background-Ipad.png');
+    width: 100%;
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+  } */
+
+  .rush-top-container div {
+    position: absolute;
+    aspect-ratio: 1024 / 768;
+    background-image: url('/static/media/fall25Graphics/Rush-Background-Ipad.png');
+  }
+}
+
+@media screen and (max-width: 568px) {
+
+  .rush-top-container div {
+    position: absolute;
+    aspect-ratio: 390 / 844;
+    background-image: url('/static/media/fall25Graphics/Rush-Background-Mobile.png');
+  }
+  
+}
+
+
+
+
+
+/*------------------------------------------------------
+RUSH ACTION BUTTONS
+------------------------------------------------------*/
+
+/* White gap between hero section and rush content */
 .rush {
-  margin-top: 20px;
+  margin-top: 3vh; /* Creates white space above the rush section */
   display: flex;
   align-items: center;
   padding: 80px 80px 80px 80px;
@@ -170,24 +219,74 @@ background-color: #152137;
   position: relative;
 }
 
-.explore-button{
-  position: absolute;
-  left: 32%;
-  bottom: 22%;
+@media screen and (max-width: 768px) {
+  .rush {
+    margin-top: 12vh; /* Slightly less space on tablets */
+  }
 }
 
-/*------------------------------------------------------
-RUSH ACTION BUTTONS
-------------------------------------------------------*/
+@media screen and (max-width: 568px) {
+  .rush {
+    margin-top: 10vh; /* Even less space on mobile */
+  }
+}
+
+/* Alternative Solution: CSS Grid Approach
+#rush-firstarea {
+  display: grid;
+  grid-template-areas: 
+    "hero"
+    "buttons";
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+.rush-top-container {
+  grid-area: hero;
+}
+
+.rush-action-buttons {
+  grid-area: buttons;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 20px;
+}
+*/
 
 .rush-action-buttons {
   position: absolute;
-  left: 31%;
-  bottom: 8%;
-  transform: translateX(-50%);
-  display: flex;
+  left: 5%;
+  bottom: 5%;
+  /* transform: translateX(-50%); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 30px;
   z-index: 10;
+  width: 60%;
+}
+
+.explore-btn {
+  background: transparent;
+  color: white;
+  border: 3px solid white !important;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  grid-column: 1 / -1; /* Span full width on first row */
+  grid-row: 1;
+  width: 40%; /* 40% of container width */
+  justify-self: center; /* Center the button */
+}
+
+.explore-btn:hover {
+  background: white;
+  color: #333;
+  border-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.explore-btn:hover .btn-icon i {
+  color: #333;
 }
 
 .rush-btn {
@@ -253,9 +352,20 @@ RUSH ACTION BUTTONS
 /* Mobile responsiveness for buttons */
 @media screen and (max-width: 768px) {
   .rush-action-buttons {
+    display: flex;
     flex-direction: column;
     gap: 15px;
-    bottom: 5%;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Set a reasonable width for mobile */
+  }
+  
+  .explore-btn {
+    grid-column: auto;
+    grid-row: auto;
+    width: auto; /* Remove width constraint on mobile */
+    justify-self: auto; /* Remove centering on mobile */
   }
   
   .rush-btn {
@@ -270,6 +380,24 @@ RUSH ACTION BUTTONS
   
   .btn-icon i {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .rush-action-buttons {
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%; /* Slightly wider on smaller screens */
+  }
+  
+  .explore-btn {
+    grid-column: auto;
+    grid-row: auto;
+    width: auto; /* Remove width constraint on mobile */
+    justify-self: auto; /* Remove centering on mobile */
   }
 }
 
@@ -558,9 +686,12 @@ h1 {
   ------------------------------------------------------*/
 @media screen and (max-width: 767px) {
   .rush {
+    margin-top: 30px;
     flex-direction: column;
     padding: 40px 20px;
   }
+
+  
 
   .rush-text-box {
     margin-top: 0px;
