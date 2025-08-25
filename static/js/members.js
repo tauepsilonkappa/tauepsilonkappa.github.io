@@ -55,11 +55,11 @@ const membersData = [
     id: "pranav-goyal",
     name: "Pranav Goyal",
     title: "VP Pro Dev",
-    major: "Computer Science",
+    major: "Computer Engineering",
     year: "Junior",
     class: "eboard",
-    image: "/static/media/people/placeholder.WebP",
-    linkedin: ""
+    image: "/static/media/people/pranavgoyal.webp",
+    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
   {
     id: "insu-jung",
@@ -193,7 +193,7 @@ const membersData = [
     year: "Junior",
     class: "delta",
     image: "/static/media/people/placeholder.WebP",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
 
 
@@ -291,7 +291,7 @@ const membersData = [
     major: "Computer Science",
     year: "Grad Student",
     class: "alpha",
-    image: "static/media/people/JessicaAzucena.WebP",
+    image: "/static/media/people/JessicaAzucena.WebP",
     linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
   },
   
@@ -488,7 +488,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junio",
     class: "gamma",
-    image: "static/media/people/mollyrich.WebP",
+    image: "/static/media/people/mollyrich.WebP",
     linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
 
