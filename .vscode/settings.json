@@ -1,3 +1,4 @@
 {
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "liveServer.settings.port": 5501
 }
