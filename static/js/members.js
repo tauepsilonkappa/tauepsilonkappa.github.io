@@ -78,7 +78,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/DrewDame.WebP",
+    image: "/static/media/people/DrewDame.webp",
     linkedin: "https://www.linkedin.com/in/drew-dame/"
   },
   {
@@ -192,7 +192,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/placeholder.WebP",
+    image: "/static/media/people/pranavgoyal.webp",
     linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
 
@@ -486,7 +486,7 @@ const membersData = [
     name: "Molly Rich",
     title: "Gamma Class",
     major: "Computer Science",
-    year: "Junio",
+    year: "Junior",
     class: "gamma",
     image: "/static/media/people/mollyrich.WebP",
     linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
