@@ -81,16 +81,16 @@ const membersData = [
     image: "/static/media/people/DrewDame.webp",
     linkedin: "https://www.linkedin.com/in/drew-dame/"
   },
-  {
-    id: "andrew-deng",
-    name: "Andrew Deng",
-    title: "VP Membership",
-    major: "Computer Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/AndrewDeng.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  },
+  // {
+  //   id: "andrew-deng",
+  //   name: "Andrew Deng",
+  //   title: "VP Membership",
+  //   major: "Computer Science",
+  //   year: "Junior",
+  //   class: "eboard",
+  //   image: "/static/media/people/AndrewDeng.WebP",
+  //   linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
+  // },
   // {
   //   id: "justin-hirsch",
   //   name: "Justin Hirsch",
@@ -273,16 +273,16 @@ const membersData = [
     image: "/static/media/people/AnaRyerson.WebP",
     linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
-  {
-    id: "andrew-deng",
-    name: "Andrew Deng",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/AndrewDeng.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  },
+  // {
+  //   id: "andrew-deng",
+  //   name: "Andrew Deng",
+  //   title: "Epsilon Class",
+  //   major: "Computer Science",
+  //   year: "Junior",
+  //   class: "epsilon",
+  //   image: "/static/media/people/AndrewDeng.WebP",
+  //   linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
+  // },
 
   {
     id: "jessica-azucena",
@@ -431,16 +431,16 @@ const membersData = [
   },
   
 
-  {
-    id: "justin-hirsch",
-    name: "Justin Hirsch",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/JustinHirsch.WebP",
-    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  },
+  // {
+  //   id: "justin-hirsch",
+  //   name: "Justin Hirsch",
+  //   title: "Epsilon Class",
+  //   major: "Computer Science",
+  //   year: "Junior",
+  //   class: "epsilon",
+  //   image: "/static/media/people/JustinHirsch.WebP",
+  //   linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  // },
   {
     id: "katie-lee",
     name: "Katie Lee",
