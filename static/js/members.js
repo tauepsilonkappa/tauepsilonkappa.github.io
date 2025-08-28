@@ -91,16 +91,16 @@ const membersData = [
     image: "/static/media/people/AndrewDeng.WebP",
     linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
   },
-  {
-    id: "justin-hirsch",
-    name: "Justin Hirsch",
-    title: "VP Membership",
-    major: "Computer Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/JustinHirsch.WebP",
-    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  },
+  // {
+  //   id: "justin-hirsch",
+  //   name: "Justin Hirsch",
+  //   title: "VP Membership",
+  //   major: "Computer Science",
+  //   year: "Junior",
+  //   class: "eboard",
+  //   image: "/static/media/people/JustinHirsch.WebP",
+  //   linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  // },
   {
     id: "bowie-cooper",
     name: "Bowie Cooper",
@@ -247,9 +247,9 @@ const membersData = [
     name: "Dhruv Kapur",
     title: "Epsilon Class",
     major: "Computer Science",
-    year: "Junior",
+    year: "Senior",
     class: "delta",
-    image: "/static/media/people/AhmedH.WebP",
+    image: "/static/media/people/DhruvKapur.WebP",
     linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
   },
 
@@ -728,6 +728,182 @@ const membersData = [
     class: "delta",
     image: "/static/media/people/ZannahBaker.WebP",
     linkedin: "https://www.linkedin.com/in/zannah-baker/"
+  },
+
+  {
+    id: "olivia-bonnewit",
+    name: "Olivia Bonnewit",
+    title: "Zeta Class",
+    major: "IOE",
+    year: "Sophmore",
+    class: "zeta",
+    image: "/static/media/people/OliviaBonnewit.webp",
+    linkedin: "https://www.linkedin.com/in/oliviabonn/"
+  },
+
+  {
+    id: "eesha-atluri",
+    name: "Eesha Atluri",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/EeshaAtluri.webp",
+    linkedin: "https://www.linkedin.com/in/eeshaatluri"
+  },
+   
+  {
+    id: "lucas-crespo",
+    name: "Lucas Crespo",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/LucasCrespo.webp",
+    linkedin: ""
+  },
+  {
+    id: "aiden-hegenauer",
+    name: "Aiden Hegenauer",
+    title: "Zeta Class",
+    major: "Data Science & Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/AidenHegenauer.webp",
+    linkedin: "https://www.linkedin.com/in/aiden-hegenauer-5bab632b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    id: "benjamin-stevenson",
+    name: "Benjamin Stevenson",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/BenStevenson.webp",
+    linkedin: ""
+  },
+  {
+    id: "vaelone-elankumaran",
+    name: "Vaelone Elankumaran",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/VaeloneE.webp",
+    linkedin: "https://www.linkedin.com/in/vaelonee/"
+  },
+  {
+    id: "nina-gernhardt",
+    name: "Nina Gernhardt",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/NinaG.webp",
+    linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
+  },
+  {
+    id: "ashish-rajam",
+    name: "Ashish Rajam",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AshishRajam.webp",
+    linkedin: "https://www.linkedin.com/in/ashish-rajam-1988a8329?trk=contact-info"
+  },
+  {
+    id: "david-sanico",
+    name: "David Sanico",
+    title: "Zeta Class",
+    major: "Electrical Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/DavidSanico.webp",
+    linkedin: "http://www.linkedin.com/in/david-sanico"
+  },
+  {
+    id: "river-mccorry",
+    name: "River McCorry",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/RiverMcCorry.webp",
+    linkedin: "http://linkedin.com/in/rivermccorry"
+  },
+  {
+    id: "avram-joshua-tarun",
+    name: "Avram Joshua Tarun",
+    title: "Zeta Class",
+    major: "Physics",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AJTarun.webp",
+    linkedin: "https://www.linkedin.com/in/avram-joshua-tarun-697582327?trk=contact-info"
+  },
+  {
+    id: "aria-fifer",
+    name: "Aria Fifer",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AriaFifer.WebP",
+    linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/"
+  },
+  // {
+  //   id: "lukas-matejuk",
+  //   name: "Lukas Matejuk",
+  //   title: "Zeta Class",
+  //   major: "IOE",
+  //   year: "Junior",
+  //   class: "zeta",
+  //   image: "/static/media/people/MargaretPeriard.WebP",
+  //   linkedin: "http://linkedin.com/in/lukas-mateju/"
+  // },
+  {
+    id: "pablo-segovia",
+    name: "Pablo Segovia",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/PabloSegovia.webp",
+    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+  },
+
+  {
+    id: "nathan-bishop",
+    name: "Nathan Bishop",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/NathanBishop.webp",
+    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+  },
+
+  {
+    id: "nandita-shenoy",
+    name: "Nandita Shenoy",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/NanditaShenoy.webp",
+    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+  },
+
+  {
+    id: "sanjana-datla",
+    name: "Sanjana Datla",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/SanjanaDatla.webp",
+    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
   },
 ];
  
