@@ -829,7 +829,7 @@ const membersData = [
     major: "Computer Science",
     year: "Sophomore",
     class: "zeta",
-    image: "/static/media/people/RiverMcCorry.webp",
+    image: "/static/media/people/RiverMccorry.webp",
     linkedin: "http://linkedin.com/in/rivermccorry"
   },
   {
@@ -849,7 +849,7 @@ const membersData = [
     major: "Computer Science",
     year: "Sophomore",
     class: "zeta",
-    image: "/static/media/people/AriaFifer.WebP",
+    image: "/static/media/people/AriaFifer.webp",
     linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/"
   },
   // {
