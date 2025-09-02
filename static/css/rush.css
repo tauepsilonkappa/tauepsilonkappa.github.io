@@ -334,19 +334,35 @@ RUSH ACTION BUTTONS
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
 }
 
-/* Application Button (Disabled) */
-.application-btn {
+/* Interest Form Button (Disabled) */
+.interest-btn.disabled {
   background-color: #6c757d;
   color: #adb5bd;
   border-color: #6c757d;
   cursor: not-allowed;
-  position: relative;
+  box-shadow: none;
 }
 
-.application-btn:hover {
+.interest-btn.disabled:hover {
   background-color: #6c757d;
   color: #adb5bd;
   transform: none;
+  box-shadow: none;
+}
+
+/* Application Button */
+.application-btn {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.application-btn:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
 
 /* Mobile responsiveness for buttons */
