@@ -55,8 +55,8 @@ class RushPopup {
     bubble.className = 'rush-bubble';
     bubble.innerHTML = `
       <div class="bubble-content">
-        <div class="bubble-icon">🎉</div>
-        <div class="bubble-text">Fall Rush!</div>
+        <div class="bubble-icon">📝</div>
+        <div class="bubble-text">Apply Now!</div>
         <button class="bubble-close" id="bubbleClose">&times;</button>
       </div>
     `;
@@ -107,19 +107,19 @@ class RushPopup {
         <div class="popup-content">
           <button class="popup-close" id="closePopup">&times;</button>
           <div class="popup-header">
-            <h2>🎉 Fall 2025 Rush is Here!</h2>
+            <h2>🎉 Fall 2025 Applications Now Open!</h2>
           </div>
           <div class="popup-body">
             <p>Ready to join the most innovative tech fraternity at the University of Michigan?</p>
-            <p><strong>Fall 2025 Rush</strong> is now open and we're looking for ambitious students passionate about technology, leadership, and brotherhood. All majors welcome!</p>
+            <p><strong>Fall 2025 Applications</strong> are now live! We're looking for ambitious students passionate about technology, leadership, and brotherhood. All majors welcome!</p>
             <div class="popup-highlights">
               <div class="highlight-item">
-                <i class="fas fa-calendar-alt"></i>
-                <span>Events starting August 27th</span>
+                <i class="fas fa-file-alt"></i>
+                <span>Applications due September 7th</span>
               </div>
               <div class="highlight-item">
                 <i class="fas fa-users"></i>
-                <span>Meet our amazing brothers</span>
+                <span>Meet our amazing brothers at rush events</span>
               </div>
               <div class="highlight-item">
                 <i class="fas fa-rocket"></i>
@@ -128,8 +128,8 @@ class RushPopup {
             </div>
           </div>
           <div class="popup-actions">
-            <a href="/rush" class="popup-btn primary">Learn More About Rush</a>
-            <button class="popup-btn secondary" id="dismissPopup">Not Now</button>
+            <a href="https://forms.gle/n5NMZegrb2JRWBeW8" target="_blank" class="popup-btn primary">Apply Now</a>
+            <a href="/rush" class="popup-btn secondary">Learn More About Rush</a>
           </div>
         </div>
       </div>
@@ -147,11 +147,6 @@ class RushPopup {
     // Close button
     if (this.closeBtn) {
       this.closeBtn.addEventListener('click', () => this.hidePopup());
-    }
-    
-    // Dismiss button (remembers choice for session)
-    if (this.dismissBtn) {
-      this.dismissBtn.addEventListener('click', () => this.dismissPopupSession());
     }
     
     // Close on overlay click
