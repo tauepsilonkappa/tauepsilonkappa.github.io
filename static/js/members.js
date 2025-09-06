@@ -760,7 +760,7 @@ const membersData = [
     year: "Junior",
     class: "zeta",
     image: "/static/media/people/LucasCrespo.webp",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/crespito/"
   },
   {
     id: "aiden-hegenauer",
@@ -780,7 +780,7 @@ const membersData = [
     year: "Junior",
     class: "zeta",
     image: "/static/media/people/BenStevenson.webp",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/benstev/"
   },
   {
     id: "vaelone-elankumaran",
@@ -881,7 +881,7 @@ const membersData = [
     year: "Junior",
     class: "zeta",
     image: "/static/media/people/NathanBishop.webp",
-    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+    linkedin: "https://www.linkedin.com/in/nbish/"
   },
 
   {
@@ -892,7 +892,7 @@ const membersData = [
     year: "Sophomore",
     class: "zeta",
     image: "/static/media/people/NanditaShenoy.webp",
-    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+    linkedin: "https://www.linkedin.com/in/nandita-shenoy/"
   },
 
   {
@@ -903,7 +903,7 @@ const membersData = [
     year: "Sophomore",
     class: "zeta",
     image: "/static/media/people/SanjanaDatla.webp",
-    linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
+    linkedin: "https://www.linkedin.com/in/sanjanadat/"
   },
 ];
  
