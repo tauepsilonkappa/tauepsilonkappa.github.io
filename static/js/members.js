@@ -688,16 +688,16 @@ const membersData = [
     image: "/static/media/people/WinstonWu.WebP",
     linkedin: "https://www.linkedin.com/in/win-wu/"
   },
-  // {
-  //   id: "yana-mehta",
-  //   name: "Yana Mehta",
-  //   title: "Epsilon Class",
-  //   major: "Computer Science",
-  //   year: "Senior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/YanaMehta.WebP",
-  //   linkedin: "https://www.linkedin.com/in/yanamehta/"
-  // },
+  {
+    id: "yana-mehta",
+    name: "Yana Mehta",
+    title: "Epsilon Class",
+    major: "Data Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/YanaMehta.WebP",
+    linkedin: "https://www.linkedin.com/in/yanamehta/"
+  },
   {
     id: "yan-cheng-poon",
     name: "Yan Cheng Poon",
