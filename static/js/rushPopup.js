@@ -149,6 +149,11 @@ class RushPopup {
       this.closeBtn.addEventListener('click', () => this.hidePopup());
     }
     
+    // Dismiss button
+    if (this.dismissBtn) {
+      this.dismissBtn.addEventListener('click', () => this.dismissPopupSession());
+    }
+    
     // Close on overlay click
     this.popup.addEventListener('click', (e) => {
       if (e.target === this.popup) {
