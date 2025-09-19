@@ -6,7 +6,7 @@ const alumniData = [
     role: "Software Engineer ",
     company: "Synchrony",
     class: "Alpha",
-    degree: "Computer Science BSE '25",
+    degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/trisha-kant/",
     image: "/static/media/people/PranavKodakara.WebP",
     category: "founders"
@@ -16,7 +16,7 @@ const alumniData = [
     role: "Technology Consultant",
     company: "Impact Advisors",
     class: "Alpha",
-    degree: "B.S Cognitive Science '24",
+    degree: "BS Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/pkodakara/",
     image: "/static/media/people/TrishaKant.jpeg",
     category: "alpha"
@@ -26,7 +26,7 @@ const alumniData = [
     role: "Software Engineer",
     company: "Ford",
     class: "Founder",
-    degree: "B.S Computer Science '24",
+    degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/noah-ivers/",
     image: "/static/media/people/NoahIvers.jpeg",
     category: "founders"
@@ -36,8 +36,8 @@ const alumniData = [
     role: "Data Engineer",
     company: "AT&T",
     class: "Founder",
-    degree: "B.S Computer Science '24",
-    linkedin: "#",
+    degree: "BS Computer Science '24",
+    linkedin: "https://www.linkedin.com/in/sebastian-roclore/",
     image: "/static/media/people/SebRoclore.WebP",
     category: "founders"
   },
@@ -46,8 +46,8 @@ const alumniData = [
     role: "Software Engineer",
     company: "Enova",
     class: "Founder",
-    degree: "B.S Computer Science '24",
-    linkedin: "#",
+    degree: "BS Computer Science '24",
+    linkedin: "https://www.linkedin.com/in/paulhsmith/",
     image: "/static/media/people/PaulSmith.jpeg",
     category: "founders"
   },
@@ -56,8 +56,8 @@ const alumniData = [
     role: "Product Manager",
     company: "Capital One",
     class: "Founder",
-    degree: "B.S Data Science '24",
-    linkedin: "#",
+    degree: "BS Data Science '24",
+    linkedin: "https://www.linkedin.com/in/esha-kaul/",
     image: "/static/media/people/EshaKaul.WebP",
     category: "founders"
   },
@@ -68,9 +68,19 @@ const alumniData = [
     role: "Software Engineer",
     company: "Meta",
     class: "Founding Class",
-    degree: "B.S Computer Science & Cognitive Science '24",
+    degree: "BS Computer Science & Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/atekumulla/",
     image: "/static/media/people/AnushaTekmulla.WebP",
+    category: "founding"
+  },
+  {
+    name: "Alexandra Tan",
+    role: "Software Engineer",
+    company: "Meta",
+    class: "Founding Class",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/thealexandratan/",
+    image: "/static/media/people/AlexandraTan.WebP",
     category: "founding"
   },
   {
@@ -78,7 +88,7 @@ const alumniData = [
     role: "Software Engineer",
     company: "ServiceNow",
     class: "Founding Class",
-    degree: "B.S Computer Science '24",
+    degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/nolan-schmitt-873bb722a/",
     image: "/static/media/people/NolanSchmitt.jpeg",
     category: "founding"
@@ -88,8 +98,8 @@ const alumniData = [
     role: "Product Consultant",
     company: "Capgemini",
     class: "Founding Class",
-    degree: "B.S Computer Science '24",
-    linkedin: "#",
+    degree: "BS Computer Science '24",
+    linkedin: "https://www.linkedin.com/in/ishashinde/",
     image: "/static/media/people/IshaShinde.WebP",
     category: "founding"
   },
@@ -98,8 +108,8 @@ const alumniData = [
     role: "UX Designer",
     company: "Google",
     class: "Founding Class",
-    degree: "B.S Design '24",
-    linkedin: "#",
+    degree: "BS Design '24",
+    linkedin: "https://www.linkedin.com/in/dvtsai/",
     image: "/static/media/people/DaphneTsai.WebP",
     category: "founding"
   },
@@ -108,8 +118,8 @@ const alumniData = [
     role: "Software Engineer",
     company: "JP Morgan Chase",
     class: "Founding Class",
-    degree: "B.S Computer Science '24",
-    linkedin: "#",
+    degree: "BS Computer Science '24",
+    linkedin: "https://www.linkedin.com/in/ethan-sterling/",
     image: "/static/media/people/EthanSterling.WebP",
     category: "founding"
   },
@@ -118,8 +128,8 @@ const alumniData = [
     role: "Software Engineer",
     company: "BNY",
     class: "Founding Class",
-    degree: "B.S Computer Science '24",
-    linkedin: "#",
+    degree: "BS Computer Science '24",
+    linkedin: "https://www.linkedin.com/in/andrewlzhang/",
     image: "/static/media/people/AndyZhang.WebP",
     category: "founding"
   },
@@ -140,8 +150,8 @@ const alumniData = [
     role: "Business Intelligence Specialist",
     company: "AlixPartners",
     class: "Alpha Class",
-    degree: "B.S Data Science '24",
-    linkedin: "#",
+    degree: "BS Data Science '24",
+    linkedin: "https://www.linkedin.com/in/alexsouzaphone/",
     image: "/static/media/people/AlexSouza.WebP",
     category: "alpha"
   },
@@ -150,8 +160,8 @@ const alumniData = [
     role: "UX Designer",
     company: "Freelance",
     class: "Alpha Class",
-    degree: "B.S UX Design  '25",
-    linkedin: "#",
+    degree: "BS UX Design  '25",
+    linkedin: "https://www.linkedin.com/in/allyvern/",
     image: "/static/media/people/AllyVern.WebP",
     category: "alpha"
   },
