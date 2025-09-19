@@ -9,7 +9,7 @@ const alumniData = [
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/trisha-kant/",
     image: "/static/media/people/PranavKodakara.WebP",
-    category: "founders"
+    category: "founding"
   },
   {
     name: "Trisha Kant",
@@ -19,7 +19,7 @@ const alumniData = [
     degree: "BS Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/pkodakara/",
     image: "/static/media/people/TrishaKant.jpeg",
-    category: "alpha"
+    category: "founders"
   },
   {
     name: "Noah Ivers",
@@ -80,7 +80,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/thealexandratan/",
-    image: "/static/media/people/AlexandraTan.WebP",
+    image: "/static/media/people/AlexTan.WebP",
     category: "founding"
   },
   {
