@@ -136,6 +136,26 @@ const alumniData = [
   
   // Alpha Class
   {
+    name: "Kyle Ritenour",
+    role: "Cyber Analylist",
+    company: "Deloitte",
+    class: "Alpha Class",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/kysrit/",
+    image: "/static/media/people/KyleRitenour.WebP",
+    category: "alpha"
+  },
+  {
+    name: "Kateri Darr",
+    role: "Software Engineer",
+    company: "Stryker",
+    class: "Alpha Class",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/kysrit/",
+    image: "/static/media/people/KateriDarr.WebP",
+    category: "alpha"
+  },
+  {
     name: "Rav Patel",
     role: "Real Estate Private Equity Analyst",
     company: "Ares Management",
