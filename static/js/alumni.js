@@ -137,7 +137,7 @@ const alumniData = [
   // Alpha Class
   {
     name: "Kyle Ritenour",
-    role: "Cyber Analylist",
+    role: "Cyber Analyst",
     company: "Deloitte",
     class: "Alpha Class",
     degree: "BSE Computer Science '25",
