@@ -73,7 +73,7 @@ const membersData = [
   },
 
   {
-    id: "andrew-deng",
+    id: "andrew-deng-class",
     name: "Andrew Deng",
     title: "VP Membership",
     major: "Computer Science",
@@ -83,7 +83,7 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
   },
   {
-    id: "justin-hirsch",
+    id: "justin-hirsch-class",
     name: "Justin Hirsch",
     title: "VP Membership",
     major: "Computer Science",
@@ -261,7 +261,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/ManushriAnand.webP",
+    image: "/static/media/people/ManushriAnand.webp",
     linkedin: "https://www.linkedin.com/in/manushrianand/"
   },
   {
@@ -574,16 +574,7 @@ const membersData = [
   //   image: "/static/media/people/MenuelRosso.WebP",
   //   linkedin: "https://www.linkedin.com/in/manuel-rosso-benitez-381801250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   // },
-  // {
-  //   id: "Manushri-Anand",
-  //   name: "Manushri Anand",
-  //   title: "Epsilon Class",
-  //   major: "Computer Science",
-  //   year: "Junior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/ManushriAnand.WebP",
-  //   linkedin: "https://www.linkedin.com/in/manushri-anand/"
-  // },
+
   {
     id: "nandini-desaraju",
     name: "Nandini Desaraju",
