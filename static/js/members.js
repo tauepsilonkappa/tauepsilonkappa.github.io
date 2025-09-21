@@ -71,36 +71,27 @@ const membersData = [
     image: "/static/media/people/insujung.WebP",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
+
   {
-    id: "drew-dame",
-    name: "Drew Dame",
-    title: "Epsilon Class",
+    id: "andrew-deng",
+    name: "Andrew Deng",
+    title: "VP Membership",
     major: "Computer Science",
     year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/DrewDame.webp",
-    linkedin: "https://www.linkedin.com/in/drew-dame/"
+    class: "eboard",
+    image: "/static/media/people/AndrewDeng.WebP",
+    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
   },
-  // {
-  //   id: "andrew-deng",
-  //   name: "Andrew Deng",
-  //   title: "VP Membership",
-  //   major: "Computer Science",
-  //   year: "Junior",
-  //   class: "eboard",
-  //   image: "/static/media/people/AndrewDeng.WebP",
-  //   linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  // },
-  // {
-  //   id: "justin-hirsch",
-  //   name: "Justin Hirsch",
-  //   title: "VP Membership",
-  //   major: "Computer Science",
-  //   year: "Junior",
-  //   class: "eboard",
-  //   image: "/static/media/people/JustinHirsch.WebP",
-  //   linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  // },
+  {
+    id: "justin-hirsch",
+    name: "Justin Hirsch",
+    title: "VP Membership",
+    major: "Computer Science",
+    year: "Junior",
+    class: "eboard",
+    image: "/static/media/people/JustinHirsch.WebP",
+    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  },
   {
     id: "bowie-cooper",
     name: "Bowie Cooper",
@@ -264,6 +255,16 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/allison-yang10/"
   },
   {
+    id: "Manu-Anand",
+    name: "Manu Anand",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/ManushriAnand.webP",
+    linkedin: "https://www.linkedin.com/in/manushrianand/"
+  },
+  {
     id: "ana-ryerson",
     name: "Ana Ryerson",
     title: "Epsilon Class",
@@ -273,16 +274,16 @@ const membersData = [
     image: "/static/media/people/AnaRyerson.WebP",
     linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
-  // {
-  //   id: "andrew-deng",
-  //   name: "Andrew Deng",
-  //   title: "Epsilon Class",
-  //   major: "Computer Science",
-  //   year: "Junior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/AndrewDeng.WebP",
-  //   linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  // },
+  {
+    id: "andrew-deng",
+    name: "Andrew Deng",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AndrewDeng.WebP",
+    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
+  },
 
   {
     id: "jessica-azucena",
@@ -357,7 +358,16 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/casey-zhang-5861182b3/"
   },
 
-
+  {
+    id: "drew-dame",
+    name: "Drew Dame",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/DrewDame.webp",
+    linkedin: "https://www.linkedin.com/in/drew-dame/"
+  },
   {
     id: "ethan-matsuda",
     name: "Ethan Matsuda",
@@ -431,16 +441,16 @@ const membersData = [
   },
   
 
-  // {
-  //   id: "justin-hirsch",
-  //   name: "Justin Hirsch",
-  //   title: "Epsilon Class",
-  //   major: "Computer Science",
-  //   year: "Junior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/JustinHirsch.WebP",
-  //   linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  // },
+  {
+    id: "justin-hirsch",
+    name: "Justin Hirsch",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/JustinHirsch.WebP",
+    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  },
   {
     id: "katie-lee",
     name: "Katie Lee",
@@ -841,6 +851,16 @@ const membersData = [
     class: "zeta",
     image: "/static/media/people/RiverMccorry.webp",
     linkedin: "http://linkedin.com/in/rivermccorry"
+  },
+  {
+    id: "daniel-wang",
+    name: "Daniel Wang",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/DanielWang.webp",
+    linkedin: "https://www.linkedin.com/in/danielwanng/"
   },
   {
     id: "avram-joshua-tarun",
