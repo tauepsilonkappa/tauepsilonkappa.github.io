@@ -71,9 +71,9 @@ const membersData = [
     image: "/static/media/people/insujung.WebP",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
-
+  
   {
-    id: "andrew-deng-class",
+    id: "andrew-deng",
     name: "Andrew Deng",
     title: "VP Membership",
     major: "Computer Science",
@@ -83,7 +83,7 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
   },
   {
-    id: "justin-hirsch-class",
+    id: "justin-hirsch",
     name: "Justin Hirsch",
     title: "VP Membership",
     major: "Computer Science",
@@ -187,7 +187,16 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
 
-
+  {
+    id: "justin-hirsch-class",
+    name: "Justin Hirsch",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/JustinHirsch.WebP",
+    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  },
 
 
   {
@@ -275,7 +284,7 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
   {
-    id: "andrew-deng",
+    id: "andrew-deng-class",
     name: "Andrew Deng",
     title: "Epsilon Class",
     major: "Computer Science",
@@ -441,16 +450,6 @@ const membersData = [
   },
   
 
-  {
-    id: "justin-hirsch",
-    name: "Justin Hirsch",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/JustinHirsch.WebP",
-    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  },
   {
     id: "katie-lee",
     name: "Katie Lee",
@@ -696,7 +695,7 @@ const membersData = [
     major: "Data Science",
     year: "Junior",
     class: "zeta",
-    image: "/static/media/people/YanaMehta.WebP",
+    image: "/static/media/people/YanaMehta.webp",
     linkedin: "https://www.linkedin.com/in/yanamehta/"
   },
   {
