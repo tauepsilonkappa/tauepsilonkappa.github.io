@@ -80,7 +80,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/thealexandratan/",
-    image: "/static/media/people/AlexTan.WebP",
+    image: "/static/media/people/AlexTan.webp",
     category: "founding"
   },
   {
