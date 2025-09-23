@@ -65,13 +65,13 @@ const membersData = [
     id: "insu-jung",
     name: "Insu Jung",
     title: "VP Tech Dev",
-    major: "Computer Science",
-    year: "Senior",
+    major: "Computer Science & Physics",
+    year: "Junior",
     class: "eboard",
-    image: "/static/media/people/insujung.WebP",
+    image: "/static/media/people/InsuJung.WebP",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
-  
+
   {
     id: "andrew-deng",
     name: "Andrew Deng",
@@ -124,7 +124,7 @@ const membersData = [
   },
 
   // Active Members
-  
+
   // E-board members also in their class sections
   {
     id: "margaret-periard-class",
@@ -219,7 +219,7 @@ const membersData = [
     image: "/static/media/people/NandiniS.WebP",
     linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
   },
-  
+
   // Other Active Members
 
   {
@@ -304,7 +304,7 @@ const membersData = [
     image: "/static/media/people/JessicaAzucena.WebP",
     linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
   },
-  
+
   {
     id: "anuj-arora",
     name: "Anuj Arora",
@@ -325,7 +325,7 @@ const membersData = [
     image: "/static/media/people/ArnavKadam.WebP",
     linkedin: "https://www.linkedin.com/in/arnav-kadam-45679b24b/"
   },
- 
+
   {
     id: "bowie-cooper",
     name: "Bowie Cooper",
@@ -336,7 +336,7 @@ const membersData = [
     image: "/static/media/people/bowiecooper.WebP",
     linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
   },
-    {
+  {
     id: "emma-johnson",
     name: "Emma Johnson",
     title: "Gamma Class",
@@ -402,10 +402,10 @@ const membersData = [
     id: "insu-jung",
     name: "Insu Jung",
     title: "Gamma Class",
-    major: "Computer Science",
-    year: "Senior",
+    major: "Computer Science & Physics",
+    year: "Junior",
     class: "gamma",
-    image: "/static/media/people/insujung.WebP",
+    image: "/static/media/people/InsuJung.WebP",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
   {
@@ -448,7 +448,7 @@ const membersData = [
     image: "/static/media/people/JoeFiorenzo.WebP",
     linkedin: "https://www.linkedin.com/company/tau-epsilon-kappa/mycompany/"
   },
-  
+
 
   {
     id: "katie-lee",
@@ -522,7 +522,7 @@ const membersData = [
     image: "/static/media/people/LiadGross.WebP",
     linkedin: "https://www.linkedin.com/in/liad-gross-6315542b5/"
   },
- 
+
   {
     id: "lucas-rosenberg",
     name: "Lucas Rosenberg",
@@ -589,7 +589,7 @@ const membersData = [
     name: "Nathan Lesny",
     title: "Epsilon Class",
     major: "Computer Science, Mathematics",
-    year: "Junio",
+    year: "Junior",
     class: "epsilon",
     image: "/static/media/people/NathanL.jpg",
     linkedin: "https://www.linkedin.com/in/nathan-lesny/"
@@ -625,8 +625,8 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/"
   },
 
-  
- 
+
+
   {
     id: "sanjana-kulkarni",
     name: "Sanjana Kulkarni",
@@ -637,7 +637,7 @@ const membersData = [
     image: "/static/media/people/SanjanaKulkarni.WebP",
     linkedin: "https://www.linkedin.com/in/sanjana-kulkarni/"
   },
- 
+
   {
     id: "stella-johnson",
     name: "Stella Johnson",
@@ -751,7 +751,7 @@ const membersData = [
     image: "/static/media/people/EeshaAtluri.webp",
     linkedin: "https://www.linkedin.com/in/eeshaatluri"
   },
-   
+
   {
     id: "lucas-crespo",
     name: "Lucas Crespo",
@@ -926,12 +926,12 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/sanjanadat/"
   },
 ];
- 
+
 
 // Function to create member card HTML
 function createMemberCard(member, isCompact = true) {
   const cardClass = isCompact ? 'member-card compact' : `member-card ${member.class}`;
-  
+
   return `
     <div class="${cardClass}" data-member="${member.id}" data-class="${member.class}">
       <div class="member-image">
@@ -956,13 +956,13 @@ function createMemberCard(member, isCompact = true) {
 function renderMembers(classFilter = 'all') {
   const membersGrid = document.getElementById('members-grid');
   let filteredMembers = membersData.filter(member => member.class !== 'eboard');
-  
+
   if (classFilter !== 'all') {
     filteredMembers = filteredMembers.filter(member => member.class === classFilter);
   }
-  
+
   membersGrid.innerHTML = filteredMembers.map(member => createMemberCard(member)).join('');
-  
+
   // Add click listeners to new cards
   addMemberCardListeners();
 }
@@ -970,15 +970,15 @@ function renderMembers(classFilter = 'all') {
 // Function to setup class filter tabs
 function setupClassFilter() {
   const filterButtons = document.querySelectorAll('.filter-btn');
-  
+
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove active class from all buttons
       filterButtons.forEach(btn => btn.classList.remove('active'));
-      
+
       // Add active class to clicked button
       button.classList.add('active');
-      
+
       // Get the class and render members
       const classFilter = button.getAttribute('data-class');
       renderMembers(classFilter);
@@ -990,7 +990,7 @@ function setupClassFilter() {
 function showMemberModal(memberId) {
   const member = membersData.find(m => m.id === memberId);
   if (!member) return;
-  
+
   const modal = document.getElementById('member-modal');
   const modalImg = document.getElementById('modal-img');
   const modalName = document.getElementById('modal-name');
@@ -998,7 +998,7 @@ function showMemberModal(memberId) {
   const modalMajor = document.getElementById('modal-major');
   const modalYear = document.getElementById('modal-year');
   const modalLinkedin = document.getElementById('modal-linkedin');
-  
+
   // Populate modal with member data
   modalImg.src = member.image;
   modalImg.alt = member.name;
@@ -1007,7 +1007,7 @@ function showMemberModal(memberId) {
   modalMajor.textContent = member.major;
   modalYear.textContent = member.year;
   modalLinkedin.href = member.linkedin;
-  
+
   // Show modal
   modal.style.display = 'block';
   document.body.style.overflow = 'hidden';
@@ -1023,7 +1023,7 @@ function hideMemberModal() {
 // Function to add click listeners to member cards
 function addMemberCardListeners() {
   const memberCards = document.querySelectorAll('.member-card');
-  
+
   memberCards.forEach(card => {
     card.addEventListener('click', () => {
       const memberId = card.getAttribute('data-member');
@@ -1036,19 +1036,19 @@ function addMemberCardListeners() {
 function setupModal() {
   const modal = document.getElementById('member-modal');
   const closeBtn = document.querySelector('.close');
-  
+
 
 
   // Close modal when clicking X
   closeBtn.addEventListener('click', hideMemberModal);
-  
+
   // Close modal when clicking outside
   window.addEventListener('click', (event) => {
     if (event.target === modal) {
       hideMemberModal();
     }
   });
-  
+
   // Close modal with Escape key
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
