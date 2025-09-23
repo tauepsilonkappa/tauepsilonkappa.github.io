@@ -2,16 +2,6 @@
 const alumniData = [
   // Founders
   {
-    name: "Pranav Kodakara",
-    role: "Software Engineer ",
-    company: "Synchrony",
-    class: "Beta",
-    degree: "BSE Computer Science '25",
-    linkedin: "https://www.linkedin.com/in/trisha-kant/",
-    image: "/static/media/people/PranavKodakara.WebP",
-    category: "founding"
-  },
-  {
     name: "Trisha Kant",
     role: "Technology Consultant",
     company: "Impact Advisors",
@@ -184,6 +174,19 @@ const alumniData = [
     linkedin: "https://www.linkedin.com/in/allyvern/",
     image: "/static/media/people/AllyVern.WebP",
     category: "alpha"
+  },
+
+  //founding class
+
+  {
+    name: "Pranav Kodakara",
+    role: "Software Engineer ",
+    company: "Synchrony",
+    class: "Beta",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/trisha-kant/",
+    image: "/static/media/people/PranavKodakara.WebP",
+    category: "founding"
   },
  
 ];
