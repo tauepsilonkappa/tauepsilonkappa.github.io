@@ -5,7 +5,7 @@ const alumniData = [
     name: "Pranav Kodakara",
     role: "Software Engineer ",
     company: "Synchrony",
-    class: "Alpha",
+    class: "Beta",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/trisha-kant/",
     image: "/static/media/people/PranavKodakara.WebP",
