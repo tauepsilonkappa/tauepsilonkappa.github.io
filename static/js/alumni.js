@@ -74,6 +74,16 @@ const alumniData = [
     category: "founding"
   },
   {
+    name: "Lily Gong",
+    role: "Software Engineer",
+    company: "Bank of America",
+    class: "Founding Class",
+    degree: "BS Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/lily-gong/",
+    image: "/static/media/people/LilyGong.WebP",
+    category: "founding"
+  },
+  {
     name: "Nolan Schmitt",
     role: "Software Engineer",
     company: "ServiceNow",
