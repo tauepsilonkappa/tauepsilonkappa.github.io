@@ -309,7 +309,7 @@ MODAL STYLES
 
 .modal-image {
   position: relative;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
 }
 
