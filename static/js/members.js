@@ -297,10 +297,10 @@ const membersData = [
   {
     id: "jessica-azucena",
     name: "Jessica Azucena",
-    title: "Alpha Class",
-    major: "Computer Science",
+    title: "Beta Class",
+    major: "Business Analytics",
     year: "Grad Student",
-    class: "alpha",
+    class: "beta",
     image: "/static/media/people/JessicaAzucena.WebP",
     linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
   },
@@ -836,7 +836,7 @@ const membersData = [
     id: "river-mccorry",
     name: "River McCorry",
     title: "Zeta Class",
-    major: "Computer Science",
+    major: "Mechanical Engineering",
     year: "Sophomore",
     class: "zeta",
     image: "/static/media/people/RiverMccorry.webp",

@@ -3,9 +3,9 @@ const alumniData = [
   // Founders
   {
     name: "Trisha Kant",
-    role: "Technology Consultant",
+    role: "Healthcare Technology Consultant",
     company: "Impact Advisors",
-    class: "Alpha",
+    class: "Founder",
     degree: "BS Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/pkodakara/",
     image: "/static/media/people/TrishaKant.jpeg",
@@ -194,9 +194,19 @@ const alumniData = [
     company: "Synchrony",
     class: "Beta",
     degree: "BSE Computer Science '25",
-    linkedin: "https://www.linkedin.com/in/trisha-kant/",
+    linkedin: "https://www.linkedin.com/in/pkodakara/",
     image: "/static/media/people/PranavKodakara.WebP",
-    category: "founding"
+    category: "beta"
+  },
+  {
+    name: "Shivani Sundaresan",
+    role: "Software Engineer ",
+    company: "Microsoft",
+    class: "Beta",
+    degree: "BS Computer Science & Cognitive Science '25",
+    linkedin: "https://www.linkedin.com/in/shivanisundaresan/",
+    image: "/static/media/people/ShivaniS-1.jpg",
+    category: "beta"
   },
  
 ];
