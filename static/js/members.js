@@ -368,6 +368,17 @@ const membersData = [
   },
 
   {
+    id: "andrew-wang",
+    name: "Andrew Wang",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Grad Student",
+    class: "delta",
+    image: "/static/media/people/AndrewWang.WebP",
+    linkedin: "https://www.linkedin.com/in/theandrewwang/"
+  },
+
+  {
     id: "drew-dame",
     name: "Drew Dame",
     title: "Epsilon Class",
