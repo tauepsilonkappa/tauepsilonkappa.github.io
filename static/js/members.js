@@ -512,16 +512,6 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
 
-  {
-    id: "landon-mckinney",
-    name: "Landon McKinney",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/LandonMc.WebP",
-    linkedin: "https://www.linkedin.com/in/landon-mckinney-984a4832a/"
-  },
 
   {
     id: "liad-gross",
