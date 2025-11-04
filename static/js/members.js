@@ -72,16 +72,7 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
 
-  {
-    id: "andrew-deng",
-    name: "Andrew Deng",
-    title: "VP Membership",
-    major: "Computer Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/AndrewDeng.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  },
+  
   {
     id: "justin-hirsch",
     name: "Justin Hirsch",
@@ -283,16 +274,7 @@ const membersData = [
     image: "/static/media/people/AnaRyerson.WebP",
     linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
-  {
-    id: "andrew-deng-class",
-    name: "Andrew Deng",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AndrewDeng.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-deng-a73686208/"
-  },
+ 
 
   {
     id: "jessica-azucena",
