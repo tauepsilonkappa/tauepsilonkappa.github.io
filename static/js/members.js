@@ -867,16 +867,16 @@ const membersData = [
     image: "/static/media/people/RiannaNikhade.webp",
     linkedin: "https://www.linkedin.com/in/riannan2/"
   },
-  {
-    id: "dev-pradhan",
-    name: "Dev Pradhan",
-    title: "Eta Class",
-    major: "Architecture",
-    year: "Freshman",
-    class: "eta",
-    image: "/static/media/people/DevPradhan.webp",
-    linkedin: "https://www.linkedin.com/in/devan-pradhan/"
-  },
+  // {
+  //   id: "dev-pradhan",
+  //   name: "Dev Pradhan",
+  //   title: "Eta Class",
+  //   major: "Architecture",
+  //   year: "Freshman",
+  //   class: "eta",
+  //   image: "/static/media/people/DevPradhan.webp",
+  //   linkedin: "https://www.linkedin.com/in/devan-pradhan/"
+  // },
   {
     id: "sungat-shienh",
     name: "Sungat Shienh",

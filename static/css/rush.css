@@ -169,10 +169,10 @@ height: 100vh;
   width: 100%;
   aspect-ratio: 1324 / 768;
   height: 100vh;
-  background: center / 100% 100% no-repeat url('/static/media/fall25Graphics/Rush-Background.png');
+  background: center / 100% 100% no-repeat url('/static/media/W26Graphics/RB.png');
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
   /* .rush-top-container div {
     background-image: url('/static/media/fall25Graphics/Rush-Background-Ipad.png');
     width: 100%;
@@ -184,16 +184,16 @@ height: 100vh;
   .rush-top-container div {
     position: absolute;
     aspect-ratio: 1024 / 768;
-    background-image: url('/static/media/fall25Graphics/Rush-Background-Ipad.png');
+    background-image: url('/static/media/W26Graphics/RB-Ipad.png');
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 700px) {
 
   .rush-top-container div {
     position: absolute;
     aspect-ratio: 390 / 844;
-    background-image: url('/static/media/fall25Graphics/Rush-Background-Mobile.png');
+    background-image: url('/static/media/W26Graphics/RB-Mobile.png');
   }
   
 }
@@ -219,13 +219,13 @@ RUSH ACTION BUTTONS
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1224px) {
   .rush {
     margin-top: 12vh; /* Slightly less space on tablets */
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 700px) {
   .rush {
     margin-top: 10vh; /* Even less space on mobile */
   }
@@ -255,15 +255,16 @@ RUSH ACTION BUTTONS
 
 .rush-action-buttons {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 14%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
   z-index: 10;
-  width: 60%;
+  width: 70%;
+  max-width: 900px;
 }
 
 .explore-btn {
@@ -271,10 +272,19 @@ RUSH ACTION BUTTONS
   color: white;
   border: 3px solid white !important;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-  grid-column: 1 / -1; /* Span full width on first row */
+  grid-column: 2; /* Middle column */
   grid-row: 1;
-  width: 40%; /* 40% of container width */
-  justify-self: center; /* Center the button */
+  justify-self: center;
+}
+
+.application-btn {
+  grid-column: 1; /* Left column */
+  grid-row: 1;
+}
+
+.interest-btn {
+  grid-column: 3; /* Right column */
+  grid-row: 1;
 }
 
 .explore-btn:hover {
@@ -366,12 +376,12 @@ RUSH ACTION BUTTONS
 }
 
 /* Mobile responsiveness for buttons */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1224px) {
   .rush-action-buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    bottom: 1%;
+    bottom: 15%;  /* Adjusted for better positioning on iPad */
     left: 50%;
     transform: translateX(-50%);
     width: 80%; /* Set a reasonable width for mobile */
@@ -399,9 +409,9 @@ RUSH ACTION BUTTONS
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 700px) {
   .rush-action-buttons {
-    bottom: 5%;
+    bottom: 10%;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -540,6 +550,8 @@ RUSH ACTION BUTTONS
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;  /* Create stacking context */
+  z-index: 2;  /* Place above timeline line (z-index: 1) */
 }
 
 .application a {
@@ -547,24 +559,44 @@ RUSH ACTION BUTTONS
 }
 
 #faqs {
-  grid-area: 1 / 2 / span 2 / span 1;
+  grid-area: 1 / 2 / span 1 / span 2;  /* Row 1, spans full width (both content columns) */
 }
 
 #app-link {
-  grid-area: 1 / 3 / span 1 / span 1;
+  grid-area: 2 / 2 / span 1 / span 1;  /* Row 2, left column */
 }
 
 #interest-link {
-  grid-area: 3 / 2 / span 1 / span 1;
+  grid-area: 2 / 3 / span 1 / span 1;  /* Row 2, right column */
 }
 
 #questions {
-  grid-area: 2 / 3 / span 2 / span 1;
+  grid-area: 3 / 2 / span 1 / span 2;  /* Row 3, spans full width */
 }
 
 #application h1 {
   padding-bottom: 10px;
   color: #ffffff; /* White text */
+}
+
+/* FAQ Styling */
+.faq-item {
+  margin-bottom: -30px;  /* Reduced spacing between Q&A pairs */
+  text-align: left;
+}
+
+.faq-question {
+  margin-bottom: -20px;  /* Reduced spacing between Q and A */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.faq-answer {
+  margin-bottom: -10px;
+  margin-left: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e8e8e8;
 }
 
 /*------------------------------------------------------
@@ -583,13 +615,8 @@ RUSH ACTION BUTTONS
 }
 
 .timeline::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -70px;
-  width: 4px;
-  height: 116.5%;
-  background: #8a91a5;
+  /* Line now handled by .rush-container::before */
+  content: none;
 }
 
 .timeline-container {
@@ -637,6 +664,19 @@ RUSH ACTION BUTTONS
   justify-content: center;
   align-items: center;
   padding: 70px 0px 70px 0px;
+  position: relative;  /* Allow absolute positioning within */
+}
+
+/* Timeline vertical line that spans the entire blue section */
+.rush-container::before {
+  content: "";
+  position: absolute;
+  left: 80.4px;  /* Aligns with timeline position */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #8a91a5;
+  z-index: 1;
 }
 
 /* Founders' Quotes */
@@ -739,9 +779,9 @@ h1 {
     font-size: 16px;
   }
 
-  .timeline::before {
-    height: 110%;
-    z-index: 1;
+  /* Adjust timeline position for mobile - move content left instead of line */
+  .timeline {
+    margin-left: 80px;  /* Reduced from 150px for mobile */
   }
 }
 

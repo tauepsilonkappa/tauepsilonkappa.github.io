@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Testimonials - TEK</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/html5reset.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/testimonials.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar (same as other pages) -->
+  <header>
+    <a href="/">
+      <img src="/static/media/tekPics/tekNavy-3.png" alt="tek logo" />
+    </a>
+    <nav class="full" aria-label="large navigation">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/">HOME</a></li>
+        <li class="nav-item"><a href="/members">MEMBERS</a></li>
+        <li class="nav-item"><a href="/alumni">ALUMNI</a></li>
+        <li class="nav-item"><a href="/activities">ACTIVITIES</a></li>
+        <li class="nav-item"><a href="/rush">RUSH</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center; margin: 40px 0; color: #1e2a5e;">Member Testimonials</h1>
+
+    <!-- Testimonials Component Container -->
+    <div id="testimonials-root"></div>
+  </main>
+
+  <!-- Footer (same as other pages) -->
+  <footer>
+    <a href="/">
+      <img src="/static/media/tekPics/tekNavy.png" alt="tek logo" />
+    </a>
+    <div class="footer-center">
+      <p>© 2025 Tau Epsilon Kappa Alpha Chapter. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Load the testimonials JavaScript -->
+  <script src="/static/js/testimonials.js"></script>
+  <script>
+    // Example testimonials data
+    const testimonialsData = [
+      {
+        quote: "Joining TEK was the best decision I made at Michigan. The professional development opportunities and the lifelong friendships I've made are invaluable. TEK has truly prepared me for my career in tech.",
+        name: "Sarah Johnson",
+        designation: "Software Engineer at Google",
+        src: "/static/media/people/groupPic2.WebP"
+      },
+      {
+        quote: "TEK provided me with the technical skills and professional network that helped me land my dream job. The mentorship from older members and the collaborative environment made all the difference.",
+        name: "Michael Chen",
+        designation: "Data Scientist at Meta",
+        src: "/static/media/rock24.jpeg"
+      },
+      {
+        quote: "The diversity and inclusive environment at TEK allowed me to grow both professionally and personally. I learned so much from my fellow members and the technical workshops were incredibly valuable.",
+        name: "Priya Patel",
+        designation: "Product Manager at Amazon",
+        src: "/static/media/rushFA24-2.jpeg"
+      },
+      {
+        quote: "TEK isn't just a fraternity, it's a family. The support system and the technical resources available to members are unmatched. I've grown so much as a developer and as a leader.",
+        name: "David Kim",
+        designation: "Full Stack Developer at Microsoft",
+        src: "/static/media/tekPics/alphaClass.jpg"
+      }
+    ];
+
+    // Initialize the testimonials component
+    document.addEventListener('DOMContentLoaded', function() {
+      new AnimatedTestimonials('testimonials-root', testimonialsData, {
+        autoplay: true  // Set to false to disable autoplay
+      });
+    });
+  </script>
+</body>
+</html>
