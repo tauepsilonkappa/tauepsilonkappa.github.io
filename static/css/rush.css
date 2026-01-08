@@ -169,7 +169,7 @@ height: 100vh;
   width: 100%;
   aspect-ratio: 1324 / 768;
   height: 100vh;
-  background: center / 100% 100% no-repeat url('/static/media/W26Graphics/RB.png');
+  background: center / 100% 100% no-repeat url('/static/media/W26Graphics/RB.webp');
 }
 
 @media screen and (max-width: 1224px) {
@@ -213,7 +213,7 @@ RUSH ACTION BUTTONS
   align-items: center;
   padding: 80px 80px 80px 80px;
   /* background-color: #455d45; */
-  background-color: #1e2a5e;
+  background-color: #061A3A;
   flex-wrap: wrap;
   color: #ffffff; /* White text */
   position: relative;
@@ -304,6 +304,7 @@ RUSH ACTION BUTTONS
   align-items: center;
   padding: 12px 30px;
   border-radius: 70px;
+  right: 50px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -373,6 +374,23 @@ RUSH ACTION BUTTONS
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
+
+/* Application Button (Disabled) */
+.application-btn.disabled {
+  background-color: #6c757d;
+  color: #adb5bd;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  box-shadow: none;
+  min-width: 350px;
+}
+
+.application-btn.disabled:hover {
+  background-color: #6c757d;
+  color: #adb5bd;
+  transform: none;
+  box-shadow: none;
 }
 
 /* Mobile responsiveness for buttons */
@@ -660,7 +678,7 @@ RUSH ACTION BUTTONS
 
 .rush-container {
   /* background-color: #455d45; */
-  background-color: #1e2a5e;
+  background-color: #061A3A;
   justify-content: center;
   align-items: center;
   padding: 70px 0px 70px 0px;
