@@ -2,16 +2,6 @@
 const alumniData = [
   // Founders
   {
-    name: "Trisha Kant",
-    role: "Healthcare Technology Consultant",
-    company: "Impact Advisors",
-    class: "Founder",
-    degree: "BS Cognitive Science '24",
-    linkedin: "https://www.linkedin.com/in/pkodakara/",
-    image: "/static/media/people/TrishaKant.jpeg",
-    category: "founders"
-  },
-  {
     name: "Noah Ivers",
     role: "Software Engineer",
     company: "Ford",
@@ -19,6 +9,26 @@ const alumniData = [
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/noah-ivers/",
     image: "/static/media/people/NoahIvers.jpeg",
+    category: "founders"
+  },
+  {
+    name: "Trisha Kant",
+    role: "Healthcare Technology Consultant",
+    company: "Impact Advisors",
+    class: "Founder",
+    degree: "BS Cognitive Science '24",
+    linkedin: "https://www.linkedin.com/in/trisha-kant/",
+    image: "/static/media/people/TrishaKant.jpeg",
+    category: "founders"
+  },
+  {
+    name: "Esha Kaul",
+    role: "Product Manager",
+    company: "Capital One",
+    class: "Founder",
+    degree: "BS Data Science '24",
+    linkedin: "https://www.linkedin.com/in/esha-kaul/",
+    image: "/static/media/people/EshaKaul.WebP",
     category: "founders"
   },
   {
@@ -41,38 +51,9 @@ const alumniData = [
     image: "/static/media/people/PaulSmith.jpeg",
     category: "founders"
   },
-  {
-    name: "Esha Kaul",
-    role: "Product Manager",
-    company: "Capital One",
-    class: "Founder",
-    degree: "BS Data Science '24",
-    linkedin: "https://www.linkedin.com/in/esha-kaul/",
-    image: "/static/media/people/EshaKaul.WebP",
-    category: "founders"
-  },
+  
   
   // Founding Class
-  {
-    name: "Anusha Tekmulla",
-    role: "Software Engineer",
-    company: "Meta",
-    class: "Founding Class",
-    degree: "BS Computer Science & Cognitive Science '24",
-    linkedin: "https://www.linkedin.com/in/atekumulla/",
-    image: "/static/media/people/AnushaTekmulla.WebP",
-    category: "founding"
-  },
-  {
-    name: "Alexandra Tan",
-    role: "Software Engineer",
-    company: "Meta",
-    class: "Founding Class",
-    degree: "BSE Computer Science '25",
-    linkedin: "https://www.linkedin.com/in/thealexandratan/",
-    image: "/static/media/people/AlexTan.webp",
-    category: "founding"
-  },
   {
     name: "Lily Gong",
     role: "Software Engineer",
@@ -104,16 +85,6 @@ const alumniData = [
     category: "founding"
   },
   {
-    name: "Daphne Tsai",
-    role: "UX Designer",
-    company: "Google",
-    class: "Founding Class",
-    degree: "BS Design '24",
-    linkedin: "https://www.linkedin.com/in/dvtsai/",
-    image: "/static/media/people/DaphneTsai.WebP",
-    category: "founding"
-  },
-  {
     name: "Ethan Sterling",
     role: "Software Engineer",
     company: "JP Morgan Chase",
@@ -121,6 +92,36 @@ const alumniData = [
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/ethan-sterling/",
     image: "/static/media/people/EthanSterling.WebP",
+    category: "founding"
+  },
+  {
+    name: "Alexandra Tan",
+    role: "Software Engineer",
+    company: "Meta",
+    class: "Founding Class",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/thealexandratan/",
+    image: "/static/media/people/AlexTan.webp",
+    category: "founding"
+  },
+  {
+    name: "Anusha Tekmulla",
+    role: "Software Engineer",
+    company: "Meta",
+    class: "Founding Class",
+    degree: "BS Computer Science & Cognitive Science '24",
+    linkedin: "https://www.linkedin.com/in/atekumulla/",
+    image: "/static/media/people/AnushaTekmulla.WebP",
+    category: "founding"
+  },
+  {
+    name: "Daphne Tsai",
+    role: "UX Designer",
+    company: "Google",
+    class: "Founding Class",
+    degree: "BS Design '24",
+    linkedin: "https://www.linkedin.com/in/dvtsai/",
+    image: "/static/media/people/DaphneTsai.WebP",
     category: "founding"
   },
   {
@@ -136,6 +137,16 @@ const alumniData = [
   
   // Alpha Class
   {
+    name: "Kateri Darr",
+    role: "Software Engineer",
+    company: "Stryker",
+    class: "Alpha Class",
+    degree: "BSE Computer Science '25",
+    linkedin: "https://www.linkedin.com/in/kateri-darr/",
+    image: "/static/media/people/KateriDarr.WebP",
+    category: "alpha"
+  },
+  {
     name: "Kyle Ritenour",
     role: "Cyber Analyst",
     company: "Deloitte",
@@ -143,16 +154,6 @@ const alumniData = [
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/kysrit/",
     image: "/static/media/people/KyleRitenour.WebP",
-    category: "alpha"
-  },
-  {
-    name: "Kateri Darr",
-    role: "Software Engineer",
-    company: "Stryker",
-    class: "Alpha Class",
-    degree: "BSE Computer Science '25",
-    linkedin: "https://www.linkedin.com/in/kysrit/",
-    image: "/static/media/people/KateriDarr.WebP",
     category: "alpha"
   },
   {
@@ -186,7 +187,7 @@ const alumniData = [
     category: "alpha"
   },
 
-  //founding class
+  // Beta Class
 
   {
     name: "Pranav Kodakara",

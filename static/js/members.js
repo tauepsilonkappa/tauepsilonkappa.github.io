@@ -1,530 +1,18 @@
 // Members data with detailed information
 const membersData = [
-  // Executive Board
-  {
-    id: "margaret-periard",
-    name: "Margaret Periard",
-    title: "President",
-    major: "Industrial & Operations Engineering",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/MargaretPeriard.WebP",
-    linkedin: "https://www.linkedin.com/in/margaret-periard/"
-  },
-  {
-    id: "andrew-kasper",
-    name: "Andrew Kasper",
-    title: "Vice President",
-    major: "Computer Science",
-    year: "Senior",
-    class: "eboard",
-    image: "/static/media/people/AndrewKasper.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/"
-  },
-  {
-    id: "izzy-dubov",
-    name: "Isabel Dubov",
-    title: "VP Finance",
-    major: "Statistics",
-    year: "Senior",
-    class: "eboard",
-    image: "/static/media/people/IzzyDubov.WebP",
-    linkedin: "https://www.linkedin.com/in/isabel-dubov/"
-  },
-  {
-    id: "sahithi-nalamothu",
-    name: "Sahithi Nalamothu",
-    title: "VP Operations",
-    major: "Computer Science, Economics",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/SahithiNalamothu.WebP",
-    linkedin: "https://www.linkedin.com/in/sahithi-nalamothu-45568922b/"
-  },
-  {
-    id: "alexandra-doytcheva",
-    name: "Alexandra Doytcheva",
-    title: "VP Internal",
-    major: "Space Sciences & Engineering",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/AlexDoytcheva.WebP",
-    linkedin: "https://www.linkedin.com/in/alexandra-doytcheva-b691a1237/"
-  },
-  {
-    id: "pranav-goyal",
-    name: "Pranav Goyal",
-    title: "VP Pro Dev",
-    major: "Computer Engineering",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/pranavgoyal.webp",
-    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
-  },
-  {
-    id: "insu-jung",
-    name: "Insu Jung",
-    title: "VP Tech Dev",
-    major: "Computer Science & Physics",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/InsuJung.WebP",
-    linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
-  },
-
-  
-  {
-    id: "justin-hirsch",
-    name: "Justin Hirsch",
-    title: "VP Membership",
-    major: "Computer Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/JustinHirsch.WebP",
-    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  },
-  {
-    id: "bowie-cooper",
-    name: "Bowie Cooper",
-    title: "VP Recruitment",
-    major: "Computer Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/bowiecooper.WebP",
-    linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
-  },
-  {
-    id: "sam-koda",
-    name: "Sam Koda",
-    title: "VP Recruitment",
-    major: "Infromation Science",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/samkoda.WebP",
-    linkedin: "https://www.linkedin.com/in/samkoda/"
-  },
-  {
-    id: "nandini-desaraju",
-    name: "Nandini Desaraju",
-    title: "VP Marketing",
-    major: "Information Analysis",
-    year: "Junior",
-    class: "eboard",
-    image: "/static/media/people/NandiniS.WebP",
-    linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
-  },
-
   // Active Members
 
   // E-board members also in their class sections
-  {
-    id: "margaret-periard-class",
-    name: "Margaret Periard",
-    title: "Delta Class",
-    major: "Industrial & Operations Engineering",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/MargaretPeriard.WebP",
-    linkedin: "https://www.linkedin.com/in/margaret-periard/"
-  },
-  {
-    id: "andrew-kasper-class",
-    name: "Andrew Kasper",
-    title: "Alpha Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "alpha",
-    image: "/static/media/people/AndrewKasper.WebP",
-    linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/"
-  },
-  {
-    id: "izzy-dubov-class",
-    name: "Isabel Dubov",
-    title: "Gamma Class",
-    major: "Statistics",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/IzzyDubov.WebP",
-    linkedin: "https://www.linkedin.com/in/isabel-dubov/"
-  },
-  {
-    id: "sahithi-nalamothu-class",
-    name: "Sahithi Nalamothu",
-    title: "Delta Class",
-    major: "Computer Science & Economics",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/SahithiNalamothu.WebP",
-    linkedin: "https://www.linkedin.com/in/sahithi-nalamothu-45568922b/"
-  },
-  {
-    id: "alexandra-doytcheva-class",
-    name: "Alexandra Doytcheva",
-    title: "Epsilon Class",
-    major: "Space Sciences & Engineering",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AlexDoytcheva.WebP",
-    linkedin: "https://www.linkedin.com/in/alexandra-doytcheva-b691a1237/"
-  },
-  {
-    id: "pranav-goyal-class",
-    name: "Pranav Goyal",
-    title: "Delta Class",
-    major: "Computer Engineering",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/pranavgoyal.webp",
-    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
-  },
 
   {
-    id: "justin-hirsch-class",
-    name: "Justin Hirsch",
-    title: "Epsilon Class",
-    major: "Computer Science",
+    id: "aiden-hegenauer",
+    name: "Aiden Hegenauer",
+    title: "Zeta Class",
+    major: "Data Science & Statistics",
     year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/JustinHirsch.WebP",
-    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
-  },
-
-
-  {
-    id: "sam-koda-class",
-    name: "Sam Koda",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/SamKoda.WebP",
-    linkedin: "https://www.linkedin.com/in/samkoda/"
-  },
-  {
-    id: "nandini-desaraju-class",
-    name: "Nandini Desaraju",
-    title: "Epsilon Class",
-    major: "Information Analysis",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/NandiniS.WebP",
-    linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
-  },
-
-  // Other Active Members
-
-  {
-    id: "aditi-vishnubhatla",
-    name: "Aditi Vishnubhatla",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AditiV-3.WebP",
-    linkedin: "https://www.linkedin.com/in/aditi-vishnubhatla/"
-  },
-  {
-    id: "ahmed-hadi",
-    name: "Ahmed Hadi",
-    title: "Epsilon Class",
-    major: "Industrial Operations Engineering",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AhmedH.WebP",
-    linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
-  },
-  {
-    id: "dhruv-kapur",
-    name: "Dhruv Kapur",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/DhruvKapur.WebP",
-    linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
-  },
-
-  {
-    id: "allison-yang",
-    name: "Allison Yang",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AllisonYang.WebP",
-    linkedin: "https://www.linkedin.com/in/allison-yang10/"
-  },
-  {
-    id: "Manu-Anand",
-    name: "Manu Anand",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/ManushriAnand.webp",
-    linkedin: "https://www.linkedin.com/in/manushrianand/"
-  },
-  {
-    id: "ana-ryerson",
-    name: "Ana Ryerson",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/AnaRyerson.WebP",
-    linkedin: "https://www.linkedin.com/in/anaryerson/"
-  },
- 
-
-  {
-    id: "jessica-azucena",
-    name: "Jessica Azucena",
-    title: "Beta Class",
-    major: "Business Analytics",
-    year: "Grad Student",
-    class: "beta",
-    image: "/static/media/people/JessicaAzucena.WebP",
-    linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
-  },
-
-  {
-    id: "anuj-arora",
-    name: "Anuj Arora",
-    title: "Delta Class",
-    major: "Robotics",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/AnujArora.WebP",
-    linkedin: "https://www.linkedin.com/in/anuj-arora-26899222a/"
-  },
-  {
-    id: "arnav-kadam",
-    name: "Arnav Kadam",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/ArnavKadam.WebP",
-    linkedin: "https://www.linkedin.com/in/arnav-kadam-45679b24b/"
-  },
-
-  {
-    id: "bowie-cooper",
-    name: "Bowie Cooper",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "gamma",
-    image: "/static/media/people/bowiecooper.WebP",
-    linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
-  },
-  {
-    id: "emma-johnson",
-    name: "Emma Johnson",
-    title: "Gamma Class",
-    major: "Information Analysis",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/emmajohnson.WebP",
-    linkedin: "https://www.linkedin.com/in/emma-johnson-47822a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-  },
-  {
-    id: "caitlin-roberts",
-    name: "Caitlin Roberts",
-    title: "Delta Class",
-    major: "Robotics",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/CaitlinRoberts.WebP",
-    linkedin: "https://www.linkedin.com/in/caitlinmroberts/"
-  },
-  {
-    id: "casey-zhang",
-    name: "Casey Zhang",
-    title: "Delta Class",
-    major: "Data Science, Art & Design",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/CaseyZhang.WebP",
-    linkedin: "https://www.linkedin.com/in/casey-zhang-5861182b3/"
-  },
-
-  {
-    id: "andrew-wang",
-    name: "Andrew Wang",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Grad Student",
-    class: "delta",
-    image: "/static/media/people/AndrewWang.WebP",
-    linkedin: "https://www.linkedin.com/in/theandrewwang/"
-  },
-
-  {
-    id: "drew-dame",
-    name: "Drew Dame",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/DrewDame.webp",
-    linkedin: "https://www.linkedin.com/in/drew-dame/"
-  },
-  {
-    id: "ethan-matsuda",
-    name: "Ethan Matsuda",
-    title: "Delta Class",
-    major: "Data Science",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/EthanMatsuda.WebP",
-    linkedin: "https://www.linkedin.com/in/ethan-matsuda/"
-  },
-  {
-    id: "gracie-hou",
-    name: "Gracie Hou",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/GracieHou.WebP",
-    linkedin: "https://www.linkedin.com/in/gracie-hou/"
-  },
-
-  {
-    id: "insu-jung",
-    name: "Insu Jung",
-    title: "Gamma Class",
-    major: "Computer Science & Physics",
-    year: "Junior",
-    class: "gamma",
-    image: "/static/media/people/InsuJung.WebP",
-    linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
-  },
-  {
-    id: "jackson-kirkey",
-    name: "Jackson Kirkey",
-    title: "Beta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/JacksonKirkey.WebP",
-    linkedin: "https://www.linkedin.com/in/jackson-kirkey/"
-  },
-  {
-    id: "jade-meister",
-    name: "Jade Meister",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/jademeister.WebP",
-    linkedin: "https://www.linkedin.com/in/jade-meister-6ab1a0274/"
-  },
-  {
-    id: "jake-levin",
-    name: "Jake Levin",
-    title: "Gamma Class",
-    major: "Data Science",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/jakelevin.WebP",
-    linkedin: "https://www.linkedin.com/in/jake-levin-450303294/"
-  },
-  {
-    id: "joe-fiorenzo",
-    name: "Joe Fiorenzo",
-    title: "Beta Class",
-    major: "Econonomics",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/JoeFiorenzo.WebP",
-    linkedin: "https://www.linkedin.com/company/tau-epsilon-kappa/mycompany/"
-  },
-
-
-  {
-    id: "katie-lee",
-    name: "Katie Lee",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/KatieLee.WebP",
-    linkedin: "https://www.linkedin.com/in/ktjlee/"
-  },
-  {
-    id: "kathryn-nichols",
-    name: "Kathryn Nichols",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/kathrynNichols.WebP",
-    linkedin: "https://www.linkedin.com/in/kathrynpnichols/"
-  },
-  {
-    id: "kenan-george-nwogu",
-    name: "Kenan George-Nwogu",
-    title: "Beta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/Kenan George-Nwogu.WebP",
-    linkedin: "https://www.linkedin.com/company/tau-epsilon-kappa/mycompany/"
-  },
-  {
-    id: "kian-sandoval",
-    name: "Kian Sandoval",
-    title: "Beta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/KianSandoval.WebP",
-    linkedin: "https://www.linkedin.com/in/kian-sandoval-19942b26b/"
-  },
-  {
-    id: "molly-rich",
-    name: "Molly Rich",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "gamma",
-    image: "/static/media/people/mollyrich.WebP",
-    linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-  },
-
-
-  {
-    id: "liad-gross",
-    name: "Liad Gross",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/LiadGross.WebP",
-    linkedin: "https://www.linkedin.com/in/liad-gross-6315542b5/"
-  },
-
-  {
-    id: "lucas-rosenberg",
-    name: "Lucas Rosenberg",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/LucasRosenberg.WebP",
-    linkedin: "https://www.linkedin.com/in/lucasrosenberg/"
-  },
-  {
-    id: "lulu-zhang",
-    name: "Lulu Zhang",
-    title: "Beta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "beta",
-    image: "/static/media/people/LuluZhang.WebP",
-    linkedin: "https://www.linkedin.com/in/lulu-zhang-431b6722a/"
+    class: "zeta",
+    image: "/static/media/people/AidenHegenauer.webp",
+    linkedin: "https://www.linkedin.com/in/aiden-hegenauer-5bab632b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
     id: "megan-gottfried",
@@ -537,79 +25,35 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/megan-gottfried/"
   },
   {
-    id: "michael-feneberg",
-    name: "Michael Feneberg",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/MichaelFeneberg.WebP",
-    linkedin: "https://www.linkedin.com/in/mfeneberg/"
+    id: "river-mccorry",
+    name: "River McCorry",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/RiverMccorry.webp",
+    linkedin: "http://linkedin.com/in/rivermccorry"
   },
-  // {
-  //   id: "menuel-rosso",
-  //   name: "Manuel Rosso-Benitez",
-  //   title: "Epsilon Class",
-  //   major: "Mechanical Engineering",
-  //   year: "Junior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/MenuelRosso.WebP",
-  //   linkedin: "https://www.linkedin.com/in/manuel-rosso-benitez-381801250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-  // },
-
   {
-    id: "nandini-desaraju",
-    name: "Nandini Desaraju",
-    title: "Epsilon Class",
+    id: "nano-nikuradze",
+    name: "Nano Nikuradze",
+    title: "Eta Class",
     major: "Computer Science",
     year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/NandiniS.WebP",
-    linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
+    class: "eta",
+    image: "/static/media/people/NanoNikuradze.webp",
+    linkedin: "https://www.linkedin.com/in/nano-nikuradze-533b8131b/"
   },
   {
-    id: "nathan-lesny",
-    name: "Nathan Lesny",
-    title: "Epsilon Class",
-    major: "Computer Science, Mathematics",
+    id: "insu-jung",
+    name: "Insu Jung",
+    title: "Gamma Class",
+    major: "Computer Science & Physics",
     year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/NathanL.jpg",
-    linkedin: "https://www.linkedin.com/in/nathan-lesny/"
+    class: "gamma",
+    image: "/static/media/people/InsuJung.WebP",
+    linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
-  {
-    id: "preston-woodworth",
-    name: "Preston Woodworth",
-    title: "Delta Class",
-    major: "Industrial & Operations Engineering",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/PrestonWoodworth.WebP",
-    linkedin: "https://www.linkedin.com/in/preston-woodworth-7371162b3/"
-  },
-  {
-    id: "sahithi-nalamothu",
-    name: "Sahithi Nalamothu",
-    title: "Delta Class",
-    major: "Computer Science & Economics",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/SahithiNalamothu.WebP",
-    linkedin: "https://www.linkedin.com/in/sahithi-nalamothu-45568922b/"
-  },
-  {
-    id: "sam-wit",
-    name: "Sam Wit",
-    title: "Delta Class",
-    major: "Aerospace Engineering",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/SamWit.WebP",
-    linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/"
-  },
-
-
-
   {
     id: "sanjana-kulkarni",
     name: "Sanjana Kulkarni",
@@ -620,7 +64,6 @@ const membersData = [
     image: "/static/media/people/SanjanaKulkarni.WebP",
     linkedin: "https://www.linkedin.com/in/sanjana-kulkarni/"
   },
-
   {
     id: "stella-johnson",
     name: "Stella Johnson",
@@ -632,99 +75,6 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/stella-johnson-ba4649212/"
   },
   {
-    id: "suprita-nagali",
-    name: "Suprita Nagali",
-    title: "Delta Class",
-    major: "Data Science & Econonomics",
-    year: "Junior",
-    class: "delta",
-    image: "/static/media/people/SupritaNagali.WebP",
-    linkedin: "https://www.linkedin.com/in/suprita-nagali/"
-  },
-  // {
-  //   id: "ellie-grehan",
-  //   name: "Ellie Grehan",
-  //   title: "Epsilon Class",
-  //   major: "Biomedical Engineering",
-  //   year: "Junior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/EllieGrehan.WebP",
-  //   linkedin: "https://www.linkedin.com/in/ellie-grehan/"
-  // },
-  {
-    id: "tim-smith",
-    name: "Tim Smith",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "gamma",
-    image: "/static/media/people/timsmith.WebP",
-    linkedin: "https://www.linkedin.com/in/timothy-smith-7366b3241/"
-  },
-  {
-    id: "winston-wu",
-    name: "Winston Wu",
-    title: "Delta Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/WinstonWu.WebP",
-    linkedin: "https://www.linkedin.com/in/win-wu/"
-  },
-  {
-    id: "yana-mehta",
-    name: "Yana Mehta",
-    title: "Epsilon Class",
-    major: "Data Science",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/YanaMehta.webp",
-    linkedin: "https://www.linkedin.com/in/yanamehta/"
-  },
-  {
-    id: "yan-cheng-poon",
-    name: "Yan Cheng Poon",
-    title: "Delta Class",
-    major: "Computer Engineering",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/YCPoon.WebP",
-    linkedin: "https://www.linkedin.com/in/yan-cheng-poon/"
-  },
-  {
-    id: "zach-freed",
-    name: "Zach Freed",
-    title: "Gamma Class",
-    major: "Computer Science, Economics",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/zachfreed.WebP",
-    linkedin: "https://www.linkedin.com/in/zachary-freed/"
-  },
-
-  {
-    id: "zannah-baker",
-    name: "Zannah Baker",
-    title: "Delta Class",
-    major: "Information Analysis",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/ZannahBaker.WebP",
-    linkedin: "https://www.linkedin.com/in/zannah-baker/"
-  },
-
-  {
-    id: "olivia-bonnewit",
-    name: "Olivia Bonnewit",
-    title: "Zeta Class",
-    major: "Industrial & Operations Engineering",
-    year: "Sophmore",
-    class: "zeta",
-    image: "/static/media/people/OliviaBonnewit.webp",
-    linkedin: "https://www.linkedin.com/in/oliviabonn/"
-  },
-
-  {
     id: "eesha-atluri",
     name: "Eesha Atluri",
     title: "Zeta Class",
@@ -733,97 +83,6 @@ const membersData = [
     class: "zeta",
     image: "/static/media/people/EeshaAtluri.webp",
     linkedin: "https://www.linkedin.com/in/eeshaatluri"
-  },
-
-  {
-    id: "lucas-crespo",
-    name: "Lucas Crespo",
-    title: "Zeta Class",
-    major: "Mechanical Engineering",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/LucasCrespo.webp",
-    linkedin: "https://www.linkedin.com/in/crespito/"
-  },
-  {
-    id: "aiden-hegenauer",
-    name: "Aiden Hegenauer",
-    title: "Zeta Class",
-    major: "Data Science & Statistics",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/AidenHegenauer.webp",
-    linkedin: "https://www.linkedin.com/in/aiden-hegenauer-5bab632b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-  },
-  {
-    id: "benjamin-stevenson",
-    name: "Benjamin Stevenson",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/BenStevenson.webp",
-    linkedin: "https://www.linkedin.com/in/benstev/"
-  },
-  {
-    id: "vaelone-elankumaran",
-    name: "Vaelone Elankumaran",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/VaeloneE.webp",
-    linkedin: "https://www.linkedin.com/in/vaelonee/"
-  },
-  {
-    id: "nina-gernhardt",
-    name: "Nina Gernhardt",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/NinaG.webp",
-    linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
-  },
-  {
-    id: "ashish-rajam",
-    name: "Ashish Rajam",
-    title: "Zeta Class",
-    major: "Mechanical Engineering",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/AshishRajam.webp",
-    linkedin: "https://www.linkedin.com/in/ashish-rajam-1988a8329?trk=contact-info"
-  },
-  {
-    id: "alisha-vasan",
-    name: "Alisha Vasan",
-    title: "Zeta Class",
-    major: "Physics & Astronomy",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/AlishaVasan.webp",
-    linkedin: "https://www.linkedin.com/in/alishavasan/"
-  },
-  {
-    id: "david-sanico",
-    name: "David Sanico",
-    title: "Zeta Class",
-    major: "Electrical Engineering",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/DavidSanico.webp",
-    linkedin: "http://www.linkedin.com/in/david-sanico"
-  },
-  {
-    id: "river-mccorry",
-    name: "River McCorry",
-    title: "Zeta Class",
-    major: "Mechanical Engineering",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/RiverMccorry.webp",
-    linkedin: "http://linkedin.com/in/rivermccorry"
   },
   {
     id: "daniel-wang",
@@ -836,14 +95,565 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/danielwanng/"
   },
   {
-    id: "avram-joshua-tarun",
-    name: "Avram Joshua Tarun",
+    id: "olivia-bonnewit",
+    name: "Olivia Bonnewit",
     title: "Zeta Class",
-    major: "Physics",
+    major: "Industrial & Operations Engineering",
+    year: "Sophmore",
+    class: "zeta",
+    image: "/static/media/people/OliviaBonnewit.webp",
+    linkedin: "https://www.linkedin.com/in/oliviabonn/"
+  },
+  {
+    id: "preston-woodworth",
+    name: "Preston Woodworth",
+    title: "Delta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/PrestonWoodworth.webp",
+    linkedin: "https://www.linkedin.com/in/preston-woodworth-7371162b3/"
+  },
+  {
+    id: "casey-zhang",
+    name: "Casey Zhang",
+    title: "Delta Class",
+    major: "Data Science, Art & Design",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/CaseyZhang.webp",
+    linkedin: "https://www.linkedin.com/in/casey-zhang-5861182b3/"
+  },
+
+
+
+  // Other Active Members
+
+  //Alpha
+  {
+    id: "andrew-kasper",
+    name: "Andrew Kasper",
+    title: "Alpha Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "alpha",
+    image: "/static/media/people/AndrewKasper.WebP",
+    linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/"
+  },
+  //Beta
+  {
+    id: "jessica-azucena",
+    name: "Jessica Azucena",
+    title: "Beta Class",
+    major: "Business Analytics",
+    year: "Grad Student",
+    class: "beta",
+    image: "/static/media/people/JessicaAzucena.WebP",
+    linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
+  },
+  {
+    id: "joe-fiorenzo",
+    name: "Joe Fiorenzo",
+    title: "Beta Class",
+    major: "Econonomics",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/JoeFiorenzo.WebP",
+    linkedin: "https://www.linkedin.com/in/joseph-fiorenzo-09b03629a/"
+  },
+  {
+    id: "kenan-george-nwogu",
+    name: "Kenan George-Nwogu",
+    title: "Beta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/Kenan George-Nwogu.WebP",
+    linkedin: "https://www.linkedin.com/in/kenan-george-nwogu-543210295/"
+  },
+  {
+    id: "dhruv-kapur",
+    name: "Dhruv Kapur",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/DhruvKapur.WebP",
+    linkedin: "https://www.linkedin.com/in/dhruvk19/"
+  },
+  {
+    id: "jackson-kirkey",
+    name: "Jackson Kirkey",
+    title: "Beta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/JacksonKirkey.WebP",
+    linkedin: "https://www.linkedin.com/in/jackson-kirkey/"
+  },
+  {
+    id: "kian-sandoval",
+    name: "Kian Sandoval",
+    title: "Beta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/KianSandoval.WebP",
+    linkedin: "https://www.linkedin.com/in/kian-sandoval-19942b26b/"
+  },
+  {
+    id: "lulu-zhang",
+    name: "Lulu Zhang",
+    title: "Beta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "beta",
+    image: "/static/media/people/LuluZhang.WebP",
+    linkedin: "https://www.linkedin.com/in/lulu-zhang-431b6722a/"
+  },
+  //Gamma
+  {
+    id: "bowie-cooper",
+    name: "Bowie Cooper",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "gamma",
+    image: "/static/media/people/bowiecooper.WebP",
+    linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
+  },
+  {
+    id: "izzy-dubov",
+    name: "Isabel Dubov",
+    title: "Gamma Class",
+    major: "Statistics",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/IzzyDubov.WebP",
+    linkedin: "https://www.linkedin.com/in/isabel-dubov/"
+  },
+  {
+    id: "zach-freed",
+    name: "Zach Freed",
+    title: "Gamma Class",
+    major: "Computer Science, Economics",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/zachfreed.WebP",
+    linkedin: "https://www.linkedin.com/in/zachary-freed/"
+  },
+  {
+    id: "emma-johnson",
+    name: "Emma Johnson",
+    title: "Gamma Class",
+    major: "Information Analysis",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/emmajohnson.WebP",
+    linkedin: "https://www.linkedin.com/in/emma-johnson-47822a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    id: "jake-levin",
+    name: "Jake Levin",
+    title: "Gamma Class",
+    major: "Data Science",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/jakelevin.WebP",
+    linkedin: "https://www.linkedin.com/in/jake-levin-450303294/"
+  },
+  {
+    id: "jade-meister",
+    name: "Jade Meister",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/jademeister.WebP",
+    linkedin: "https://www.linkedin.com/in/jade-meister-6ab1a0274/"
+  },
+  {
+    id: "kathryn-nichols",
+    name: "Kathryn Nichols",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/kathrynNichols.WebP",
+    linkedin: "https://www.linkedin.com/in/kathrynpnichols/"
+  },
+  {
+    id: "molly-rich",
+    name: "Molly Rich",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "gamma",
+    image: "/static/media/people/mollyrich.WebP",
+    linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    id: "tim-smith",
+    name: "Tim Smith",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "gamma",
+    image: "/static/media/people/timsmith.WebP",
+    linkedin: "https://www.linkedin.com/in/timothy-smith-7366b3241/"
+  },
+  //Delta
+  {
+    id: "anuj-arora",
+    name: "Anuj Arora",
+    title: "Delta Class",
+    major: "Robotics",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/AnujArora.WebP",
+    linkedin: "https://www.linkedin.com/in/anuj-arora-26899222a/"
+  },
+  {
+    id: "zannah-baker",
+    name: "Zannah Baker",
+    title: "Delta Class",
+    major: "Information Analysis",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/ZannahBaker.WebP",
+    linkedin: "https://www.linkedin.com/in/zannah-baker/"
+  },
+  {
+    id: "liad-gross",
+    name: "Liad Gross",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/LiadGross.WebP",
+    linkedin: "https://www.linkedin.com/in/liad-gross-6315542b5/"
+  },
+  {
+    id: "arnav-kadam",
+    name: "Arnav Kadam",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/ArnavKadam.WebP",
+    linkedin: "https://www.linkedin.com/in/arnav-kadam-45679b24b/"
+  },
+  {
+    id: "katie-lee",
+    name: "Katie Lee",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/KatieLee.WebP",
+    linkedin: "https://www.linkedin.com/in/ktjlee/"
+  },
+  {
+    id: "ethan-matsuda",
+    name: "Ethan Matsuda",
+    title: "Delta Class",
+    major: "Data Science",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/EthanMatsuda.WebP",
+    linkedin: "https://www.linkedin.com/in/ethan-matsuda/"
+  },
+  {
+    id: "suprita-nagali",
+    name: "Suprita Nagali",
+    title: "Delta Class",
+    major: "Data Science & Econonomics",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/SupritaNagali.WebP",
+    linkedin: "https://www.linkedin.com/in/suprita-nagali/"
+  },
+  {
+    id: "sahithi-nalamothu",
+    name: "Sahithi Nalamothu",
+    title: "Delta Class",
+    major: "Computer Science & Economics",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/SahithiNalamothu.WebP",
+    linkedin: "https://www.linkedin.com/in/sahithi-nalamothu-45568922b/"
+  },
+  {
+    id: "margaret-periard",
+    name: "Margaret Periard",
+    title: "Delta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
+    class: "delta",
+    image: "/static/media/people/MargaretPeriard.WebP",
+    linkedin: "https://www.linkedin.com/in/margaret-periard/"
+  },
+  {
+    id: "yan-cheng-poon",
+    name: "Yan Cheng Poon",
+    title: "Delta Class",
+    major: "Computer Engineering",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/YCPoon.WebP",
+    linkedin: "https://www.linkedin.com/in/yan-cheng-poon/"
+  },
+  {
+    id: "caitlin-roberts",
+    name: "Caitlin Roberts",
+    title: "Delta Class",
+    major: "Robotics",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/CaitlinRoberts.WebP",
+    linkedin: "https://www.linkedin.com/in/caitlinmroberts/"
+  },
+  {
+    id: "lucas-rosenberg",
+    name: "Lucas Rosenberg",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/LucasRosenberg.WebP",
+    linkedin: "https://www.linkedin.com/in/lucasrosenberg/"
+  },
+  {
+    id: "andrew-wang",
+    name: "Andrew Wang",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Grad Student",
+    class: "delta",
+    image: "/static/media/people/AndrewWang.WebP",
+    linkedin: "https://www.linkedin.com/in/theandrewwang/"
+  },
+  {
+    id: "sam-wit",
+    name: "Sam Wit",
+    title: "Delta Class",
+    major: "Aerospace Engineering",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/SamWit.WebP",
+    linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/"
+  },
+  {
+    id: "winston-wu",
+    name: "Winston Wu",
+    title: "Delta Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/WinstonWu.WebP",
+    linkedin: "https://www.linkedin.com/in/win-wu/"
+  },
+  //Epsilon
+  {
+    id: "Manu-Anand",
+    name: "Manu Anand",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/ManushriAnand.webp",
+    linkedin: "https://www.linkedin.com/in/manushrianand/"
+  },
+  {
+    id: "drew-dame",
+    name: "Drew Dame",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/DrewDame.webp",
+    linkedin: "https://www.linkedin.com/in/drew-dame/"
+  },
+  {
+    id: "nandini-desaraju",
+    name: "Nandini Desaraju",
+    title: "Epsilon Class",
+    major: "Information Analysis",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/NandiniS.WebP",
+    linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
+  },
+  {
+    id: "alexandra-doytcheva",
+    name: "Alexandra Doytcheva",
+    title: "Epsilon Class",
+    major: "Space Sciences & Engineering",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AlexDoytcheva.WebP",
+    linkedin: "https://www.linkedin.com/in/alexandra-doytcheva-b691a1237/"
+  },
+  {
+    id: "michael-feneberg",
+    name: "Michael Feneberg",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/MichaelFeneberg.WebP",
+    linkedin: "https://www.linkedin.com/in/mfeneberg/"
+  },
+  {
+    id: "pranav-goyal",
+    name: "Pranav Goyal",
+    title: "Epsilon Class",
+    major: "Computer Engineering",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/pranavgoyal.webp",
+    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
+  },
+  // {
+  //   id: "ellie-grehan",
+  //   name: "Ellie Grehan",
+  //   title: "Epsilon Class",
+  //   major: "Biomedical Engineering",
+  //   year: "Junior",
+  //   class: "epsilon",
+  //   image: "/static/media/people/EllieGrehan.WebP",
+  //   linkedin: "https://www.linkedin.com/in/ellie-grehan/"
+  // },
+  {
+    id: "ahmed-hadi",
+    name: "Ahmed Hadi",
+    title: "Epsilon Class",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AhmedH.WebP",
+    linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
+  },
+  {
+    id: "justin-hirsch",
+    name: "Justin Hirsch",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/JustinHirsch.WebP",
+    linkedin: "https://www.linkedin.com/in/justinhirsch425/"
+  },
+  {
+    id: "gracie-hou",
+    name: "Gracie Hou",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/GracieHou.WebP",
+    linkedin: "https://www.linkedin.com/in/gracie-hou/"
+  },
+  {
+    id: "sam-koda",
+    name: "Sam Koda",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "epsilon",
+    image: "/static/media/people/SamKoda.WebP",
+    linkedin: "https://www.linkedin.com/in/samkoda/"
+  },
+  {
+    id: "nathan-lesny",
+    name: "Nathan Lesny",
+    title: "Epsilon Class",
+    major: "Computer Science, Mathematics",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/NathanL.jpg",
+    linkedin: "https://www.linkedin.com/in/nathan-lesny/"
+  },
+  // {
+  //   id: "menuel-rosso",
+  //   name: "Manuel Rosso-Benitez",
+  //   title: "Epsilon Class",
+  //   major: "Mechanical Engineering",
+  //   year: "Junior",
+  //   class: "epsilon",
+  //   image: "/static/media/people/MenuelRosso.WebP",
+  //   linkedin: "https://www.linkedin.com/in/manuel-rosso-benitez-381801250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  // },
+  {
+    id: "ana-ryerson",
+    name: "Ana Ryerson",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AnaRyerson.WebP",
+    linkedin: "https://www.linkedin.com/in/anaryerson/"
+  },
+  {
+    id: "aditi-vishnubhatla",
+    name: "Aditi Vishnubhatla",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AditiV-3.WebP",
+    linkedin: "https://www.linkedin.com/in/aditi-vishnubhatla/"
+  },
+  {
+    id: "allison-yang",
+    name: "Allison Yang",
+    title: "Epsilon Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "epsilon",
+    image: "/static/media/people/AllisonYang.WebP",
+    linkedin: "https://www.linkedin.com/in/allison-yang10/"
+  },
+  //Zeta
+  {
+    id: "nathan-bishop",
+    name: "Nathan Bishop",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/NathanBishop.webp",
+    linkedin: "https://www.linkedin.com/in/nbish/"
+  },
+  {
+    id: "lucas-crespo",
+    name: "Lucas Crespo",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/LucasCrespo.webp",
+    linkedin: "https://www.linkedin.com/in/crespito/"
+  },
+  {
+    id: "sanjana-datla",
+    name: "Sanjana Datla",
+    title: "Zeta Class",
+    major: "Computer Science",
     year: "Sophomore",
     class: "zeta",
-    image: "/static/media/people/AJTarun.webp",
-    linkedin: "https://www.linkedin.com/in/avram-joshua-tarun-697582327?trk=contact-info"
+    image: "/static/media/people/SanjanaDatla.webp",
+    linkedin: "https://www.linkedin.com/in/sanjanadat/"
+  },
+  {
+    id: "vaelone-elankumaran",
+    name: "Vaelone Elankumaran",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/VaeloneE.webp",
+    linkedin: "https://www.linkedin.com/in/vaelonee/"
   },
   {
     id: "aria-fifer",
@@ -854,6 +664,16 @@ const membersData = [
     class: "zeta",
     image: "/static/media/people/AriaFifer.webp",
     linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/"
+  },
+  {
+    id: "nina-gernhardt",
+    name: "Nina Gernhardt",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/NinaG.webp",
+    linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
   },
   // {
   //   id: "lukas-matejuk",
@@ -866,6 +686,36 @@ const membersData = [
   //   linkedin: "http://linkedin.com/in/lukas-mateju/"
   // },
   {
+    id: "yana-mehta",
+    name: "Yana Mehta",
+    title: "Epsilon Class",
+    major: "Data Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/YanaMehta.webp",
+    linkedin: "https://www.linkedin.com/in/yanamehta/"
+  },
+  {
+    id: "ashish-rajam",
+    name: "Ashish Rajam",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AshishRajam.webp",
+    linkedin: "https://www.linkedin.com/in/ashish-rajam-1988a8329?trk=contact-info"
+  },
+  {
+    id: "david-sanico",
+    name: "David Sanico",
+    title: "Zeta Class",
+    major: "Electrical Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/DavidSanico.webp",
+    linkedin: "http://www.linkedin.com/in/david-sanico"
+  },
+  {
     id: "pablo-segovia",
     name: "Pablo Segovia",
     title: "Zeta Class",
@@ -875,18 +725,6 @@ const membersData = [
     image: "/static/media/people/PabloSegovia.webp",
     linkedin: "https://www.linkedin.com/in/pablo-segovia-aa0a54262/"
   },
-
-  {
-    id: "nathan-bishop",
-    name: "Nathan Bishop",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Junior",
-    class: "zeta",
-    image: "/static/media/people/NathanBishop.webp",
-    linkedin: "https://www.linkedin.com/in/nbish/"
-  },
-
   {
     id: "nandita-shenoy",
     name: "Nandita Shenoy",
@@ -897,17 +735,209 @@ const membersData = [
     image: "/static/media/people/NanditaShenoy.webp",
     linkedin: "https://www.linkedin.com/in/nandita-shenoy/"
   },
-
   {
-    id: "sanjana-datla",
-    name: "Sanjana Datla",
+    id: "benjamin-stevenson",
+    name: "Benjamin Stevenson",
     title: "Zeta Class",
     major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/BenStevenson.webp",
+    linkedin: "https://www.linkedin.com/in/benstev/"
+  },
+  {
+    id: "avram-joshua-tarun",
+    name: "Avram Joshua Tarun",
+    title: "Zeta Class",
+    major: "Physics",
     year: "Sophomore",
     class: "zeta",
-    image: "/static/media/people/SanjanaDatla.webp",
-    linkedin: "https://www.linkedin.com/in/sanjanadat/"
+    image: "/static/media/people/AJTarun.webp",
+    linkedin: "https://www.linkedin.com/in/avram-joshua-tarun-697582327?trk=contact-info"
   },
+  
+  {
+    id: "alisha-vasan",
+    name: "Alisha Vasan",
+    title: "Zeta Class",
+    major: "Physics & Astronomy",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AlishaVasan.webp",
+    linkedin: "https://www.linkedin.com/in/alishavasan/"
+  },
+  //Eta
+  {
+    id: "anjali-bramasandra",
+    name: "Anjali Bramasandra",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/AnjaiBrahmasandra.webp",
+    linkedin: "https://www.linkedin.com/in/anjalibrahmasandra/"
+  },
+  {
+    id: "rhea-chokhalingam",
+    name: "Rhea Chokhalingam",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/RheaChokhalingam.webp",
+    linkedin: "https://www.linkedin.com/in/rhea-chokhalingam-652950273/"
+  },
+  {
+    id: "tai-demoradevore",
+    name: "Tai Demura-Devore",
+    title: "Eta Class",
+    major: "Data Science",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/TaiDemuraDevore.webp",
+    linkedin: "https://www.linkedin.com/in/taidemuradevore/"
+  },
+  {
+    id: "alex-dumitrascu",
+    name: "Alex Dumitrascu",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/AlexDumistrascu.webp",
+    linkedin: "https://www.linkedin.com/in/alexdumitrascu/"
+  },
+  {
+    id: "madeline-ellies",
+    name: "Madeline Ellies",
+    title: "Eta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/MadelineEllies.webp",
+    linkedin: "https://www.linkedin.com/in/madeline-ellies/"
+  },
+  {
+    id: "maddie-gold",
+    name: "Maddie Gold",
+    title: "Eta Class",
+    major: "Mathematics",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/MaddieGold.webp",
+    linkedin: "https://www.linkedin.com/in/madeline-gold-853557357/"
+  },
+  {
+    id: "steven-li",
+    name: "Steven Li",
+    title: "Eta Class",
+    major: "Data Science & Mathematics",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/StevenLi.webp",
+    linkedin: "https://www.linkedin.com/in/steven-liwen-li/"
+  },
+  {
+    id: "quincy-loegering",
+    name: "Quincy Loegering",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/QuincyLoegering.webp",
+    linkedin: "https://www.linkedin.com/in/quincy-loegering-944617324/"
+  },
+  {
+    id: "laya-mantha",
+    name: "Laya Mantha",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/LayaMantha.webp",
+    linkedin: "https://www.linkedin.com/in/laya-mantha/"
+  },
+  {
+    id: "rianna-nikhade",
+    name: "Rianna Nikhade",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/RiannaNikhade.webp",
+    linkedin: "https://www.linkedin.com/in/riannan2/"
+  },
+  // {
+  //   id: "dev-pradhan",
+  //   name: "Dev Pradhan",
+  //   title: "Eta Class",
+  //   major: "Architecture",
+  //   year: "Freshman",
+  //   class: "eta",
+  //   image: "/static/media/people/DevPradhan.webp",
+  //   linkedin: "https://www.linkedin.com/in/devan-pradhan/"
+  // },
+  {
+    id: "sungat-shienh",
+    name: "Sungat Shienh",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/SungatShienh.webp",
+    linkedin: "https://www.linkedin.com/in/sungat/"
+  },
+  {
+    id: "evan-short",
+    name: "Evan Short",
+    title: "Eta Class",
+    major: "Robotics",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/EvanShort.webp",
+    linkedin: "https://www.linkedin.com/in/evan-short-b9439a386/"
+  },
+  {
+    id: "aaron-sun",
+    name: "Aaron Sun",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/AaronSun.webp",
+    linkedin: "https://www.linkedin.com/in/aasunn/"
+  },
+  {
+    id: "nika-tananko",
+    name: "Nika Tananko",
+    title: "Eta Class",
+    major: "Data Science & Astrophysics",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/NikaTananko.webp",
+    linkedin: "https://www.linkedin.com/in/veronica-tananko-930769297/"
+  },
+  {
+    id: "ayaan-vaswani",
+    name: "Ayaan Vaswani",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/AyaanVaswani.webp",
+    linkedin: "https://www.linkedin.com/in/ayaanvaswani/"
+  },
+  {
+    id: "josh-young",
+    name: "Josh Young",
+    title: "Eta Class",
+    major: "Computer Science",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/JoshYoung.webp",
+    linkedin: "https://www.linkedin.com/in/joshyoung01/"
+  },
+
 ];
 
 
