@@ -184,7 +184,7 @@ height: 100vh;
   .rush-top-container div {
     position: absolute;
     aspect-ratio: 1024 / 768;
-    background-image: url('/static/media/W26Graphics/RB-Ipad.png');
+    background-image: url('/static/media/W26Graphics/RBIpad.webp');
   }
 }
 
@@ -193,7 +193,7 @@ height: 100vh;
   .rush-top-container div {
     position: absolute;
     aspect-ratio: 390 / 844;
-    background-image: url('/static/media/W26Graphics/RB-Mobile.png');
+    background-image: url('/static/media/W26Graphics/RBMobile.webp');
   }
   
 }
