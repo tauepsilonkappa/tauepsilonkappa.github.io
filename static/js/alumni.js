@@ -134,6 +134,16 @@ const alumniData = [
     image: "/static/media/people/AndyZhang.WebP",
     category: "founding"
   },
+  {
+    name: "Zainab Iftikhar",
+    role: "Business Analyst",
+    company: "ICF Consulting",
+    class: "Founding Class",
+    degree: "BSI Information Analysis '25",
+    linkedin: "https://www.linkedin.com/in/zainab-iftikhar101/",
+    image: "/static/media/people/ZainabIftikhar.WebP",
+    category: "founding"
+  },
   
   // Alpha Class
   {
