@@ -768,8 +768,8 @@ const membersData = [
   },
   //Eta
   {
-    id: "anjali-bramasandra",
-    name: "Anjali Bramasandra",
+    id: "anjali-brahmasandra",
+    name: "Anjali Brahmasandra",
     title: "Eta Class",
     major: "Computer Science",
     year: "Freshman",
