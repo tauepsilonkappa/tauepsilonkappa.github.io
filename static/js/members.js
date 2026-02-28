@@ -554,16 +554,7 @@ const membersData = [
     image: "/static/media/people/GracieHou.WebP",
     linkedin: "https://www.linkedin.com/in/gracie-hou/"
   },
-  {
-    id: "sam-koda",
-    name: "Sam Koda",
-    title: "Epsilon Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "epsilon",
-    image: "/static/media/people/QuincyLoegering.webp",
-    linkedin: "https://www.linkedin.com/in/samkoda/"
-  },
+  
   {
     id: "nathan-lesny",
     name: "Nathan Lesny",
