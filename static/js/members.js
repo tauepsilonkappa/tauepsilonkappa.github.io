@@ -561,7 +561,7 @@ const membersData = [
     major: "Computer Science",
     year: "Sophomore",
     class: "epsilon",
-    image: "/static/media/people/SamKoda.WebP",
+    image: "/static/media/people/QuincyLoegering.webp",
     linkedin: "https://www.linkedin.com/in/samkoda/"
   },
   {
