@@ -51,7 +51,7 @@ const membersData = [
     major: "Computer Science & Physics",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/InsuJung.WebP",
+    image: "/static/media/people/InsuJung.webp",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
   {
@@ -666,14 +666,24 @@ const membersData = [
     image: "/static/media/people/NinaG.webp",
     linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
   },
+  {
+    id: "sana-gupta",
+    name: "Sana Gupta",
+    title: "Zeta Class",
+    major: "Computer Science & Economics",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/SanaGupta.webp",
+    linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
+  },
   // {
-  //   id: "lukas-matejuk",
-  //   name: "Lukas Matejuk",
+  //   id: "lukas-mateju",
+  //   name: "Lukas Mateju",
   //   title: "Zeta Class",
   //   major: "IOE",
   //   year: "Junior",
   //   class: "zeta",
-  //   image: "/static/media/people/MargaretPeriard.WebP",
+  //   image: "/static/media/people/LukasMateju.webp",
   //   linkedin: "http://linkedin.com/in/lukas-mateju/"
   // },
   {
@@ -759,8 +769,8 @@ const membersData = [
   },
   //Eta
   {
-    id: "anjali-bramasandra",
-    name: "Anjali Bramasandra",
+    id: "anjali-brahmasandra",
+    name: "Anjali Brahmasandra",
     title: "Eta Class",
     major: "Computer Science",
     year: "Freshman",
@@ -858,16 +868,16 @@ const membersData = [
     image: "/static/media/people/RiannaNikhade.webp",
     linkedin: "https://www.linkedin.com/in/riannan2/"
   },
-  // {
-  //   id: "dev-pradhan",
-  //   name: "Dev Pradhan",
-  //   title: "Eta Class",
-  //   major: "Architecture",
-  //   year: "Freshman",
-  //   class: "eta",
-  //   image: "/static/media/people/DevPradhan.webp",
-  //   linkedin: "https://www.linkedin.com/in/devan-pradhan/"
-  // },
+  {
+    id: "dev-pradhan",
+    name: "Dev Pradhan",
+    title: "Eta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Freshman",
+    class: "eta",
+    image: "/static/media/people/DevPradhan.webp",
+    linkedin: "https://www.linkedin.com/in/devan-pradhan/"
+  },
   {
     id: "sungat-shienh",
     name: "Sungat Shienh",
