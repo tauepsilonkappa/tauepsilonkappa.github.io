@@ -676,16 +676,16 @@ const membersData = [
     image: "/static/media/people/SanaGupta.webp",
     linkedin: "https://www.linkedin.com/in/nina-gernhardt-0252292b4/"
   },
-  // {
-  //   id: "lukas-mateju",
-  //   name: "Lukas Mateju",
-  //   title: "Zeta Class",
-  //   major: "IOE",
-  //   year: "Junior",
-  //   class: "zeta",
-  //   image: "/static/media/people/LukasMateju.webp",
-  //   linkedin: "http://linkedin.com/in/lukas-mateju/"
-  // },
+  {
+    id: "lukas-mateju",
+    name: "Lukas Mateju",
+    title: "Zeta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/LukasMateju.webp",
+    linkedin: "http://linkedin.com/in/lukas-mateju/"
+  },
   {
     id: "yana-mehta",
     name: "Yana Mehta",
