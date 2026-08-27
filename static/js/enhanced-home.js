@@ -50,27 +50,6 @@ function setupSmoothScroll() {
 }
 
 // Photo collage hover effects
-function setupPhotoCollage() {
-  const photoItems = document.querySelectorAll('.photo-item');
-  
-  photoItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      // Slightly dim other photos
-      photoItems.forEach(otherItem => {
-        if (otherItem !== item) {
-          otherItem.style.opacity = '0.7';
-        }
-      });
-    });
-
-    item.addEventListener('mouseleave', () => {
-      // Restore opacity
-      photoItems.forEach(otherItem => {
-        otherItem.style.opacity = '1';
-      });
-    });
-  });
-}
 
 // Value cards stagger animation
 function setupValueCards() {
@@ -167,7 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScrollAnimations();
   setupParallaxEffect();
   setupSmoothScroll();
-  setupPhotoCollage();
   setupValueCards();
 });
 
