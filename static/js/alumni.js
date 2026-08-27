@@ -216,7 +216,7 @@ const alumniData = [
     class: "Beta",
     degree: "BS Computer Science & Cognitive Science '25",
     linkedin: "https://www.linkedin.com/in/shivanisundaresan/",
-    image: "/static/media/people/ShivaniS-1.webp",
+    image: "/static/media/people/ShivaniSundaresan.webp",
     category: "beta"
   },
  

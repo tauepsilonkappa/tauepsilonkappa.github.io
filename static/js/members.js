@@ -168,7 +168,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/Kenan George-Nwogu.webp",
+    image: "/static/media/people/KenanGeorgeNwogu.webp",
     linkedin: "https://www.linkedin.com/in/kenan-george-nwogu-543210295/"
   },
   {
@@ -239,7 +239,7 @@ const membersData = [
     major: "Computer Science, Economics",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/zachfreed.webp",
+    image: "/static/media/people/ZachFreed.webp",
     linkedin: "https://www.linkedin.com/in/zachary-freed/"
   },
   {
@@ -249,7 +249,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/emmajohnson.webp",
+    image: "/static/media/people/EmmaJohnson.webp",
     linkedin: "https://www.linkedin.com/in/emma-johnson-47822a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
@@ -259,7 +259,7 @@ const membersData = [
     major: "Data Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/jakelevin.webp",
+    image: "/static/media/people/JakeLevin.webp",
     linkedin: "https://www.linkedin.com/in/jake-levin-450303294/"
   },
   {
@@ -269,7 +269,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/jademeister.webp",
+    image: "/static/media/people/JadeMeister.webp",
     linkedin: "https://www.linkedin.com/in/jade-meister-6ab1a0274/"
   },
   {
@@ -279,7 +279,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/kathrynNichols.webp",
+    image: "/static/media/people/KathrynNichols.webp",
     linkedin: "https://www.linkedin.com/in/kathrynpnichols/"
   },
   {
@@ -289,7 +289,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/mollyrich.webp",
+    image: "/static/media/people/MollyRich.webp",
     linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
@@ -299,7 +299,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/timsmith.webp",
+    image: "/static/media/people/TimSmith.webp",
     linkedin: "https://www.linkedin.com/in/timothy-smith-7366b3241/"
   },
   //Delta
@@ -481,7 +481,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/NandiniS.webp",
+    image: "/static/media/people/NandiniDesaraju.webp",
     linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
   },
   {
@@ -511,7 +511,7 @@ const membersData = [
     major: "Computer Engineering",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/pranavgoyal.webp",
+    image: "/static/media/people/PranavGoyal.webp",
     linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
   // {
@@ -531,7 +531,7 @@ const membersData = [
     major: "Industrial & Operations Engineering",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AhmedH.webp",
+    image: "/static/media/people/AhmedHadi.webp",
     linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
   },
   {
@@ -562,7 +562,7 @@ const membersData = [
     major: "Computer Science, Mathematics",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/NathanL.webp",
+    image: "/static/media/people/NathanLesny.webp",
     linkedin: "https://www.linkedin.com/in/nathan-lesny/"
   },
   // {
@@ -592,7 +592,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AditiV-3.webp",
+    image: "/static/media/people/AditiVishnubhatla.webp",
     linkedin: "https://www.linkedin.com/in/aditi-vishnubhatla/"
   },
   {
@@ -643,7 +643,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "zeta",
-    image: "/static/media/people/VaeloneE.webp",
+    image: "/static/media/people/VaeloneElankumaran.webp",
     linkedin: "https://www.linkedin.com/in/vaelonee/"
   },
   {
