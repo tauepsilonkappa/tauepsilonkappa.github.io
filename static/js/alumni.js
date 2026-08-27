@@ -8,7 +8,7 @@ const alumniData = [
     class: "Founder",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/noah-ivers/",
-    image: "/static/media/people/NoahIvers.jpeg",
+    image: "/static/media/people/NoahIvers.webp",
     category: "founders"
   },
   {
@@ -18,7 +18,7 @@ const alumniData = [
     class: "Founder",
     degree: "BS Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/trisha-kant/",
-    image: "/static/media/people/TrishaKant.jpeg",
+    image: "/static/media/people/TrishaKant.webp",
     category: "founders"
   },
   {
@@ -28,7 +28,7 @@ const alumniData = [
     class: "Founder",
     degree: "BS Data Science '24",
     linkedin: "https://www.linkedin.com/in/esha-kaul/",
-    image: "/static/media/people/EshaKaul.WebP",
+    image: "/static/media/people/EshaKaul.webp",
     category: "founders"
   },
   {
@@ -38,7 +38,7 @@ const alumniData = [
     class: "Founder",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/sebastian-roclore/",
-    image: "/static/media/people/SebRoclore.WebP",
+    image: "/static/media/people/SebRoclore.webp",
     category: "founders"
   },
   {
@@ -48,7 +48,7 @@ const alumniData = [
     class: "Founder",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/paulhsmith/",
-    image: "/static/media/people/PaulSmith.jpeg",
+    image: "/static/media/people/PaulSmith.webp",
     category: "founders"
   },
   
@@ -61,7 +61,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science '25",
     linkedin: "https://www.linkedin.com/in/lily-gong/",
-    image: "/static/media/people/LilyGong.WebP",
+    image: "/static/media/people/LilyGong.webp",
     category: "founding"
   },
   {
@@ -71,7 +71,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/nolan-schmitt-873bb722a/",
-    image: "/static/media/people/NolanSchmitt.jpeg",
+    image: "/static/media/people/NolanSchmitt.webp",
     category: "founding"
   },
   {
@@ -81,7 +81,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/ishashinde/",
-    image: "/static/media/people/IshaShinde.WebP",
+    image: "/static/media/people/IshaShinde.webp",
     category: "founding"
   },
   {
@@ -91,7 +91,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/ethan-sterling/",
-    image: "/static/media/people/EthanSterling.WebP",
+    image: "/static/media/people/EthanSterling.webp",
     category: "founding"
   },
   {
@@ -111,7 +111,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science & Cognitive Science '24",
     linkedin: "https://www.linkedin.com/in/atekumulla/",
-    image: "/static/media/people/AnushaTekmulla.WebP",
+    image: "/static/media/people/AnushaTekmulla.webp",
     category: "founding"
   },
   {
@@ -121,7 +121,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Design '24",
     linkedin: "https://www.linkedin.com/in/dvtsai/",
-    image: "/static/media/people/DaphneTsai.WebP",
+    image: "/static/media/people/DaphneTsai.webp",
     category: "founding"
   },
   {
@@ -131,7 +131,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BS Computer Science '24",
     linkedin: "https://www.linkedin.com/in/andrewlzhang/",
-    image: "/static/media/people/AndyZhang.WebP",
+    image: "/static/media/people/AndyZhang.webp",
     category: "founding"
   },
   {
@@ -141,7 +141,7 @@ const alumniData = [
     class: "Founding Class",
     degree: "BSI Information Analysis '25",
     linkedin: "https://www.linkedin.com/in/zainab-iftikhar101/",
-    image: "/static/media/people/ZainabIftikhar.WebP",
+    image: "/static/media/people/ZainabIftikhar.webp",
     category: "founding"
   },
   
@@ -153,7 +153,7 @@ const alumniData = [
     class: "Alpha Class",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/kateri-darr/",
-    image: "/static/media/people/KateriDarr.WebP",
+    image: "/static/media/people/KateriDarr.webp",
     category: "alpha"
   },
   {
@@ -163,7 +163,7 @@ const alumniData = [
     class: "Alpha Class",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/kysrit/",
-    image: "/static/media/people/KyleRitenour.WebP",
+    image: "/static/media/people/KyleRitenour.webp",
     category: "alpha"
   },
   {
@@ -173,7 +173,7 @@ const alumniData = [
     class: "Alpha Class",
     degree: "BBA '24",
     linkedin: "https://www.linkedin.com/in/n01patel/",
-    image: "/static/media/people/RavPatel.jpeg",
+    image: "/static/media/people/RavPatel.webp",
     category: "alpha"
   },
   {
@@ -183,7 +183,7 @@ const alumniData = [
     class: "Alpha Class",
     degree: "BS Data Science '24",
     linkedin: "https://www.linkedin.com/in/alexsouzaphone/",
-    image: "/static/media/people/AlexSouza.WebP",
+    image: "/static/media/people/AlexSouza.webp",
     category: "alpha"
   },
   {
@@ -193,7 +193,7 @@ const alumniData = [
     class: "Alpha Class",
     degree: "BS UX Design  '25",
     linkedin: "https://www.linkedin.com/in/allyvern/",
-    image: "/static/media/people/AllyVern.WebP",
+    image: "/static/media/people/AllyVern.webp",
     category: "alpha"
   },
 
@@ -206,7 +206,7 @@ const alumniData = [
     class: "Beta",
     degree: "BSE Computer Science '25",
     linkedin: "https://www.linkedin.com/in/pkodakara/",
-    image: "/static/media/people/PranavKodakara.WebP",
+    image: "/static/media/people/PranavKodakara.webp",
     category: "beta"
   },
   {
@@ -216,7 +216,7 @@ const alumniData = [
     class: "Beta",
     degree: "BS Computer Science & Cognitive Science '25",
     linkedin: "https://www.linkedin.com/in/shivanisundaresan/",
-    image: "/static/media/people/ShivaniS-1.jpg",
+    image: "/static/media/people/ShivaniS-1.webp",
     category: "beta"
   },
  

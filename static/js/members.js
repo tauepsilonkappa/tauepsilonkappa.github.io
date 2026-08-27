@@ -21,7 +21,7 @@ const membersData = [
     major: "Industrial & Operations Engineering",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/MeganGottfried.WebP",
+    image: "/static/media/people/MeganGottfried.webp",
     linkedin: "https://www.linkedin.com/in/megan-gottfried/"
   },
   {
@@ -61,7 +61,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/SanjanaKulkarni.WebP",
+    image: "/static/media/people/SanjanaKulkarni.webp",
     linkedin: "https://www.linkedin.com/in/sanjana-kulkarni/"
   },
   {
@@ -71,7 +71,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/StellaJohnson.WebP",
+    image: "/static/media/people/StellaJohnson.webp",
     linkedin: "https://www.linkedin.com/in/stella-johnson-ba4649212/"
   },
   {
@@ -137,7 +137,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "alpha",
-    image: "/static/media/people/AndrewKasper.WebP",
+    image: "/static/media/people/AndrewKasper.webp",
     linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/"
   },
   //Beta
@@ -148,7 +148,7 @@ const membersData = [
     major: "Business Analytics",
     year: "Grad Student",
     class: "beta",
-    image: "/static/media/people/JessicaAzucena.WebP",
+    image: "/static/media/people/JessicaAzucena.webp",
     linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
   },
   {
@@ -158,7 +158,7 @@ const membersData = [
     major: "Economics",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/JoeFiorenzo.WebP",
+    image: "/static/media/people/JoeFiorenzo.webp",
     linkedin: "https://www.linkedin.com/in/joseph-fiorenzo-09b03629a/"
   },
   {
@@ -168,7 +168,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/Kenan George-Nwogu.WebP",
+    image: "/static/media/people/Kenan George-Nwogu.webp",
     linkedin: "https://www.linkedin.com/in/kenan-george-nwogu-543210295/"
   },
   {
@@ -178,7 +178,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/DhruvKapur.WebP",
+    image: "/static/media/people/DhruvKapur.webp",
     linkedin: "https://www.linkedin.com/in/dhruvk19/"
   },
   {
@@ -188,7 +188,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/JacksonKirkey.WebP",
+    image: "/static/media/people/JacksonKirkey.webp",
     linkedin: "https://www.linkedin.com/in/jackson-kirkey/"
   },
   {
@@ -198,7 +198,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/KianSandoval.WebP",
+    image: "/static/media/people/KianSandoval.webp",
     linkedin: "https://www.linkedin.com/in/kian-sandoval-19942b26b/"
   },
   {
@@ -208,7 +208,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "beta",
-    image: "/static/media/people/LuluZhang.WebP",
+    image: "/static/media/people/LuluZhang.webp",
     linkedin: "https://www.linkedin.com/in/lulu-zhang-431b6722a/"
   },
   //Gamma
@@ -219,7 +219,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/bowiecooper.WebP",
+    image: "/static/media/people/bowiecooper.webp",
     linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
   },
   {
@@ -229,7 +229,7 @@ const membersData = [
     major: "Statistics",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/IzzyDubov.WebP",
+    image: "/static/media/people/IzzyDubov.webp",
     linkedin: "https://www.linkedin.com/in/isabel-dubov/"
   },
   {
@@ -239,7 +239,7 @@ const membersData = [
     major: "Computer Science, Economics",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/zachfreed.WebP",
+    image: "/static/media/people/zachfreed.webp",
     linkedin: "https://www.linkedin.com/in/zachary-freed/"
   },
   {
@@ -249,7 +249,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/emmajohnson.WebP",
+    image: "/static/media/people/emmajohnson.webp",
     linkedin: "https://www.linkedin.com/in/emma-johnson-47822a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
@@ -259,7 +259,7 @@ const membersData = [
     major: "Data Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/jakelevin.WebP",
+    image: "/static/media/people/jakelevin.webp",
     linkedin: "https://www.linkedin.com/in/jake-levin-450303294/"
   },
   {
@@ -269,7 +269,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/jademeister.WebP",
+    image: "/static/media/people/jademeister.webp",
     linkedin: "https://www.linkedin.com/in/jade-meister-6ab1a0274/"
   },
   {
@@ -279,7 +279,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "gamma",
-    image: "/static/media/people/kathrynNichols.WebP",
+    image: "/static/media/people/kathrynNichols.webp",
     linkedin: "https://www.linkedin.com/in/kathrynpnichols/"
   },
   {
@@ -289,7 +289,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/mollyrich.WebP",
+    image: "/static/media/people/mollyrich.webp",
     linkedin: "https://www.linkedin.com/in/molly-rich-8ab403294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
@@ -299,7 +299,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "gamma",
-    image: "/static/media/people/timsmith.WebP",
+    image: "/static/media/people/timsmith.webp",
     linkedin: "https://www.linkedin.com/in/timothy-smith-7366b3241/"
   },
   //Delta
@@ -310,7 +310,7 @@ const membersData = [
     major: "Robotics",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/AnujArora.WebP",
+    image: "/static/media/people/AnujArora.webp",
     linkedin: "https://www.linkedin.com/in/anuj-arora-26899222a/"
   },
   {
@@ -320,7 +320,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/ZannahBaker.WebP",
+    image: "/static/media/people/ZannahBaker.webp",
     linkedin: "https://www.linkedin.com/in/zannah-baker/"
   },
   {
@@ -330,7 +330,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/LiadGross.WebP",
+    image: "/static/media/people/LiadGross.webp",
     linkedin: "https://www.linkedin.com/in/liad-gross-6315542b5/"
   },
   {
@@ -340,7 +340,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/ArnavKadam.WebP",
+    image: "/static/media/people/ArnavKadam.webp",
     linkedin: "https://www.linkedin.com/in/arnav-kadam-45679b24b/"
   },
   {
@@ -350,7 +350,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/KatieLee.WebP",
+    image: "/static/media/people/KatieLee.webp",
     linkedin: "https://www.linkedin.com/in/ktjlee/"
   },
   {
@@ -360,7 +360,7 @@ const membersData = [
     major: "Data Science",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/EthanMatsuda.WebP",
+    image: "/static/media/people/EthanMatsuda.webp",
     linkedin: "https://www.linkedin.com/in/ethan-matsuda/"
   },
   {
@@ -370,7 +370,7 @@ const membersData = [
     major: "Data Science & Economics",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/SupritaNagali.WebP",
+    image: "/static/media/people/SupritaNagali.webp",
     linkedin: "https://www.linkedin.com/in/suprita-nagali/"
   },
   {
@@ -380,7 +380,7 @@ const membersData = [
     major: "Computer Science & Economics",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/SahithiNalamothu.WebP",
+    image: "/static/media/people/SahithiNalamothu.webp",
     linkedin: "https://www.linkedin.com/in/sahithi-nalamothu-45568922b/"
   },
   {
@@ -390,7 +390,7 @@ const membersData = [
     major: "Industrial & Operations Engineering",
     year: "Junior",
     class: "delta",
-    image: "/static/media/people/MargaretPeriard.WebP",
+    image: "/static/media/people/MargaretPeriard.webp",
     linkedin: "https://www.linkedin.com/in/margaret-periard/"
   },
   {
@@ -400,7 +400,7 @@ const membersData = [
     major: "Computer Engineering",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/YCPoon.WebP",
+    image: "/static/media/people/YCPoon.webp",
     linkedin: "https://www.linkedin.com/in/yan-cheng-poon/"
   },
   {
@@ -410,7 +410,7 @@ const membersData = [
     major: "Robotics",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/CaitlinRoberts.WebP",
+    image: "/static/media/people/CaitlinRoberts.webp",
     linkedin: "https://www.linkedin.com/in/caitlinmroberts/"
   },
   {
@@ -420,7 +420,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/LucasRosenberg.WebP",
+    image: "/static/media/people/LucasRosenberg.webp",
     linkedin: "https://www.linkedin.com/in/lucasrosenberg/"
   },
   {
@@ -430,7 +430,7 @@ const membersData = [
     major: "Computer Science",
     year: "Grad Student",
     class: "delta",
-    image: "/static/media/people/AndrewWang.WebP",
+    image: "/static/media/people/AndrewWang.webp",
     linkedin: "https://www.linkedin.com/in/theandrewwang/"
   },
   {
@@ -440,7 +440,7 @@ const membersData = [
     major: "Aerospace Engineering",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/SamWit.WebP",
+    image: "/static/media/people/SamWit.webp",
     linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/"
   },
   {
@@ -450,7 +450,7 @@ const membersData = [
     major: "Computer Science",
     year: "Senior",
     class: "delta",
-    image: "/static/media/people/WinstonWu.WebP",
+    image: "/static/media/people/WinstonWu.webp",
     linkedin: "https://www.linkedin.com/in/win-wu/"
   },
   //Epsilon
@@ -481,7 +481,7 @@ const membersData = [
     major: "Information Analysis",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/NandiniS.WebP",
+    image: "/static/media/people/NandiniS.webp",
     linkedin: "https://www.linkedin.com/in/nandinidesaraju/"
   },
   {
@@ -491,7 +491,7 @@ const membersData = [
     major: "Space Sciences & Engineering",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AlexDoytcheva.WebP",
+    image: "/static/media/people/AlexDoytcheva.webp",
     linkedin: "https://www.linkedin.com/in/alexandra-doytcheva-b691a1237/"
   },
   {
@@ -501,7 +501,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/MichaelFeneberg.WebP",
+    image: "/static/media/people/MichaelFeneberg.webp",
     linkedin: "https://www.linkedin.com/in/mfeneberg/"
   },
   {
@@ -531,7 +531,7 @@ const membersData = [
     major: "Industrial & Operations Engineering",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AhmedH.WebP",
+    image: "/static/media/people/AhmedH.webp",
     linkedin: "https://www.linkedin.com/in/ahmed-hadi1/"
   },
   {
@@ -541,7 +541,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/JustinHirsch.WebP",
+    image: "/static/media/people/JustinHirsch.webp",
     linkedin: "https://www.linkedin.com/in/justinhirsch425/"
   },
   {
@@ -551,7 +551,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/GracieHou.WebP",
+    image: "/static/media/people/GracieHou.webp",
     linkedin: "https://www.linkedin.com/in/gracie-hou/"
   },
   
@@ -562,7 +562,7 @@ const membersData = [
     major: "Computer Science, Mathematics",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/NathanL.jpg",
+    image: "/static/media/people/NathanL.webp",
     linkedin: "https://www.linkedin.com/in/nathan-lesny/"
   },
   // {
@@ -582,7 +582,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AnaRyerson.WebP",
+    image: "/static/media/people/AnaRyerson.webp",
     linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
   {
@@ -592,7 +592,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AditiV-3.WebP",
+    image: "/static/media/people/AditiV-3.webp",
     linkedin: "https://www.linkedin.com/in/aditi-vishnubhatla/"
   },
   {
@@ -602,7 +602,7 @@ const membersData = [
     major: "Computer Science",
     year: "Junior",
     class: "epsilon",
-    image: "/static/media/people/AllisonYang.WebP",
+    image: "/static/media/people/AllisonYang.webp",
     linkedin: "https://www.linkedin.com/in/allison-yang10/"
   },
   //Zeta
