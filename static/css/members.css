@@ -34,12 +34,17 @@ EXECUTIVE BOARD
 }
 
 .eboard-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* four per row; an incomplete last row centres itself */
+.eboard-grid > * {
+  flex: 0 0 calc((100% - 3 * 40px) / 4);
 }
 
 /*------------------------------------------------------
@@ -393,8 +398,11 @@ RESPONSIVE DESIGN
 /* Large tablets and small desktops */
 @media screen and (max-width: 1024px) {
   .eboard-grid {
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  .eboard-grid > * {
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
 }
 
@@ -410,8 +418,11 @@ RESPONSIVE DESIGN
   }
   
   .eboard-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  .eboard-grid > * {
+    flex-basis: calc((100% - 30px) / 2);
   }
   
   .class-filter {
@@ -457,8 +468,11 @@ RESPONSIVE DESIGN
 
 @media screen and (max-width: 480px) {
   .eboard-grid {
-    grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .eboard-grid > * {
+    flex-basis: 100%;
   }
   
   .members-grid {

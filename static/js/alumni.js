@@ -220,6 +220,218 @@ const alumniData = [
     category: "beta"
   },
  
+
+  // Class of 2026
+  {
+    name: "Sanjana Kulkarni",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/sanjana-kulkarni/",
+    image: "/static/media/people/SanjanaKulkarni.webp",
+    category: "delta"
+  },
+  {
+    name: "Andrew Kasper",
+    role: "",
+    company: "",
+    class: "Alpha Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/",
+    image: "/static/media/people/AndrewKasper.webp",
+    category: "alpha"
+  },
+  {
+    name: "Joe Fiorenzo",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Economics '26",
+    linkedin: "https://www.linkedin.com/in/joseph-fiorenzo-09b03629a/",
+    image: "/static/media/people/JoeFiorenzo.webp",
+    category: "beta"
+  },
+  {
+    name: "Kenan George-Nwogu",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/kenan-george-nwogu-543210295/",
+    image: "/static/media/people/KenanGeorgeNwogu.webp",
+    category: "beta"
+  },
+  {
+    name: "Dhruv Kapur",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/dhruvk19/",
+    image: "/static/media/people/DhruvKapur.webp",
+    category: "beta"
+  },
+  {
+    name: "Jackson Kirkey",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/jackson-kirkey/",
+    image: "/static/media/people/JacksonKirkey.webp",
+    category: "beta"
+  },
+  {
+    name: "Kian Sandoval",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/kian-sandoval-19942b26b/",
+    image: "/static/media/people/KianSandoval.webp",
+    category: "beta"
+  },
+  {
+    name: "Lulu Zhang",
+    role: "",
+    company: "",
+    class: "Beta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/lulu-zhang-431b6722a/",
+    image: "/static/media/people/LuluZhang.webp",
+    category: "beta"
+  },
+  {
+    name: "Isabel Dubov",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Statistics '26",
+    linkedin: "https://www.linkedin.com/in/isabel-dubov/",
+    image: "/static/media/people/IzzyDubov.webp",
+    category: "gamma"
+  },
+  {
+    name: "Zach Freed",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Computer Science, Economics '26",
+    linkedin: "https://www.linkedin.com/in/zachary-freed/",
+    image: "/static/media/people/ZachFreed.webp",
+    category: "gamma"
+  },
+  {
+    name: "Emma Johnson",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Information Analysis '26",
+    linkedin: "https://www.linkedin.com/in/emma-johnson-47822a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    image: "/static/media/people/EmmaJohnson.webp",
+    category: "gamma"
+  },
+  {
+    name: "Jake Levin",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Data Science '26",
+    linkedin: "https://www.linkedin.com/in/jake-levin-450303294/",
+    image: "/static/media/people/JakeLevin.webp",
+    category: "gamma"
+  },
+  {
+    name: "Jade Meister",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/jade-meister-6ab1a0274/",
+    image: "/static/media/people/JadeMeister.webp",
+    category: "gamma"
+  },
+  {
+    name: "Kathryn Nichols",
+    role: "",
+    company: "",
+    class: "Gamma Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/kathrynpnichols/",
+    image: "/static/media/people/KathrynNichols.webp",
+    category: "gamma"
+  },
+  {
+    name: "Zannah Baker",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Information Analysis '26",
+    linkedin: "https://www.linkedin.com/in/zannah-baker/",
+    image: "/static/media/people/ZannahBaker.webp",
+    category: "delta"
+  },
+  {
+    name: "Ethan Matsuda",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Data Science '26",
+    linkedin: "https://www.linkedin.com/in/ethan-matsuda/",
+    image: "/static/media/people/EthanMatsuda.webp",
+    category: "delta"
+  },
+  {
+    name: "Yan Cheng Poon",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Computer Engineering '26",
+    linkedin: "https://www.linkedin.com/in/yan-cheng-poon/",
+    image: "/static/media/people/YCPoon.webp",
+    category: "delta"
+  },
+  {
+    name: "Caitlin Roberts",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Robotics '26",
+    linkedin: "https://www.linkedin.com/in/caitlinmroberts/",
+    image: "/static/media/people/CaitlinRoberts.webp",
+    category: "delta"
+  },
+  {
+    name: "Lucas Rosenberg",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/lucasrosenberg/",
+    image: "/static/media/people/LucasRosenberg.webp",
+    category: "delta"
+  },
+  {
+    name: "Sam Wit",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Aerospace Engineering '26",
+    linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/",
+    image: "/static/media/people/SamWit.webp",
+    category: "delta"
+  },
+  {
+    name: "Winston Wu",
+    role: "",
+    company: "",
+    class: "Delta Class",
+    degree: "Computer Science '26",
+    linkedin: "https://www.linkedin.com/in/win-wu/",
+    image: "/static/media/people/WinstonWu.webp",
+    category: "delta"
+  },
 ];
 
 // Function to create alumni card HTML
