@@ -11,3 +11,4 @@ dist/
 .env.*
 !.env.example
 focus-tool.html
+static/media/_sources/

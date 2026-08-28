@@ -278,8 +278,7 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/ManushriAnand.webp",
-    linkedin: "https://www.linkedin.com/in/manushrianand/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/manushrianand/"
   },
   {
     id: "drew-dame",
@@ -319,8 +318,7 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/MichaelFeneberg.webp",
-    linkedin: "https://www.linkedin.com/in/mfeneberg/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/mfeneberg/"
   },
   {
     id: "pranav-goyal",
@@ -330,8 +328,7 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/PranavGoyal.webp",
-    linkedin: "https://www.linkedin.com/in/pranav-goy4l/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
   // {
   //   id: "ellie-grehan",
@@ -382,8 +379,7 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/NathanLesny.webp",
-    linkedin: "https://www.linkedin.com/in/nathan-lesny/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/nathan-lesny/"
   },
   // {
   //   id: "menuel-rosso",
@@ -403,8 +399,7 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/AnaRyerson.webp",
-    linkedin: "https://www.linkedin.com/in/anaryerson/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/anaryerson/"
   },
   {
     id: "aditi-vishnubhatla",
@@ -455,8 +450,7 @@ const membersData = [
     year: "Junior",
     class: "zeta",
     image: "/static/media/people/SanjanaDatla.webp",
-    linkedin: "https://www.linkedin.com/in/sanjanadat/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/sanjanadat/"
   },
   {
     id: "vaelone-elankumaran",
@@ -466,8 +460,7 @@ const membersData = [
     year: "Senior",
     class: "zeta",
     image: "/static/media/people/VaeloneElankumaran.webp",
-    linkedin: "https://www.linkedin.com/in/vaelonee/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/vaelonee/"
   },
   {
     id: "aria-fifer",
@@ -477,8 +470,7 @@ const membersData = [
     year: "Senior",
     class: "zeta",
     image: "/static/media/people/AriaFifer.webp",
-    linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/"
   },
   {
     id: "nina-gernhardt",
@@ -784,8 +776,7 @@ const membersData = [
     year: "Sophomore",
     class: "theta",
     image: "/static/media/people/AvarySheldon.webp",
-    linkedin: "https://www.linkedin.com/in/avary-sheldon-2341503b0/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/avary-sheldon-2341503b0/"
   },
   {
     id: "brady-adams",
@@ -795,8 +786,7 @@ const membersData = [
     year: "Sophomore",
     class: "theta",
     image: "/static/media/people/BradyAdams.webp",
-    linkedin: "https://www.linkedin.com/in/brady-adams-umich/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/brady-adams-umich/"
   },
   {
     id: "brianna-everson",
@@ -846,8 +836,7 @@ const membersData = [
     year: "Junior",
     class: "theta",
     image: "/static/media/people/GarrettCheng.webp",
-    linkedin: "https://www.linkedin.com/in/garrett-cheng/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/garrett-cheng/"
   },
   {
     id: "gloria-chang",
@@ -897,8 +886,7 @@ const membersData = [
     year: "Junior",
     class: "theta",
     image: "/static/media/people/LuciaGrasso.webp",
-    linkedin: "https://www.linkedin.com/in/lucia-grasso/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/lucia-grasso/"
   },
   {
     id: "lynn-van",
@@ -928,8 +916,7 @@ const membersData = [
     year: "Sophomore",
     class: "theta",
     image: "/static/media/people/SahasraPotla.webp",
-    linkedin: "https://www.linkedin.com/in/sahasra-potla/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/sahasra-potla/"
   },
   {
     id: "sanika-vemali",
@@ -979,8 +966,7 @@ const membersData = [
     year: "Sophomore",
     class: "theta",
     image: "/static/media/people/ZaaraSeemeen.webp",
-    linkedin: "https://www.linkedin.com/in/zaara-seemeen17/",
-    focus: "50% 50%"
+    linkedin: "https://www.linkedin.com/in/zaara-seemeen17/"
   },
 
 ];
