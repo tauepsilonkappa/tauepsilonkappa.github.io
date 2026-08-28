@@ -9,7 +9,7 @@ const membersData = [
     name: "Aiden Hegenauer",
     title: "Zeta Class",
     major: "Data Science & Statistics",
-    year: "Junior",
+    year: "Senior",
     class: "zeta",
     image: "/static/media/people/AidenHegenauer.webp",
     linkedin: "https://www.linkedin.com/in/aiden-hegenauer-5bab632b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
@@ -19,7 +19,7 @@ const membersData = [
     name: "Megan Gottfried",
     title: "Delta Class",
     major: "Industrial & Operations Engineering",
-    year: "Junior",
+    year: "Senior",
     class: "delta",
     image: "/static/media/people/MeganGottfried.webp",
     linkedin: "https://www.linkedin.com/in/megan-gottfried/"
@@ -29,7 +29,7 @@ const membersData = [
     name: "River McCorry",
     title: "Zeta Class",
     major: "Mechanical Engineering",
-    year: "Sophomore",
+    year: "Junior",
     class: "zeta",
     image: "/static/media/people/RiverMccorry.webp",
     linkedin: "http://linkedin.com/in/rivermccorry"
@@ -39,10 +39,101 @@ const membersData = [
     name: "Nano Nikuradze",
     title: "Eta Class",
     major: "Computer Science",
-    year: "Sophomore",
+    year: "Junior",
     class: "eta",
     image: "/static/media/people/NanoNikuradze.webp",
     linkedin: "https://www.linkedin.com/in/nano-nikuradze-533b8131b/"
+  },
+  {
+    id: "ashish-rajam",
+    name: "Ashish Rajam",
+    title: "Zeta Class",
+    major: "Mechanical Engineering",
+    year: "Sophomore",
+    class: "zeta",
+    image: "/static/media/people/AshishRajam.webp",
+    linkedin: "https://www.linkedin.com/in/ashish-rajam-1988a8329?trk=contact-info"
+  },
+  {
+    id: "eesha-atluri",
+    name: "Eesha Atluri",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/EeshaAtluri.webp",
+    linkedin: "https://www.linkedin.com/in/eeshaatluri"
+  },
+  {
+    id: "stella-johnson",
+    name: "Stella Johnson",
+    title: "Epsilon Class",
+    major: "Information Analysis",
+    year: "Senior",
+    class: "epsilon",
+    image: "/static/media/people/StellaJohnson.webp",
+    linkedin: "https://www.linkedin.com/in/stella-johnson-ba4649212/"
+  },
+  {
+    id: "nika-tananko",
+    name: "Nika Tananko",
+    title: "Eta Class",
+    major: "Data Science & Astrophysics",
+    year: "Sophomore",
+    class: "eta",
+    image: "/static/media/people/NikaTananko.webp",
+    linkedin: "https://www.linkedin.com/in/veronica-tananko-930769297/"
+  },
+  {
+    id: "daniel-wang",
+    name: "Daniel Wang",
+    title: "Zeta Class",
+    major: "Computer Science",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/DanielWang.webp",
+    linkedin: "https://www.linkedin.com/in/danielwanng/"
+  },
+  {
+    id: "olivia-bonnewit",
+    name: "Olivia Bonnewit",
+    title: "Zeta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
+    class: "zeta",
+    image: "/static/media/people/OliviaBonnewit.webp",
+    linkedin: "https://www.linkedin.com/in/oliviabonn/"
+  },
+
+
+
+
+  // Other Active Members
+
+  //Alpha
+
+  //Beta
+  {
+    id: "jessica-azucena",
+    name: "Jessica Azucena",
+    title: "Beta Class",
+    major: "Business Analytics",
+    year: "Grad Student",
+    class: "beta",
+    image: "/static/media/people/JessicaAzucena.webp",
+    linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
+  },
+
+  //Gamma
+  {
+    id: "bowie-cooper",
+    name: "Bowie Cooper",
+    title: "Gamma Class",
+    major: "Computer Science",
+    year: "Senior",
+    class: "gamma",
+    image: "/static/media/people/bowiecooper.webp",
+    linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
   },
   {
     id: "insu-jung",
@@ -54,109 +145,7 @@ const membersData = [
     image: "/static/media/people/InsuJung.webp",
     linkedin: "https://www.linkedin.com/in/insu-jung-84767229b/"
   },
-  
-    {
-    id: "stella-johnson",
-    name: "Stella Johnson",
-    title: "Epsilon Class",
-    major: "Information Analysis",
-    year: "Junior",
-    class: "epsilon",
-    image: "/static/media/people/StellaJohnson.webp",
-    linkedin: "https://www.linkedin.com/in/stella-johnson-ba4649212/"
-  },
   {
-    id: "eesha-atluri",
-    name: "Eesha Atluri",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/EeshaAtluri.webp",
-    linkedin: "https://www.linkedin.com/in/eeshaatluri"
-  },
-  {
-    id: "daniel-wang",
-    name: "Daniel Wang",
-    title: "Zeta Class",
-    major: "Computer Science",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/DanielWang.webp",
-    linkedin: "https://www.linkedin.com/in/danielwanng/"
-  },
-  {
-    id: "olivia-bonnewit",
-    name: "Olivia Bonnewit",
-    title: "Zeta Class",
-    major: "Industrial & Operations Engineering",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/OliviaBonnewit.webp",
-    linkedin: "https://www.linkedin.com/in/oliviabonn/"
-  },
-  {
-    id: "preston-woodworth",
-    name: "Preston Woodworth",
-    title: "Delta Class",
-    major: "Industrial & Operations Engineering",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/PrestonWoodworth.webp",
-    linkedin: "https://www.linkedin.com/in/preston-woodworth-7371162b3/"
-  },
-  {
-    id: "casey-zhang",
-    name: "Casey Zhang",
-    title: "Delta Class",
-    major: "Data Science, Art & Design",
-    year: "Senior",
-    class: "delta",
-    image: "/static/media/people/CaseyZhang.webp",
-    linkedin: "https://www.linkedin.com/in/casey-zhang-5861182b3/"
-  },
-
-
-
-  // Other Active Members
-
-  //Alpha
-  
-    //Beta
-  {
-    id: "jessica-azucena",
-    name: "Jessica Azucena",
-    title: "Beta Class",
-    major: "Business Analytics",
-    year: "Grad Student",
-    class: "beta",
-    image: "/static/media/people/JessicaAzucena.webp",
-    linkedin: "https://www.linkedin.com/in/jessicaazucenaumich/"
-  },
-  
-    
-    
-    
-    
-    
-    //Gamma
-  {
-    id: "bowie-cooper",
-    name: "Bowie Cooper",
-    title: "Gamma Class",
-    major: "Computer Science",
-    year: "Senior",
-    class: "gamma",
-    image: "/static/media/people/bowiecooper.webp",
-    linkedin: "https://www.linkedin.com/in/bowie-cooper-b60328294/"
-  },
-  
-    
-    
-    
-    
-    
-    {
     id: "molly-rich",
     name: "Molly Rich",
     title: "Gamma Class",
@@ -187,8 +176,8 @@ const membersData = [
     image: "/static/media/people/AnujArora.webp",
     linkedin: "https://www.linkedin.com/in/anuj-arora-26899222a/"
   },
-  
-    {
+
+  {
     id: "liad-gross",
     name: "Liad Gross",
     title: "Delta Class",
@@ -218,8 +207,8 @@ const membersData = [
     image: "/static/media/people/KatieLee.webp",
     linkedin: "https://www.linkedin.com/in/ktjlee/"
   },
-  
-    {
+
+  {
     id: "suprita-nagali",
     name: "Suprita Nagali",
     title: "Delta Class",
@@ -249,10 +238,7 @@ const membersData = [
     image: "/static/media/people/MargaretPeriard.webp",
     linkedin: "https://www.linkedin.com/in/margaret-periard/"
   },
-  
-    
-    
-    {
+  {
     id: "andrew-wang",
     name: "Andrew Wang",
     title: "Delta Class",
@@ -262,9 +248,28 @@ const membersData = [
     image: "/static/media/people/AndrewWang.webp",
     linkedin: "https://www.linkedin.com/in/theandrewwang/"
   },
-  
-    
-    //Epsilon
+  {
+    id: "preston-woodworth",
+    name: "Preston Woodworth",
+    title: "Delta Class",
+    major: "Industrial & Operations Engineering",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/PrestonWoodworth.webp",
+    linkedin: "https://www.linkedin.com/in/preston-woodworth-7371162b3/"
+  },
+  {
+    id: "casey-zhang",
+    name: "Casey Zhang",
+    title: "Delta Class",
+    major: "Data Science, Art & Design",
+    year: "Senior",
+    class: "delta",
+    image: "/static/media/people/CaseyZhang.webp",
+    linkedin: "https://www.linkedin.com/in/casey-zhang-5861182b3/"
+  },
+
+  //Epsilon
   {
     id: "Manu-Anand",
     name: "Manu Anand",
@@ -273,7 +278,8 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/ManushriAnand.webp",
-    linkedin: "https://www.linkedin.com/in/manushrianand/"
+    linkedin: "https://www.linkedin.com/in/manushrianand/",
+    focus: "50% 50%"
   },
   {
     id: "drew-dame",
@@ -313,7 +319,8 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/MichaelFeneberg.webp",
-    linkedin: "https://www.linkedin.com/in/mfeneberg/"
+    linkedin: "https://www.linkedin.com/in/mfeneberg/",
+    focus: "50% 50%"
   },
   {
     id: "pranav-goyal",
@@ -323,7 +330,8 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/PranavGoyal.webp",
-    linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
+    linkedin: "https://www.linkedin.com/in/pranav-goy4l/",
+    focus: "50% 50%"
   },
   // {
   //   id: "ellie-grehan",
@@ -374,7 +382,8 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/NathanLesny.webp",
-    linkedin: "https://www.linkedin.com/in/nathan-lesny/"
+    linkedin: "https://www.linkedin.com/in/nathan-lesny/",
+    focus: "50% 50%"
   },
   // {
   //   id: "menuel-rosso",
@@ -394,7 +403,8 @@ const membersData = [
     year: "Senior",
     class: "epsilon",
     image: "/static/media/people/AnaRyerson.webp",
-    linkedin: "https://www.linkedin.com/in/anaryerson/"
+    linkedin: "https://www.linkedin.com/in/anaryerson/",
+    focus: "50% 50%"
   },
   {
     id: "aditi-vishnubhatla",
@@ -445,7 +455,8 @@ const membersData = [
     year: "Junior",
     class: "zeta",
     image: "/static/media/people/SanjanaDatla.webp",
-    linkedin: "https://www.linkedin.com/in/sanjanadat/"
+    linkedin: "https://www.linkedin.com/in/sanjanadat/",
+    focus: "50% 50%"
   },
   {
     id: "vaelone-elankumaran",
@@ -455,7 +466,8 @@ const membersData = [
     year: "Senior",
     class: "zeta",
     image: "/static/media/people/VaeloneElankumaran.webp",
-    linkedin: "https://www.linkedin.com/in/vaelonee/"
+    linkedin: "https://www.linkedin.com/in/vaelonee/",
+    focus: "50% 50%"
   },
   {
     id: "aria-fifer",
@@ -465,7 +477,8 @@ const membersData = [
     year: "Senior",
     class: "zeta",
     image: "/static/media/people/AriaFifer.webp",
-    linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/"
+    linkedin: "https://www.linkedin.com/in/aria-fifer-401629218/",
+    focus: "50% 50%"
   },
   {
     id: "nina-gernhardt",
@@ -506,16 +519,6 @@ const membersData = [
     class: "zeta",
     image: "/static/media/people/YanaMehta.webp",
     linkedin: "https://www.linkedin.com/in/yanamehta/"
-  },
-  {
-    id: "ashish-rajam",
-    name: "Ashish Rajam",
-    title: "Zeta Class",
-    major: "Mechanical Engineering",
-    year: "Sophomore",
-    class: "zeta",
-    image: "/static/media/people/AshishRajam.webp",
-    linkedin: "https://www.linkedin.com/in/ashish-rajam-1988a8329?trk=contact-info"
   },
   {
     id: "david-sanico",
@@ -719,16 +722,7 @@ const membersData = [
     image: "/static/media/people/AaronSun.webp",
     linkedin: "https://www.linkedin.com/in/aasunn/"
   },
-  {
-    id: "nika-tananko",
-    name: "Nika Tananko",
-    title: "Eta Class",
-    major: "Data Science & Astrophysics",
-    year: "Sophomore",
-    class: "eta",
-    image: "/static/media/people/NikaTananko.webp",
-    linkedin: "https://www.linkedin.com/in/veronica-tananko-930769297/"
-  },
+
   {
     id: "ayaan-vaswani",
     name: "Ayaan Vaswani",
@@ -766,7 +760,7 @@ const membersData = [
     id: "akshaya-rachamadugu",
     name: "Akshaya Rachamadugu",
     title: "Theta Class",
-    major: "",
+    major: "Computer Science",
     year: "Sophomore",
     class: "theta",
     image: "/static/media/people/AkshayaRachamadugu.webp",
@@ -787,27 +781,29 @@ const membersData = [
     name: "Avary Sheldon",
     title: "Theta Class",
     major: "Information Analysis",
-    year: "",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/AvarySheldon.webp",
-    linkedin: "https://www.linkedin.com/in/avary-sheldon-2341503b0/"
+    linkedin: "https://www.linkedin.com/in/avary-sheldon-2341503b0/",
+    focus: "50% 50%"
   },
   {
     id: "brady-adams",
     name: "Brady Adams",
     title: "Theta Class",
     major: "Computer Engineering",
-    year: "",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/BradyAdams.webp",
-    linkedin: "https://www.linkedin.com/in/brady-adams-umich/"
+    linkedin: "https://www.linkedin.com/in/brady-adams-umich/",
+    focus: "50% 50%"
   },
   {
     id: "brianna-everson",
     name: "Brianna Everson",
     title: "Theta Class",
     major: "Mechanical Engineering",
-    year: "",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/BriannaEverson.webp",
     linkedin: "https://www.linkedin.com/in/briannaeverson/"
@@ -816,8 +812,8 @@ const membersData = [
     id: "connor-welch",
     name: "Connor Welch",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Industrial & Operations Engineering",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/ConnorWelch.webp",
     linkedin: "https://www.linkedin.com/in/connorwelch11/"
@@ -826,8 +822,8 @@ const membersData = [
     id: "derek-wurzer",
     name: "Derek Wurzer",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/DerekWurzer.webp",
     linkedin: "https://www.linkedin.com/in/derekwurzer/"
@@ -836,8 +832,8 @@ const membersData = [
     id: "ellie-gruber",
     name: "Ellie Gruber",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Industrial & Operations Engineering",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/EllieGruber.webp",
     linkedin: "https://www.linkedin.com/in/ellianna-gruber/"
@@ -846,18 +842,19 @@ const membersData = [
     id: "garrett-cheng",
     name: "Garrett Cheng",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Mechanical Engineering",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/GarrettCheng.webp",
-    linkedin: "https://www.linkedin.com/in/garrett-cheng/"
+    linkedin: "https://www.linkedin.com/in/garrett-cheng/",
+    focus: "50% 50%"
   },
   {
     id: "gloria-chang",
     name: "Gloria Chang",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/GloriaChang.webp",
     linkedin: "https://www.linkedin.com/in/-gloriachang/"
@@ -866,8 +863,8 @@ const membersData = [
     id: "grant-patterson",
     name: "Grant Patterson",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/GrantPatterson.webp",
     linkedin: "https://www.linkedin.com/in/pattersongrant/"
@@ -876,8 +873,8 @@ const membersData = [
     id: "jase-smith",
     name: "Jase Smith",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Data Science",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/JaseSmith.webp",
     linkedin: "https://www.linkedin.com/in/jase-smith-293424336/"
@@ -896,18 +893,19 @@ const membersData = [
     id: "lucia-grasso",
     name: "Lucia Grasso",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Information Analysis",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/LuciaGrasso.webp",
-    linkedin: "https://www.linkedin.com/in/lucia-grasso/"
+    linkedin: "https://www.linkedin.com/in/lucia-grasso/",
+    focus: "50% 50%"
   },
   {
     id: "lynn-van",
     name: "Lynn Van",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Information Analysis",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/LynnVan.webp",
     linkedin: "https://www.linkedin.com/in/lynn-van-aaaa4830b/"
@@ -916,8 +914,8 @@ const membersData = [
     id: "owen-bogda",
     name: "Owen Bogda",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Engineering",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/OwenBogda.webp",
     linkedin: "https://www.linkedin.com/in/owen-bogda/"
@@ -926,18 +924,19 @@ const membersData = [
     id: "sahasra-potla",
     name: "Sahasra Potla",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Data Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/SahasraPotla.webp",
-    linkedin: "https://www.linkedin.com/in/sahasra-potla/"
+    linkedin: "https://www.linkedin.com/in/sahasra-potla/",
+    focus: "50% 50%"
   },
   {
     id: "sanika-vemali",
     name: "Sanika Vemali",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Data Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/SanikaVemali.webp",
     linkedin: ""
@@ -947,7 +946,7 @@ const membersData = [
     name: "Sean Kang",
     title: "Theta Class",
     major: "Mechanical Engineering",
-    year: "",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/SeanKang.webp",
     linkedin: "https://www.linkedin.com/in/seankangg/"
@@ -956,8 +955,8 @@ const membersData = [
     id: "thewfic-anwar",
     name: "Thewfic Anwar",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Junior",
     class: "theta",
     image: "/static/media/people/ThewficAnwar.webp",
     linkedin: "https://www.linkedin.com/in/thewficanwar/"
@@ -966,8 +965,8 @@ const membersData = [
     id: "yoav-manor",
     name: "Yoav Manor",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/YoavManor.webp",
     linkedin: "https://www.linkedin.com/in/yoav-manor/"
@@ -976,11 +975,12 @@ const membersData = [
     id: "zaara-seemeen",
     name: "Zaara Seemeen",
     title: "Theta Class",
-    major: "",
-    year: "",
+    major: "Computer Science",
+    year: "Sophomore",
     class: "theta",
     image: "/static/media/people/ZaaraSeemeen.webp",
-    linkedin: "https://www.linkedin.com/in/zaara-seemeen17/"
+    linkedin: "https://www.linkedin.com/in/zaara-seemeen17/",
+    focus: "50% 50%"
   },
 
 ];
@@ -993,7 +993,7 @@ function createMemberCard(member, isCompact = true) {
   return `
     <div class="${cardClass}" data-member="${member.id}" data-class="${member.class}">
       <div class="member-image">
-        <img src="${member.image}" alt="${member.name}" />
+        <img src="${member.image}" alt="${member.name}" style="object-position: ${member.focus || 'center'}" />
         <div class="member-overlay">
           <i class="fas fa-info-circle"></i>
         </div>
@@ -1059,6 +1059,7 @@ function showMemberModal(memberId) {
 
   // Populate modal with member data
   modalImg.src = member.image;
+  modalImg.style.objectPosition = member.focus || 'center';
   modalImg.alt = member.name;
   modalName.textContent = member.name;
   modalTitle.textContent = member.title;
