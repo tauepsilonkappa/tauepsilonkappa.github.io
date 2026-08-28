@@ -939,6 +939,239 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/joshyoung01/"
   },
 
+
+  // Theta Class
+  {
+    id: "aiden-kim",
+    name: "Aiden Kim",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/AidenKim.webp",
+    linkedin: ""
+  },
+  {
+    id: "akshaya-rachamadugu",
+    name: "Akshaya Rachamadugu",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/AkshayaRachamadugu.webp",
+    linkedin: ""
+  },
+  {
+    id: "alex-habarth",
+    name: "Alex Habarth",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/AlexHabarth.webp",
+    linkedin: ""
+  },
+  {
+    id: "avary-sheldon",
+    name: "Avary Sheldon",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/AvarySheldon.webp",
+    linkedin: ""
+  },
+  {
+    id: "brady-adams",
+    name: "Brady Adams",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/BradyAdams.webp",
+    linkedin: ""
+  },
+  {
+    id: "brianna-everson",
+    name: "Brianna Everson",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/BriannaEverson.webp",
+    linkedin: ""
+  },
+  {
+    id: "connor-welch",
+    name: "Connor Welch",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/ConnorWelch.webp",
+    linkedin: ""
+  },
+  {
+    id: "derek-wurzer",
+    name: "Derek Wurzer",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/DerekWurzer.webp",
+    linkedin: ""
+  },
+  {
+    id: "ellie-gruber",
+    name: "Ellie Gruber",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/EllieGruber.webp",
+    linkedin: ""
+  },
+  {
+    id: "garrett-cheng",
+    name: "Garrett Cheng",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/GarrettCheng.webp",
+    linkedin: ""
+  },
+  {
+    id: "gloria-chang",
+    name: "Gloria Chang",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/GloriaChang.webp",
+    linkedin: ""
+  },
+  {
+    id: "grant-patterson",
+    name: "Grant Patterson",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/GrantPatterson.webp",
+    linkedin: ""
+  },
+  {
+    id: "jase-smith",
+    name: "Jase Smith",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/JaseSmith.webp",
+    linkedin: ""
+  },
+  {
+    id: "jay-sarkar",
+    name: "Jay Sarkar",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/JaySarkar.webp",
+    linkedin: ""
+  },
+  {
+    id: "lucia-grasso",
+    name: "Lucia Grasso",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/LuciaGrasso.webp",
+    linkedin: ""
+  },
+  {
+    id: "lynn-van",
+    name: "Lynn Van",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/LynnVan.webp",
+    linkedin: ""
+  },
+  {
+    id: "owen-bogda",
+    name: "Owen Bogda",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/OwenBogda.webp",
+    linkedin: ""
+  },
+  {
+    id: "sahasra-potla",
+    name: "Sahasra Potla",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/SahasraPotla.webp",
+    linkedin: ""
+  },
+  {
+    id: "sanika-vemali",
+    name: "Sanika Vemali",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/SanikaVemali.webp",
+    linkedin: ""
+  },
+  {
+    id: "sean-kang",
+    name: "Sean Kang",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/SeanKang.webp",
+    linkedin: ""
+  },
+  {
+    id: "thewfic-anwar",
+    name: "Thewfic Anwar",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/ThewficAnwar.webp",
+    linkedin: ""
+  },
+  {
+    id: "yoav-manor",
+    name: "Yoav Manor",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/YoavManor.webp",
+    linkedin: ""
+  },
+  {
+    id: "zaara-seemeen",
+    name: "Zaara Seemeen",
+    title: "Theta Class",
+    major: "",
+    year: "",
+    class: "theta",
+    image: "/static/media/people/ZaaraSeemeen.webp",
+    linkedin: ""
+  },
+
 ];
 
 
