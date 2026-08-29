@@ -51,8 +51,8 @@ const alumniData = [
     image: "/static/media/people/PaulSmith.webp",
     category: "founders"
   },
-  
-  
+
+
   // Founding Class
   {
     name: "Lily Gong",
@@ -144,7 +144,7 @@ const alumniData = [
     image: "/static/media/people/ZainabIftikhar.webp",
     category: "founding"
   },
-  
+
   // Alpha Class
   {
     name: "Kateri Darr",
@@ -219,13 +219,13 @@ const alumniData = [
     image: "/static/media/people/ShivaniSundaresan.webp",
     category: "beta"
   },
- 
+
 
   // Class of 2026
   {
     name: "Sanjana Kulkarni",
     role: "",
-    company: "",
+    company: "Deloitte",
     class: "Delta Class",
     degree: "Computer Science '26",
     linkedin: "https://www.linkedin.com/in/sanjana-kulkarni/",
@@ -234,8 +234,8 @@ const alumniData = [
   },
   {
     name: "Andrew Kasper",
-    role: "",
-    company: "",
+    role: "Analyst",
+    company: "Deloitte",
     class: "Alpha Class",
     degree: "Computer Science '26",
     linkedin: "https://www.linkedin.com/in/andrew-kasper-95b68423b/",
@@ -374,8 +374,8 @@ const alumniData = [
   },
   {
     name: "Ethan Matsuda",
-    role: "",
-    company: "",
+    role: "Data Scientist",
+    company: "Bloomberg",
     class: "Delta Class",
     degree: "Data Science '26",
     linkedin: "https://www.linkedin.com/in/ethan-matsuda/",
@@ -384,8 +384,8 @@ const alumniData = [
   },
   {
     name: "Yan Cheng Poon",
-    role: "",
-    company: "",
+    role: "CPU Design Verification Engineer",
+    company: "Apple",
     class: "Delta Class",
     degree: "Computer Engineering '26",
     linkedin: "https://www.linkedin.com/in/yan-cheng-poon/",
@@ -394,8 +394,8 @@ const alumniData = [
   },
   {
     name: "Caitlin Roberts",
-    role: "",
-    company: "",
+    role: "Associate Consultant",
+    company: "Siemens",
     class: "Delta Class",
     degree: "Robotics '26",
     linkedin: "https://www.linkedin.com/in/caitlinmroberts/",
@@ -414,8 +414,8 @@ const alumniData = [
   },
   {
     name: "Sam Wit",
-    role: "",
-    company: "",
+    role: "Systems Engineer",
+    company: "Raytheon",
     class: "Delta Class",
     degree: "Aerospace Engineering '26",
     linkedin: "https://www.linkedin.com/in/samuel-wit-9149532b3/",
@@ -424,8 +424,8 @@ const alumniData = [
   },
   {
     name: "Winston Wu",
-    role: "",
-    company: "",
+    role: "Investor",
+    company: "Plug and Play",
     class: "Delta Class",
     degree: "Computer Science '26",
     linkedin: "https://www.linkedin.com/in/win-wu/",
@@ -437,11 +437,11 @@ const alumniData = [
 // Function to create alumni card HTML
 function createAlumniCard(alumni, isCompact = true) {
   const cardClass = isCompact ? 'alumni-card compact' : 'alumni-card featured';
-  
+
   return `
     <div class="${cardClass}" data-category="${alumni.category}">
       <div class="card-image">
-        <img src="${alumni.image}" alt="${alumni.name}" />
+        <img src="${alumni.image}" alt="${alumni.name}" loading="lazy" decoding="async" />
         <div class="company-logo">
           <span>${alumni.company}</span>
         </div>
@@ -465,26 +465,26 @@ function createAlumniCard(alumni, isCompact = true) {
 function renderAlumni(category = 'all') {
   const alumniGrid = document.getElementById('alumni-grid');
   let filteredAlumni = alumniData;
-  
+
   if (category !== 'all') {
     filteredAlumni = alumniData.filter(alumni => alumni.category === category);
   }
-  
+
   alumniGrid.innerHTML = filteredAlumni.map(alumni => createAlumniCard(alumni)).join('');
 }
 
 // Function to handle tab switching
 function setupTabs() {
   const tabButtons = document.querySelectorAll('.tab-btn');
-  
+
   tabButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove active class from all buttons
       tabButtons.forEach(btn => btn.classList.remove('active'));
-      
+
       // Add active class to clicked button
       button.classList.add('active');
-      
+
       // Get the category and render alumni
       const category = button.getAttribute('data-class');
       renderAlumni(category);
@@ -495,7 +495,7 @@ function setupTabs() {
 // Function to animate stats on scroll
 function animateStats() {
   const statNumbers = document.querySelectorAll('.stat-number');
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -505,7 +505,7 @@ function animateStats() {
       }
     });
   });
-  
+
   statNumbers.forEach(stat => observer.observe(stat));
 }
 
@@ -530,12 +530,12 @@ class LogoManager {
     this.heroSection = document.querySelector('.hero-section');
     this.visibleLogos = [];
     this.minSpacing = 120; // Minimum spacing between logos in pixels
-    
+
     if (!this.heroSection || this.logoItems.length === 0) {
       console.warn('Hero section or logo items not found');
       return;
     }
-    
+
     this.breakpoints = {
       desktop: { width: 1400, maxLogos: 20, spacing: 90 },
       laptop: { width: 1200, maxLogos: 16, spacing: 85 },
@@ -543,36 +543,36 @@ class LogoManager {
       mobile: { width: 480, maxLogos: 8, spacing: 70 },
       small: { width: 0, maxLogos: 6, spacing: 65 }
     };
-    
+
     this.init();
   }
-  
+
   init() {
     this.manageLogos();
     this.setupResizeListener();
   }
-  
+
   getCurrentBreakpoint() {
     const width = window.innerWidth;
-    
+
     if (width >= this.breakpoints.desktop.width) return this.breakpoints.desktop;
     if (width >= this.breakpoints.laptop.width) return this.breakpoints.laptop;
     if (width >= this.breakpoints.tablet.width) return this.breakpoints.tablet;
     if (width >= this.breakpoints.mobile.width) return this.breakpoints.mobile;
     return this.breakpoints.small;
   }
-  
+
   getLogoPosition(logoItem) {
     const style = logoItem.getAttribute('style') || '';
     const topMatch = style.match(/top:\s*([0-9.]+)%/);
     const leftMatch = style.match(/left:\s*([0-9.]+)%/);
     const rightMatch = style.match(/right:\s*([0-9.]+)%/);
-    
+
     if (!topMatch) return null;
-    
+
     const top = parseFloat(topMatch[1]);
     let left;
-    
+
     if (leftMatch) {
       left = parseFloat(leftMatch[1]);
     } else if (rightMatch) {
@@ -580,33 +580,33 @@ class LogoManager {
     } else {
       return null;
     }
-    
+
     return { top, left, element: logoItem };
   }
-  
+
   calculateDistance(pos1, pos2) {
     const heroRect = this.heroSection.getBoundingClientRect();
     const x1 = (pos1.left / 100) * heroRect.width;
     const y1 = (pos1.top / 100) * heroRect.height;
     const x2 = (pos2.left / 100) * heroRect.width;
     const y2 = (pos2.top / 100) * heroRect.height;
-    
+
     return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
   }
-  
+
   isValidPosition(newPos, existingPositions, minSpacing) {
     return existingPositions.every(pos => {
       return this.calculateDistance(newPos, pos) >= minSpacing;
     });
   }
-  
+
   selectOptimalLogos(maxLogos, minSpacing) {
     // Get all logos with actual content (not empty slots)
     const logosWithContent = Array.from(this.logoItems).filter(item => {
       const img = item.querySelector('img');
       return img && img.src;
     });
-    
+
     // Get all logo positions and filter out edge positions that might overflow
     const allPositions = logosWithContent
       .map(item => this.getLogoPosition(item))
@@ -615,94 +615,94 @@ class LogoManager {
         // Filter out positions too close to edges to prevent overflow
         return pos.left >= 5 && pos.left <= 95 && pos.top >= 5 && pos.top <= 90;
       });
-    
+
     if (allPositions.length === 0) return [];
-    
+
     // Start with priority logos (ones with content first)
     const selectedPositions = [];
     const availablePositions = [...allPositions];
-    
+
     // Sort by content first, then by position diversity
     availablePositions.sort((a, b) => {
       const aHasContent = a.element.querySelector('img')?.src ? 1 : 0;
       const bHasContent = b.element.querySelector('img')?.src ? 1 : 0;
-      
+
       if (aHasContent !== bHasContent) {
         return bHasContent - aHasContent; // Content first
       }
-      
+
       // Then by balanced distribution across the screen
       const aBalance = Math.abs(a.left - 50) + Math.abs(a.top - 50);
       const bBalance = Math.abs(b.left - 50) + Math.abs(b.top - 50);
       return aBalance - bBalance;
     });
-    
+
     // Greedy selection algorithm with improved spacing
     for (const pos of availablePositions) {
       if (selectedPositions.length >= maxLogos) break;
-      
+
       if (this.isValidPosition(pos, selectedPositions, minSpacing)) {
         selectedPositions.push(pos);
       }
     }
-    
+
     return selectedPositions.map(pos => pos.element);
   }
-  
+
   manageLogos() {
     const startTime = performance.now();
     const breakpoint = this.getCurrentBreakpoint();
     const selectedLogos = this.selectOptimalLogos(breakpoint.maxLogos, breakpoint.spacing);
-    
+
     // Hide all logos first
     this.logoItems.forEach(item => {
       item.style.display = 'none';
       item.classList.remove('animate');
     });
-    
+
     // Show and animate selected logos
     this.visibleLogos = selectedLogos;
     selectedLogos.forEach((item, index) => {
       item.style.display = 'flex';
       const delay = (index * 150) + (parseInt(item.dataset.delay) || 0);
-      
+
       setTimeout(() => {
         item.classList.add('animate');
       }, delay);
     });
-    
+
     const endTime = performance.now();
-    
+
     // Debug logging (remove in production)
     console.log(`Logo Management: Showing ${selectedLogos.length}/${this.logoItems.length} logos for ${window.innerWidth}px width (max: ${breakpoint.maxLogos}, spacing: ${breakpoint.spacing}px) - Computed in ${(endTime - startTime).toFixed(2)}ms`);
   }
-  
+
   setupResizeListener() {
     let resizeTimeout;
     let lastWidth = window.innerWidth;
-    
+
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         const currentWidth = window.innerWidth;
-        
+
         // Only recalculate if the width change is significant (> 50px)
         // or if we've crossed a breakpoint boundary
-        if (Math.abs(currentWidth - lastWidth) > 50 || 
-            this.hasBreakpointChanged(lastWidth, currentWidth)) {
+        if (Math.abs(currentWidth - lastWidth) > 50 ||
+          this.hasBreakpointChanged(lastWidth, currentWidth)) {
           this.manageLogos();
           lastWidth = currentWidth;
         }
       }, 250);
     });
   }
-  
+
   hasBreakpointChanged(oldWidth, newWidth) {
     const oldBreakpoint = this.getBreakpointForWidth(oldWidth);
     const newBreakpoint = this.getBreakpointForWidth(newWidth);
     return oldBreakpoint.maxLogos !== newBreakpoint.maxLogos;
   }
-  
+
   getBreakpointForWidth(width) {
     if (width >= this.breakpoints.desktop.width) return this.breakpoints.desktop;
     if (width >= this.breakpoints.laptop.width) return this.breakpoints.laptop;
@@ -721,18 +721,18 @@ function animateHeroLogos() {
       console.log('Hero section not found, skipping logo animation');
       return;
     }
-    
+
     // Initialize the logo manager which handles dynamic allocation
     const logoManager = new LogoManager();
     console.log('Logo manager initialized successfully');
   } catch (error) {
     console.error('Error initializing logo manager:', error);
-    
+
     // Fallback to simple animation
     const logoItems = document.querySelectorAll('.hero-logo-item.scattered');
     logoItems.forEach((item, index) => {
       const delay = (index * 200) + (parseInt(item.dataset.delay) || 0);
-      
+
       setTimeout(() => {
         item.style.display = 'flex';
         item.classList.add('animate');
@@ -747,21 +747,21 @@ function setupCompaniesAnimation() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const logoItems = entry.target.querySelectorAll('.logo-item');
-        
+
         logoItems.forEach((item) => {
           const delay = parseInt(item.dataset.delay) || 0;
-          
+
           setTimeout(() => {
             item.style.animationDelay = '0s';
             item.classList.add('animate');
           }, delay);
         });
-        
+
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.3 });
-  
+
   const companiesSection = document.querySelector('.companies-collage');
   if (companiesSection) {
     observer.observe(companiesSection);
@@ -772,7 +772,7 @@ function setupCompaniesAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
   // Add js-enabled class to disable CSS fallback animations
   document.body.classList.add('js-enabled');
-  
+
   renderAlumni(); // Render all alumni initially
   setupTabs(); // Setup tab functionality
   animateStats(); // Setup stats animation

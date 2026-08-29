@@ -979,7 +979,7 @@ function createMemberCard(member, isCompact = true) {
   return `
     <div class="${cardClass}" data-member="${member.id}" data-class="${member.class}">
       <div class="member-image">
-        <img src="${member.image}" alt="${member.name}" style="object-position: ${member.focus || 'center'}" />
+        <img src="${member.image}" alt="${member.name}" loading="lazy" decoding="async" style="object-position: ${member.focus || 'center'}" />
         <div class="member-overlay">
           <i class="fas fa-info-circle"></i>
         </div>
