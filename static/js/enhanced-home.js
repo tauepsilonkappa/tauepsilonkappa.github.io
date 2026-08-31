@@ -68,7 +68,7 @@ function setupLoadingScreen() {
   loadingScreen.innerHTML = `
     <div class="loading-content">
       <div class="tek-logo">
-        <img src="/static/media/tekPics/tekNavy-3.png" alt="TEK Logo" />
+        <img src="/static/media/tekPics/tekNavy.png" alt="TEK Logo" />
       </div>
       <div class="loading-spinner"></div>
     </div>
