@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Brand New Day</title>
+<link rel="shortcut icon" type="image/png" href="/static/media/tekPics/Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="https://use.typekit.net/zje6zde.css">
+<link rel="stylesheet" href="/static/css/html5reset.css">
+<link rel="stylesheet" href="/static/css/base.css">
+<link rel="stylesheet" href="/static/css/rush-fa27.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"}}</script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/navigation.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="torn" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035 .07" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <filter id="inkgrain" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".05 .08" numOctaves="3" seed="3" result="warp"/><feDisplacementMap in="SourceGraphic" in2="warp" scale="10" xChannelSelector="R" yChannelSelector="G" result="shape"/><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="9" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -.55 1.12" result="gm"/><feComposite in="shape" in2="gm" operator="in"/></filter>
+  <filter id="rough" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6"/></filter>
+  <symbol id="paperclip" viewBox="0 0 40 90"><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#8d93a6" stroke-width="3.2" stroke-linecap="round"/><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".6"/></symbol>
+</svg>
+<div class="skip"><a href="#main">Skip to Main Content</a></div>
+<header>
+      <a href="/">
+        <img
+          src="/static/media/tekPics/tekNavy.png"
+          alt="tek logo"
+          tabindex="0"
+        />
+      </a>
+      <nav class="full" aria-label="large navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/">HOME</a></li>
+          <li class="nav-item"><a href="/members">MEMBERS</a></li>
+          <li class="nav-item"><a href="/alumni">ALUMNI</a></li>
+          <li class="nav-item"><a href="/activities">ACTIVITIES</a></li>
+          <li class="nav-item"><a href="/rush" class="active">RUSH</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile" aria-label="mobile navigation">
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+          <nav class="mobile-menu-nav">
+            <a href="/">HOME</a>
+            <a href="/members">MEMBERS</a>
+            <a href="/alumni">ALUMNI</a>
+            <a href="/activities">ACTIVITIES</a>
+            <a href="/rush" class="active">RUSH</a>
+          </nav>
+        </div>
+      </nav>
+    </header>
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <img class="city" src="/static/media/rush/city-1932.webp" alt="" width="1920" height="560">
+    <div class="wrap">
+      <svg class="blob b1" data-depth=".08" viewBox="0 0 400 300" aria-hidden="true"><path d="M60 140c-20-70 60-120 140-118 60 1 90 40 150 30 40-7 50 40 40 90-8 40-40 70-20 110-30 40-110 50-170 30-60-20-70-70-100-90-40-25-30-30-40-52z"/></svg>
+      <svg class="blob contour" viewBox="0 0 400 300" aria-hidden="true"><path d="M60 140c-20-70 60-120 140-118 60 1 90 40 150 30 40-7 50 40 40 90-8 40-40 70-20 110-30 40-110 50-170 30-60-20-70-70-100-90-40-25-30-30-40-52z"/></svg>
+      <p class="synopsis" aria-hidden="true">We used to know each other. We were... together. But something bad was going to happen. To the whole world. And the only way to stop it was to make everyone forget me... Including you.<br><br>Because I'm not just Peter Parker. I'm Spider-Man.</p>
+      <img class="stk panel" style="--rot:-7deg;left:46%;bottom:4%" src="/static/media/rush/panel-b.webp" alt="" width="260" height="300">
+      <svg class="stk emblem" style="--rot:22deg;left:58%;top:8%" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M90 70L55 42 30 14M110 70L145 42 170 14M88 82L46 74 12 60M112 82L154 74 188 60M88 92L46 106 16 136M112 92L154 106 184 136M92 102L62 142 42 186M108 102L138 142 158 186"/></g><ellipse cx="100" cy="126" rx="26" ry="40" fill="currentColor"/><circle cx="100" cy="80" r="17" fill="currentColor"/></svg>
+      <span class="anchor a-top" style="right:9%;top:-3rem"></span>
+      <span class="anchor a-shot" style="right:24%;top:-3rem"></span>
+      <div class="head">
+        <p class="over"><span class="hl red">Are you Peter Parker?</span><span class="hl blue">Or are you Spider-Man?</span></p>
+        <h1 data-text="TEK Rush">TEK Rush</h1>
+        <span class="bnd">Brand New Day</span>
+        <p class="sub">Michigan's premier professional technology fraternity. Focused on professional growth, technical skills, and lifelong social connections that last through college and beyond!</p>
+        <div class="cta">
+          <a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Apply by Sat 9/12 · noon</a>
+          <a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"><span class="tape"></span>Interest form</a>
+        </div>
+      </div>
+      <div class="paste jumpwrap" data-depth=".5" style="--rot:-6deg"><img class="jump" src="/static/media/rush/spidey-jump-grey.webp" alt="" width="1200" height="703"><span class="anchor a-wrist" style="left:43.3%;top:18.9%"></span><span class="anchor a-tip" style="left:53.5%;top:17.1%"></span></div>
+      <svg class="silk" aria-hidden="true"><defs><linearGradient id="silkG" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".88" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="silkS" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1b1f3a" stop-opacity=".35"/><stop offset=".88" stop-color="#1b1f3a" stop-opacity=".35"/><stop offset="1" stop-color="#1b1f3a" stop-opacity="0"/></linearGradient></defs><path class="s-halo" d="M0 0"/><path class="s-core" d="M0 0"/></svg>
+      <div class="cluster">
+        <span class="date-dot" aria-hidden="true">Sept<br>8–12<br>2026</span>
+        <img class="paste sticker swing" data-depth="1" style="--rot:8deg" src="/static/media/rush/spidey-swing-tight.webp" alt="" width="842" height="900">
+      </div>
+      <aside class="paste card note" data-depth=".25" style="--rot:3deg">
+        <svg class="clip-svg" aria-hidden="true"><use href="#paperclip"/></svg>
+        <h2>Known characteristics</h2>
+        <dl><dt>Majors</dt><dd>Welcome to all</dd><dt>Years</dt><dd>Freshmen &amp; sophomores</dd><dt>Seen</dt><dd>Sept 8–12, Ann Arbor</dd><dt>Status</dt><dd>Recruiting</dd></dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EXTRA: newsprint on cloth -->
+  <section class="extra">
+    <div class="webhost" id="extraWebs"></div>
+    <div class="wrap">
+      <div class="reveal" style="--rot:0">
+        <p class="cap">Extra, extra</p>
+        <h2 class="h2">Read all about it</h2>
+        <p>Looking for passionate, driven and hard-working students to join Tau Epsilon Kappa.</p>
+      </div>
+      <img class="stk contours" style="left:44%;bottom:-6%" src="/static/media/rush/svg/contour-blob.svg" alt="" width="400" height="300">
+      <div class="cloth-host" aria-label="TEK Rush front page: Wanted. Apply by Sat 9/12 noon"><span class="hint">pull the paper →</span></div>
+    </div>
+  </section>
+
+  <!-- RUSH WEEK -->
+  <section class="week" id="week">
+    <div class="webhost webhost-tl" id="weekWebs"></div>
+    <img class="stk panel" style="--rot:5deg;left:2%;bottom:4%" src="/static/media/rush/panel-c.webp" alt="" width="320" height="200">
+    <img class="stk thwip" style="right:4%;bottom:6%" src="/static/media/rush/svg/thwip.svg" alt="" width="320" height="160">
+    <img class="stk patch" style="left:34%;bottom:-2%" src="/static/media/rush/svg/halftone-patch.svg" alt="" width="200" height="200">
+    <div class="wrap stage">
+      <div class="title reveal" style="--rot:0">
+        <h2>Rush <em>week.</em></h2>
+        <span class="stamp">Sept 8–12 · Ann Arbor</span>
+      </div>
+      <svg class="strand" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path id="weekStrand" d="M60 250 C 160 330, 220 360, 300 380 S 420 250, 520 240 S 640 360, 720 380 S 830 210, 900 180"/></svg>
+      <div class="cards">
+        <article class="ev card e0" style="--rot:-4deg"><span class="tape"></span><span class="d">Tue<b>9/8</b></span><h3>Info Session</h3><span class="t">6–7 pm · Henderson Rm, Michigan League</span></article>
+        <article class="ev card e1" style="--rot:5deg"><span class="pin"></span><span class="d">Wed<b>9/9</b></span><h3>DEI Panel</h3><span class="t">6:30–7:30 pm · Henderson Rm, Michigan League</span></article>
+        <article class="ev card e2" style="--rot:-2deg"><span class="tape"></span><span class="d">Thu<b>9/10</b></span><h3>Meet & Greet</h3><span class="t">6–8:30 pm · CCCB 3460</span></article>
+        <article class="ev card e3" style="--rot:3deg"><span class="tape"></span><img class="hang sticker" src="/static/media/rush/spidey-jump-riso.webp" alt="" width="1200" height="555"><span class="d">Fri<b>9/11</b></span><h3>Meet & Greet</h3><span class="t">6–8:30 pm · CCCB 2460</span></article>
+        <article class="ev card e4" style="--rot:-3deg"><span class="pin blue"></span><span class="stamp">Due · Sat noon</span><span class="d">Sat<b>9/12</b></span><h3>Application due</h3><span class="t">12:00 noon</span></article>
+        
+      </div>
+      <ol class="mobile-list">
+        <li class="ev card reveal e0" style="--rot:-2deg"><span class="tape"></span><span class="d">Tue<b>9/8</b></span><h3>Info Session</h3><span class="t">6–7 pm · Henderson Rm, Michigan League</span></li>
+        <li class="ev card reveal e1" style="--rot:2deg"><span class="pin"></span><span class="d">Wed<b>9/9</b></span><h3>DEI Panel</h3><span class="t">6:30–7:30 pm · Henderson Rm, Michigan League</span></li>
+        <li class="ev card reveal e2" style="--rot:-1.5deg"><span class="tape"></span><span class="d">Thu<b>9/10</b></span><h3>Meet & Greet</h3><span class="t">6–8:30 pm · CCCB 3460</span></li>
+        <li class="ev card reveal e3" style="--rot:2deg"><span class="tape"></span><img class="hang sticker" src="/static/media/rush/spidey-jump-riso.webp" alt="" width="1200" height="555"><span class="d">Fri<b>9/11</b></span><h3>Meet & Greet</h3><span class="t">6–8:30 pm · CCCB 2460</span></li>
+        <li class="ev card reveal e4" style="--rot:-2deg"><span class="pin blue"></span><span class="stamp">Due · Sat noon</span><span class="d">Sat<b>9/12</b></span><h3>Application due</h3><span class="t">12:00 noon</span></li>
+        
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- Q&A -->
+  <section class="qa">
+    <img class="stk sun" src="/static/media/rush/deco-sun.webp" alt="" width="820" height="260">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><p class="cap">Before you ask</p><h2 class="h2">Questions from the crowd</h2></div>
+      <div class="note-s card reveal" style="--rot:-3deg"><span class="tape" style="--w:90px;left:10%;top:-12px;--r:-9deg"></span><h3>I'm not a tech major. Can I still apply?</h3><p>Yes. We take every major. Curiosity about technology is the bar, not a transcript.</p></div>
+      <div class="note-s card light reveal" style="--rot:2deg"><span class="pin"></span><h3>I'm a sophomore. Is it too late?</h3><p>No. Freshmen and sophomores are exactly who we recruit.</p></div>
+      <div class="note-s card torn reveal" style="--rot:-1.5deg"><svg class="clip-svg" aria-hidden="true"><use href="#paperclip"/></svg><h3>What's the time commitment?</h3><p>Pledging scales with what you want out of it. Expect a few hours a week during the process; after that, it's yours to set.</p></div>
+      
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders">
+    <div class="webhost webhost-br" id="foundersWebs"></div>
+    <img class="stk eye" src="/static/media/rush/panel-eye.webp" alt="" width="220" height="220">
+    <img class="stk spidey-die" style="left:36%;top:2%" src="/static/media/rush/svg/spider-emblem-sticker.svg" alt="" width="200" height="200">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><p class="cap">Two founders, on the record</p><h2 class="h2">Testimonials</h2></div>
+      <blockquote class="clip ruled card reveal" data-x="-40" style="--rot:-1.5deg"><span class="pin"></span><p>Creating a new fraternity on campus has been extremely rewarding. Being able to cultivate a specific community of diverse yet like-minded students has been the best part of my time at UMich. The people I've met through TEK are ones I will have throughout my life.</p><cite><b>Trisha Kant</b>Founder</cite></blockquote>
+      <blockquote class="clip torn reveal" data-x="40" style="--rot:1.2deg"><div class="kick"><span>Founders speak</span><span>From the founding class</span></div><p>Starting TEK has been the best part of my college experience. Watching the fraternity flourish and the members grow closer has been a privilege. TEK has a bright future. May the younger members carry on what we've started.</p><cite><b>Noah Ivers</b>Founder</cite></blockquote>
+      
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section class="apply">
+    <div class="wrap">
+      <div class="card torn reveal" style="--rot:-2deg">
+        <svg class="stk emblem" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M90 70L55 42 30 14M110 70L145 42 170 14M88 82L46 74 12 60M112 82L154 74 188 60M88 92L46 106 16 136M112 92L154 106 184 136M92 102L62 142 42 186M108 102L138 142 158 186"/></g><ellipse cx="100" cy="126" rx="26" ry="40" fill="currentColor"/><circle cx="100" cy="80" r="17" fill="currentColor"/></svg>
+        <span class="tape" style="--w:220px;left:-28px;top:-14px;--r:-7deg"></span><span class="tape" style="--w:220px;right:-28px;left:auto;top:-14px;--r:8deg"></span>
+        <div>
+          <span class="stamp">Wanted</span>
+          <h2 class="h2">Both of you, apply</h2>
+          <p class="type">Applications close Saturday, Sept 12 at noon. Come to one event first, then tell us who you are.<br>Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+        </div>
+        <div class="btns"><a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Open the application</a><a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"><span class="tape"></span>Interest form</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="rush-footer">
+      <a href="/">
+        <img loading="lazy" decoding="async"
+          src="/static/media/tekPics/tekWhite.png"
+          alt="tek logo"
+          tabindex="0"
+        />
+      </a>
+
+      <div class="footer-center">
+        <p>© 2026 Tau Epsilon Kappa Alpha Chapter. All Rights Reserved.</p>
+
+        <!-- Hide urls on screen size less than small -->
+        <!-- Email -->
+        <nav class="nav-links">
+          <ul class="nav-links">
+            <li class="footer-icon mail-icon">
+              <a href="mailto:tauepsilonkappa@umich.edu" target="_blank">
+                <div class="footer-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    width="30px"
+                    height="30px"
+                  >
+                    <path
+                      d="M12 12.713l11.985-6.713c-.331-.518-.978-.851-1.685-.851h-20.6c-.707 0-1.354.333-1.685.851l11.985 6.713zm12-4.471v11.758c0 .828-.673 1.5-1.5 1.5h-21c-.827 0-1.5-.672-1.5-1.5v-11.758l11.985 6.712 11.985-6.712z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li>
+              <a
+                href="https://www.linkedin.com/company/tau-epsilon-kappa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-icon"
+              >
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 48 48"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Instagram -->
+            <li>
+              <a
+                href="https://www.instagram.com/tekumich/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-icon"
+              >
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 48 48"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_17_63)">
+                    <path
+                      d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z"
+                    ></path>
+                    <path
+                      d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z"
+                    ></path>
+                    <path
+                      d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_17_63">
+                      <rect width="48" height="48" fill="white"></rect>
+                        
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script type="module">
+gsap.registerPlugin(ScrollTrigger);
+document.documentElement.classList.add('js');
+// press: quick stamp bounce, then let the link navigate
+document.querySelectorAll('.btn').forEach(b => b.addEventListener('pointerdown', () => gsap.fromTo(b, { scale: .94 }, { scale: 1, duration: .45, ease: 'elastic.out(1,.45)', clearProps: 'scale' })));
+document.fonts.ready.then(() => document.documentElement.classList.add('fonts'));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mm = gsap.matchMedia();
+
+if (!reduce && !matchMedia('(pointer: coarse)').matches) {
+  const lenis = new Lenis({ lerp: .09 });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
+
+// ---- hero paste-up ----
+document.fonts.ready.then(() => {
+  if (reduce) return;
+  const rot = el => parseFloat(el.style.getPropertyValue('--rot')) || 0;
+  const tl = gsap.timeline({ defaults: { ease: 'back.out(1.7)', duration: .7 } });
+  tl.from('.hero .over .hl', { y: 18, opacity: 0, stagger: .12, duration: .5, ease: 'power3.out' })
+    .from('.hero h1', { y: 30, opacity: 0, duration: .7, ease: 'power3.out' }, '-=.2')
+    .from('.hero .bnd, .hero .sub, .hero .cta', { y: 16, opacity: 0, stagger: .08, duration: .5, ease: 'power3.out', clearProps: 'transform,opacity' }, '-=.35')
+    .from('.hero .blob', { scale: .6, opacity: 0, transformOrigin: '50% 50%', duration: .8, stagger: .1 }, '-=.9')
+    .from('.hero .paste', { scale: 1.22, opacity: 0, rotation: (i, el) => rot(el) + 10, stagger: .13, transformOrigin: '50% 50%' }, '-=.6')
+    .from('.hero .note .clip-svg', { y: -20, opacity: 0, duration: .4, ease: 'power2.out' }, '-=.25')
+    ;
+});
+
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  gsap.utils.toArray('.hero [data-depth]').forEach(el => {
+    gsap.to(el, { y: () => -300 * parseFloat(el.dataset.depth), ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  });
+  const hero = document.querySelector('.hero'), items = gsap.utils.toArray('.hero [data-depth]');
+  hero.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5;
+    items.forEach(el => gsap.to(el, { x: x * 22 * el.dataset.depth, duration: .8, ease: 'power2.out', overwrite: 'auto' }));
+  });
+});
+
+// ---- rush week: evidence board, string routed through the pins ----
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  const stage = document.querySelector('.week .stage'), strand = document.getElementById('weekStrand'), svg = strand.ownerSVGElement;
+  const route = () => {
+    const sr = stage.getBoundingClientRect();
+    const pts = gsap.utils.toArray('.week .cards .ev').map(el => { const r = el.getBoundingClientRect(); const f = el.querySelector('.pin, .tape'); const fr = f ? f.getBoundingClientRect() : r; return [fr.left + fr.width * .5 - sr.left, (f ? fr.top + fr.height * .5 : r.top - 4) - sr.top]; });
+    svg.setAttribute('viewBox', `0 0 ${sr.width} ${sr.height}`);
+    strand.setAttribute('d', pts.slice(1).reduce((d, [x1, y1], i) => { const [x0, y0] = pts[i]; return d + ` Q${(x0 + x1) / 2} ${(y0 + y1) / 2 + 26} ${x1} ${y1}`; }, `M${pts[0][0]} ${pts[0][1]}`));
+  };
+  route();
+  const L = strand.getTotalLength();
+  gsap.set(strand, { strokeDasharray: L, strokeDashoffset: L });
+  ScrollTrigger.addEventListener('refresh', () => { route(); const l = strand.getTotalLength(); gsap.set(strand, { strokeDasharray: l, strokeDashoffset: gsap.getProperty(strand, 'strokeDashoffset') > 0 ? l : 0 }); });
+  gsap.utils.toArray('.week .cards .ev').forEach((el, i) => {
+    gsap.from(el, { opacity: 0, y: 60, scale: 1.1, rotation: (parseFloat(el.style.getPropertyValue('--rot')) || 0) - 12, duration: .7, ease: 'back.out(1.6)', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+  });
+  ScrollTrigger.create({ trigger: '.week .cards .ev.e4', start: 'top 85%', once: true, onEnter: () => gsap.to(strand, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut', delay: .3 }) });
+});
+
+
+if (!reduce) gsap.utils.toArray('.reveal').forEach(el => {
+  const rot = parseFloat(getComputedStyle(el).getPropertyValue('--rot')) || 0;
+  const dx = parseFloat(el.dataset.x || 0);
+  gsap.from(el, { y: dx ? 10 : 44, x: dx, opacity: 0, rotation: rot - 4, duration: .85, ease: 'power3.out', clearProps: 'transform,opacity', scrollTrigger: { trigger: el, start: 'top 88%' } });
+});
+if (!reduce) gsap.from('.apply .btns', { y: 14, opacity: 0, delay: .3, clearProps: 'transform,opacity', scrollTrigger: { trigger: '.apply .card', start: 'top 70%' } });
+if (!reduce) gsap.from('.apply .stamp', { scale: 2.6, rotation: -30, opacity: 0, duration: .45, ease: 'power4.in', scrollTrigger: { trigger: '.apply .card', start: 'top 70%' } });
+
+// ---- silk strand: wrist → fingertips → hero top-right corner. Twisted fiber bundle + one damped spring on the arc's control point ----
+{
+  const silk = document.querySelector('.hero .silk'), heroEl = document.querySelector('.hero');
+  const wrist = document.querySelector('.a-wrist'), tip = document.querySelector('.a-tip');
+  if (silk && wrist && tip) {
+    const NS = 'http://www.w3.org/2000/svg', grads = silk.querySelectorAll('linearGradient');
+    const halo = silk.querySelector('.s-halo'), core = silk.querySelector('.s-core');
+    const fibers = Array.from({ length: 5 }, (_, i) => { const p = document.createElementNS(NS, 'path'); p.setAttribute('class', 's-fiber'); p.style.opacity = .55 + .09 * i; silk.appendChild(p); return { p, ph: i * 1.26 + Math.sin(i * 7.3) * .8, k: 1 + (i - 2) * .06, amp: 2.2 + (i % 3) * .9 }; });
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let cx, cy, vx = 0, vy = 0;   // ponytail: one spring on the control point = whole-strand sway; no per-point rope sim
+    const draw = now => {
+      const s = silk.getBoundingClientRect(), h = heroEl.getBoundingClientRect(), w = wrist.getBoundingClientRect(), t = tip.getBoundingClientRect();
+      const ax = w.left - s.left, ay = w.top - s.top, bx = t.left - s.left, by = t.top - s.top, ex = h.right - s.left, ey = h.top - s.top;
+      const tx = bx + (bx - ax) * 1.8, ty = by + (by - ay) * 1.8 + (reduce ? 0 : Math.sin(now / 1300) * 6);
+      if (cx === undefined) { cx = tx; cy = ty + 40; }
+      if (reduce) { cx = tx; cy = ty; } else { vx += (tx - cx) * .035; vy += (ty - cy) * .035; vx *= .9; vy *= .9; cx += vx; cy += vy; }
+      const pts = [], tan = [];
+      for (let i = 0; i <= 6; i++) { const u = i / 6; pts.push([ax + (bx - ax) * u, ay + (by - ay) * u]); tan.push([bx - ax, by - ay]); }
+      for (let i = 1; i <= 60; i++) { const u = i / 60, m = 1 - u; pts.push([m * m * bx + 2 * m * u * cx + u * u * ex, m * m * by + 2 * m * u * cy + u * u * ey]); tan.push([2 * m * (cx - bx) + 2 * u * (ex - cx), 2 * m * (cy - by) + 2 * u * (ey - cy)]); }
+      const d = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('');
+      halo.setAttribute('d', d); core.setAttribute('d', d);
+      const spin = reduce ? 0 : now / 2600, n = pts.length - 1;
+      fibers.forEach(f => {
+        f.p.setAttribute('d', pts.map((p, i) => { const [dx, dy] = tan[i], l = Math.hypot(dx, dy) || 1, u = i / n, off = Math.sin(u * 46 * f.k + f.ph + spin) * f.amp * (.4 + u * .6); return (i ? 'L' : 'M') + (p[0] - dy / l * off).toFixed(1) + ' ' + (p[1] + dx / l * off).toFixed(1); }).join(''));
+      });
+      grads.forEach(g => { g.setAttribute('x1', ax); g.setAttribute('y1', ay); g.setAttribute('x2', ex); g.setAttribute('y2', ey); });
+      requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
+  }
+}
+// ---- applications closed: Apply buttons show a toast instead of navigating ----
+{
+  const interest = document.querySelector('a[href*="docs.google.com/forms"]');
+  const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status');
+  t.innerHTML = `Applications aren't open yet. <a href="${interest.href}">Fill out the interest form</a> instead.`;
+  document.body.appendChild(t);
+  let h; const block = e => { e.preventDefault(); clearTimeout(h); t.classList.add('on'); h = setTimeout(() => t.classList.remove('on'), 4000); };
+  document.querySelectorAll('a[href^="https://forms.gle"]').forEach(a => { a.addEventListener('click', block); a.addEventListener('auxclick', block); });
+}
+// ---- webs and ropes (verlet) ----
+import('/static/js/webs.js').then(({ ropeCanvas, cornerWeb }) => {
+  const desk = matchMedia('(min-width: 901px)').matches;
+  const hero = document.querySelector('.hero .wrap');
+  if (desk) {
+    cornerWeb(document.getElementById('extraWebs'), { corner: 'tr', radius: 300, spokes: 10, rings: 6, color: 'rgba(27,31,58,.42)' });
+    cornerWeb(document.getElementById('weekWebs'), { corner: 'tl', radius: 240, spokes: 9, rings: 6, color: 'rgba(27,31,58,.38)' });
+    cornerWeb(document.getElementById('foundersWebs'), { corner: 'br', radius: 300, spokes: 10, rings: 6, color: 'rgba(27,31,58,.38)' });
+  } else {
+    cornerWeb(document.getElementById('extraWebs'), { corner: 'tr', radius: 160, spokes: 9, rings: 5, color: 'rgba(27,31,58,.4)' });
+  }
+});
+
+// ---- newsprint on cloth ----
+function newsprint(maskImg) {
+  const c = document.createElement('canvas'); c.width = 1600; c.height = 1000; const x = c.getContext('2d');
+  x.fillStyle = '#efe8d8'; x.fillRect(0, 0, c.width, c.height);
+  x.fillStyle = '#d8322a'; x.fillRect(60, 60, 1480, 150);
+  x.fillStyle = '#fff'; x.font = '110px "Alfa Slab One"'; x.textBaseline = 'middle'; x.fillText('TEK RUSH', 90, 138);
+  x.font = '60px "Special Elite"'; x.textAlign = 'right'; x.fillText('FALL 2026', 1510, 138); x.textAlign = 'left';
+  x.fillStyle = '#1b1f3a'; x.font = '300px "Alfa Slab One"'; x.fillText('WANTED', 70, 400);
+  x.fillStyle = '#2d55c4'; x.font = '64px "Special Elite"'; x.fillText('ARE YOU PETER PARKER,', 70, 570); x.fillText('OR ARE YOU SPIDER-MAN?', 70, 650);
+  x.fillStyle = '#1b1f3a'; x.font = '72px "Alfa Slab One"'; x.fillText('INDUSTRY NETWORKING.', 70, 760); x.fillText('PROJECT EXPERIENCE.', 70, 845);
+  if (maskImg) { x.save(); x.globalAlpha = .9; x.drawImage(maskImg, 1100, 560, 430, 430 * maskImg.height / maskImg.width); x.restore(); }
+  x.fillStyle = '#d8322a'; x.font = '70px "Alfa Slab One"'; x.fillText('INSIDE: @TEKUMICH', 70, 945);
+  const img = new Image(); img.alt = 'TEK Rush front page: Wanted. Apply by Sat 9/12 noon'; img.src = c.toDataURL('image/png'); return img;
+}
+const host = document.querySelector('.cloth-host');
+ScrollTrigger.create({ trigger: host, start: 'top 130%', once: true, onEnter: async () => {
+  await document.fonts.ready;
+  const mask = new Image(); mask.src = '/static/media/rush/spidey-mask-riso.webp';
+  await new Promise(r => { mask.onload = r; mask.onerror = r; });
+  const img = newsprint(mask.naturalWidth ? mask : null);
+  const fallback = () => { host.classList.add('static'); host.appendChild(img); };
+  if (reduce || innerWidth < 901) return fallback();
+  try {
+    const { HoloCloth } = await import('/tools/holocloth/holocloth.js');
+    const cloth = new HoloCloth(host, { preset: 'Black Cloth', orbit: false, autoPoke: 0, quality: 'Medium', zoom: 1.35, flat: true,
+      render: { transparent: true, noise: .06, exposure: 1.05, environment: .9, bloom: 0 },
+      material: { baseColor: '#efe8d8', roughness: .7, clearcoat: .05, specTint: .2, metalness: .1 },
+      physics: { viscosity: .86, stiffness: 1, iterations: 14, smoothing: .02, grabRadius: .55, grabStrength: .4, settle: .014 } });
+    await new Promise(r => img.complete ? r() : img.onload = r);
+    await cloth.setImage(img);
+    ScrollTrigger.create({ trigger: host, start: 'top 80%', once: true, onEnter: () => cloth.poke(.5) });
+  } catch (e) { console.warn('cloth fallback', e); fallback(); }
+}});
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holocloth</title>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"
+  }
+}
+</script>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #0b0c12; color: #d7d9e0; font: 13px/1.4 system-ui, sans-serif; }
+  #stage { position: fixed; inset: 0; }
+  #stage.dragover::after { content: 'Drop image'; position: absolute; inset: 16px; border: 2px dashed #7fd4ff; display: grid; place-items: center; font-size: 24px; color: #7fd4ff; pointer-events: none; }
+  #panel { position: fixed; top: 12px; right: 12px; width: 260px; max-height: calc(100% - 24px); overflow: auto; background: rgba(18,19,28,.92); border: 1px solid #2a2c3a; border-radius: 10px; padding: 12px 14px; backdrop-filter: blur(8px); }
+  #panel h1 { font-size: 13px; margin: 0 0 8px; letter-spacing: .08em; text-transform: uppercase; color: #8b9dc3; }
+  fieldset { border: 0; border-top: 1px solid #2a2c3a; margin: 10px 0 0; padding: 8px 0 0; }
+  legend { padding: 0 6px 0 0; color: #8b9dc3; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  label { display: grid; grid-template-columns: 1fr 1.4fr auto; align-items: center; gap: 8px; margin: 4px 0; }
+  label span:last-child { min-width: 3.5em; text-align: right; font-variant-numeric: tabular-nums; color: #8b9dc3; }
+  input[type=range] { width: 100%; }
+  input[type=color] { width: 40px; height: 22px; padding: 0; border: 0; background: none; }
+  select, button { font: inherit; color: inherit; background: #1d1f2b; border: 1px solid #343648; border-radius: 6px; padding: 5px 8px; }
+  button { cursor: pointer; }
+  button:hover { background: #262939; }
+  button.primary { background: #7fd4ff; color: #0b0c12; border-color: #7fd4ff; font-weight: 600; }
+  .row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .row button { flex: 1; }
+  .hint { color: #6b7590; font-size: 11px; margin: 8px 0 0; }
+  input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #7fd4ff; outline-offset: 2px; }
+  @media (max-width: 640px) { #panel { left: 12px; right: 12px; width: auto; top: auto; bottom: 12px; max-height: 45%; } }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<aside id="panel" aria-label="Controls">
+  <h1>Holocloth</h1>
+  <div class="row">
+    <button id="pick" class="primary">Upload image</button>
+    <button id="clear">Clear</button>
+  </div>
+  <input id="file" type="file" accept="image/*" hidden>
+  <fieldset>
+    <legend>Material</legend>
+    <label><span>Preset</span><select id="preset"><option>Holo</option><option>Chrome</option><option>Black Cloth</option></select><span></span></label>
+    <label><span>Base</span><input id="baseColor" type="color" value="#20242d"><span></span></label>
+    <label><span>Holo</span><input data-p="material.holoIntensity" type="range" min="0" max="4" step="0.01" value="3.78"><span></span></label>
+    <label><span>Hue</span><input data-p="material.hueShift" type="range" min="0" max="1" step="0.01" value="0.37"><span></span></label>
+    <label><span>Sparkle</span><input data-p="material.sparkle" type="range" min="0" max="2" step="0.01" value="0.73"><span></span></label>
+    <label><span>Bump</span><input data-p="material.bump" type="range" min="0" max="4" step="0.05" value="3"><span></span></label>
+    <label><span>Corners</span><input data-p="image.cornerRadius" type="range" min="0" max="1" step="0.01" value="0"><span></span></label>
+  </fieldset>
+  <fieldset>
+    <legend>Physics</legend>
+    <label><span>Viscosity</span><input data-p="physics.viscosity" type="range" min="0" max="0.6" step="0.005" value="0.6"><span></span></label>
+    <label><span>Stiffness</span><input data-p="physics.stiffness" type="range" min="0.2" max="1" step="0.01" value="1"><span></span></label>
+    <label><span>Smoothing</span><input data-p="physics.smoothing" type="range" min="0" max="0.3" step="0.005" value="0.045"><span></span></label>
+    <label><span>Grab radius</span><input data-p="physics.grabRadius" type="range" min="0.05" max="1.2" step="0.01" value="0.27"><span></span></label>
+    <div class="row"><button id="poke">Poke</button><button id="reset">Reset</button></div>
+  </fieldset>
+  <fieldset>
+    <legend>Render</legend>
+    <label><span>Background</span><input id="bg" type="color" value="#0b0c12"><span></span></label>
+    <label><span>Exposure</span><input data-p="render.exposure" type="range" min="0.1" max="2" step="0.01" value="0.5"><span></span></label>
+    <label><span>Environment</span><input data-p="render.environment" type="range" min="0" max="2" step="0.01" value="0.73"><span></span></label>
+    <label><span>Bloom</span><input data-p="render.bloom" type="range" min="0" max="1" step="0.01" value="0.05"><span></span></label>
+    <label><span>Grain</span><input data-p="render.noise" type="range" min="0" max="1" step="0.005" value="0.345"><span></span></label>
+    <label><span>Quality</span><select id="quality"><option>High</option><option>Medium</option><option>Low</option></select><span></span></label>
+  </fieldset>
+  <fieldset>
+    <legend>Export</legend>
+    <div class="row"><button id="export" class="primary">PNG</button><button id="exportT">PNG, no background</button></div>
+  </fieldset>
+  <p class="hint">Drag the cloth to pull it. Drag empty space to orbit, scroll to zoom. Drop an image anywhere.</p>
+</aside>
+
+<script type="module">
+import { HoloCloth, PRESETS } from './holocloth.js';
+
+const stage = document.getElementById('stage');
+const cloth = new HoloCloth(stage);
+window.cloth = cloth; // handy in devtools
+
+const $ = (id) => document.getElementById(id);
+const setPath = (path, value) => {
+  const [a, b] = path.split('.');
+  cloth.set({ [a]: { [b]: value } });
+};
+
+// sliders
+for (const input of document.querySelectorAll('input[data-p]')) {
+  const out = input.parentElement.lastElementChild;
+  const show = () => { out.textContent = Number(input.value).toFixed(input.step.includes('.') ? input.step.split('.')[1].length : 0); };
+  show();
+  input.addEventListener('input', () => { show(); setPath(input.dataset.p, Number(input.value)); });
+}
+$('baseColor').addEventListener('input', (e) => setPath('material.baseColor', e.target.value));
+$('bg').addEventListener('input', (e) => setPath('render.background', e.target.value));
+$('quality').addEventListener('change', (e) => cloth.set({ quality: e.target.value }));
+
+// preset: apply, then sync the sliders it touches
+$('preset').addEventListener('change', (e) => {
+  cloth.setPreset(e.target.value);
+  const m = PRESETS[e.target.value];
+  $('baseColor').value = m.baseColor;
+  for (const input of document.querySelectorAll('input[data-p^="material."]')) {
+    const key = input.dataset.p.split('.')[1];
+    if (key in m) { input.value = m[key]; input.dispatchEvent(new Event('input')); }
+  }
+});
+
+// images
+const useFile = (file) => { if (file && file.type.startsWith('image/')) cloth.setImage(URL.createObjectURL(file)); };
+$('pick').addEventListener('click', () => $('file').click());
+$('file').addEventListener('change', (e) => useFile(e.target.files[0]));
+$('clear').addEventListener('click', () => cloth.clearImage());
+stage.addEventListener('dragover', (e) => { e.preventDefault(); stage.classList.add('dragover'); });
+stage.addEventListener('dragleave', () => stage.classList.remove('dragover'));
+stage.addEventListener('drop', (e) => { e.preventDefault(); stage.classList.remove('dragover'); useFile(e.dataTransfer.files[0]); });
+
+$('poke').addEventListener('click', () => cloth.poke(1));
+$('reset').addEventListener('click', () => cloth.reset());
+
+const download = (transparent) => {
+  const a = document.createElement('a');
+  a.href = cloth.exportPNG({ transparent });
+  a.download = `holocloth${transparent ? '-nobg' : ''}-${new Date().toISOString().replace(/[:.]/g, '-')}.png`;
+  a.click();
+};
+$('export').addEventListener('click', () => download(false));
+$('exportT').addEventListener('click', () => download(true));
+</script>
+</body>
+</html>

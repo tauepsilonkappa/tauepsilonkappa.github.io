@@ -12,3 +12,7 @@ dist/
 !.env.example
 focus-tool.html
 static/media/_sources/
+
+# Playwright MCP session output
+.playwright-mcp/
+__pycache__/
