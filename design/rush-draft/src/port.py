@@ -59,7 +59,7 @@ html = f'''<!doctype html>
 <link rel="stylesheet" href="https://use.typekit.net/zje6zde.css">
 <link rel="stylesheet" href="/static/css/html5reset.css">
 <link rel="stylesheet" href="/static/css/base.css">
-<link rel="stylesheet" href="/static/css/rush-new.css">
+<link rel="stylesheet" href="/static/css/rush-fa27.css">
 {importmap}
 <script src="/static/js/main.js"></script>
 <script src="/static/js/navigation.js"></script>
