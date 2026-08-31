@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Brand New Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Special+Elite&family=Figtree:wght@400;600;800&display=swap">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"}}</script>
+<style>
+:root{
+  --ink:#1b1f3a; --ink-2:#3d4157; --red:#d8322a; --cobalt:#2d55c4; --paper:#ece5d4; --card:#f6f1e6; --tape:rgba(246,224,140,.62);
+  --slab:"Alfa Slab One","Rockwell Extra Bold",serif; --type:"Special Elite","Courier New",monospace; --body:"Figtree","Quasimoda",system-ui,sans-serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}
+body{margin:0;background:var(--paper);background-image:linear-gradient(rgba(45,85,196,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(45,85,196,.07) 1px,transparent 1px);background-size:28px 28px;color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;background-image:var(--grain);opacity:.11;mix-blend-mode:multiply;pointer-events:none;z-index:60}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.site-header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding-right:50px;position:relative;z-index:20;box-shadow:0 0 30px rgb(127 137 161/30%)}
+.site-header .logo img{width:200px;height:auto;margin:15px;display:block}
+.site-header nav.full ul{display:flex;list-style:none;margin:0;padding:0}
+.site-header a{padding:10px;font:600 18px/1 "Figtree",system-ui,sans-serif;color:#293786;text-decoration:none}
+.site-header a.active{font-weight:800;font-size:21px}
+.site-header nav.mobile{display:none}
+.burger{background:none;border:0;padding:12px;cursor:pointer;display:flex;flex-direction:column;gap:5px}
+.burger span{display:block;width:24px;height:3px;background:#293786;border-radius:2px}
+@media (max-width:767px){.site-header{padding-right:6px}.site-header .logo img{width:130px;margin:10px}.site-header nav.full{display:none}.site-header nav.mobile{display:block}}
+.site-footer{display:flex;align-items:center;justify-content:space-between;padding:20px 30px;background:#2b3c67;color:#fff;position:relative;z-index:20}
+.site-footer img{width:120px;height:auto;display:block}
+.site-footer .footer-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.site-footer p{margin:0;font:400 14px/1.4 "Figtree",system-ui,sans-serif}
+.site-footer ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+.site-footer a{color:#fff;display:block}
+.site-footer a:hover{color:#fbf7de}
+@media (max-width:767px){.site-footer{flex-direction:column;gap:14px;padding:22px 16px 26px}.site-footer .footer-center{position:static;transform:none}.site-footer p{font-size:12px;text-align:center}}
+.wrap{width:min(1180px,100% - 2rem);margin-inline:auto}
+main{position:relative}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---- material vocabulary ---- */
+.sticker{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(8px 14px 14px rgba(20,20,40,.32))}
+.card{background:var(--card) url(/assets/paper-tan.jpg) center/700px;background-blend-mode:multiply;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,6px 10px 22px rgba(20,20,40,.22);position:relative}
+.card.light{background:#f4efe3 url(/assets/paper-white.jpg) center/600px;background-blend-mode:multiply}
+.torn{position:relative;background:none!important;box-shadow:none!important}
+.torn::before{content:"";position:absolute;inset:0;z-index:-1;background:#f3eee2 url(/assets/paper-white.jpg) center/600px;filter:url(#torn) drop-shadow(6px 10px 18px rgba(20,20,40,.22))}
+.tape{position:absolute;width:var(--w,118px);height:30px;background:repeating-linear-gradient(90deg,transparent 0 6px,rgba(255,255,255,.14) 6px 8px,transparent 8px 21px),var(--tape);mix-blend-mode:multiply;clip-path:polygon(0 14%,2% 4%,5% 11%,7% 0,11% 13%,89% 10%,92% 2%,94% 12%,97% 0,100% 15%,100% 86%,98% 97%,95% 90%,92% 100%,88% 88%,11% 91%,8% 100%,5% 89%,2% 98%,0 84%);transform:rotate(var(--r,-6deg));box-shadow:0 1px 2px rgba(0,0,0,.08);pointer-events:none}
+.tape::after{content:"";position:absolute;inset:0;background:url(/assets/paper-white.jpg) center/300px;opacity:.5;mix-blend-mode:multiply}
+.pin{position:absolute;top:-9px;left:14px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff7b74,var(--red) 60%,#9c1f1a);box-shadow:0 3px 4px rgba(0,0,0,.4);z-index:2}
+.pin.blue{background:radial-gradient(circle at 35% 35%,#7f9cf0,var(--cobalt) 60%,#1a338a)}
+.clip-svg{position:absolute;top:-22px;right:18px;width:26px;height:auto;transform:rotate(-8deg);filter:drop-shadow(1px 2px 2px rgba(0,0,0,.25));z-index:2}
+.hl{display:inline;font-family:var(--type);letter-spacing:.02em;padding:.08em .38em .04em;color:#fff;background:var(--ink);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl.red{background:var(--red)}.hl.blue{background:var(--cobalt)}.hl.paper{background:var(--card);color:var(--ink)}
+.type{font-family:var(--type);letter-spacing:.02em}
+.stamp{display:inline-block;font:400 1.25rem/1 var(--slab);letter-spacing:.08em;text-transform:uppercase;color:var(--red);border:4px solid var(--red);border-radius:.3em;padding:.35em .6em;transform:rotate(-6deg);box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 4px var(--red);mix-blend-mode:multiply;opacity:.9;filter:url(#rough)}
+.stamp.blue{color:var(--cobalt);border-color:var(--cobalt);box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 4px var(--cobalt)}
+.blob{position:absolute;mix-blend-mode:multiply;opacity:.88;pointer-events:none;filter:url(#torn)}
+.blob path{fill:var(--red)}.blob.blue path{fill:var(--cobalt)}
+.btn{display:inline-block;position:relative;background:var(--red);color:#fff;text-decoration:none;font:400 1.05rem/1 var(--slab);letter-spacing:.02em;padding:.95em 1.4em .85em;border:3px solid #fff;clip-path:polygon(0 4%,3% 0,97% 2%,100% 8%,99% 94%,96% 100%,4% 98%,0 92%);filter:drop-shadow(2px 4px 3px rgba(0,0,0,.3));transform:rotate(-1.5deg);transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{transform:rotate(0) translateY(-2px)}
+.btn.blue{background:var(--cobalt)}
+.btn.ghost{background:none;color:var(--ink);font-family:var(--type);font-size:.95rem;border:0;clip-path:none;filter:none;transform:rotate(1deg);isolation:isolate}
+.btn.ghost::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--card) url(/assets/paper-white.jpg) center/300px;border:1px solid rgba(27,31,58,.35);filter:url(#torn) drop-shadow(1px 2px 3px rgba(0,0,0,.2))}
+.btn.ghost .tape{--w:70px;top:-10px;left:14%;--r:4deg}
+.date-dot{width:96px;aspect-ratio:1;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;text-align:center;font:400 .82rem/1.1 var(--slab);letter-spacing:.04em;text-transform:uppercase;box-shadow:.15em .15em 0 var(--red);transform:rotate(6deg)}
+.marker{position:relative;display:inline-block}
+.marker svg{position:absolute;left:-2%;right:-2%;bottom:-.25em;width:104%;height:.55em;overflow:visible}
+.marker svg path{fill:none;stroke:var(--red);stroke-width:5;stroke-linecap:round;opacity:.85}
+
+/* ---- hero ---- */
+.hero{position:relative;min-height:calc(100svh - 92px);padding:clamp(1.2rem,3vw,2.6rem) 0 5rem;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(45,85,196,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(45,85,196,.09) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(#000 60%,transparent);pointer-events:none;z-index:-1}
+.hero .wrap{position:relative;min-height:min(78vh,760px)}
+.hero .head{position:relative;z-index:5;max-width:36rem}
+.hero .over{display:flex;flex-wrap:wrap;gap:.6rem .8rem;align-items:center;margin:0 0 .9rem;font-size:clamp(.9rem,1.35vw,1.08rem)}
+.hero .over .hl{transform:rotate(-1.2deg);display:inline-block}.hero .over .hl + .hl{transform:rotate(1.4deg)}
+.hero h1{margin:0;font:400 clamp(4.6rem,12vw,10.5rem)/.86 var(--slab);color:var(--red);letter-spacing:-.01em;text-transform:uppercase;position:relative;filter:url(#rough)}
+.hero h1::before{content:attr(data-text);position:absolute;inset:0;color:var(--cobalt);transform:translate(.045em,-.035em);z-index:-1;opacity:.85}
+.hero .bnd{display:block;margin:.35em 0 0;font:400 clamp(1.3rem,2.6vw,2.2rem)/1 var(--slab);color:var(--cobalt);letter-spacing:.16em;text-transform:uppercase;transform:rotate(-1deg);transform-origin:left}
+.hero .sub{margin:1.1rem 0 0;max-width:30rem;font-size:1.06rem;color:var(--ink-2)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:1.1rem 1.4rem;align-items:center;margin-top:1.6rem}
+.hero .paste{position:absolute;will-change:transform}
+.hero .jump{left:41%;top:20%;width:clamp(400px,50vw,680px);z-index:4;transform:rotate(var(--rot));pointer-events:none}
+.hero .swing{right:1%;top:1%;width:clamp(120px,14vw,190px);z-index:5;transform:rotate(var(--rot))}
+.hero .note{right:3%;bottom:2%;width:clamp(200px,24vw,300px);padding:1rem 1.1rem 1.2rem;z-index:6;transform:rotate(var(--rot));font:400 .82rem/1.45 var(--type)}
+.hero .note h2{margin:0 0 .5em;font:400 .78rem/1 var(--type);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border-bottom:2px dashed var(--red);padding-bottom:.5em}
+.hero .note dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.3em .8em}
+.hero .note dt{color:var(--ink)}.hero .note dd{margin:0}
+.hero .blob.b1{right:0;top:10%;width:50vw;max-width:680px;transform:rotate(-12deg);z-index:1}
+.hero .blob.b2{left:52%;bottom:-10%;width:26vw;max-width:380px;transform:rotate(8deg);z-index:1}
+.hero .strand{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.hero .strand path{fill:none;stroke:var(--ink);stroke-width:1.2;opacity:.55}
+.hero .cluster{display:contents}
+
+/* ---- newsprint on cloth ---- */
+.extra{position:relative;z-index:1;padding:1rem 0 1rem}
+.extra .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2rem;align-items:center}
+.extra .wrap>*{min-width:0}
+.extra h2{margin:0;font:400 clamp(1.5rem,3vw,2.3rem)/1.5 var(--type);text-transform:none;letter-spacing:.01em}
+.extra h2 .hl{font-size:1em}
+.extra p{margin:1em 0 0;max-width:34ch;color:var(--ink-2)}
+.extra .cloth-host{position:relative;aspect-ratio:16/9;min-height:320px;cursor:grab}
+.extra .cloth-host canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.extra .cloth-host.static{cursor:default}
+.extra .cloth-host.static img{position:absolute;left:6%;top:8%;width:88%;max-width:88%;height:auto;transform:rotate(-3deg);filter:url(#torn) drop-shadow(10px 16px 18px rgba(20,20,40,.35))}
+.extra .hint{position:absolute;left:12%;bottom:16%;font:400 .78rem/1 var(--type);color:var(--ink-2);letter-spacing:.08em}
+.extra .cloth-host.static .hint{display:none}
+
+/* ---- rush week (pinned evidence board) ---- */
+.week{position:relative;padding:1rem 0 2rem}
+.week .stage{position:relative;min-height:82vh}
+.week .title{position:relative;z-index:3;max-width:34rem}
+.week h2{margin:.3em 0 0;font:400 clamp(2.4rem,6vw,5rem)/.9 var(--slab);text-transform:uppercase;color:var(--ink)}
+.week h2 em{font-style:normal;color:var(--cobalt)}
+.week .title{max-width:none;display:inline-block}
+.week .title .stamp{position:absolute;left:calc(100% - 2.2rem);top:.6rem;font-size:.95rem;z-index:2;transform:rotate(-8deg);white-space:nowrap}
+.week .strand{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.week .strand path{fill:none;stroke:var(--red);stroke-width:2.2;opacity:.9;stroke-linecap:round;filter:drop-shadow(1px 2px 1px rgba(0,0,0,.3))}
+.week .cards{position:absolute;inset:0;z-index:2}
+.week .ev .pin,.week .ev .tape{z-index:3}
+.week .ev{position:absolute;width:clamp(180px,20vw,270px);padding:.9rem 1rem 1.1rem;transform:rotate(var(--rot));will-change:transform}
+.week .ev .d{font:400 .78rem/1.3 var(--type);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.week .ev .d b{display:block;font:400 2rem/1 var(--slab);color:var(--ink);letter-spacing:0;margin:.15em 0 .35em}
+.week .ev h3{margin:0;font:800 1.05rem/1.15 var(--body);text-transform:uppercase;letter-spacing:.01em}
+.week .ev .t{display:block;margin-top:.35em;font:400 .85rem/1.2 var(--type);color:var(--ink)}
+.week .ev p{margin:.5em 0 0;font-size:.86rem;color:var(--ink-2)}
+/* five different objects */
+.week .ev.e0{width:clamp(200px,22vw,290px)}
+.week .ev.e0 .tape{--w:96px;left:12%;top:-12px;--r:-11deg}
+.week .ev.e1{background:#f1d2cc;box-shadow:4px 8px 18px rgba(20,20,40,.22);width:clamp(170px,18vw,230px)}
+.week .ev.e1 .pin{left:auto;right:16px}
+.week .ev.e2{background:repeating-linear-gradient(transparent 0 1.45rem,rgba(45,85,196,.35) 1.45rem calc(1.45rem + 1px)),linear-gradient(#f6f1e6 0 1.3rem,var(--red) 1.3rem calc(1.3rem + 2px),#f6f1e6 calc(1.3rem + 2px));background-blend-mode:normal;box-shadow:6px 10px 22px rgba(20,20,40,.22);width:clamp(200px,22vw,290px);padding-top:1.5rem}
+.week .ev.e2 .tape{--w:134px;left:58%;top:-12px;--r:6deg}
+.week .ev.e3 .tape{--w:112px;left:30%;top:-12px;--r:-4deg}
+.week .ev.e3 .hang{position:absolute;right:-34%;bottom:-38%;width:70%;transform:rotate(-18deg);pointer-events:none}
+.week .ev.e4{background:none;box-shadow:none;padding-top:1.2rem}
+.week .ev.e4::before{content:"";position:absolute;inset:0;z-index:-1;background:#fbf8f0 url(/assets/paper-white.jpg) center/500px;background-blend-mode:multiply;filter:url(#torn) drop-shadow(6px 10px 18px rgba(20,20,40,.22))}
+.week .ev.e4 .stamp{position:absolute;right:-8%;top:-1.4rem;font-size:.95rem;transform:rotate(-12deg)}
+.week .ev.e4 .d,.week .ev.e4 .d b{color:var(--red)}
+.week .ev.e0{left:2%;top:34%}.week .ev.e1{left:22%;top:62%}.week .ev.e2{left:41%;top:28%}.week .ev.e3{left:60%;top:58%}.week .ev.e4{left:78%;top:24%}
+.week .ev.e1,.week .ev.e3{z-index:1}
+.week .ev.e0,.week .ev.e2,.week .ev.e4{z-index:0}
+.week .mobile-list{display:none}
+
+/* ---- tape marquee ---- */
+.marquee{position:relative;margin:2rem 0 3rem;transform:rotate(-1.6deg);overflow:hidden;background:var(--tape);mix-blend-mode:multiply;padding:.55em 0}
+.marquee .track{display:flex;gap:3rem;white-space:nowrap;font:400 1.1rem/1 var(--type);letter-spacing:.14em;text-transform:uppercase;width:max-content}
+.marquee span{padding-right:3rem}
+
+/* ---- Q&A: notes pinned around a heading note ---- */
+.qa{padding:2rem 0 3rem}
+.qa .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6rem 2rem;align-items:start}
+.qa .head{grid-column:1/-1;max-width:34rem}
+.qa .head h2{margin:0;font:400 clamp(1.4rem,2.6vw,2rem)/1.5 var(--type);text-transform:none}
+.note-s{padding:1.3rem 1.2rem 1.5rem;transform:translateY(var(--dy,0)) rotate(var(--rot))}
+.note-s h3{margin:0 0 .7em;font:400 1.02rem/1.6 var(--type);text-transform:none}
+.note-s p{margin:0;font-size:.98rem}
+.qa .note-s:nth-of-type(1){--dy:0}.qa .note-s:nth-of-type(2){--dy:2.4rem}.qa .note-s:nth-of-type(3){--dy:-.6rem}
+
+/* ---- founders (torn newsprint) ---- */
+.founders{padding:2rem 0 3rem;position:relative}
+.founders .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;position:relative;align-items:start}
+.founders .head{grid-column:1/-1;max-width:34rem}
+.founders h2{margin:0;font:400 clamp(1.5rem,3vw,2.3rem)/1.4 var(--type);text-transform:none}
+.clip{padding:1.6rem 1.5rem 1.4rem;transform:rotate(var(--rot));position:relative;z-index:1}
+.clip .kick{font:400 .72rem/1 var(--type);letter-spacing:.16em;text-transform:uppercase;color:var(--red);border-bottom:2px solid var(--ink);padding-bottom:.6em;margin-bottom:.9em;display:flex;justify-content:space-between}
+.clip p{margin:0 0 .9em;font-size:1.02rem}
+.clip p::first-letter{font:400 2.6em/.85 var(--slab);float:left;padding:.05em .12em 0 0;color:var(--red)}
+.clip cite{font:400 .8rem/1.4 var(--type);font-style:normal;letter-spacing:.1em;text-transform:uppercase}
+.clip cite b{display:block;font:800 1rem/1.2 var(--body);letter-spacing:0}
+.founders .clip:nth-of-type(1){max-width:34rem}
+.founders .clip:nth-of-type(2){max-width:28rem;margin-top:3.5rem;justify-self:end}
+.founders .clip:nth-of-type(2) p::first-letter{font:inherit;float:none;padding:0;color:inherit}
+.founders .flip{position:absolute;right:2%;top:-10%;width:clamp(120px,13vw,190px);height:auto;transform:rotate(12deg);z-index:0}
+
+/* ---- apply ---- */
+.apply{padding:2rem 0 5rem}
+.apply .card{max-width:60rem;margin:0 auto;padding:clamp(1.6rem,4vw,3rem);display:grid;grid-template-columns:1fr auto;gap:1.6rem 2.4rem;align-items:center;transform:rotate(-.6deg)}
+.apply .stamp{font-size:clamp(1.6rem,3.4vw,2.6rem);margin-bottom:.6em}
+.apply h2{margin:0;font:400 clamp(1.4rem,2.8vw,2.1rem)/1.5 var(--type);text-transform:none}
+.apply p{margin:.9em 0 0;max-width:46ch;color:var(--ink)}
+.apply p a{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--red)}
+.apply .btns{display:grid;gap:1.2rem;justify-items:start}
+.apply .tape{--w:100px;top:-12px;left:8%;--r:-5deg}
+
+@media (prefers-reduced-motion:reduce){.paste,.reveal,.ev{opacity:1!important;transform:rotate(var(--rot,0))!important}}
+@media (max-width:900px){
+  .hero{padding-top:1rem;padding-bottom:2rem}
+  .hero .wrap{min-height:auto}
+  .hero .head{max-width:100%}
+  .hero .jump,.hero .strand{display:none}
+  .hero .blob.b1{right:-24%;top:-6%;width:70vw}
+  .hero .blob.b2{left:-24%;bottom:auto;top:62%;width:60vw}
+  .hero .cluster{display:block;position:relative;height:clamp(230px,60vw,330px);margin-top:1.4rem}
+  .hero .swing{position:absolute;right:-4%;top:0;width:42vw;z-index:2}
+  .hero .cluster .date-dot{position:absolute;left:4%;top:40%;transform:rotate(-8deg)}
+  .hero .note{position:relative;right:auto;bottom:auto;top:auto;width:min(100%,22rem);margin:.6rem 0 0}
+  .extra .wrap{grid-template-columns:minmax(0,1fr)}
+  .extra .cloth-host{aspect-ratio:auto;height:270px;min-height:0;width:100%}
+  .week .stage{min-height:auto}
+  .week .cards,.week .strand{display:none}
+  .week .title .stamp{position:static;display:inline-block;margin-top:.8rem}
+  .week .mobile-list{display:grid;gap:1.6rem;margin-top:1.6rem;list-style:none;padding:0}
+  .week .mobile-list .ev{position:relative;width:min(100%,26rem);left:auto!important;top:auto!important;margin:0 auto}
+  .week .mobile-list .ev.e3 .hang{right:auto;left:-8%;bottom:-18%;width:40%;transform:rotate(14deg)}
+  .week .mobile-list .ev.e4{margin-top:2.2rem}
+  .qa .wrap{grid-template-columns:1fr}
+  .note-s{--dy:0!important}
+  .founders .wrap{grid-template-columns:1fr}
+  .founders .clip:nth-of-type(2){margin-top:0;justify-self:stretch;max-width:none}
+  .founders .flip{right:0;top:-1%;width:20vw}
+  .apply .card{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="torn" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035 .07" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <filter id="rough" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6"/></filter>
+  <symbol id="paperclip" viewBox="0 0 40 90"><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#8d93a6" stroke-width="3.2" stroke-linecap="round"/><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".6"/></symbol>
+</svg>
+<header class="site-header">
+  <a class="logo" href="/"><img src="/static/media/tekPics/tekNavy.png" alt="tek logo" width="200"></a>
+  <nav class="full" aria-label="large navigation"><ul>
+    <li><a href="/">HOME</a></li><li><a href="/members">MEMBERS</a></li><li><a href="/alumni">ALUMNI</a></li><li><a href="/activities">ACTIVITIES</a></li><li><a href="/rush" class="active" aria-current="page">RUSH</a></li>
+  </ul></nav>
+  <nav class="mobile" aria-label="mobile navigation"><button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button></nav>
+</header>
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <svg class="blob b1" viewBox="0 0 400 300" aria-hidden="true"><path d="M60 140c-20-70 60-120 140-118 60 1 90 40 150 30 40-7 50 40 40 90-8 40-40 70-20 110-30 40-110 50-170 30-60-20-70-70-100-90-40-25-30-30-40-52z"/></svg>
+      <svg class="blob b2 blue" viewBox="0 0 400 300" aria-hidden="true"><path d="M40 150c-30-60 40-110 100-100 50 8 60-30 130-20 70 10 120 60 110 120-8 50-60 60-70 100-10 40-90 40-150 20-50-17-70-30-90-60-15-22-20-35-30-60z"/></svg>
+      <svg class="strand" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path d="M940 60 C 900 160, 860 230, 800 300 S 700 380, 640 420"/><path d="M950 80 C 900 110, 820 140, 760 200"/></svg>
+      <div class="head">
+        <p class="over"><span class="hl red">Are you Peter Parker?</span><span class="hl blue">Or are you Spider-Man?</span></p>
+        <h1 data-text="TEK Rush">TEK Rush</h1>
+        <span class="bnd">Brand New Day</span>
+        <p class="sub">Michigan's professional technology fraternity. Every member is the student with the problem set due at midnight <em>and</em> the one who shipped the project. All majors. Five days in September to find out which one you are.</p>
+        <div class="cta">
+          <a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Apply by Sat 9/12 · noon</a>
+          <a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSfX854ImNU2sAhxdPtWQ6LyX9Kq9qkI3ChX1ZdqHTKFPQWWXg/viewform"><span class="tape"></span>Interest form</a>
+          <span class="date-dot" aria-hidden="true">Sept<br>8–12<br>2026</span>
+        </div>
+      </div>
+      <img class="paste jump" data-depth=".25" style="--rot:-6deg" src="/assets/spidey-jump-riso.webp" alt="" width="1200" height="555">
+      <div class="cluster">
+        <img class="paste sticker swing" data-depth=".6" style="--rot:8deg" src="/assets/spidey-swing.webp" alt="" width="714" height="1100">
+      </div>
+      <aside class="paste card note" data-depth=".35" style="--rot:3deg">
+        <svg class="clip-svg" aria-hidden="true"><use href="#paperclip"/></svg>
+        <h2>Known characteristics</h2>
+        <dl><dt>Majors</dt><dd>All of them</dd><dt>Years</dt><dd>Freshmen &amp; sophomores</dd><dt>Seen</dt><dd>Sept 8–12, Ann Arbor</dd><dt>Status</dt><dd>Recruiting</dd></dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EXTRA: newsprint on cloth -->
+  <section class="extra">
+    <div class="wrap">
+      <div class="reveal" style="--rot:0">
+        <h2><span class="hl">Read all</span><br><span class="hl red">about it.</span></h2>
+        <p>One week. Five events. One short application. The whole schedule fits on a single front page.</p>
+      </div>
+      <div class="cloth-host" aria-label="TEK Rush front page: Wanted. Apply by Sat 9/12 noon"><span class="hint">pull the paper →</span></div>
+    </div>
+  </section>
+
+  <!-- RUSH WEEK -->
+  <section class="week" id="week">
+    <div class="wrap stage">
+      <div class="title reveal" style="--rot:0">
+        <h2>Rush <em>week.</em></h2>
+        <span class="stamp">Sept 8–12 · Ann Arbor</span>
+      </div>
+      <svg class="strand" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path id="weekStrand" d="M60 250 C 160 330, 220 360, 300 380 S 420 250, 520 240 S 640 360, 720 380 S 830 210, 900 180"/></svg>
+      <div class="cards">
+        <article class="ev card e0" style="--rot:-4deg"><span class="tape"></span><span class="d">Tue<b>9/8</b></span><h3>Info Session</h3><span class="t">6–7 pm</span><p>Start here. What the fraternity is, how rush works, and what you get out of joining.</p></article>
+        <article class="ev card e1" style="--rot:5deg"><span class="pin"></span><span class="d">Wed<b>9/9</b></span><h3>DEI Panel</h3><span class="t">6:30–7:30 pm</span><p>Current members talk about belonging in tech and in TEK. Questions welcome.</p></article>
+        <article class="ev card e2" style="--rot:-2deg"><span class="tape"></span><span class="d">Thu<b>9/10</b></span><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>No agenda. Come talk to members about classes, projects and recruiting.</p></article>
+        <article class="ev card e3" style="--rot:3deg"><span class="tape"></span><img class="hang sticker" src="/assets/spidey-jump-riso.webp" alt="" width="1200" height="555"><span class="d">Fri<b>9/11</b></span><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>A second night for anyone who missed Thursday or wants to come back.</p></article>
+        <article class="ev card e4" style="--rot:-3deg"><span class="pin blue"></span><span class="stamp">Due · Sat noon</span><span class="d">Sat<b>9/12</b></span><h3>Application due</h3><span class="t">12:00 noon</span><p>The form is short. Come to at least one event first, then tell us who you are.</p></article>
+        
+      </div>
+      <ol class="mobile-list">
+        <li class="ev card reveal e0" style="--rot:-2deg"><span class="tape"></span><span class="d">Tue<b>9/8</b></span><h3>Info Session</h3><span class="t">6–7 pm</span><p>Start here. What the fraternity is, how rush works, and what you get out of joining.</p></li>
+        <li class="ev card reveal e1" style="--rot:2deg"><span class="pin"></span><span class="d">Wed<b>9/9</b></span><h3>DEI Panel</h3><span class="t">6:30–7:30 pm</span><p>Current members talk about belonging in tech and in TEK. Questions welcome.</p></li>
+        <li class="ev card reveal e2" style="--rot:-1.5deg"><span class="tape"></span><span class="d">Thu<b>9/10</b></span><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>No agenda. Come talk to members about classes, projects and recruiting.</p></li>
+        <li class="ev card reveal e3" style="--rot:2deg"><span class="tape"></span><img class="hang sticker" src="/assets/spidey-jump-riso.webp" alt="" width="1200" height="555"><span class="d">Fri<b>9/11</b></span><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>A second night for anyone who missed Thursday or wants to come back.</p></li>
+        <li class="ev card reveal e4" style="--rot:-2deg"><span class="pin blue"></span><span class="stamp">Due · Sat noon</span><span class="d">Sat<b>9/12</b></span><h3>Application due</h3><span class="t">12:00 noon</span><p>The form is short. Come to at least one event first, then tell us who you are.</p></li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Apply by Sat 9/12 · noon</span><span>All majors</span><span>Freshmen &amp; sophomores</span><span>@tekumich</span><span>Info session Tue 9/8</span><span>Brand new day</span>
+    <span>Apply by Sat 9/12 · noon</span><span>All majors</span><span>Freshmen &amp; sophomores</span><span>@tekumich</span><span>Info session Tue 9/8</span><span>Brand new day</span>
+  </div></div>
+
+  <!-- Q&A -->
+  <section class="qa">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><h2><span class="hl blue">Questions from the crowd,</span> <span class="hl paper">answered on the back of whatever was nearby.</span></h2></div>
+      <div class="note-s card reveal" style="--rot:-3deg"><span class="tape" style="--w:90px;left:10%;top:-12px;--r:-9deg"></span><h3><span class="hl blue">I'm not a tech major. Can I still apply?</span></h3><p>Yes. We take every major. Curiosity about technology is the bar, not a transcript.</p></div>
+      <div class="note-s card light reveal" style="--rot:2deg"><span class="pin"></span><h3><span class="hl red">I'm a sophomore. Is it too late?</span></h3><p>No. Freshmen and sophomores are exactly who we recruit.</p></div>
+      <div class="note-s card torn reveal" style="--rot:-1.5deg"><svg class="clip-svg" aria-hidden="true"><use href="#paperclip"/></svg><h3><span class="hl">What's the time commitment?</span></h3><p>Pledging scales with what you want out of it. Expect a few hours a week during the process; after that, it's yours to set.</p></div>
+      
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><h2>Two founders, on the record: <span class="marker">why it exists<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 40 2, 90 10, 130 5 S 180 4, 198 7"/></svg></span></h2></div>
+      <img class="sticker flip reveal" src="/assets/spidey-flip.webp" alt="" width="558" height="900" style="--rot:12deg">
+      <blockquote class="clip torn reveal" style="--rot:-1.5deg"><div class="kick"><span>Founder's note</span><span>№ 1</span></div><p>Creating a new fraternity on campus has been extremely rewarding. Being able to cultivate a specific community of diverse yet like-minded students has been the best part of my time at UMich. The people I've met through TEK are ones I will have throughout my life.</p><cite><b>Trisha Kant</b>Founder</cite></blockquote>
+      <blockquote class="clip torn reveal" style="--rot:1.2deg"><div class="kick"><span>Founder's note</span><span>№ 2</span></div><p>Starting TEK has been the best part of my college experience. Watching the fraternity flourish and the members grow closer has been a privilege. TEK has a bright future — may the younger members carry on what we've started.</p><cite><b>Noah Ivers</b>Founder</cite></blockquote>
+      
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section class="apply">
+    <div class="wrap">
+      <div class="card reveal" style="--rot:-.6deg">
+        <span class="tape"></span>
+        <div>
+          <span class="stamp">Wanted</span>
+          <h2><span class="hl red">Both of you.</span> <span class="hl">Apply by Saturday, Sept 12 at noon.</span></h2>
+          <p>Short form. Come to one event first, then tell us who you are. Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+        </div>
+        <div class="btns"><a class="btn blue" href="https://forms.gle/LbX77aMKqMnf3Fx68">Open the application</a><a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSfX854ImNU2sAhxdPtWQ6LyX9Kq9qkI3ChX1ZdqHTKFPQWWXg/viewform"><span class="tape"></span>Interest form</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <a href="/"><img src="/static/media/tekPics/tekWhite.png" alt="tek logo" width="120"></a>
+  <div class="footer-center">
+    <p>© 2026 Tau Epsilon Kappa Alpha Chapter. All Rights Reserved.</p>
+    <ul>
+      <li><a href="mailto:tauepsilonkappa@umich.edu" aria-label="Email"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 12.713l11.985-6.713c-.331-.518-.978-.851-1.685-.851h-20.6c-.707 0-1.354.333-1.685.851l11.985 6.713zm12-4.471v11.758c0 .828-.673 1.5-1.5 1.5h-21c-.827 0-1.5-.672-1.5-1.5v-11.758l11.985 6.712 11.985-6.712z"/></svg></a></li>
+      <li><a href="https://www.linkedin.com/company/tau-epsilon-kappa" aria-label="LinkedIn"><svg viewBox="0 0 48 48" width="26" height="26"><path fill="currentColor" d="M44.4 0H3.5C1.6 0 0 1.5 0 3.5v41.1C0 46.4 1.6 48 3.5 48h40.9c2 0 3.6-1.6 3.6-3.5V3.5C48 1.5 46.4 0 44.4 0zM14.2 40.9H7.1V18h7.1v22.9zM10.7 14.9c-2.3 0-4.1-1.9-4.1-4.1s1.8-4.1 4.1-4.1 4.1 1.8 4.1 4.1-1.8 4.1-4.1 4.1zM40.9 40.9h-7.1V29.8c0-2.7 0-6.1-3.7-6.1s-4.3 2.9-4.3 5.9v11.3h-7.1V18h6.8v3.1h.1c1-1.8 3.3-3.7 6.7-3.7 7.2 0 8.6 4.7 8.6 10.9v12.6z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/tekumich/" aria-label="Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script type="module">
+gsap.registerPlugin(ScrollTrigger);
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mm = gsap.matchMedia();
+
+if (!reduce && !matchMedia('(pointer: coarse)').matches) {
+  const lenis = new Lenis({ lerp: .09 });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
+
+// ---- hero paste-up ----
+document.fonts.ready.then(() => {
+  if (reduce) return;
+  const rot = el => parseFloat(el.style.getPropertyValue('--rot')) || 0;
+  const tl = gsap.timeline({ defaults: { ease: 'back.out(1.7)', duration: .7 } });
+  tl.from('.hero .over .hl', { y: 18, opacity: 0, stagger: .12, duration: .5, ease: 'power3.out' })
+    .from('.hero h1', { y: 30, opacity: 0, duration: .7, ease: 'power3.out' }, '-=.2')
+    .from('.hero .bnd, .hero .sub, .hero .cta > *', { y: 16, opacity: 0, stagger: .08, duration: .5, ease: 'power3.out' }, '-=.35')
+    .from('.hero .blob', { scale: .6, opacity: 0, transformOrigin: '50% 50%', duration: .8, stagger: .1 }, '-=.9')
+    .from('.hero .paste', { scale: 1.22, opacity: 0, rotation: (i, el) => rot(el) + 10, stagger: .13, transformOrigin: '50% 50%' }, '-=.6')
+    .from('.hero .note .clip-svg', { y: -20, opacity: 0, duration: .4, ease: 'power2.out' }, '-=.25')
+    .from('.hero .strand path', { strokeDashoffset: (i, el) => el.getTotalLength(), strokeDasharray: (i, el) => el.getTotalLength(), duration: 1.2, ease: 'power2.inOut', stagger: .2 }, '-=1');
+});
+
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  gsap.utils.toArray('.hero [data-depth]').forEach(el => {
+    gsap.to(el, { y: () => -120 * parseFloat(el.dataset.depth), ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  });
+  const hero = document.querySelector('.hero'), items = gsap.utils.toArray('.hero [data-depth]');
+  hero.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5;
+    items.forEach(el => gsap.to(el, { x: x * 22 * el.dataset.depth, duration: .8, ease: 'power2.out', overwrite: 'auto' }));
+  });
+});
+
+// ---- rush week: evidence board, string routed through the pins ----
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  const stage = document.querySelector('.week .stage'), strand = document.getElementById('weekStrand'), svg = strand.ownerSVGElement;
+  const route = () => {
+    const sr = stage.getBoundingClientRect();
+    const pts = gsap.utils.toArray('.week .cards .ev').map(el => { const r = el.getBoundingClientRect(); const f = el.querySelector('.pin, .tape'); const fr = f ? f.getBoundingClientRect() : r; return [fr.left + fr.width * .5 - sr.left, (f ? fr.top + fr.height * .5 : r.top - 4) - sr.top]; });
+    svg.setAttribute('viewBox', `0 0 ${sr.width} ${sr.height}`);
+    strand.setAttribute('d', pts.slice(1).reduce((d, [x1, y1], i) => { const [x0, y0] = pts[i]; return d + ` Q${(x0 + x1) / 2} ${(y0 + y1) / 2 + 26} ${x1} ${y1}`; }, `M${pts[0][0]} ${pts[0][1]}`));
+  };
+  route();
+  const L = strand.getTotalLength();
+  gsap.set(strand, { strokeDasharray: L, strokeDashoffset: L });
+  const tl = gsap.timeline({ scrollTrigger: { trigger: '.week', start: 'top top', end: '+=1100', pin: true, scrub: .8, anticipatePin: 1, invalidateOnRefresh: true, onRefresh: route } });
+  tl.to(strand, { strokeDashoffset: 0, ease: 'none', duration: 4 }, 0);
+  gsap.utils.toArray('.week .cards .ev').forEach((el, i) => {
+    const rot = parseFloat(el.style.getPropertyValue('--rot')) || 0;
+    tl.from(el, { scale: 1.08, rotation: rot - 7, y: 28, duration: .8, ease: 'back.out(1.5)' }, i * .6);
+  });
+});
+
+gsap.to('.marquee .track', { xPercent: -50, ease: 'none', duration: 22, repeat: -1 });
+
+if (!reduce) gsap.utils.toArray('.reveal').forEach(el => {
+  const rot = parseFloat(getComputedStyle(el).getPropertyValue('--rot')) || 0;
+  gsap.from(el, { y: 44, opacity: 0, rotation: rot - 4, duration: .85, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+});
+if (!reduce) gsap.from('.apply .stamp', { scale: 2.6, rotation: -30, opacity: 0, duration: .45, ease: 'power4.in', scrollTrigger: { trigger: '.apply .card', start: 'top 70%' } });
+
+// ---- newsprint on cloth ----
+function newsprint(maskImg) {
+  const c = document.createElement('canvas'); c.width = 1600; c.height = 1000; const x = c.getContext('2d');
+  x.fillStyle = '#efe8d8'; x.fillRect(0, 0, c.width, c.height);
+  x.fillStyle = '#d8322a'; x.fillRect(60, 60, 1480, 150);
+  x.fillStyle = '#fff'; x.font = '110px "Alfa Slab One"'; x.textBaseline = 'middle'; x.fillText('TEK RUSH', 90, 138);
+  x.font = '60px "Special Elite"'; x.textAlign = 'right'; x.fillText('FALL 2026', 1510, 138); x.textAlign = 'left';
+  x.fillStyle = '#1b1f3a'; x.font = '300px "Alfa Slab One"'; x.fillText('WANTED', 70, 400);
+  x.fillStyle = '#2d55c4'; x.font = '52px "Special Elite"'; x.fillText('ARE YOU PETER PARKER, OR ARE YOU SPIDER-MAN?', 70, 570);
+  x.fillStyle = '#1b1f3a'; x.font = '40px "Special Elite"';
+  ['TUE 9/8   INFO SESSION      6–7 PM', 'WED 9/9   DEI PANEL         6:30–7:30', 'THU 9/10  MEET & GREET      6–8 PM', 'FRI 9/11  MEET & GREET      6–8 PM'].forEach((l, i) => x.fillText(l, 70, 660 + i * 58));
+  if (maskImg) { x.save(); x.globalAlpha = .9; x.drawImage(maskImg, 1130, 620, 400, 400 * maskImg.height / maskImg.width); x.restore(); }
+  x.fillStyle = '#d8322a'; x.font = '84px "Alfa Slab One"'; x.fillText('APPLY BY SAT 9/12 · NOON', 70, 935);
+  const img = new Image(); img.alt = 'TEK Rush front page: Wanted. Apply by Sat 9/12 noon'; img.src = c.toDataURL('image/png'); return img;
+}
+const host = document.querySelector('.cloth-host');
+ScrollTrigger.create({ trigger: host, start: 'top 130%', once: true, onEnter: async () => {
+  await document.fonts.ready;
+  const mask = new Image(); mask.src = '/assets/spidey-mask-riso.webp';
+  await new Promise(r => { mask.onload = r; mask.onerror = r; });
+  const img = newsprint(mask.naturalWidth ? mask : null);
+  const fallback = () => { host.classList.add('static'); host.appendChild(img); };
+  if (reduce || innerWidth < 901) return fallback();
+  try {
+    const { HoloCloth } = await import('/tools/holocloth/holocloth.js');
+    const cloth = new HoloCloth(host, { preset: 'Black Cloth', orbit: false, autoPoke: 6, quality: 'Medium', zoom: 1.6,
+      render: { transparent: true, noise: .06, exposure: 1.05, environment: .9, bloom: 0 },
+      material: { baseColor: '#efe8d8', roughness: .7, clearcoat: .05, specTint: .2, metalness: .1 },
+      physics: { grabRadius: .42 } });
+    await new Promise(r => img.complete ? r() : img.onload = r);
+    await cloth.setImage(img);
+    cloth.poke(.8);
+    ScrollTrigger.create({ trigger: host, start: 'top 80%', onEnter: () => cloth.poke(1) });
+  } catch (e) { console.warn('cloth fallback', e); fallback(); }
+}});
+</script>
+</body>
+</html>

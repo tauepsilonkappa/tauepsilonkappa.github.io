@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Fall 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Chivo:wght@300;700;900&family=Figtree:wght@600;800&display=swap">
+<style>
+:root{
+  --paper:#fbf6ea; --ink:#121212; --cobalt:#1f4fd8; --red:#e3302c; --yellow:#ffcf3d; --white:#fff;
+  --display:"Bangers","Impact",sans-serif; --body:"Chivo",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1); --border:5px solid var(--ink);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:300 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;background-image:{{GRAIN}};opacity:.08;mix-blend-mode:multiply;pointer-events:none;z-index:50}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+{{NAV_CSS}}
+{{FOOTER_CSS}}
+.wrap{width:min(1140px,100% - 2rem);margin-inline:auto}
+main{overflow-x:clip;padding:1.4rem 0 3rem}
+
+.panel{position:relative;border:var(--border);background:var(--white);box-shadow:8px 8px 0 var(--ink)}
+.caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:.35em .7em .25em;font:400 1.05rem/1 var(--display);letter-spacing:.04em;text-transform:uppercase;box-shadow:3px 3px 0 var(--ink)}
+.dots{background-image:radial-gradient(circle,var(--red) 1.5px,transparent 1.7px);background-size:10px 10px;opacity:.28}
+
+/* splash */
+.splash{min-height:min(78vh,720px);display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden}
+.splash .art{position:relative;background:var(--cobalt)}
+.splash .art .dots{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 1.6px,transparent 1.8px);background-size:11px 11px;opacity:.16}
+.splash .web{position:absolute;left:-2px;top:-2px;width:min(78%,520px);height:auto;color:#fff}
+.splash .web path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s .2s var(--ease) forwards}
+.splash .spider{position:absolute;right:8%;bottom:6%;width:min(42%,300px);color:var(--ink);filter:drop-shadow(6px 6px 0 var(--red));transform:rotate(-14deg);animation:pop .6s 1.2s var(--ease) both}
+.splash .cap{position:absolute;left:1.2rem;top:1.2rem;animation:pop .5s .9s var(--ease) both;z-index:2}
+.splash .copy{padding:clamp(1.4rem,4vw,3rem) clamp(1.2rem,3.5vw,2.6rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem;position:relative;overflow:hidden}
+.splash .copy > .dots{position:absolute;inset:0;pointer-events:none}
+.splash h1{position:relative;margin:0;font:400 clamp(3.6rem,8.5vw,7.4rem)/.9 var(--display);text-transform:uppercase;letter-spacing:.01em;color:var(--cobalt);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:.06em .06em 0 var(--ink),.1em .1em 0 var(--red);animation:pop .6s 1.05s var(--ease) both;text-wrap:balance}
+.splash h1 em{font-style:normal;color:var(--red);text-shadow:.06em .06em 0 var(--ink),.1em .1em 0 var(--cobalt)}
+.bubble{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:1.4em;padding:1.1rem 1.3rem 1.2rem;font:300 1.05rem/1.5 var(--body);max-width:36ch;animation:pop .6s 1.35s var(--ease) both}
+.bubble::before{content:"";position:absolute;left:2.2rem;bottom:-19px;width:0;height:0;border:11px solid transparent;border-top:14px solid var(--ink);border-bottom:0;transform:skewX(-30deg)}
+.bubble::after{content:"";position:absolute;left:2.35rem;bottom:-13px;width:0;height:0;border:9px solid transparent;border-top:11px solid var(--white);border-bottom:0;transform:skewX(-30deg)}
+.bubble b{font-weight:900}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center;animation:pop .6s 1.5s var(--ease) both;position:relative}
+.btn{display:inline-block;background:var(--red);color:var(--white);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);text-decoration:none;font:400 1.3rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase;padding:.6em 1em .5em;transition:transform .15s var(--ease),box-shadow .15s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn.alt{background:var(--white);color:var(--ink)}
+
+/* strip */
+.strip{margin-top:3.2rem}
+.strip .caption,.qa .caption,.quotes .caption,.end .caption{margin-bottom:1.1rem}
+.panels{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem}
+.panels .panel{padding:0;display:flex;flex-direction:column;min-height:15rem}
+.panels .day{background:var(--yellow);border-bottom:var(--border);padding:.55rem .8rem .4rem;font:400 1rem/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.panels .day b{font-size:1.6rem;display:block;margin-top:.15em;font-weight:400}
+.panels .body{padding:.9rem .9rem 1rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.panels h3{margin:0;font:400 1.75rem/.95 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--cobalt)}
+.panels .t{font:900 .82rem/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase}
+.panels p{margin:.2rem 0 0;font-size:.92rem;color:#3a3a3a}
+.panels .panel.due{background:var(--red);color:var(--white)}
+.panels .panel.due h3{color:var(--white)}
+.panels .panel.due p{color:#ffe1df}
+.panels .panel.due .day{background:var(--ink);color:var(--yellow)}
+
+/* Q&A bubbles */
+.qa{margin-top:3.2rem}
+.qa ol{list-style:none;margin:0;padding:0;display:grid;gap:1.2rem;max-width:56rem}
+.qa li{display:grid;gap:.6rem}
+.qa .q,.qa .a{position:relative;border:3px solid var(--ink);border-radius:1.2em;padding:.9rem 1.2rem;max-width:34rem}
+.qa .q{background:var(--white);justify-self:start;font:700 1.02rem/1.4 var(--body)}
+.qa .a{background:var(--cobalt);color:var(--white);justify-self:end;margin-left:3rem}
+.qa .q::after{content:"";position:absolute;left:1.6rem;bottom:-14px;border:8px solid transparent;border-top:10px solid var(--ink);border-bottom:0}
+.qa .a::after{content:"";position:absolute;right:1.6rem;bottom:-14px;border:8px solid transparent;border-top:10px solid var(--ink);border-bottom:0}
+
+/* quotes */
+.quotes{margin-top:3.2rem}
+.quotes .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.quotes .panel{padding:1.4rem 1.4rem 1.2rem;background:var(--white)}
+.quotes .panel .dots{position:absolute;inset:0;pointer-events:none;opacity:.12}
+.quotes p{position:relative;margin:0 0 1rem;font:300 1.1rem/1.5 var(--body)}
+.quotes p::before{content:"\201C";font:400 3.2rem/0 var(--display);color:var(--red);margin-right:.1em;vertical-align:-.3em}
+.quotes .who{position:relative;display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:.3em .6em .2em;font:400 .95rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase}
+
+/* end */
+.end{margin-top:3.2rem}
+.end .panel{padding:clamp(1.6rem,4vw,2.6rem);display:grid;grid-template-columns:1fr auto;gap:1.4rem 2rem;align-items:center;background:var(--cobalt);color:var(--white)}
+.end .panel .dots{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 1.6px,transparent 1.8px);background-size:11px 11px;opacity:.14;pointer-events:none}
+.end h2{position:relative;margin:0;font:400 clamp(2.6rem,6vw,4.6rem)/.9 var(--display);text-transform:uppercase;letter-spacing:.02em;text-shadow:.06em .06em 0 var(--ink)}
+.end p{position:relative;margin:.6em 0 0;max-width:44ch}
+.end .btns{animation:none}
+
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.reveal{animation:rise .7s var(--ease) both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.splash .web path{stroke-dashoffset:0}}
+
+@media (max-width:960px){.panels{grid-template-columns:repeat(2,1fr)}.panels .panel.due{grid-column:1/-1;min-height:auto}}
+@media (max-width:820px){
+  .splash{grid-template-columns:1fr;min-height:auto}
+  .splash .art{min-height:300px;order:-1}
+  .quotes .grid,.end .panel{grid-template-columns:1fr}
+  .qa .a{margin-left:1.2rem}
+}
+@media (max-width:520px){.panels{grid-template-columns:1fr}.panels .panel{min-height:auto}.panel{box-shadow:5px 5px 0 var(--ink)}}
+</style>
+</head>
+<body>
+{{NAV}}
+<main>
+  <div class="wrap">
+    <section class="panel splash" aria-labelledby="h1">
+      <div class="copy">
+        <div class="dots"></div>
+        <h1 id="h1">New recruits <em>wanted!</em></h1>
+        <div class="bubble">Are you Peter Parker, or are you Spider-Man? <b>Tau Epsilon Kappa</b> is Michigan's professional technology fraternity, and every member is both. All majors. Five days to find out.</div>
+        <div class="btns">
+          <a class="btn" href="{{APPLY}}">Apply by Sat 9/12</a>
+          <a class="btn alt" href="{{INTEREST}}">Interest form</a>
+        </div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="dots"></div>
+        <svg class="web" viewBox="0 0 400 400"><path pathLength="1" d="{{WEB}}"/></svg>
+        <span class="caption cap">Ann Arbor. September. First week of classes.</span>
+        <svg class="spider" viewBox="0 0 200 200">{{SPIDER}}</svg>
+      </div>
+    </section>
+
+    <section class="strip reveal" id="week">
+      <span class="caption">Meanwhile, this week…</span>
+      <ol class="panels">
+        {{#EVENTS}}<li class="panel{i:4? due}"><div class="day">{0}<b>{1}</b></div><div class="body"><h3>{2}</h3><span class="t">{3}</span><p>{4}</p></div></li>
+        {{/EVENTS}}
+      </ol>
+    </section>
+
+    <section class="qa reveal">
+      <span class="caption">Questions from the crowd</span>
+      <ol>
+        {{#FAQ}}<li><div class="q">{0}</div><div class="a">{1}</div></li>
+        {{/FAQ}}
+      </ol>
+    </section>
+
+    <section class="quotes reveal">
+      <span class="caption">The founders, on the record</span>
+      <div class="grid">
+        {{#TESTIMONIALS}}<div class="panel"><div class="dots"></div><p>{2}</p><span class="who">{0} · {1}</span></div>
+        {{/TESTIMONIALS}}
+      </div>
+    </section>
+
+    <section class="end reveal">
+      <span class="caption">To be continued…</span>
+      <div class="panel">
+        <div class="dots"></div>
+        <div>
+          <h2>Your turn.</h2>
+          <p>Applications close Saturday, September 12 at noon. Come to one event first, then tell us who you are. Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+        </div>
+        <div class="btns"><a class="btn" href="{{APPLY}}">Apply now</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+{{FOOTER}}
+</body>
+</html>

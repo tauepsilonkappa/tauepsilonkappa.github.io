@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Fall 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Chivo:wght@300;700;900&family=Figtree:wght@600;800&display=swap">
+<style>
+:root{
+  --paper:#fbf6ea; --ink:#121212; --cobalt:#1f4fd8; --red:#e3302c; --yellow:#ffcf3d; --white:#fff;
+  --display:"Bangers","Impact",sans-serif; --body:"Chivo",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1); --border:5px solid var(--ink);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:300 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.08;mix-blend-mode:multiply;pointer-events:none;z-index:50}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.site-header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding-right:50px;position:relative;z-index:20;box-shadow:0 0 30px rgb(127 137 161/30%)}
+.site-header .logo img{width:200px;height:auto;margin:15px;display:block}
+.site-header nav.full ul{display:flex;list-style:none;margin:0;padding:0}
+.site-header a{padding:10px;font:600 18px/1 "Figtree",system-ui,sans-serif;color:#293786;text-decoration:none}
+.site-header a.active{font-weight:800;font-size:21px}
+.site-header nav.mobile{display:none}
+.burger{background:none;border:0;padding:12px;cursor:pointer;display:flex;flex-direction:column;gap:5px}
+.burger span{display:block;width:24px;height:3px;background:#293786;border-radius:2px}
+@media (max-width:767px){.site-header{padding-right:6px}.site-header .logo img{width:130px;margin:10px}.site-header nav.full{display:none}.site-header nav.mobile{display:block}}
+.site-footer{display:flex;align-items:center;justify-content:space-between;padding:20px 30px;background:#2b3c67;color:#fff;position:relative;z-index:20}
+.site-footer img{width:120px;height:auto;display:block}
+.site-footer .footer-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.site-footer p{margin:0;font:400 14px/1.4 "Figtree",system-ui,sans-serif}
+.site-footer ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+.site-footer a{color:#fff;display:block}
+.site-footer a:hover{color:#fbf7de}
+@media (max-width:767px){.site-footer{flex-direction:column;gap:14px;padding:22px 16px 26px}.site-footer .footer-center{position:static;transform:none}.site-footer p{font-size:12px;text-align:center}}
+.wrap{width:min(1140px,100% - 2rem);margin-inline:auto}
+main{overflow-x:clip;padding:1.4rem 0 3rem}
+
+.panel{position:relative;border:var(--border);background:var(--white);box-shadow:8px 8px 0 var(--ink)}
+.caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:.35em .7em .25em;font:400 1.05rem/1 var(--display);letter-spacing:.04em;text-transform:uppercase;box-shadow:3px 3px 0 var(--ink)}
+.dots{background-image:radial-gradient(circle,var(--red) 1.5px,transparent 1.7px);background-size:10px 10px;opacity:.28}
+
+/* splash */
+.splash{min-height:min(78vh,720px);display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden}
+.splash .art{position:relative;background:var(--cobalt)}
+.splash .art .dots{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 1.6px,transparent 1.8px);background-size:11px 11px;opacity:.16}
+.splash .web{position:absolute;left:-2px;top:-2px;width:min(78%,520px);height:auto;color:#fff}
+.splash .web path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s .2s var(--ease) forwards}
+.splash .spider{position:absolute;right:8%;bottom:6%;width:min(42%,300px);color:var(--ink);filter:drop-shadow(6px 6px 0 var(--red));transform:rotate(-14deg);animation:pop .6s 1.2s var(--ease) both}
+.splash .cap{position:absolute;left:1.2rem;top:1.2rem;animation:pop .5s .9s var(--ease) both;z-index:2}
+.splash .copy{padding:clamp(1.4rem,4vw,3rem) clamp(1.2rem,3.5vw,2.6rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem;position:relative;overflow:hidden}
+.splash .copy > .dots{position:absolute;inset:0;pointer-events:none}
+.splash h1{position:relative;margin:0;font:400 clamp(3.6rem,8.5vw,7.4rem)/.9 var(--display);text-transform:uppercase;letter-spacing:.01em;color:var(--cobalt);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:.06em .06em 0 var(--ink),.1em .1em 0 var(--red);animation:pop .6s 1.05s var(--ease) both;text-wrap:balance}
+.splash h1 em{font-style:normal;color:var(--red);text-shadow:.06em .06em 0 var(--ink),.1em .1em 0 var(--cobalt)}
+.bubble{position:relative;background:var(--white);border:3px solid var(--ink);border-radius:1.4em;padding:1.1rem 1.3rem 1.2rem;font:300 1.05rem/1.5 var(--body);max-width:36ch;animation:pop .6s 1.35s var(--ease) both}
+.bubble::before{content:"";position:absolute;left:2.2rem;bottom:-19px;width:0;height:0;border:11px solid transparent;border-top:14px solid var(--ink);border-bottom:0;transform:skewX(-30deg)}
+.bubble::after{content:"";position:absolute;left:2.35rem;bottom:-13px;width:0;height:0;border:9px solid transparent;border-top:11px solid var(--white);border-bottom:0;transform:skewX(-30deg)}
+.bubble b{font-weight:900}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center;animation:pop .6s 1.5s var(--ease) both;position:relative}
+.btn{display:inline-block;background:var(--red);color:var(--white);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);text-decoration:none;font:400 1.3rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase;padding:.6em 1em .5em;transition:transform .15s var(--ease),box-shadow .15s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn.alt{background:var(--white);color:var(--ink)}
+
+/* strip */
+.strip{margin-top:3.2rem}
+.strip .caption,.qa .caption,.quotes .caption,.end .caption{margin-bottom:1.1rem}
+.panels{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem}
+.panels .panel{padding:0;display:flex;flex-direction:column;min-height:15rem}
+.panels .day{background:var(--yellow);border-bottom:var(--border);padding:.55rem .8rem .4rem;font:400 1rem/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.panels .day b{font-size:1.6rem;display:block;margin-top:.15em;font-weight:400}
+.panels .body{padding:.9rem .9rem 1rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.panels h3{margin:0;font:400 1.75rem/.95 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--cobalt)}
+.panels .t{font:900 .82rem/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase}
+.panels p{margin:.2rem 0 0;font-size:.92rem;color:#3a3a3a}
+.panels .panel.due{background:var(--red);color:var(--white)}
+.panels .panel.due h3{color:var(--white)}
+.panels .panel.due p{color:#ffe1df}
+.panels .panel.due .day{background:var(--ink);color:var(--yellow)}
+
+/* Q&A bubbles */
+.qa{margin-top:3.2rem}
+.qa ol{list-style:none;margin:0;padding:0;display:grid;gap:1.2rem;max-width:56rem}
+.qa li{display:grid;gap:.6rem}
+.qa .q,.qa .a{position:relative;border:3px solid var(--ink);border-radius:1.2em;padding:.9rem 1.2rem;max-width:34rem}
+.qa .q{background:var(--white);justify-self:start;font:700 1.02rem/1.4 var(--body)}
+.qa .a{background:var(--cobalt);color:var(--white);justify-self:end;margin-left:3rem}
+.qa .q::after{content:"";position:absolute;left:1.6rem;bottom:-14px;border:8px solid transparent;border-top:10px solid var(--ink);border-bottom:0}
+.qa .a::after{content:"";position:absolute;right:1.6rem;bottom:-14px;border:8px solid transparent;border-top:10px solid var(--ink);border-bottom:0}
+
+/* quotes */
+.quotes{margin-top:3.2rem}
+.quotes .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.quotes .panel{padding:1.4rem 1.4rem 1.2rem;background:var(--white)}
+.quotes .panel .dots{position:absolute;inset:0;pointer-events:none;opacity:.12}
+.quotes p{position:relative;margin:0 0 1rem;font:300 1.1rem/1.5 var(--body)}
+.quotes p::before{content:"\201C";font:400 3.2rem/0 var(--display);color:var(--red);margin-right:.1em;vertical-align:-.3em}
+.quotes .who{position:relative;display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:.3em .6em .2em;font:400 .95rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase}
+
+/* end */
+.end{margin-top:3.2rem}
+.end .panel{padding:clamp(1.6rem,4vw,2.6rem);display:grid;grid-template-columns:1fr auto;gap:1.4rem 2rem;align-items:center;background:var(--cobalt);color:var(--white)}
+.end .panel .dots{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 1.6px,transparent 1.8px);background-size:11px 11px;opacity:.14;pointer-events:none}
+.end h2{position:relative;margin:0;font:400 clamp(2.6rem,6vw,4.6rem)/.9 var(--display);text-transform:uppercase;letter-spacing:.02em;text-shadow:.06em .06em 0 var(--ink)}
+.end p{position:relative;margin:.6em 0 0;max-width:44ch}
+.end .btns{animation:none}
+
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.reveal{animation:rise .7s var(--ease) both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.splash .web path{stroke-dashoffset:0}}
+
+@media (max-width:960px){.panels{grid-template-columns:repeat(2,1fr)}.panels .panel.due{grid-column:1/-1;min-height:auto}}
+@media (max-width:820px){
+  .splash{grid-template-columns:1fr;min-height:auto}
+  .splash .art{min-height:300px;order:-1}
+  .quotes .grid,.end .panel{grid-template-columns:1fr}
+  .qa .a{margin-left:1.2rem}
+}
+@media (max-width:520px){.panels{grid-template-columns:1fr}.panels .panel{min-height:auto}.panel{box-shadow:5px 5px 0 var(--ink)}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="/"><img src="/static/media/tekPics/tekNavy.png" alt="tek logo" width="200"></a>
+  <nav class="full" aria-label="large navigation"><ul>
+    <li><a href="/">HOME</a></li><li><a href="/members">MEMBERS</a></li><li><a href="/alumni">ALUMNI</a></li><li><a href="/activities">ACTIVITIES</a></li><li><a href="/rush" class="active" aria-current="page">RUSH</a></li>
+  </ul></nav>
+  <nav class="mobile" aria-label="mobile navigation"><button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button></nav>
+</header>
+<main>
+  <div class="wrap">
+    <section class="panel splash" aria-labelledby="h1">
+      <div class="copy">
+        <div class="dots"></div>
+        <h1 id="h1">New recruits <em>wanted!</em></h1>
+        <div class="bubble">Are you Peter Parker, or are you Spider-Man? <b>Tau Epsilon Kappa</b> is Michigan's professional technology fraternity, and every member is both. All majors. Five days to find out.</div>
+        <div class="btns">
+          <a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Apply by Sat 9/12</a>
+          <a class="btn alt" href="https://docs.google.com/forms/d/e/1FAIpQLSfX854ImNU2sAhxdPtWQ6LyX9Kq9qkI3ChX1ZdqHTKFPQWWXg/viewform">Interest form</a>
+        </div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="dots"></div>
+        <svg class="web" viewBox="0 0 400 400"><path pathLength="1" d="M0 0L400.0 0.0M0 0L392.3 78.0M0 0L369.6 153.1M0 0L332.6 222.2M0 0L282.8 282.8M0 0L222.2 332.6M0 0L153.1 369.6M0 0L78.0 392.3M0 0L0.0 400.0M48.0 0.0Q42.8 4.2 47.1 9.4Q41.1 12.5 44.3 18.4Q37.9 20.3 39.9 26.7Q33.2 27.3 33.9 33.9Q27.3 33.2 26.7 39.9Q20.3 37.9 18.4 44.3Q12.5 41.1 9.4 47.1Q4.2 42.8 0.0 48.0M96.0 0.0Q85.6 8.4 94.2 18.7Q82.3 25.0 88.7 36.7Q75.8 40.5 79.8 53.3Q66.5 54.5 67.9 67.9Q54.5 66.5 53.3 79.8Q40.5 75.8 36.7 88.7Q25.0 82.3 18.7 94.2Q8.4 85.6 0.0 96.0M150.0 0.0Q133.7 13.2 147.1 29.3Q128.6 39.0 138.6 57.4Q118.5 63.3 124.7 83.3Q103.9 85.2 106.1 106.1Q85.2 103.9 83.3 124.7Q63.3 118.5 57.4 138.6Q39.0 128.6 29.3 147.1Q13.2 133.7 0.0 150.0M210.0 0.0Q187.2 18.4 206.0 41.0Q180.0 54.6 194.0 80.4Q165.9 88.7 174.6 116.7Q145.4 119.3 148.5 148.5Q119.3 145.4 116.7 174.6Q88.7 165.9 80.4 194.0Q54.6 180.0 41.0 206.0Q18.4 187.2 0.0 210.0M278.0 0.0Q247.8 24.4 272.7 54.2Q238.3 72.3 256.8 106.4Q219.6 117.4 231.1 154.4Q192.5 158.0 196.6 196.6Q158.0 192.5 154.4 231.1Q117.4 219.6 106.4 256.8Q72.3 238.3 54.2 272.7Q24.4 247.8 0.0 278.0M352.0 0.0Q313.8 30.9 345.2 68.7Q301.7 91.5 325.2 134.7Q278.0 148.6 292.7 195.6Q243.7 200.0 248.9 248.9Q200.0 243.7 195.6 292.7Q148.6 278.0 134.7 325.2Q91.5 301.7 68.7 345.2Q30.9 313.8 0.0 352.0"/></svg>
+        <span class="caption cap">Ann Arbor. September. First week of classes.</span>
+        <svg class="spider" viewBox="0 0 200 200"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M90 70L55 42 30 14M110 70L145 42 170 14M88 82L46 74 12 60M112 82L154 74 188 60M88 92L46 106 16 136M112 92L154 106 184 136M92 102L62 142 42 186M108 102L138 142 158 186"/></g><ellipse cx="100" cy="126" rx="26" ry="40" fill="currentColor"/><circle cx="100" cy="80" r="17" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <section class="strip reveal" id="week">
+      <span class="caption">Meanwhile, this week…</span>
+      <ol class="panels">
+        <li class="panel"><div class="day">Tue<b>9/8</b></div><div class="body"><h3>Info Session</h3><span class="t">6–7 pm</span><p>Start here. What the fraternity is, how rush works, and what you get out of joining.</p></div></li>
+        <li class="panel"><div class="day">Wed<b>9/9</b></div><div class="body"><h3>DEI Panel</h3><span class="t">6:30–7:30 pm</span><p>Current members talk about belonging in tech and in TEK. Questions welcome.</p></div></li>
+        <li class="panel"><div class="day">Thu<b>9/10</b></div><div class="body"><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>No agenda. Come talk to members about classes, projects and recruiting.</p></div></li>
+        <li class="panel"><div class="day">Fri<b>9/11</b></div><div class="body"><h3>Meet & Greet</h3><span class="t">6–8 pm</span><p>A second night for anyone who missed Thursday or wants to come back.</p></div></li>
+        <li class="panel due"><div class="day">Sat<b>9/12</b></div><div class="body"><h3>Application due</h3><span class="t">12:00 noon</span><p>The form is short. Come to at least one event first, then tell us who you are.</p></div></li>
+        
+      </ol>
+    </section>
+
+    <section class="qa reveal">
+      <span class="caption">Questions from the crowd</span>
+      <ol>
+        <li><div class="q">I'm not a tech major. Can I still apply?</div><div class="a">Yes. We take every major. Curiosity about technology is the bar, not a transcript.</div></li>
+        <li><div class="q">I'm a sophomore. Is it too late?</div><div class="a">No. Freshmen and sophomores are exactly who we recruit.</div></li>
+        <li><div class="q">What's the time commitment?</div><div class="a">Pledging scales with what you want out of it. Expect a few hours a week during the process; after that, it's yours to set.</div></li>
+        
+      </ol>
+    </section>
+
+    <section class="quotes reveal">
+      <span class="caption">The founders, on the record</span>
+      <div class="grid">
+        <div class="panel"><div class="dots"></div><p>Creating a new fraternity on campus has been extremely rewarding. Being able to cultivate a specific community of diverse yet like-minded students has been the best part of my time at UMich. The people I've met through TEK are ones I will have throughout my life.</p><span class="who">Trisha Kant · Founder</span></div>
+        <div class="panel"><div class="dots"></div><p>Starting TEK has been the best part of my college experience. Watching the fraternity flourish and the members grow closer has been a privilege. TEK has a bright future — may the younger members carry on what we've started.</p><span class="who">Noah Ivers · Founder</span></div>
+        
+      </div>
+    </section>
+
+    <section class="end reveal">
+      <span class="caption">To be continued…</span>
+      <div class="panel">
+        <div class="dots"></div>
+        <div>
+          <h2>Your turn.</h2>
+          <p>Applications close Saturday, September 12 at noon. Come to one event first, then tell us who you are. Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+        </div>
+        <div class="btns"><a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Apply now</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <a href="/"><img src="/static/media/tekPics/tekWhite.png" alt="tek logo" width="120"></a>
+  <div class="footer-center">
+    <p>© 2026 Tau Epsilon Kappa Alpha Chapter. All Rights Reserved.</p>
+    <ul>
+      <li><a href="mailto:tauepsilonkappa@umich.edu" aria-label="Email"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 12.713l11.985-6.713c-.331-.518-.978-.851-1.685-.851h-20.6c-.707 0-1.354.333-1.685.851l11.985 6.713zm12-4.471v11.758c0 .828-.673 1.5-1.5 1.5h-21c-.827 0-1.5-.672-1.5-1.5v-11.758l11.985 6.712 11.985-6.712z"/></svg></a></li>
+      <li><a href="https://www.linkedin.com/company/tau-epsilon-kappa" aria-label="LinkedIn"><svg viewBox="0 0 48 48" width="26" height="26"><path fill="currentColor" d="M44.4 0H3.5C1.6 0 0 1.5 0 3.5v41.1C0 46.4 1.6 48 3.5 48h40.9c2 0 3.6-1.6 3.6-3.5V3.5C48 1.5 46.4 0 44.4 0zM14.2 40.9H7.1V18h7.1v22.9zM10.7 14.9c-2.3 0-4.1-1.9-4.1-4.1s1.8-4.1 4.1-4.1 4.1 1.8 4.1 4.1-1.8 4.1-4.1 4.1zM40.9 40.9h-7.1V29.8c0-2.7 0-6.1-3.7-6.1s-4.3 2.9-4.3 5.9v11.3h-7.1V18h6.8v3.1h.1c1-1.8 3.3-3.7 6.7-3.7 7.2 0 8.6 4.7 8.6 10.9v12.6z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/tekumich/" aria-label="Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Fall 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=Figtree:wght@600;800&display=swap">
+<style>
+:root{
+  --paper:#f5f3ee; --paper-2:#ebe7de; --ink:#151412; --ink-2:#4a4741; --rule:#a9a49a; --red:#cf1f2b;
+  --display:"Big Shoulders Display","Arial Narrow",sans-serif;
+  --serif:"Newsreader","Times New Roman",serif;
+  --mono:"IBM Plex Mono","Courier New",monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--serif);-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;background-image:{{GRAIN}};opacity:.09;mix-blend-mode:multiply;pointer-events:none;z-index:50}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+{{NAV_CSS}}
+{{FOOTER_CSS}}
+
+.wrap{width:min(1120px,100% - 2rem);margin-inline:auto}
+main{overflow-x:clip}
+
+/* masthead */
+.band{background:var(--red);color:#fff;border-top:6px solid var(--ink);border-bottom:6px solid var(--ink);animation:drop .6s var(--ease) both}
+.band .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding:.35em 0 .2em}
+.band h1{margin:0;font:900 clamp(4.4rem,15vw,12rem)/.86 var(--display);letter-spacing:-.01em;text-transform:uppercase;text-shadow:.045em .045em 0 var(--ink)}
+.band .ed{font:500 .8rem/1.3 var(--mono);text-align:right;text-transform:uppercase;letter-spacing:.12em;padding-bottom:.6em;white-space:nowrap}
+.band .ed b{display:block;font:900 1.6rem/1 var(--display);letter-spacing:.02em}
+.dateline{border-bottom:1px solid var(--rule);font:500 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);animation:fade .6s .3s var(--ease) both}
+.dateline .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.9em 0}
+
+/* front page */
+.headline{display:block;width:100%;height:auto;margin:.6rem 0 .2rem;animation:stamp .7s .45s var(--ease) both;transform-origin:50% 60%}
+.headline text{font:900 300px var(--display);fill:var(--ink);text-transform:uppercase}
+.front{display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem 3rem;align-items:start;padding:.6rem 0 3.5rem;border-bottom:4px double var(--ink)}
+.lede{animation:fade .7s .8s var(--ease) both}
+.kicker{font:500 .72rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 1em}
+.deck{font:italic 400 clamp(1.5rem,2.6vw,2.15rem)/1.15 var(--serif);margin:0 0 .8em;text-wrap:balance}
+.lede p.body{font-size:1.06rem;max-width:58ch;margin:0 0 1.4em}
+.lede p.body::first-letter{font:900 3.4em/.8 var(--display);float:left;padding:.08em .1em 0 0;color:var(--red)}
+.actions{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center}
+.stamp{display:inline-block;font:900 1.15rem/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--red);border:3px solid var(--red);padding:.7em 1.1em .6em;text-decoration:none;transform:rotate(-1.5deg);box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 4px var(--red);transition:transform .2s var(--ease),background .2s}
+.stamp:hover{transform:rotate(0) scale(1.03);background:#fff}
+.quiet{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:underline;text-underline-offset:.3em}
+.mug{margin:0;border:3px solid var(--ink);background:var(--paper-2);padding:.8rem;animation:fade .7s .95s var(--ease) both}
+.mug .frame{aspect-ratio:1;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
+.mug svg{width:82%;height:auto;transform:rotate(-8deg)}
+.mug figcaption{font:400 .78rem/1.4 var(--mono);color:var(--ink-2);margin-top:.7rem}
+.mug figcaption b{font-weight:500;color:var(--ink)}
+
+/* sections */
+section.sec{padding:3.2rem 0;border-bottom:1px solid var(--rule)}
+.sec h2{margin:0 0 1.4rem;font:900 clamp(2.2rem,5vw,3.4rem)/.95 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.sec h2 small{display:block;font:500 .72rem/1 var(--mono);letter-spacing:.14em;color:var(--red);margin-bottom:.7em}
+
+.classifieds{list-style:none;margin:0;padding:0;border-top:3px solid var(--ink)}
+.classifieds li{display:grid;grid-template-columns:7.5rem 1fr auto;gap:.5rem 1.5rem;align-items:baseline;padding:1rem 0;border-bottom:1px solid var(--rule)}
+.classifieds .day{font:500 .8rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.classifieds .day b{display:block;font:900 1.7rem/1 var(--display);letter-spacing:0}
+.classifieds h3{margin:0;font:900 1.55rem/1 var(--display);text-transform:uppercase}
+.classifieds p{margin:.25em 0 0;font-size:.98rem;color:var(--ink-2)}
+.classifieds .time{font:500 .82rem/1 var(--mono);white-space:nowrap}
+.classifieds li.due{background:var(--ink);color:var(--paper);padding-inline:1rem;margin-top:.6rem;border:0}
+.classifieds li.due .day,.classifieds li.due p{color:var(--paper)}
+.classifieds li.due .day b{color:var(--red)}
+
+.letters{display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem;margin:0}
+.letters div{border-top:3px solid var(--ink);padding-top:.9rem}
+.letters dt{font:900 1.35rem/1.05 var(--display);text-transform:uppercase;margin-bottom:.4em}
+.letters dd{margin:0;color:var(--ink-2)}
+.letters dd::before{content:"— ";color:var(--red)}
+
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem 3rem}
+.quotes blockquote{margin:0;position:relative;padding-top:3.4rem}
+.quotes blockquote::before{content:"\201C";position:absolute;top:.35em;left:-.04em;font:900 7rem/.6 var(--display);color:var(--red);opacity:.9}
+.quotes p{margin:0 0 1em;font:italic 400 1.25rem/1.4 var(--serif)}
+.quotes cite{font:500 .75rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;font-style:normal}
+.quotes cite b{display:block;font:900 1.15rem/1 var(--display);letter-spacing:.02em;margin-bottom:.2em}
+
+.coupon{margin:3rem 0 3.5rem;border:3px dashed var(--ink);padding:2rem clamp(1.2rem,4vw,3rem);display:grid;grid-template-columns:1fr auto;gap:1.5rem 2rem;align-items:center;position:relative}
+.coupon::before{content:"\2702 CLIP AND SUBMIT";position:absolute;top:-.75em;left:1.4rem;background:var(--paper);padding:0 .5em;font:500 .72rem/1.5 var(--mono);letter-spacing:.14em}
+.coupon h2{margin:0;font:italic 400 clamp(1.5rem,3vw,2.3rem)/1.15 var(--serif);text-transform:none;letter-spacing:0}
+.coupon h2 b{font:900 1.05em/1 var(--display);font-style:normal;text-transform:uppercase}
+.coupon p{margin:.5em 0 0;color:var(--ink-2)}
+
+/* motion */
+@keyframes drop{from{transform:translateY(-100%)}to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes stamp{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.reveal{animation:rise .8s var(--ease) both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:820px){
+  .front,.letters,.quotes{grid-template-columns:1fr}
+  .coupon{grid-template-columns:1fr}
+  .band .ed{display:none}
+  .dateline .wrap span:last-child{display:none}
+  .classifieds li{grid-template-columns:5.6rem 1fr}
+  .classifieds .time{grid-column:2}
+  .mug{max-width:22rem}
+}
+</style>
+</head>
+<body>
+{{NAV}}
+<main>
+  <div class="band"><div class="wrap">
+    <h1>TEK Rush</h1>
+    <div class="ed">Final edition<b>Fall 2026</b></div>
+  </div></div>
+  <div class="dateline"><div class="wrap">
+    <span>Tuesday, September 8, 2026 · Ann Arbor, Mich. · One week only</span><span>tauepsilonkappa.com</span>
+  </div></div>
+
+  <div class="wrap">
+    <svg class="headline" viewBox="0 0 1000 232" aria-hidden="true"><text x="0" y="224" textLength="1000" lengthAdjust="spacingAndGlyphs">Wanted</text></svg>
+    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Wanted: new members, Fall 2026</h2>
+
+    <section class="front">
+      <div class="lede">
+        <p class="kicker">Michigan's professional technology fraternity</p>
+        <p class="deck">Are you Peter Parker? Or are you Spider-Man?</p>
+        <p class="body">Every member of Tau Epsilon Kappa is both. The student with the problem set due at midnight, and the one who shipped a project, ran a workshop, or landed the internship because someone here showed them how. Rush is five days in September. All majors. Freshmen and sophomores especially.</p>
+        <div class="actions">
+          <a class="stamp" href="{{APPLY}}">Apply by Sat 9/12, noon</a>
+          <a class="quiet" href="{{INTEREST}}">Not ready? Interest form</a>
+        </div>
+      </div>
+      <figure class="mug">
+        <div class="frame">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.9" fill="#151412"/></pattern>
+              <mask id="spiderMask"><g color="#fff">{{SPIDER}}</g></mask>
+            </defs>
+            <g color="#151412" opacity=".18">{{SPIDER}}</g>
+            <rect width="200" height="200" fill="url(#dots)" mask="url(#spiderMask)"/>
+          </svg>
+        </div>
+        <figcaption><b>Fig. 1.</b> Suspect last seen in the Duderstadt at 2 a.m., debugging. Approach with questions.</figcaption>
+      </figure>
+    </section>
+
+    <section class="sec reveal" id="week">
+      <h2><small>Classifieds</small>This week</h2>
+      <ol class="classifieds">
+        {{#EVENTS}}<li{i:4? class="due"}><span class="day">{0}<b>{1}</b></span><div><h3>{2}</h3><p>{4}</p></div><span class="time">{3}</span></li>
+        {{/EVENTS}}
+      </ol>
+    </section>
+
+    <section class="sec reveal">
+      <h2><small>Letters</small>To the editor</h2>
+      <dl class="letters">
+        {{#FAQ}}<div><dt>{0}</dt><dd>{1}</dd></div>
+        {{/FAQ}}
+      </dl>
+    </section>
+
+    <section class="sec reveal">
+      <h2><small>Op-ed</small>From the founders</h2>
+      <div class="quotes">
+        {{#TESTIMONIALS}}<blockquote><p>{2}</p><cite><b>{0}</b>{1}</cite></blockquote>
+        {{/TESTIMONIALS}}
+      </div>
+    </section>
+
+    <section class="coupon reveal">
+      <div>
+        <h2>Applications close <b>Saturday at noon.</b></h2>
+        <p>Short form. Come to at least one event first, then tell us who you are. Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+      </div>
+      <a class="stamp" href="{{APPLY}}">Apply now</a>
+    </section>
+  </div>
+</main>
+{{FOOTER}}
+</body>
+</html>

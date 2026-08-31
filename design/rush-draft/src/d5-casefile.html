@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEK Rush · Brand New Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Special+Elite&family=Figtree:wght@400;600;800&display=swap">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"}}</script>
+<style>
+:root{
+  --ink:#1b1f3a; --ink-2:#4a4d63; --red:#d8322a; --cobalt:#2d55c4; --paper:#ece5d4; --card:#f6f1e6; --tape:rgba(246,224,140,.62);
+  --slab:"Alfa Slab One","Rockwell Extra Bold",serif; --type:"Special Elite","Courier New",monospace; --body:"Figtree","Quasimoda",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}
+html{overflow-x:clip}
+body{margin:0;background:var(--paper) url(/assets/paper-white.jpg) center/900px;color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;background:url(/assets/dots.png) 0 0/9px 9px;opacity:.06;mix-blend-mode:multiply;pointer-events:none;z-index:60}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+{{NAV_CSS}}
+{{FOOTER_CSS}}
+.wrap{width:min(1180px,100% - 2rem);margin-inline:auto}
+main{position:relative}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---- material vocabulary ---- */
+.sticker{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(8px 14px 14px rgba(20,20,40,.32))}
+.card{background:var(--card) url(/assets/paper-tan.jpg) center/700px;background-blend-mode:multiply;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,6px 10px 22px rgba(20,20,40,.22);position:relative}
+.torn{background:none!important;box-shadow:none!important}
+.torn::before{content:"";position:absolute;inset:0;z-index:-1;background:#f3eee2 url(/assets/paper-white.jpg) center/600px;filter:url(#torn) drop-shadow(6px 10px 18px rgba(20,20,40,.22))}
+.tape{position:absolute;width:118px;height:32px;background:var(--tape);mix-blend-mode:multiply;clip-path:polygon(0 12%,3% 0,6% 10%,9% 0,12% 12%,88% 12%,91% 0,94% 10%,97% 0,100% 12%,100% 88%,97% 100%,94% 90%,91% 100%,88% 88%,12% 88%,9% 100%,6% 90%,3% 100%,0 88%);transform:rotate(var(--r,-6deg));box-shadow:0 1px 2px rgba(0,0,0,.08);pointer-events:none}
+.tape::after{content:"";position:absolute;inset:0;background:url(/assets/paper-white.jpg) center/300px;opacity:.5;mix-blend-mode:multiply}
+.label{display:inline-block;font:400 clamp(.85rem,1.3vw,1.05rem)/1.25 var(--type);letter-spacing:.02em;padding:.18em .5em .1em;color:#fff;background:var(--ink)}
+.label.red{background:var(--red)}.label.blue{background:var(--cobalt)}
+.type{font-family:var(--type);letter-spacing:.02em}
+.blob{position:absolute;mix-blend-mode:multiply;opacity:.88;pointer-events:none;filter:url(#torn)}
+.blob path{fill:var(--red)}.blob.blue path{fill:var(--cobalt)}
+.blob::after{content:"";position:absolute;inset:0;background:url(/assets/dots.png) 0 0/7px 7px;opacity:.35}
+.btn{display:inline-block;position:relative;background:var(--red);color:#fff;text-decoration:none;font:400 1.05rem/1 var(--slab);letter-spacing:.02em;padding:.95em 1.4em .85em;border:4px solid #fff;box-shadow:6px 8px 0 var(--ink);transform:rotate(-1.5deg);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s}
+.btn:hover{transform:rotate(0) translate(-2px,-2px);box-shadow:9px 11px 0 var(--ink)}
+.btn.blue{background:var(--cobalt)}
+.btn.ghost{background:var(--card);color:var(--ink);font-family:var(--type);font-size:.95rem;border-color:var(--ink);box-shadow:4px 5px 0 var(--ink);transform:rotate(1deg)}
+
+/* ---- hero ---- */
+.hero{position:relative;min-height:calc(100svh - 92px);padding:clamp(1.2rem,3vw,2.6rem) 0 4rem;overflow:clip}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(45,85,196,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(45,85,196,.13) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(#000 70%,transparent);pointer-events:none}
+.hero .wrap{position:relative;min-height:min(78vh,760px);padding-bottom:7rem}
+.hero .head{position:relative;z-index:5;max-width:36rem}
+.hero .over{display:flex;flex-wrap:wrap;gap:.6rem .8rem;align-items:center;margin:0 0 .9rem}
+.hero .over .label{transform:rotate(-1.2deg)}.hero .over .label + .label{transform:rotate(1.4deg)}
+.hero h1{margin:0;font:400 clamp(4.6rem,12vw,10.5rem)/.86 var(--slab);color:var(--red);letter-spacing:-.01em;text-transform:uppercase;position:relative;filter:url(#rough)}
+.hero .bnd{display:block;margin:.35em 0 0;font:400 clamp(1.3rem,2.6vw,2.2rem)/1 var(--slab);color:var(--cobalt);letter-spacing:.16em;text-transform:uppercase;transform:rotate(-1deg);transform-origin:left}
+.hero h1::before{content:attr(data-text);position:absolute;inset:0;color:var(--cobalt);transform:translate(.045em,-.035em);z-index:-1;opacity:.85}
+.hero .sub{margin:1.1rem 0 0;max-width:30rem;font-size:1.06rem;color:var(--ink-2)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:1.1rem 1.4rem;align-items:center;margin-top:1.6rem}
+.hero .paste{position:absolute;will-change:transform}
+.hero .cluster{display:contents}
+.hero .swing{right:-3%;top:-4%;width:clamp(170px,26vw,360px);z-index:4;transform:rotate(var(--rot))}
+.hero .jump{left:49%;bottom:-27%;width:clamp(220px,30vw,420px);z-index:3;transform:rotate(var(--rot))}
+.hero .mask{right:34%;top:38%;width:clamp(130px,16vw,220px);z-index:2;transform:rotate(var(--rot));opacity:.95}
+.hero .logo{right:36%;top:20%;width:clamp(110px,15vw,210px);z-index:6;transform:rotate(var(--rot))}
+.hero .note{right:3%;top:54%;width:clamp(200px,24vw,300px);padding:1rem 1.1rem 1.2rem;z-index:5;transform:rotate(var(--rot));font:400 .82rem/1.45 var(--type)}
+.hero .note h2{margin:0 0 .5em;font:400 .78rem/1 var(--type);letter-spacing:.16em;text-transform:uppercase;color:var(--red);border-bottom:1px dashed var(--ink-2);padding-bottom:.5em}
+.hero .note dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.3em .8em}
+.hero .note dt{color:var(--ink-2)}.hero .note dd{margin:0}
+.hero .note .clip-svg{position:absolute;top:-22px;right:18px;width:26px;height:auto;transform:rotate(-8deg);filter:drop-shadow(1px 2px 2px rgba(0,0,0,.25))}
+.hero .blob.b1{right:-6%;top:-10%;width:40vw;max-width:600px;transform:rotate(-12deg)}
+.hero .blob.b2{left:40%;bottom:-26%;width:34vw;max-width:500px;transform:rotate(8deg)}
+.hero .strand{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.hero .strand path{fill:none;stroke:var(--ink);stroke-width:1.2;opacity:.55}
+.hero .pin{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--red);box-shadow:0 2px 4px rgba(0,0,0,.4),inset -2px -2px 3px rgba(0,0,0,.3);z-index:7}
+
+/* ---- newsprint cloth band ---- */
+.extra{position:relative;padding:2rem 0 3rem}
+.extra .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2rem;align-items:center}
+.extra .wrap>*{min-width:0}
+.extra h2{margin:0;font:400 clamp(2rem,4.5vw,3.6rem)/.95 var(--slab);text-transform:uppercase}
+.extra h2 em{font-style:normal;color:var(--red)}
+.extra p{margin:.8em 0 0;max-width:34ch;color:var(--ink-2)}
+.extra .cloth-host{position:relative;aspect-ratio:16/10;min-height:320px;cursor:grab}
+.extra .cloth-host canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.extra .cloth-host.static img{position:absolute;inset:6%;width:88%;height:auto;transform:rotate(-3deg);filter:url(#torn) drop-shadow(10px 16px 18px rgba(20,20,40,.35))}
+.extra .hint{position:absolute;left:1rem;bottom:.6rem;font:400 .74rem/1 var(--type);color:var(--ink-2);letter-spacing:.06em}
+
+/* ---- rush week (pinned) ---- */
+.week{position:relative;padding:3rem 0 2rem}
+.week .stage{position:relative;min-height:80vh}
+.week .title{position:relative;z-index:3;max-width:34rem}
+.week h2{margin:.3em 0 0;font:400 clamp(2.4rem,6vw,5rem)/.9 var(--slab);text-transform:uppercase;color:var(--ink)}
+.week h2 em{font-style:normal;color:var(--cobalt)}
+.week .strand{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.week .strand path{fill:none;stroke:var(--ink);stroke-width:1.4;opacity:.6}
+.week .cards{position:absolute;inset:0;z-index:2}
+.week .ev{position:absolute;width:clamp(180px,19vw,250px);padding:.9rem 1rem 1.1rem;transform:rotate(var(--rot));will-change:transform}
+.week .ev .tape{top:-13px;left:50%;margin-left:-59px;--r:var(--tr,-4deg)}
+.week .ev .pin{position:absolute;top:-9px;left:14px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff7b74,var(--red) 60%,#9c1f1a);box-shadow:0 3px 4px rgba(0,0,0,.4);z-index:2}
+.week .ev.due .pin{background:radial-gradient(circle at 35% 35%,#7f9cf0,var(--cobalt) 60%,#1a338a)}
+.week .ev .d{font:400 .78rem/1.3 var(--type);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.week .ev .d b{display:block;font:400 2rem/1 var(--slab);color:var(--ink);letter-spacing:0;margin:.15em 0 .35em}
+.week .ev h3{margin:0;font:800 1.05rem/1.15 var(--body);text-transform:uppercase;letter-spacing:.01em}
+.week .ev .t{display:block;margin-top:.35em;font:400 .85rem/1.2 var(--type);color:var(--ink-2)}
+.week .ev p{margin:.5em 0 0;font-size:.86rem;color:var(--ink-2)}
+.week .ev.due{background:var(--red);color:#fff}
+.week .ev.due .d,.week .ev.due .d b,.week .ev.due h3,.week .ev.due .t,.week .ev.due p{color:#fff}
+.week .ev:nth-child(1){left:2%;top:36%}.week .ev:nth-child(2){left:23%;top:58%}.week .ev:nth-child(3){left:44%;top:32%}.week .ev:nth-child(4){left:63%;top:60%}.week .ev:nth-child(5){left:80%;top:24%}
+.week .mobile-list{display:none}
+
+/* ---- tape marquee ---- */
+.marquee{position:relative;margin:2rem 0 3rem;transform:rotate(-1.6deg);overflow:hidden;background:var(--tape);mix-blend-mode:multiply;padding:.55em 0}
+.marquee .track{display:flex;gap:3rem;white-space:nowrap;font:400 1.1rem/1 var(--type);letter-spacing:.14em;text-transform:uppercase;width:max-content}
+.marquee span{padding-right:3rem}
+
+/* ---- Q&A sticky notes ---- */
+.qa{padding:2rem 0 3rem}
+.qa .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem 2rem;align-items:start}
+.qa .head{grid-column:1/-1;max-width:34rem}
+.qa h2{margin:.2em 0 0;font:400 clamp(2rem,4.5vw,3.4rem)/.95 var(--slab);text-transform:uppercase}
+.note-s{background:#f7e58a;padding:1.3rem 1.2rem 1.5rem;transform:rotate(var(--rot));box-shadow:4px 8px 18px rgba(20,20,40,.22);position:relative;min-height:12rem}
+.note-s:nth-child(3){background:#f4c9c4}.note-s:nth-child(4){background:#c7d7f8}
+.note-s .tape{top:-12px;left:50%;margin-left:-59px;--r:3deg}
+.note-s h3{margin:0 0 .5em;font:400 1.05rem/1.35 var(--type)}
+.note-s p{margin:0;font-size:.98rem}
+
+/* ---- founders (torn newsprint) ---- */
+.founders{padding:2rem 0 3rem;position:relative}
+.founders .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;position:relative}
+.founders .head{grid-column:1/-1;max-width:34rem}
+.founders h2{margin:.2em 0 0;font:400 clamp(2rem,4.5vw,3.4rem)/.95 var(--slab);text-transform:uppercase}
+.clip{background:#f3eee2 url(/assets/paper-white.jpg) center/600px;padding:1.6rem 1.5rem 1.4rem;transform:rotate(var(--rot));box-shadow:6px 10px 22px rgba(20,20,40,.2);position:relative}
+.clip .kick{font:400 .72rem/1 var(--type);letter-spacing:.16em;text-transform:uppercase;color:var(--red);border-bottom:2px solid var(--ink);padding-bottom:.6em;margin-bottom:.9em;display:flex;justify-content:space-between}
+.clip p{margin:0 0 .9em;font-size:1.02rem;column-count:1}
+.clip p::first-letter{font:400 2.6em/.85 var(--slab);float:left;padding:.05em .12em 0 0;color:var(--red)}
+.clip cite{font:400 .8rem/1.4 var(--type);font-style:normal;letter-spacing:.1em;text-transform:uppercase}
+.clip cite b{display:block;font:800 1rem/1.2 var(--body);letter-spacing:0}
+.founders .flip{position:absolute;right:1%;top:-12%;width:clamp(120px,13vw,190px);transform:rotate(12deg);z-index:3}
+
+/* ---- apply ---- */
+.apply{padding:2rem 0 5rem}
+.apply .card{max-width:60rem;margin:0 auto;padding:clamp(1.6rem,4vw,3rem);display:grid;grid-template-columns:1fr auto;gap:1.6rem 2.4rem;align-items:center;transform:rotate(-.6deg)}
+.apply h2{margin:0;font:400 clamp(2rem,5vw,3.8rem)/.95 var(--slab);text-transform:uppercase}
+.apply h2 em{font-style:normal;color:var(--cobalt)}
+.apply p{margin:.7em 0 0;max-width:46ch;color:var(--ink-2)}
+.apply .stamp{position:absolute;right:6%;top:-1.6rem;font:400 1.4rem/1 var(--slab);letter-spacing:.08em;text-transform:uppercase;color:var(--red);border:4px solid var(--red);border-radius:.3em;padding:.35em .6em;transform:rotate(-12deg);box-shadow:inset 0 0 0 2px var(--card),inset 0 0 0 4px var(--red);mix-blend-mode:multiply;opacity:.9}
+.apply .btns{display:grid;gap:1.2rem;justify-items:start}
+.apply .tape{top:-12px;left:8%;--r:-5deg}
+
+@media (prefers-reduced-motion:reduce){.paste,.reveal,.ev{opacity:1!important;transform:rotate(var(--rot,0))!important}}
+@media (max-width:900px){
+  .hero{padding-top:1rem}
+  .hero .wrap{min-height:auto;padding-bottom:1rem}
+  .hero .head{max-width:100%}
+  .hero .jump,.hero .mask,.hero .pin,.hero .strand{display:none}
+  .hero .blob.b1{right:-24%;top:-6%;width:70vw}
+  .hero .blob.b2{left:-24%;bottom:auto;top:62%;width:60vw}
+  .hero .cluster{display:block;position:relative;height:clamp(240px,62vw,340px);margin-top:1.4rem}
+  .hero .swing{position:absolute;right:-6%;top:0;width:44vw;z-index:2}
+  .hero .logo{position:absolute;left:-2%;top:22%;width:50vw;z-index:3}
+  .hero .note{position:relative;right:auto;top:auto;width:min(100%,22rem);margin:.6rem 0 0}
+  .extra h2{text-wrap:balance;font-size:clamp(1.8rem,9vw,2.6rem)}
+  .extra .cloth-host{aspect-ratio:auto;height:270px;min-height:0;width:100%}
+  .extra .cloth-host.static img{inset:auto;left:6%;top:8%;width:88%;max-width:88%;height:auto}
+  .hero .sub{font-size:1rem}
+  .extra .wrap{grid-template-columns:minmax(0,1fr)}
+  .week .stage{min-height:auto}
+  .week .cards,.week .strand{display:none}
+  .week .mobile-list{display:grid;gap:1.4rem;margin-top:1.6rem;list-style:none;padding:0}
+  .week .mobile-list .ev{position:relative;width:min(100%,26rem);left:auto!important;top:auto!important;margin:0 auto}
+  .qa .wrap{grid-template-columns:1fr}
+  .founders .wrap{grid-template-columns:1fr}
+  .founders .flip{right:0;top:-1%;width:20vw}
+  .apply .card{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="torn" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035 .07" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <filter id="rough" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6"/></filter>
+</svg>
+{{NAV}}
+<main>
+  <!-- HERO: the case file spread -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <svg class="blob b1" viewBox="0 0 400 300" aria-hidden="true"><path d="M60 140c-20-70 60-120 140-118 60 1 90 40 150 30 40-7 50 40 40 90-8 40-40 70-20 110-30 40-110 50-170 30-60-20-70-70-100-90-40-25-30-30-40-52z"/></svg>
+      <svg class="blob b2 blue" viewBox="0 0 400 300" aria-hidden="true"><path d="M40 150c-30-60 40-110 100-100 50 8 60-30 130-20 70 10 120 60 110 120-8 50-60 60-70 100-10 40-90 40-150 20-50-17-70-30-90-60-15-22-20-35-30-60z"/></svg>
+      <svg class="strand" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path d="M870 40 C 800 180, 760 260, 690 330 S 560 420, 480 470 S 300 560, 190 640"/><path d="M880 60 C 820 100, 700 140, 650 210"/></svg>
+      <div class="head">
+        <p class="over"><span class="label red type">Are you Peter Parker?</span><span class="label blue type">Or are you Spider-Man?</span></p>
+        <h1 data-text="TEK Rush">TEK Rush</h1>
+        <span class="bnd">Brand New Day</span>
+        <p class="sub">Michigan's professional technology fraternity. Every member is the student with the problem set due at midnight <em>and</em> the one who shipped the project. All majors. Five days in September to find out which one you are.</p>
+        <div class="cta">
+          <a class="btn" href="{{APPLY}}">Apply by Sat 9/12 · noon</a>
+          <a class="btn ghost" href="{{INTEREST}}">Interest form</a>
+        </div>
+      </div>
+      <div class="cluster">
+      <img class="paste sticker swing" data-depth=".6" style="--rot:8deg" src="/assets/spidey-swing.webp" alt="" width="714" height="1100">
+      <img class="paste sticker jump" data-depth=".25" style="--rot:-6deg" src="/assets/spidey-jump-riso.webp" alt="" width="1200" height="555">
+      <img class="paste mask" data-depth=".15" style="--rot:5deg" src="/assets/spidey-mask-riso.webp" alt="" width="833" height="648">
+      <img class="paste sticker logo" data-depth=".45" style="--rot:-9deg" src="/assets/logo-bnd.webp" alt="Spider-Man: Brand New Day" width="800" height="233">
+      </div>
+      <aside class="paste card note" data-depth=".35" style="--rot:3deg">
+        <svg class="clip-svg" viewBox="0 0 40 90" aria-hidden="true"><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#8d93a6" stroke-width="3.2" stroke-linecap="round"/><path d="M12 22v46a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v48a2.5 2.5 0 0 0 5 0V24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".6"/></svg>
+        <h2>Known characteristics</h2>
+        <dl><dt>Majors</dt><dd>All of them</dd><dt>Years</dt><dd>Freshmen &amp; sophomores</dd><dt>Seen</dt><dd>Sept 8–12, Ann Arbor</dd><dt>Status</dt><dd>Recruiting</dd></dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EXTRA: newsprint on cloth -->
+  <section class="extra">
+    <div class="wrap">
+      <div class="reveal" style="--rot:0">
+        <span class="label type">Extra, extra</span>
+        <h2>Read all <em>about it.</em></h2>
+        <p>One week. Five events. One short application. Grab the paper and pull — it moves.</p>
+      </div>
+      <div class="cloth-host" aria-label="Wanted poster on cloth"><span class="hint">drag to pull</span></div>
+    </div>
+  </section>
+
+  <!-- RUSH WEEK: evidence pinned to the board -->
+  <section class="week" id="week">
+    <div class="wrap stage">
+      <div class="title reveal" style="--rot:0">
+        <span class="label red type">Sept 8–12 · Ann Arbor</span>
+        <h2>Rush <em>week.</em></h2>
+      </div>
+      <svg class="strand" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path id="weekStrand" d="M60 250 C 160 330, 220 360, 300 380 S 420 250, 520 240 S 640 360, 720 380 S 830 210, 900 180"/></svg>
+      <div class="cards">
+        {{#EVENTS}}<article class="ev card{i:4? due}" style="--rot:{i:0?-4deg}{i:1?3deg}{i:2?-2deg}{i:3?4deg}{i:4?-3deg};--tr:{i:0?4deg}{i:1?-5deg}{i:2?3deg}{i:3?-3deg}{i:4?5deg}"><span class="tape"></span><span class="pin"></span><span class="d">{0}<b>{1}</b></span><h3>{2}</h3><span class="t">{3}</span><p>{4}</p></article>
+        {{/EVENTS}}
+      </div>
+      <ol class="mobile-list">
+        {{#EVENTS}}<li class="ev card reveal{i:4? due}" style="--rot:{i:0?-2deg}{i:1?2deg}{i:2?-1.5deg}{i:3?2deg}{i:4?-2deg}"><span class="tape"></span><span class="d">{0}<b>{1}</b></span><h3>{2}</h3><span class="t">{3}</span><p>{4}</p></li>
+        {{/EVENTS}}
+      </ol>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Apply by Sat 9/12 · noon</span><span>All majors</span><span>Freshmen &amp; sophomores</span><span>@tekumich</span><span>Info session Tue 9/8</span><span>Brand new day</span>
+    <span>Apply by Sat 9/12 · noon</span><span>All majors</span><span>Freshmen &amp; sophomores</span><span>@tekumich</span><span>Info session Tue 9/8</span><span>Brand new day</span>
+  </div></div>
+
+  <!-- Q&A: sticky notes -->
+  <section class="qa">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><span class="label blue type">Before you ask</span><h2>Questions from the crowd</h2></div>
+      {{#FAQ}}<div class="note-s reveal" style="--rot:{i:0?-3deg}{i:1?2deg}{i:2?-1.5deg}"><span class="tape"></span><h3>{0}</h3><p>{1}</p></div>
+      {{/FAQ}}
+    </div>
+  </section>
+
+  <!-- FOUNDERS: torn clippings -->
+  <section class="founders">
+    <div class="wrap">
+      <div class="head reveal" style="--rot:0"><span class="label type">On the record</span><h2>Why it exists</h2></div>
+      <img class="sticker flip reveal" src="/assets/spidey-flip.webp" alt="" width="558" height="900" style="--rot:12deg">
+      {{#TESTIMONIALS}}<blockquote class="clip torn reveal" style="--rot:{i:0?-1.5deg}{i:1?1.2deg}"><div class="kick"><span>Founder's note</span><span>№ {n}</span></div><p>{2}</p><cite><b>{0}</b>{1}</cite></blockquote>
+      {{/TESTIMONIALS}}
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section class="apply">
+    <div class="wrap">
+      <div class="card reveal" style="--rot:-.6deg">
+        <span class="tape"></span>
+        <span class="stamp">Wanted</span>
+        <div>
+          <span class="label red type">Saturday, Sept 12 · noon</span>
+          <h2>Both of you <em>apply.</em></h2>
+          <p>Short form. Come to one event first, then tell us who you are. Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
+        </div>
+        <div class="btns"><a class="btn blue" href="{{APPLY}}">Open the application</a><a class="btn ghost" href="{{INTEREST}}">Interest form</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+{{FOOTER}}
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script type="module">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mm = gsap.matchMedia();
+
+// smooth scroll (desktop only; native on touch)
+if (!reduce && !matchMedia('(pointer: coarse)').matches) {
+  const lenis = new Lenis({ lerp: .09 });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
+
+// ---- hero: paste-up sequence ----
+document.fonts.ready.then(() => {
+  if (reduce) return;
+  const tl = gsap.timeline({ defaults: { ease: 'back.out(1.7)', duration: .7 } });
+  tl.from('.hero .over .label', { y: 18, opacity: 0, stagger: .12, duration: .5, ease: 'power3.out' })
+    .from('.hero h1', { y: 30, opacity: 0, duration: .7, ease: 'power3.out' }, '-=.2')
+    .from('.hero .sub, .hero .cta', { y: 16, opacity: 0, stagger: .1, duration: .5, ease: 'power3.out' }, '-=.35')
+    .from('.hero .paste', { scale: 1.22, opacity: 0, rotation: (i, el) => parseFloat(el.style.getPropertyValue('--rot')) + 10, stagger: .13, transformOrigin: '50% 50%' }, '-=.55')
+    .from('.hero .note .clip-svg', { y: -20, opacity: 0, duration: .4, ease: 'power2.out' }, '-=.25')
+    .from('.hero .strand path', { strokeDashoffset: (i, el) => el.getTotalLength(), strokeDasharray: (i, el) => el.getTotalLength(), duration: 1.4, ease: 'power2.inOut', stagger: .2 }, '-=1');
+});
+
+// ---- hero: depth parallax on scroll ----
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  gsap.utils.toArray('.hero [data-depth]').forEach(el => {
+    gsap.to(el, { y: () => -140 * parseFloat(el.dataset.depth), ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  });
+  // pointer parallax, tiny
+  const hero = document.querySelector('.hero');
+  const items = gsap.utils.toArray('.hero [data-depth]');
+  hero.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    items.forEach(el => gsap.to(el, { x: x * 24 * el.dataset.depth, rotation: parseFloat(el.style.getPropertyValue('--rot')) + x * 3 * el.dataset.depth, duration: .8, ease: 'power2.out', overwrite: 'auto' }));
+  });
+});
+
+// ---- rush week: pinned paste-up ----
+mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+  const strand = document.getElementById('weekStrand'); const L = strand.getTotalLength();
+  gsap.set(strand, { strokeDasharray: L, strokeDashoffset: L });
+  const tl = gsap.timeline({ scrollTrigger: { trigger: '.week', start: 'top top', end: '+=1800', pin: true, scrub: .8, anticipatePin: 1 } });
+  tl.to(strand, { strokeDashoffset: 0, ease: 'none', duration: 5 }, 0);
+  gsap.utils.toArray('.week .cards .ev').forEach((el, i) => {
+    tl.from(el, { scale: 1.3, opacity: 0, rotation: parseFloat(el.style.getPropertyValue('--rot')) - 14, y: 60, duration: .8, ease: 'back.out(1.5)' }, i * .95 + .2)
+      .from(el.querySelector('.tape'), { scaleX: 0, duration: .3 }, i * .95 + .75);
+  });
+  tl.to({}, { duration: .6 });
+});
+
+// ---- tape marquee ----
+gsap.to('.marquee .track', { xPercent: -50, ease: 'none', duration: 22, repeat: -1 });
+
+// ---- reveals ----
+if (!reduce) gsap.utils.toArray('.reveal').forEach(el => {
+  const rot = parseFloat(getComputedStyle(el).getPropertyValue('--rot')) || 0;
+  gsap.from(el, { y: 44, opacity: 0, rotation: rot - 4, duration: .85, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+});
+
+// ---- stamp slam ----
+if (!reduce) gsap.from('.apply .stamp', { scale: 2.6, rotation: -30, opacity: 0, duration: .45, ease: 'power4.in', scrollTrigger: { trigger: '.apply .card', start: 'top 70%' } });
+
+// ---- newsprint on cloth (three.js holocloth port) ----
+function newsprint() {
+  const c = document.createElement('canvas'); c.width = 1600; c.height = 1000; const x = c.getContext('2d');
+  x.fillStyle = '#efe8d8'; x.fillRect(0, 0, c.width, c.height);
+  x.fillStyle = '#d8322a'; x.fillRect(60, 60, 1480, 150);
+  x.fillStyle = '#fff'; x.font = '110px "Alfa Slab One"'; x.textBaseline = 'middle'; x.fillText('TEK RUSH', 90, 138);
+  x.font = '34px "Special Elite"'; x.textAlign = 'right'; x.fillText('FALL 2026', 1510, 138); x.textAlign = 'left';
+  x.fillStyle = '#1b1f3a'; x.font = '300px "Alfa Slab One"'; x.fillText('WANTED', 70, 420);
+  x.font = '26px "Special Elite"'; x.fillText('TUESDAY MORNING FINAL · SEPT 8, 2026 · ANN ARBOR · ONE WEEK ONLY', 70, 232);
+  x.fillStyle = '#2d55c4'; x.font = '54px "Special Elite"'; x.fillText('ARE YOU PETER PARKER, OR ARE YOU SPIDER-MAN?', 70, 600);
+  x.fillStyle = '#1b1f3a';
+  for (let col = 0; col < 3; col++) for (let i = 0; i < 14; i++) { const w = 380 + ((i * 37 + col * 53) % 90); x.fillRect(70 + col * 500, 660 + i * 22, w, 9); }
+  x.fillStyle = '#d8322a'; x.font = '44px "Alfa Slab One"'; x.fillText('APPLY BY SAT 9/12 · NOON', 70, 950);
+  const img = new Image(); img.src = c.toDataURL('image/png'); return img;
+}
+const host = document.querySelector('.cloth-host');
+ScrollTrigger.create({ trigger: host, start: 'top 130%', once: true, onEnter: async () => {
+  await document.fonts.ready;
+  const img = newsprint();
+  if (reduce || innerWidth < 901) { host.classList.add('static'); host.appendChild(img); return; }
+  try {
+    const { HoloCloth } = await import('/tools/holocloth/holocloth.js');
+    const cloth = new HoloCloth(host, { preset: 'Black Cloth', orbit: false, autoPoke: 6, quality: 'Medium', zoom: 1.45,
+      render: { transparent: true, noise: .06, exposure: 1.05, environment: .9, bloom: 0 },
+      material: { baseColor: '#efe8d8', roughness: .7, clearcoat: .05, specTint: .2, metalness: .1 },
+      physics: { grabRadius: .42 } });
+    await new Promise(r => img.complete ? r() : img.onload = r);
+    await cloth.setImage(img);
+    cloth.poke(.8);
+    ScrollTrigger.create({ trigger: host, start: 'top 80%', onEnter: () => cloth.poke(1) });
+  } catch (e) { console.warn('cloth fallback', e); host.classList.add('static'); host.appendChild(img); }
+}});
+</script>
+</body>
+</html>
