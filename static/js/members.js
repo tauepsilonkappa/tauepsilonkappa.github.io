@@ -330,16 +330,16 @@ const membersData = [
     image: "/static/media/people/PranavGoyal.webp",
     linkedin: "https://www.linkedin.com/in/pranav-goy4l/"
   },
-  // {
-  //   id: "ellie-grehan",
-  //   name: "Ellie Grehan",
-  //   title: "Epsilon Class",
-  //   major: "Biomedical Engineering",
-  //   year: "Senior",
-  //   class: "epsilon",
-  //   image: "/static/media/people/EllieGrehan.WebP",
-  //   linkedin: "https://www.linkedin.com/in/ellie-grehan/"
-  // },
+  {
+    id: "ellie-grehan",
+    name: "Ellie Grehan",
+    title: "Epsilon Class",
+    major: "Biomedical Engineering",
+    year: "Senior",
+    class: "epsilon",
+    image: "/static/media/people/EllieGrehan.webp",
+    linkedin: "https://www.linkedin.com/in/ellie-grehan/"
+  },
   {
     id: "ahmed-hadi",
     name: "Ahmed Hadi",
@@ -371,6 +371,16 @@ const membersData = [
     linkedin: "https://www.linkedin.com/in/gracie-hou/"
   },
 
+  {
+    id: "sam-koda",
+    name: "Sam Koda",
+    title: "Epsilon Class",
+    major: "Information Analysis",
+    year: "Senior",
+    class: "epsilon",
+    image: "/static/media/people/SamKoda.webp",
+    linkedin: "https://www.linkedin.com/in/samkoda/"
+  },
   {
     id: "nathan-lesny",
     name: "Nathan Lesny",
