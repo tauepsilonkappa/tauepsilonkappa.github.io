@@ -103,8 +103,8 @@ FOOTER_CSS = '''.site-footer{display:flex;align-items:center;justify-content:spa
 EVENTS = [
   ("Tue", "9/8",  "Info Session",    "6–7 pm · Henderson Rm, Michigan League",  ""),
   ("Wed", "9/9",  "DEI Panel",       "6:30–7:30 pm · Henderson Rm, Michigan League", "Members on belonging in tech. Questions welcome."),
-  ("Thu", "9/10", "Meet & Greet",    "6–8:30 pm · CCCB 3460",     "Talk classes, projects and recruiting."),
-  ("Fri", "9/11", "Meet & Greet",    "6–8:30 pm · CCCB 2460",     "Second night. Missed Thursday? Come by."),
+  ("Thu", "9/10", "Meet & Greet",    "6–8 pm · CCCB 3460",     "Talk classes, projects and recruiting."),
+  ("Fri", "9/11", "Meet & Greet",    "6–8 pm · CCCB 2460",     "Second night. Missed Thursday? Come by."),
   ("Sat", "9/12", "Application due", "12:00 noon",                "Short form. Hit one event first, then tell us who you are."),
 ]
 FAQ = [
