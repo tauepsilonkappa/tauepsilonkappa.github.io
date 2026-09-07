@@ -116,7 +116,7 @@ TESTIMONIALS = [
   ("Trisha Kant", "Founder", "Creating a new fraternity on campus has been extremely rewarding. Being able to cultivate a specific community of diverse yet like-minded students has been the best part of my time at UMich. The people I've met through TEK are ones I will have throughout my life."),
   ("Noah Ivers", "Founder", "Starting TEK has been the best part of my college experience. Watching the fraternity flourish and the members grow closer has been a privilege. TEK has a bright future. May the younger members carry on what we've started."),
 ]
-APPLY = "https://forms.gle/LbX77aMKqMnf3Fx68"
+APPLY = "https://docs.google.com/forms/d/e/1FAIpQLScVrbt3NHL5SW6oRtRvy3NcbaJtOyKEoelb1ufFYzquO7NFyQ/viewform?usp=send_form"
 INTEREST = "https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"
 
 def render(name):

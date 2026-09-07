@@ -258,7 +258,3 @@ main{position:relative}
   .apply .card{grid-template-columns:1fr}
 }
 html.js:not(.fonts) .hero .head,html.js:not(.fonts) .hero .paste,html.js:not(.fonts) .hero .blob{visibility:hidden}
-/* applications-closed toast */
-.toast{position:fixed;left:50%;bottom:1.6rem;transform:translate(-50%,12px) rotate(-1deg);background:var(--card) url(/static/media/rush/paper-tan.jpg) center/700px;background-blend-mode:multiply;color:var(--ink);border:2px solid var(--ink);box-shadow:var(--shadow);padding:.85rem 1.15rem;font:400 .95rem/1.45 var(--type);z-index:9999;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;max-width:min(92vw,30rem);text-align:center}
-.toast.on{opacity:1;pointer-events:auto;transform:translate(-50%,0) rotate(-1deg)}
-.toast a{color:var(--red);text-decoration:underline}

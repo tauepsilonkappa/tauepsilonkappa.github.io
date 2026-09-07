@@ -75,7 +75,7 @@
         <span class="bnd">Brand New Day</span>
         <p class="sub">Michigan's premier professional technology fraternity. Focused on professional growth, technical skills, and lifelong social connections that last through college and beyond!</p>
         <div class="cta">
-          <a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Apply by Sat 9/12 · noon</a>
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScVrbt3NHL5SW6oRtRvy3NcbaJtOyKEoelb1ufFYzquO7NFyQ/viewform?usp=send_form">Apply by Sat 9/12 · noon</a>
           <a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"><span class="tape"></span>Interest form</a>
         </div>
       </div>
@@ -175,7 +175,7 @@
           <h2 class="h2">Brand new day to apply</h2>
           <p class="type">Applications close Saturday, Sept 12 at noon. Come to one event first, then tell us who you are.<br>Questions: <a href="mailto:tauepsilonkappa@umich.edu">tauepsilonkappa@umich.edu</a></p>
         </div>
-        <div class="btns"><a class="btn" href="https://forms.gle/LbX77aMKqMnf3Fx68">Open the application</a><a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"><span class="tape"></span>Interest form</a></div>
+        <div class="btns"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScVrbt3NHL5SW6oRtRvy3NcbaJtOyKEoelb1ufFYzquO7NFyQ/viewform?usp=send_form">Open the application</a><a class="btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLScvKZmzYm5nd82Af1WnQIXEt5JmzKAY-YFZgpAYvmy_HK15LA/viewform"><span class="tape"></span>Interest form</a></div>
       </div>
     </div>
   </section>
@@ -378,15 +378,6 @@ if (!reduce) gsap.from('.apply .stamp', { scale: 2.6, rotation: -30, opacity: 0,
     };
     requestAnimationFrame(draw);
   }
-}
-// ---- applications closed: Apply buttons show a toast instead of navigating ----
-{
-  const interest = document.querySelector('a[href*="docs.google.com/forms"]');
-  const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status');
-  t.innerHTML = `Applications aren't open yet. <a href="${interest.href}">Fill out the interest form</a> instead.`;
-  document.body.appendChild(t);
-  let h; const block = e => { e.preventDefault(); clearTimeout(h); t.classList.add('on'); h = setTimeout(() => t.classList.remove('on'), 4000); };
-  document.querySelectorAll('a[href^="https://forms.gle"]').forEach(a => { a.addEventListener('click', block); a.addEventListener('auxclick', block); });
 }
 // ---- webs and ropes (verlet) ----
 import('/static/js/webs.js').then(({ ropeCanvas, cornerWeb }) => {
