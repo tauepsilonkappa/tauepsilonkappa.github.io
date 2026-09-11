@@ -908,16 +908,16 @@ const membersData = [
     image: "/static/media/people/LynnVan.webp",
     linkedin: "https://www.linkedin.com/in/lynn-van-aaaa4830b/"
   },
-  {
-    id: "owen-bogda",
-    name: "Owen Bogda",
-    title: "Theta Class",
-    major: "Computer Engineering",
-    year: "Junior",
-    class: "theta",
-    image: "/static/media/people/OwenBogda.webp",
-    linkedin: "https://www.linkedin.com/in/owen-bogda/"
-  },
+  // {
+  //   id: "owen-bogda",
+  //   name: "Owen Bogda",
+  //   title: "Theta Class",
+  //   major: "Computer Engineering",
+  //   year: "Junior",
+  //   class: "theta",
+  //   image: "/static/media/people/OwenBogda.webp",
+  //   linkedin: "https://www.linkedin.com/in/owen-bogda/"
+  // },
   {
     id: "sahasra-potla",
     name: "Sahasra Potla",
